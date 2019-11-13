@@ -1,3 +1,28 @@
+## Release 0.5.3 (2019-11-13)
+```
+Changes:
+
+  + da676b7:
+    Statically link libstdc++ with the Go plugin to avoid
+    libstdc++ version issues on Android buildbot.
+```
+
+This release addresses libstdc++ loading issue on dependency scanner plugin.
+
+## Release 0.5.2 (2019-11-13)
+```
+Changes:
+
+  + 7a4cc47:
+    Don't fail reproxy when loading of dependency scanner plugin fails.
+  + efea8bf:
+    Add a temporary workaround suggested in rules_go to fix issue
+    with version number stamping.
+```
+
+This release makes reproxy not fail when it cannot load CPP dependency
+scanner plugin.
+
 ## Release 0.5.1 (2019-11-11)
 ```
 Changes:

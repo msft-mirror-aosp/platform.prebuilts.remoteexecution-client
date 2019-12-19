@@ -1,5 +1,5 @@
 drops {
-  dest_file: "test/rewrapper"
+  dest_file: "CHANGELOG.md"
   version: "test"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
@@ -9,7 +9,7 @@ drops {
     build_number: "53"
     artifact_gcs_bucket: "reclient-release-artifacts"
     artifact_root: "prod/re-client/gcp_ubuntu/release/53/20191219-115552"
-    artifact_name: "rewrapper"
-    artifact_permission_mode: "755"
+    artifact_name: "CHANGELOG.md"
+    artifact_permission_mode: "640"
   }
 }

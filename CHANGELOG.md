@@ -1,3 +1,15 @@
+## Release 0.6.2 (2019-12-19)
+```
+Changes:
+  + 41c7b59:
+    Update remote-apis-sdks commit to include the GRPC fix in SDK
+  + bd18b14:
+    Prevent failure to load clang-scan-deps from failing actions.
+```
+
+This release primarily fixes the GRPC max concurrent streams issue in the SDK
+and goes back to using full input processor as default.
+
 ## Release 0.6.1 (2019-12-16)
 ```
 Changes:

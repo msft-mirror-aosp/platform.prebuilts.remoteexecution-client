@@ -1,3 +1,16 @@
+## Release 0.7.0 (2020-01-06)
+```
+Changes:
+  + ea1b2a1:
+    Wireup the new toolchain input processor as part of ProcessInputs fn
+  + f0ae7a8:
+    Script to test application default creds on Android corp buildbots
+```
+
+This release adds a feature to search for "remote_toolchain_inputs" file that
+lives alongside LLVM toolchains in Android to specify the list of files that
+constitute toolchain inputs.
+
 ## Release 0.6.2 (2019-12-19)
 ```
 Changes:

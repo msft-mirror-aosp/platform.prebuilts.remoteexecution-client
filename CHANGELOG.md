@@ -1,3 +1,64 @@
+## Release 0.7.1 (2020-01-23)
+```
+Changes:
+  + edfbaae:
+    Remove -verify flag before calling clang-scan-deps
+  + 4930837:
+    Revert "Merge "Optimize the dependency scanner plugin to reuse workers""
+```
+
+This release reverts the clang-scan-deps optimization since we discovered a bug
+in clang-scan-deps caching behaviour when workers are reused.
+
+## Release 0.7.1 (2020-01-20)
+```
+Changes:
+  + bfee822:
+    Fix occasional failure in Javac/R8/D8 compare builds
+  + 6a54076:
+    Remote execution integration test for re-client
+  + 3cefecc:
+    Optimize the dependency scanner plugin to reuse workers
+  + a172d20:
+    Aggregating stats per label.
+  + 31fbea5:
+    Use a random socket file in integration tests
+  + 98f775a:
+    Per proxy invocation ID.
+  + fd4a213:
+    Make rewrapper block until it can dial to reproxy.
+  + 2b43cf9:
+    Part 2 of renaming continuous_android tests to continuous_android_lerc
+  + b5ced78:
+    Updated scripts/install to run on mac as well as linux.
+  + e15143f:
+    Updated cgo directives to selectively pick certain libraries.
+  + 900dbff:
+    Update the dep scanning build script to run on macos as well as linux.
+  + d9b6602:
+    Update the cpp dependency scanner integration test to explicitly
+  + f5eac3c:
+    Update .gitignore file to ignore MacOS .DS_Store files.
+  + 53b2fe8:
+    Add virtual inputs for all -I and -isystem dir paths
+```
+
+This release includes a potential fix for the flaky resource exhaustion issue
+as well as an optimization for the clang-scan-deps plugin.
+
+## Release 0.7.0 (2020-01-06)
+```
+Changes:
+  + ea1b2a1:
+    Wireup the new toolchain input processor as part of ProcessInputs fn
+  + f0ae7a8:
+    Script to test application default creds on Android corp buildbots
+```
+
+This release adds a feature to search for "remote_toolchain_inputs" file that
+lives alongside LLVM toolchains in Android to specify the list of files that
+constitute toolchain inputs.
+
 ## Release 0.6.2 (2019-12-19)
 ```
 Changes:

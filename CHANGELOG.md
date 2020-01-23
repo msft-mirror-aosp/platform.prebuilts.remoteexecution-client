@@ -1,3 +1,15 @@
+## Release 0.7.1 (2020-01-23)
+```
+Changes:
+  + edfbaae:
+    Remove -verify flag before calling clang-scan-deps
+  + 4930837:
+    Revert "Merge "Optimize the dependency scanner plugin to reuse workers""
+```
+
+This release reverts the clang-scan-deps optimization since we discovered a bug
+in clang-scan-deps caching behaviour when workers are reused.
+
 ## Release 0.7.1 (2020-01-20)
 ```
 Changes:

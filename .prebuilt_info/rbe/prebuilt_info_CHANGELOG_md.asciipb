@@ -1,9 +1,9 @@
 drops {
   dest_file: "CHANGELOG.md"
-  version: "0.7.2.3f6228b"
+  version: "test"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
-  git_branch: "master"
+  git_branch: "master-build-rbe-testing"
   kokoro_drop {
     full_job_name: "re-client/gcp_ubuntu/release"
     build_number: "56"

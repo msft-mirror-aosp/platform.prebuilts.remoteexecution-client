@@ -1,4 +1,66 @@
-## Release 0.7.1 (2020-01-23)
+## Release 0.8.2 (2020-02-10)
+```
+Changes:
+  + cc4b9cf:
+    Fix log messages missing printing the error.
+```
+
+This release fixes missing error logs in removal of output directories in
+compare mode.
+## Release 0.8.1 (2020-02-07)
+```
+Changes:
+  + 2ae2a7f:
+    Prevent deletion of inputs under output directories in compare mode.
+  + 8365bbf:
+    Added strings replacer to properly encode quotation marks on created.
+  + c8b2db9:
+    Change updated flags instead of actual flags.
+  + 453eceb:
+    Added a feature to enable/disable the use of the toolchain input file.
+  + f8f49b9:
+    Support remote execution of javac/r8/d8.
+  + ee5e60c:
+    Propagate RBE_HTTP_PROXY value to reproxy, if set.
+  + 7761b78:
+    Add a debug helper function for dumping inputs to a tmp directory.
+  + 587f2d4:
+    Add working directory to the joined path of the .keep_me file.
+  + 0284950:
+    Add a feature to enable/disable the command argument cleaning. Default is enabled.
+```
+
+This release fixes a breakage in D8 compare builds due to having inputs under output
+directories.
+
+## Release 0.8.0 (2020-02-03)
+```
+Changes:
+  + 7af0844
+    Fix mismatch in ab/6089871 due to missing dependency on the --system dir.
+  + 4cf6a50
+    Update Android internal image to 2020-01-22 snapshot.
+  + 6d08ef5
+    Merge toolchain inputs in returned results in case of shallow fallback
+  + 86630ca
+    Fix segmentation fault when both toolchain and clangscandeps fail
+  + 5c040c2
+    Add javac LERC integration test.
+  + fd852e5
+    Add feature to enable in band update of action results to test
+    whether it has an impact on performance.
+  + 59f7155
+    Fix crash in stat logging when accept-cached is false
+  + f4a59aa
+    Fix the paths returned by toolchain input processor
+  + 0132e03
+    Add -Qunused-arguments parameter to scan-deps invocation to suppress warnings
+```
+
+This release adds a feature to enable synchronous upload of cached results in LERC mode
+and has a couple of bug-fixes for remote-execution flow.
+
+## Release 0.7.2 (2020-01-23)
 ```
 Changes:
   + edfbaae:

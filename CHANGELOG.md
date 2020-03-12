@@ -1,3 +1,90 @@
+## Release 0.9.4 (2020-03-05)
+```
+Changes:
+  + 250a753:
+    Fix unnecessary deps validation when deep input processor succeeds.
+  + 061b94c:
+    Add the gcno file to the output spec if --coverage is passed to clang
+```
+
+This release has fixes for downloading coverage file generated as part of clang
+compiles and fixes LERC to NOT do un-necessary dependency validation.
+
+## Release 0.9.3 (2020-03-03)
+```
+Changes:
+  + 9d89a75:
+    Updated the clang flag parser to handle more general clang commands.
+  + a9eddb0:
+    Document that --toolchain_inputs is relative to the exec root.
+  + 628a60a:
+    Handle -B flag and add it as a dependency.
+  + bd7abce:
+    Bump SDK version to include fix for batch download of blobs.
+  + a792271:
+    Modify create-release script to drop CHANGELOG.md to test/ folder
+```
+
+This release has fixes with respect to C++ input processor and bumps RE-SDK
+version to include fix for batch blob downloads.
+
+## Release 0.9.2 (2020-02-28)
+```
+Changes:
+  + e140d51:
+    Replace moreflag with rbeflag in the version package.
+  + 290e433:
+    Upgrade sdk to include batch upload size fix.
+  + 415cb83:
+    Enforce all returned paths from input processor are under exec root.
+  + 80fb1b3:
+    Remove the -fintegrated-cc1 flag when doing clang-scan-deps.
+  + 6d0e3f1:
+    Remove changelog from prebuilt-drop tool invocation
+```
+
+This release fixes a bug in reading RBE flags and includes input processor
+refactorings and fixes for supporting the nest/chrome builds.
+
+## Release 0.9.1 (2020-02-25)
+```
+Changes:
+  + f4fae4d:
+    Pass vargs to clang-scan-deps instead of combined string
+  + 1ff5530:
+    Remove the invalidation check in dependency scanner plugin
+```
+
+This release changes scan-deps interface so that it takes an unescaped
+list of arguments instead of a JSON database string.
+
+## Release 0.9.0 (2020-02-21)
+```
+Changes:
+  + 9bdf5ca:
+    Support toolchain_inputs flag for explicitly specifying toolchain
+  + 4f47570:
+    Handle -fsanitize-blacklist and -fprofile-sample-use similar to fprofile-use
+  + b29d7a3:
+    Change default execution strategy to undefined
+  + 52cb208:
+    Fix broken javac integ test.
+  + 17cd328:
+    rbeflag package allows setting flags with RBE_ prefixed env vars.
+  + faf5c1e:
+    Remove workaround to not delete inputs under output directories in compare mode.
+  + 6abae0d:
+    Add escaping for spaces on clang build command.
+  + 09f5abf:
+    toolchain: toolchain executable is workdir relative
+  + 7179410:
+    Fixing tool commands to process inputs shallow
+  + bf15e5b:
+    Adding ability to parse logs from multiple files, and save to separate files.
+```
+
+This release contains support for the toolchain_inputs flag and other fixes.
+
 ## Release 0.8.2 (2020-02-10)
 ```
 Changes:
@@ -7,6 +94,7 @@ Changes:
 
 This release fixes missing error logs in removal of output directories in
 compare mode.
+
 ## Release 0.8.1 (2020-02-07)
 ```
 Changes:

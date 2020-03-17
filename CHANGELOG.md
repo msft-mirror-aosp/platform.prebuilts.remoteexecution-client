@@ -1,3 +1,17 @@
+## Release 0.9.5 (2020-03-16)
+```
+Changes:
+  + 0bd4e59:
+    Add scripts to do global setup of RBE variables to android developers
+  + 3ff26d6:
+    Add reproxy support for cache-silo key
+  + 614329a:
+    Dont clean command args by default
+```
+
+This release makes reproxy support cache silo key and does not clean arguments
+for remote execution to prevent bootloops on output images.
+
 ## Release 0.9.4 (2020-03-05)
 ```
 Changes:

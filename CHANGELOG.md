@@ -1,3 +1,240 @@
+## Release 0.9.5 (2020-03-16)
+```
+Changes:
+  + 0bd4e59:
+    Add scripts to do global setup of RBE variables to android developers
+  + 3ff26d6:
+    Add reproxy support for cache-silo key
+  + 614329a:
+    Dont clean command args by default
+```
+
+This release makes reproxy support cache silo key and does not clean arguments
+for remote execution to prevent bootloops on output images.
+
+## Release 0.9.4 (2020-03-05)
+```
+Changes:
+  + 250a753:
+    Fix unnecessary deps validation when deep input processor succeeds.
+  + 061b94c:
+    Add the gcno file to the output spec if --coverage is passed to clang
+```
+
+This release has fixes for downloading coverage file generated as part of clang
+compiles and fixes LERC to NOT do un-necessary dependency validation.
+
+## Release 0.9.3 (2020-03-03)
+```
+Changes:
+  + 9d89a75:
+    Updated the clang flag parser to handle more general clang commands.
+  + a9eddb0:
+    Document that --toolchain_inputs is relative to the exec root.
+  + 628a60a:
+    Handle -B flag and add it as a dependency.
+  + bd7abce:
+    Bump SDK version to include fix for batch download of blobs.
+  + a792271:
+    Modify create-release script to drop CHANGELOG.md to test/ folder
+```
+
+This release has fixes with respect to C++ input processor and bumps RE-SDK
+version to include fix for batch blob downloads.
+
+## Release 0.9.2 (2020-02-28)
+```
+Changes:
+  + e140d51:
+    Replace moreflag with rbeflag in the version package.
+  + 290e433:
+    Upgrade sdk to include batch upload size fix.
+  + 415cb83:
+    Enforce all returned paths from input processor are under exec root.
+  + 80fb1b3:
+    Remove the -fintegrated-cc1 flag when doing clang-scan-deps.
+  + 6d0e3f1:
+    Remove changelog from prebuilt-drop tool invocation
+```
+
+This release fixes a bug in reading RBE flags and includes input processor
+refactorings and fixes for supporting the nest/chrome builds.
+
+## Release 0.9.1 (2020-02-25)
+```
+Changes:
+  + f4fae4d:
+    Pass vargs to clang-scan-deps instead of combined string
+  + 1ff5530:
+    Remove the invalidation check in dependency scanner plugin
+```
+
+This release changes scan-deps interface so that it takes an unescaped
+list of arguments instead of a JSON database string.
+
+## Release 0.9.0 (2020-02-21)
+```
+Changes:
+  + 9bdf5ca:
+    Support toolchain_inputs flag for explicitly specifying toolchain
+  + 4f47570:
+    Handle -fsanitize-blacklist and -fprofile-sample-use similar to fprofile-use
+  + b29d7a3:
+    Change default execution strategy to undefined
+  + 52cb208:
+    Fix broken javac integ test.
+  + 17cd328:
+    rbeflag package allows setting flags with RBE_ prefixed env vars.
+  + faf5c1e:
+    Remove workaround to not delete inputs under output directories in compare mode.
+  + 6abae0d:
+    Add escaping for spaces on clang build command.
+  + 09f5abf:
+    toolchain: toolchain executable is workdir relative
+  + 7179410:
+    Fixing tool commands to process inputs shallow
+  + bf15e5b:
+    Adding ability to parse logs from multiple files, and save to separate files.
+```
+
+This release contains support for the toolchain_inputs flag and other fixes.
+
+## Release 0.8.2 (2020-02-10)
+```
+Changes:
+  + cc4b9cf:
+    Fix log messages missing printing the error.
+```
+
+This release fixes missing error logs in removal of output directories in
+compare mode.
+
+## Release 0.8.1 (2020-02-07)
+```
+Changes:
+  + 2ae2a7f:
+    Prevent deletion of inputs under output directories in compare mode.
+  + 8365bbf:
+    Added strings replacer to properly encode quotation marks on created.
+  + c8b2db9:
+    Change updated flags instead of actual flags.
+  + 453eceb:
+    Added a feature to enable/disable the use of the toolchain input file.
+  + f8f49b9:
+    Support remote execution of javac/r8/d8.
+  + ee5e60c:
+    Propagate RBE_HTTP_PROXY value to reproxy, if set.
+  + 7761b78:
+    Add a debug helper function for dumping inputs to a tmp directory.
+  + 587f2d4:
+    Add working directory to the joined path of the .keep_me file.
+  + 0284950:
+    Add a feature to enable/disable the command argument cleaning. Default is enabled.
+```
+
+This release fixes a breakage in D8 compare builds due to having inputs under output
+directories.
+
+## Release 0.8.0 (2020-02-03)
+```
+Changes:
+  + 7af0844
+    Fix mismatch in ab/6089871 due to missing dependency on the --system dir.
+  + 4cf6a50
+    Update Android internal image to 2020-01-22 snapshot.
+  + 6d08ef5
+    Merge toolchain inputs in returned results in case of shallow fallback
+  + 86630ca
+    Fix segmentation fault when both toolchain and clangscandeps fail
+  + 5c040c2
+    Add javac LERC integration test.
+  + fd852e5
+    Add feature to enable in band update of action results to test
+    whether it has an impact on performance.
+  + 59f7155
+    Fix crash in stat logging when accept-cached is false
+  + f4a59aa
+    Fix the paths returned by toolchain input processor
+  + 0132e03
+    Add -Qunused-arguments parameter to scan-deps invocation to suppress warnings
+```
+
+This release adds a feature to enable synchronous upload of cached results in LERC mode
+and has a couple of bug-fixes for remote-execution flow.
+
+## Release 0.7.2 (2020-01-23)
+```
+Changes:
+  + edfbaae:
+    Remove -verify flag before calling clang-scan-deps
+  + 4930837:
+    Revert "Merge "Optimize the dependency scanner plugin to reuse workers""
+```
+
+This release reverts the clang-scan-deps optimization since we discovered a bug
+in clang-scan-deps caching behaviour when workers are reused.
+
+## Release 0.7.1 (2020-01-20)
+```
+Changes:
+  + bfee822:
+    Fix occasional failure in Javac/R8/D8 compare builds
+  + 6a54076:
+    Remote execution integration test for re-client
+  + 3cefecc:
+    Optimize the dependency scanner plugin to reuse workers
+  + a172d20:
+    Aggregating stats per label.
+  + 31fbea5:
+    Use a random socket file in integration tests
+  + 98f775a:
+    Per proxy invocation ID.
+  + fd4a213:
+    Make rewrapper block until it can dial to reproxy.
+  + 2b43cf9:
+    Part 2 of renaming continuous_android tests to continuous_android_lerc
+  + b5ced78:
+    Updated scripts/install to run on mac as well as linux.
+  + e15143f:
+    Updated cgo directives to selectively pick certain libraries.
+  + 900dbff:
+    Update the dep scanning build script to run on macos as well as linux.
+  + d9b6602:
+    Update the cpp dependency scanner integration test to explicitly
+  + f5eac3c:
+    Update .gitignore file to ignore MacOS .DS_Store files.
+  + 53b2fe8:
+    Add virtual inputs for all -I and -isystem dir paths
+```
+
+This release includes a potential fix for the flaky resource exhaustion issue
+as well as an optimization for the clang-scan-deps plugin.
+
+## Release 0.7.0 (2020-01-06)
+```
+Changes:
+  + ea1b2a1:
+    Wireup the new toolchain input processor as part of ProcessInputs fn
+  + f0ae7a8:
+    Script to test application default creds on Android corp buildbots
+```
+
+This release adds a feature to search for "remote_toolchain_inputs" file that
+lives alongside LLVM toolchains in Android to specify the list of files that
+constitute toolchain inputs.
+
+## Release 0.6.2 (2019-12-19)
+```
+Changes:
+  + 41c7b59:
+    Update remote-apis-sdks commit to include the GRPC fix in SDK
+  + bd18b14:
+    Prevent failure to load clang-scan-deps from failing actions.
+```
+
+This release primarily fixes the GRPC max concurrent streams issue in the SDK
+and goes back to using full input processor as default.
+
 ## Release 0.6.1 (2019-12-16)
 ```
 Changes:

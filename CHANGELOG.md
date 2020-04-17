@@ -1,3 +1,93 @@
+## Release 0.12.2 (2020-04-15)
+```
+Changes:
+  + d52f0b7:
+    Remove un-needed chdir and fix integration tests
+  + 34c2872:
+    Remove -debug-info-kind flag in clang-scan-deps.
+  + 0e25698:
+    Fix how we invoke clang++ binary to find resource directory
+  + 94f70cf:
+    Add an rsp package for centralizing rsp file parsing.
+```
+
+This release primarily contains bug fixes to C++ input processor and rsp file
+parsing.
+
+## Release 0.12.1 (2020-04-10)
+```
+Changes:
+  + 09a5526:
+    Also cache when we fail to find the resource-directory
+```
+
+This release fixes input processor latency for header-abi-dumper actions.
+
+## Release 0.12.0 (2020-04-08)
+```
+Changes:
+  + 5b29aa6:
+    Fix compare mode for actions where some inputs are also outputs.
+  + 9c31e0d:
+    Add .toc files as additional dependencies
+  + 667c5e1:
+    Supporting remote execution of header ABI dump actions
+  + 625fc40:
+    Add more details on how to build the code and run tests, and how to contribute.
+  + 99426b0:
+    Add support for Bazelisk and pin to Bazel 2.2.0.
+```
+
+This release adds support for remote execution of header ABI dumper and adds a fix
+for compare mode of metalava actions.
+
+## Release 0.11.0 (2020-04-02)
+```
+Changes:
+  + b2836e1:
+    Add output_directories and multiple rsp files flags to rewrapper.
+  + 4559f40:
+    Log flags in rewrapper after parsing.
+  + 8afef4a:
+    Removing flags logging from rewrapper, making it verbosity 1
+  + b7447ea:
+    Use LOG_DIR variable in android integration tests.
+  + 74ec9b9:
+    Add support in reproxy for link actions
+```
+
+This release adds support for linking, explicit output directories, and multiple
+input file lists. Also includes logging fixes.
+
+## Release 0.10.0 (2020-04-01)
+```
+Changes:
+  + 3be02a4:
+    Fix metalava input processor.
+  + 7c66991:
+    Add common config file with artifact definitions for log files.
+  + c2a1d10:
+    Local execution to support non-uniform resource requirements. Bug: b/151818457
+  + 000cd94:
+    Cache metalava version to avoid running metalava multiple times.
+  + 9615ed6:
+    Refactor toolchain input processor and support version checks.
+  + 0a5b462:
+    Add a metalava flag parser.
+  + 13dc031:
+    Remove support for async artifact upload in LERC.
+  + b5d8485:
+    Failure in the input processor should fallback to local execution.
+  + 751faad:
+    Using SDK command proto (latest SDK commit)
+  + 836d908:
+    Logging improvements: log all flags from all binaries, log server address on failed dial
+  + 3e20ddd:
+    Add remote_disabled mode to reproxy.
+```
+
+This release mainly adds metalava support to reproxy.
+
 ## Release 0.9.5 (2020-03-16)
 ```
 Changes:

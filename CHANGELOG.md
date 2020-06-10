@@ -1,3 +1,273 @@
+## Release 0.13.2 (2020-06-08)
+```
+Changes:
+ + 8d702db:
+ Parse metalava dep file if present.
+ + 476583e:
+ Add a script to autogenerate version bump commit
+ + 0ef1512:
+ Add a test to make sure version numbers dont contain undefined string
+ + 5ef722c:
+ cleanup //internal/pkg/bootstrap
+ + 5f23182:
+ inputprocessor recognizes clang '-arch' flag
+ + f0ae1e9:
+ clangscandeps: get rid of swig
+ + 66741fb:
+ Bump bazel version to 3.2.
+ + 428104c:
+ Add -fsanitize-blacklist argument to 'toAbsArgs' list.
+ + c8d7682:
+ use protocmp for cmp.Diff
+ + 4b64c20:
+ Revert "Revert "fix .bazelrc for windows""
+ + 0756620:
+ cleanup BUILD.bazel
+ + 5aa7bea:
+ cleanup //pkg/cache
+ + ca687d4:
+ remove //internal/pkg/cli
+ + 41e60cf:
+ skip TestCleanIncludePaths on windows
+ + 3e5e8bc:
+ Remove sync.Once from feature config since its not needed.
+```
+
+## Release 0.13.1 (2020-05-27)
+```
+Changes:
+  + 6ef0853:
+    Revert "fix .bazelrc for windows"
+```
+This release fixes the re-client version number to re-include git commit sha.
+
+## Release 0.13.0 (2020-05-27)
+```
+Changes:
+  + ac536bf:
+    fix //internal/pkg/inputprocessor/action/r8 test for windows
+  + 9685b69:
+    Merge "fix //internal/pkg/reproxy test for windows"
+  + 6ac7ff7:
+    fix //internal/pkg/inputprocessor/toolchain test on windows
+  + 63007d4:
+    fix //internal/pkg/reproxy test for windows
+  + 41a675a:
+    fix //pkg/inputprocessor test on windows
+  + e13bf22:
+    Merge "Add an r8 input processor capable of parsing flags files and transitive includes."
+  + 95ac626:
+    Merge "fix //internal/pkg/subprocess"
+  + c3002a1:
+    Add an r8 input processor capable of parsing flags files and transitive includes.
+  + 35e5cdf:
+    fix //pkg/filemetadata test for windows
+  + 99a4d56:
+    fix //internal/pkg/subprocess
+  + 1744d44:
+    remove processToolchainInputsUsingStrace
+  + 48993d9:
+    Merge "fix internal/pkg/logger for windows"
+  + 7ef55eb:
+    Merge "fix //internal/pkg/inputprocessor/pathtranslator test for windows"
+  + a97c325:
+    fix internal/pkg/logger for windows
+  + a932917:
+    fix //internal/pkg/inputprocessor/pathtranslator test for windows
+  + f44a68d:
+    add totalRamMBs for windows
+  + 5666f30:
+    Merge "fix //internal/pkg/deps test for windows"
+  + 27f7037:
+    Merge "Use rules_go's bazel package to access runfiles"
+  + a5c9bfe:
+    Merge "Linux- and Mac-specific code for reproxy/localexec"
+  + 564beb4:
+    fix //internal/pkg/deps test for windows
+  + 50ded68:
+    Merge "fix //internal/pkg/inputprocessor/action/cppcompile test for windows"
+  + 87a022d:
+    Merge "fix //internal/pkg/deps test for windows"
+  + 2e6868b:
+    Merge "fix //internal/pkg/inputprocessor/flagparser test for windows"
+  + d6c91db:
+    Merge "fix //internal/pkg/inputprocessor/action/headerabi test for windows"
+  + 45b5ed0:
+    Merge "Support main-dex-list flag in r8 and d8 commands."
+  + 66cefb8:
+    fix //internal/pkg/deps test for windows
+  + bf430b1:
+    fix //internal/pkg/inputprocessor/action/cppcompile test for windows
+  + b8f5819:
+    fix //internal/pkg/inputprocessor/action/headerabi test for windows
+  + d0bebef:
+    fix //internal/pkg/inputprocessor/flagparser test for windows
+  + 635625b:
+    Use rules_go's bazel package to access runfiles
+  + c83c795:
+    execroot: fix for windows
+  + b16b64b:
+    Merge "don't use (*os.File).Chmod"
+  + 9340e2d:
+    Merge "Make feature config a singleton for use throughout reproxy."
+  + aff8a35:
+    don't use (*os.File).Chmod
+  + 0d35981:
+    Support main-dex-list flag in r8 and d8 commands.
+  + 16d3015:
+    update rules_go from 0.20.1 to 0.21.7
+  + 5dbe23f:
+    Make feature config a singleton for use throughout reproxy.
+  + f98951c:
+    Linux- and Mac-specific code for reproxy/localexec
+  + de5ea79:
+    Merge "fix .bazelrc for windows"
+  + 556277e:
+    Add feature for cleaning input paths.
+  + c6b56a5:
+    fix .bazelrc for windows
+  + 703a714:
+    Fix GoB/Gerrit URL in README.md
+  + f86cb46:
+    Merge "Revert "Include all package html files under sourcepath for metalava actions.""
+  + 9b43238:
+    Revert "Include all package html files under sourcepath for metalava actions."
+  + ca42d0a:
+    Merge "Include all package html files under sourcepath for metalava actions."
+  + b83225b:
+    Include all package html files under sourcepath for metalava actions.
+  + 907ecd3:
+    Add new metalava flags to the metalava flagparser.
+  + 1bef273:
+    Merge "Add file specified by -Wl,--out-implib as an output for link actions"
+  + 4b9d944:
+    Convert shallowFallback to a configuration in reproxy
+  + 405f716:
+    Merge "Add label-digest as well to command-id"
+  + c74bf70:
+    Exclude metalava sourcepath from inputs and make it a virtual directory instead.
+  + 6892cfa:
+    Add label-digest as well to command-id
+  + 9a3b8ef:
+    Merge "Include rsp file(s) as explicit inputs if passed explicitly to rewrapper."
+  + 5830ee1:
+    Add stat for local execution queuing time
+  + 3bce8a5:
+    Add 'fprofile-sample-use' to the list of arguments to make absolute paths before passing to clang-scan-deps.
+  + 4ec62be:
+    Update bazel version to 3.1.0.
+  + 715602d:
+    Add file specified by -Wl,--out-implib as an output for link actions
+  + fbc78f7:
+    Fix post-submits for bazelisk change.
+  + c94dc5f:
+    Update clang plugin custom rule to pass tags to its actions.
+  + 660ef01:
+    Merge "Change CI to use bazlisk, add new Docker image."
+  + 9b15ee8:
+    Fix continuous android integration tests
+  + a8c2ed5:
+    Change CI to use bazlisk, add new Docker image.
+  + 5b837e8:
+    Include rsp file(s) as explicit inputs if passed explicitly to rewrapper.
+```
+This release includes a number of fixes to:
+1. Get re-client to build in Windows
+2. Fix R8 mismatches
+3. Change re-client builds to use Bazelisk
+4. Fixes for C++ link action mismatches
+5. Fixes to flag parser / input processor for metalava actions
+
+## Release 0.12.2 (2020-04-15)
+```
+Changes:
+  + d52f0b7:
+    Remove un-needed chdir and fix integration tests
+  + 34c2872:
+    Remove -debug-info-kind flag in clang-scan-deps.
+  + 0e25698:
+    Fix how we invoke clang++ binary to find resource directory
+  + 94f70cf:
+    Add an rsp package for centralizing rsp file parsing.
+```
+
+This release primarily contains bug fixes to C++ input processor and rsp file
+parsing.
+
+## Release 0.12.1 (2020-04-10)
+```
+Changes:
+  + 09a5526:
+    Also cache when we fail to find the resource-directory
+```
+
+This release fixes input processor latency for header-abi-dumper actions.
+
+## Release 0.12.0 (2020-04-08)
+```
+Changes:
+  + 5b29aa6:
+    Fix compare mode for actions where some inputs are also outputs.
+  + 9c31e0d:
+    Add .toc files as additional dependencies
+  + 667c5e1:
+    Supporting remote execution of header ABI dump actions
+  + 625fc40:
+    Add more details on how to build the code and run tests, and how to contribute.
+  + 99426b0:
+    Add support for Bazelisk and pin to Bazel 2.2.0.
+```
+
+This release adds support for remote execution of header ABI dumper and adds a fix
+for compare mode of metalava actions.
+
+## Release 0.11.0 (2020-04-02)
+```
+Changes:
+  + b2836e1:
+    Add output_directories and multiple rsp files flags to rewrapper.
+  + 4559f40:
+    Log flags in rewrapper after parsing.
+  + 8afef4a:
+    Removing flags logging from rewrapper, making it verbosity 1
+  + b7447ea:
+    Use LOG_DIR variable in android integration tests.
+  + 74ec9b9:
+    Add support in reproxy for link actions
+```
+
+This release adds support for linking, explicit output directories, and multiple
+input file lists. Also includes logging fixes.
+
+## Release 0.10.0 (2020-04-01)
+```
+Changes:
+  + 3be02a4:
+    Fix metalava input processor.
+  + 7c66991:
+    Add common config file with artifact definitions for log files.
+  + c2a1d10:
+    Local execution to support non-uniform resource requirements. Bug: b/151818457
+  + 000cd94:
+    Cache metalava version to avoid running metalava multiple times.
+  + 9615ed6:
+    Refactor toolchain input processor and support version checks.
+  + 0a5b462:
+    Add a metalava flag parser.
+  + 13dc031:
+    Remove support for async artifact upload in LERC.
+  + b5d8485:
+    Failure in the input processor should fallback to local execution.
+  + 751faad:
+    Using SDK command proto (latest SDK commit)
+  + 836d908:
+    Logging improvements: log all flags from all binaries, log server address on failed dial
+  + 3e20ddd:
+    Add remote_disabled mode to reproxy.
+```
+
+This release mainly adds metalava support to reproxy.
+
 ## Release 0.9.5 (2020-03-16)
 ```
 Changes:

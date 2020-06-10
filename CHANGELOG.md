@@ -1,3 +1,38 @@
+## Release 0.13.2 (2020-06-08)
+```
+Changes:
+ + 8d702db:
+ Parse metalava dep file if present.
+ + 476583e:
+ Add a script to autogenerate version bump commit
+ + 0ef1512:
+ Add a test to make sure version numbers dont contain undefined string
+ + 5ef722c:
+ cleanup //internal/pkg/bootstrap
+ + 5f23182:
+ inputprocessor recognizes clang '-arch' flag
+ + f0ae1e9:
+ clangscandeps: get rid of swig
+ + 66741fb:
+ Bump bazel version to 3.2.
+ + 428104c:
+ Add -fsanitize-blacklist argument to 'toAbsArgs' list.
+ + c8d7682:
+ use protocmp for cmp.Diff
+ + 4b64c20:
+ Revert "Revert "fix .bazelrc for windows""
+ + 0756620:
+ cleanup BUILD.bazel
+ + 5aa7bea:
+ cleanup //pkg/cache
+ + ca687d4:
+ remove //internal/pkg/cli
+ + 41e60cf:
+ skip TestCleanIncludePaths on windows
+ + 3e5e8bc:
+ Remove sync.Once from feature config since its not needed.
+```
+
 ## Release 0.13.1 (2020-05-27)
 ```
 Changes:

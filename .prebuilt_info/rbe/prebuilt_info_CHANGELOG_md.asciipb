@@ -1,14 +1,14 @@
 drops {
   dest_file: "CHANGELOG.md"
-  version: "0.12.2.188e34a"
+  version: "0.13.2.c5cdef0"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   git_branch: "master"
   kokoro_drop {
     full_job_name: "re-client/gcp_ubuntu/release"
-    build_number: "76"
+    build_number: "91"
     artifact_gcs_bucket: "reclient-release-artifacts"
-    artifact_root: "prod/re-client/gcp_ubuntu/release/76/20200415-092706"
+    artifact_root: "prod/re-client/gcp_ubuntu/release/91/20200609-052849"
     artifact_name: "CHANGELOG.md"
     artifact_permission_mode: "640"
   }

@@ -1,3 +1,52 @@
+## Release 0.13.3 (2020-06-25)
+```
+Changes:
+ + e0ce5e9:
+ Update remote-apis-sdks to include fix for cache issue
+ + 1bb305e:
+ Switching to SDK version of Cache.
+ + 1d54d28:
+ use --experimental_allow_tags_propagation
+ + 729dee1:
+ fix build on linux
+ + 147ae72:
+ kokoro for windows
+ + 856638b:
+ enable windows build
+ + 823753f:
+ cppdependencyscanner: no need to link libdl
+ + 6186c4c:
+ inputprocessor: Add .keep_me to -sysroot, etc
+ + 43befec:
+ Add doc for rules_foreign_cc patch
+ + 4dec8c3:
+ cppcompile: fix test on windows
+ + d48f808:
+ reproxy: static link libstdc++
+ + 8a52c03:
+ Add remote execution support for clang-tidy actions
+ + 677ac78:
+ Patch osx_commands.bzl in rules_foreign_cc
+ + df50112:
+ cppcompile: Use WorkingDirectory in unit test
+ + 36ad52f:
+ cppdependencyscanner: don't use -Bstatic for macosx
+ + 52995ef:
+ Use v3 docker image (adds cipd binaries)
+ + b986df7:
+ Add cipd.yaml file.
+ + f68612c:
+ Add depot_tools to re-client-builder DockerFile.
+ + 7335e04:
+ fix mac build
+ + 0b11193:
+ cppdependencyscanner as go_library
+ + e709044:
+ remove custom plugin build rule
+ + 1f7d8c1:
+ Fix bump-version script to ignore merge commits
+```
+
 ## Release 0.13.2 (2020-06-08)
 ```
 Changes:

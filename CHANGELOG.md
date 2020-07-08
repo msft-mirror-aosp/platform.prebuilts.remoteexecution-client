@@ -1,3 +1,232 @@
+## Release 0.13.3 (2020-06-25)
+```
+Changes:
+ + e0ce5e9:
+ Update remote-apis-sdks to include fix for cache issue
+ + 1bb305e:
+ Switching to SDK version of Cache.
+ + 1d54d28:
+ use --experimental_allow_tags_propagation
+ + 729dee1:
+ fix build on linux
+ + 147ae72:
+ kokoro for windows
+ + 856638b:
+ enable windows build
+ + 823753f:
+ cppdependencyscanner: no need to link libdl
+ + 6186c4c:
+ inputprocessor: Add .keep_me to -sysroot, etc
+ + 43befec:
+ Add doc for rules_foreign_cc patch
+ + 4dec8c3:
+ cppcompile: fix test on windows
+ + d48f808:
+ reproxy: static link libstdc++
+ + 8a52c03:
+ Add remote execution support for clang-tidy actions
+ + 677ac78:
+ Patch osx_commands.bzl in rules_foreign_cc
+ + df50112:
+ cppcompile: Use WorkingDirectory in unit test
+ + 36ad52f:
+ cppdependencyscanner: don't use -Bstatic for macosx
+ + 52995ef:
+ Use v3 docker image (adds cipd binaries)
+ + b986df7:
+ Add cipd.yaml file.
+ + f68612c:
+ Add depot_tools to re-client-builder DockerFile.
+ + 7335e04:
+ fix mac build
+ + 0b11193:
+ cppdependencyscanner as go_library
+ + e709044:
+ remove custom plugin build rule
+ + 1f7d8c1:
+ Fix bump-version script to ignore merge commits
+```
+
+## Release 0.13.2 (2020-06-08)
+```
+Changes:
+ + 8d702db:
+ Parse metalava dep file if present.
+ + 476583e:
+ Add a script to autogenerate version bump commit
+ + 0ef1512:
+ Add a test to make sure version numbers dont contain undefined string
+ + 5ef722c:
+ cleanup //internal/pkg/bootstrap
+ + 5f23182:
+ inputprocessor recognizes clang '-arch' flag
+ + f0ae1e9:
+ clangscandeps: get rid of swig
+ + 66741fb:
+ Bump bazel version to 3.2.
+ + 428104c:
+ Add -fsanitize-blacklist argument to 'toAbsArgs' list.
+ + c8d7682:
+ use protocmp for cmp.Diff
+ + 4b64c20:
+ Revert "Revert "fix .bazelrc for windows""
+ + 0756620:
+ cleanup BUILD.bazel
+ + 5aa7bea:
+ cleanup //pkg/cache
+ + ca687d4:
+ remove //internal/pkg/cli
+ + 41e60cf:
+ skip TestCleanIncludePaths on windows
+ + 3e5e8bc:
+ Remove sync.Once from feature config since its not needed.
+```
+
+## Release 0.13.1 (2020-05-27)
+```
+Changes:
+  + 6ef0853:
+    Revert "fix .bazelrc for windows"
+```
+This release fixes the re-client version number to re-include git commit sha.
+
+## Release 0.13.0 (2020-05-27)
+```
+Changes:
+  + ac536bf:
+    fix //internal/pkg/inputprocessor/action/r8 test for windows
+  + 9685b69:
+    Merge "fix //internal/pkg/reproxy test for windows"
+  + 6ac7ff7:
+    fix //internal/pkg/inputprocessor/toolchain test on windows
+  + 63007d4:
+    fix //internal/pkg/reproxy test for windows
+  + 41a675a:
+    fix //pkg/inputprocessor test on windows
+  + e13bf22:
+    Merge "Add an r8 input processor capable of parsing flags files and transitive includes."
+  + 95ac626:
+    Merge "fix //internal/pkg/subprocess"
+  + c3002a1:
+    Add an r8 input processor capable of parsing flags files and transitive includes.
+  + 35e5cdf:
+    fix //pkg/filemetadata test for windows
+  + 99a4d56:
+    fix //internal/pkg/subprocess
+  + 1744d44:
+    remove processToolchainInputsUsingStrace
+  + 48993d9:
+    Merge "fix internal/pkg/logger for windows"
+  + 7ef55eb:
+    Merge "fix //internal/pkg/inputprocessor/pathtranslator test for windows"
+  + a97c325:
+    fix internal/pkg/logger for windows
+  + a932917:
+    fix //internal/pkg/inputprocessor/pathtranslator test for windows
+  + f44a68d:
+    add totalRamMBs for windows
+  + 5666f30:
+    Merge "fix //internal/pkg/deps test for windows"
+  + 27f7037:
+    Merge "Use rules_go's bazel package to access runfiles"
+  + a5c9bfe:
+    Merge "Linux- and Mac-specific code for reproxy/localexec"
+  + 564beb4:
+    fix //internal/pkg/deps test for windows
+  + 50ded68:
+    Merge "fix //internal/pkg/inputprocessor/action/cppcompile test for windows"
+  + 87a022d:
+    Merge "fix //internal/pkg/deps test for windows"
+  + 2e6868b:
+    Merge "fix //internal/pkg/inputprocessor/flagparser test for windows"
+  + d6c91db:
+    Merge "fix //internal/pkg/inputprocessor/action/headerabi test for windows"
+  + 45b5ed0:
+    Merge "Support main-dex-list flag in r8 and d8 commands."
+  + 66cefb8:
+    fix //internal/pkg/deps test for windows
+  + bf430b1:
+    fix //internal/pkg/inputprocessor/action/cppcompile test for windows
+  + b8f5819:
+    fix //internal/pkg/inputprocessor/action/headerabi test for windows
+  + d0bebef:
+    fix //internal/pkg/inputprocessor/flagparser test for windows
+  + 635625b:
+    Use rules_go's bazel package to access runfiles
+  + c83c795:
+    execroot: fix for windows
+  + b16b64b:
+    Merge "don't use (*os.File).Chmod"
+  + 9340e2d:
+    Merge "Make feature config a singleton for use throughout reproxy."
+  + aff8a35:
+    don't use (*os.File).Chmod
+  + 0d35981:
+    Support main-dex-list flag in r8 and d8 commands.
+  + 16d3015:
+    update rules_go from 0.20.1 to 0.21.7
+  + 5dbe23f:
+    Make feature config a singleton for use throughout reproxy.
+  + f98951c:
+    Linux- and Mac-specific code for reproxy/localexec
+  + de5ea79:
+    Merge "fix .bazelrc for windows"
+  + 556277e:
+    Add feature for cleaning input paths.
+  + c6b56a5:
+    fix .bazelrc for windows
+  + 703a714:
+    Fix GoB/Gerrit URL in README.md
+  + f86cb46:
+    Merge "Revert "Include all package html files under sourcepath for metalava actions.""
+  + 9b43238:
+    Revert "Include all package html files under sourcepath for metalava actions."
+  + ca42d0a:
+    Merge "Include all package html files under sourcepath for metalava actions."
+  + b83225b:
+    Include all package html files under sourcepath for metalava actions.
+  + 907ecd3:
+    Add new metalava flags to the metalava flagparser.
+  + 1bef273:
+    Merge "Add file specified by -Wl,--out-implib as an output for link actions"
+  + 4b9d944:
+    Convert shallowFallback to a configuration in reproxy
+  + 405f716:
+    Merge "Add label-digest as well to command-id"
+  + c74bf70:
+    Exclude metalava sourcepath from inputs and make it a virtual directory instead.
+  + 6892cfa:
+    Add label-digest as well to command-id
+  + 9a3b8ef:
+    Merge "Include rsp file(s) as explicit inputs if passed explicitly to rewrapper."
+  + 5830ee1:
+    Add stat for local execution queuing time
+  + 3bce8a5:
+    Add 'fprofile-sample-use' to the list of arguments to make absolute paths before passing to clang-scan-deps.
+  + 4ec62be:
+    Update bazel version to 3.1.0.
+  + 715602d:
+    Add file specified by -Wl,--out-implib as an output for link actions
+  + fbc78f7:
+    Fix post-submits for bazelisk change.
+  + c94dc5f:
+    Update clang plugin custom rule to pass tags to its actions.
+  + 660ef01:
+    Merge "Change CI to use bazlisk, add new Docker image."
+  + 9b15ee8:
+    Fix continuous android integration tests
+  + a8c2ed5:
+    Change CI to use bazlisk, add new Docker image.
+  + 5b837e8:
+    Include rsp file(s) as explicit inputs if passed explicitly to rewrapper.
+```
+This release includes a number of fixes to:
+1. Get re-client to build in Windows
+2. Fix R8 mismatches
+3. Change re-client builds to use Bazelisk
+4. Fixes for C++ link action mismatches
+5. Fixes to flag parser / input processor for metalava actions
+
 ## Release 0.12.2 (2020-04-15)
 ```
 Changes:

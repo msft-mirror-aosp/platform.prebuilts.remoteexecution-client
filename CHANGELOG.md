@@ -1,3 +1,32 @@
+## Release 0.13.4 (2020-06-30)
+```
+Changes:
+ + 3af712d:
+ kokoro: Set directory in mac continuous build
+ + 4ad36dd:
+ Rewrite environment variables to have relative paths.
+ + eba7afc:
+ kokoro: Add macos_external dir with continuous build
+ + d245833:
+ gcp_windows: use --test_output=streamed
+ + 6b2ce38:
+ Centralize config_setting in BUILD.bazel file
+ + 73e7928:
+ gazelle: no need to exclude internal/pkg/cppdependencyscanner
+ + 498daa8:
+ swig is no longer needed
+ + 7c18a43:
+ windows presubmit builder
+ + d989ccf:
+ Fix kokoro windows
+ + 854eeec:
+ update go protobuf
+ + 02cf17f:
+ fix BUILD.bazel by gazelle
+ + 54a6cfb:
+ don't run cp command
+```
+
 ## Release 0.13.3 (2020-06-25)
 ```
 Changes:

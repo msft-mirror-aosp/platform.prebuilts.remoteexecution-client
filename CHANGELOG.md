@@ -1,3 +1,52 @@
+## Release 0.13.5 (2020-07-23)
+```
+Changes:
+ + 16831e5:
+ Do not store cache entries for directories
+ + 45dce2b:
+ roll rules_go to v0.23.4
+ + 07ee194:
+ kokoro/macos_extenral: enabe unit tests
+ + f45e5be:
+ chromium linux integration test
+ + ab096bd:
+ Do not add dependencies from the CLI for signapk actions
+ + eb92c1c:
+ Invalidate output file cache entries before uploading LERC cache outputs
+ + 4691c35:
+ Add verification of LERC stats in integration test
+ + dc2894c:
+ Hide cpp dependency scanner inside input processor
+ + d74d8f1:
+ Remove the need to verify timestamp set by clang binary
+ + 9ea12a5:
+ handle clang-cl flags
+ + ab6e77b:
+ Disable local fallback when LERC local execution fails with a user error.
+ + 9780e32:
+ refactor flagsparser
+ + 750690c:
+ remoteexec test: show reproxy log if failed.
+ + 88ba17a:
+ Fixing remote compare mode to update the action result with the local run results.
+ + 2207a13:
+ Bumping SDK version to propagate recent bug fixes
+ + 175cdbe:
+ Add Dockerfile for ubuntu container with strace for RE debugging.
+ + 0c4fab3:
+ Add instructions on how to fetch dev-foundry.json file
+ + 98f89d7:
+ Removing a no longer needed ProxyResponseMillies stat.
+ + 1537b7f:
+ Add reproxy option to dump input tree of all actions it receives.
+ + 09d4d6c:
+ kokoro: Add Mac presubmit build
+ + 53e3c14:
+ Fix scripts to reflect current locations of bazel binaries.
+ + 545b29a:
+ kokoro: Set GOPATH, GOBIN, PATH for Mac builds
+```
+
 ## Release 0.13.4 (2020-06-30)
 ```
 Changes:

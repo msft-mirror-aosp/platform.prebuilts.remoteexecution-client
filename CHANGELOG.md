@@ -1,3 +1,10 @@
+## Release 0.13.6 (2020-08-10)
+```
+Changes:
+ + 4e475e2:
+ Revert "Merge "Fixing remote compare mode to update the action result with the local run results.""
+```
+
 ## Release 0.13.5 (2020-07-23)
 ```
 Changes:

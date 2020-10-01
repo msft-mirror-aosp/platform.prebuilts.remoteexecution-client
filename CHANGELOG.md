@@ -1,3 +1,200 @@
+## Release 0.14.0 (2020-09-11)
+```
+Changes:
+ + d91fa91:
+ roll bazel_gazelle to v0.22.0
+ + 2d0e007:
+ bootstrap: delete isProxyRunning
+ + f72dc2c:
+ roll google.golang.org/protobuf to v1.25.0
+ + ce3415c:
+ use named-pipe for rewrapper<->reproxy on windows
+ + e3c3cfd:
+ reproxy: fail early by checking capabilities at startup
+ + 179f7f1:
+ set cipd tag and ref
+ + 204335e:
+ kookro/gcp_windows: factor out setup.bat
+ + 1eb8585:
+ Holdoff: don't race until need for execution is confirmed.
+ + 6500ce5:
+ Bump remote-apis-sdks to include revert of batch download change
+ + 6e51ab5:
+ Simplifying existing racing code a bit
+ + 1d7399a:
+ Bump remote-apis-sdks commit
+ + 17bd91b:
+ workaround http://b/167946840 gcp_windows/presubmit failing
+ + d491028:
+ Move CIPD package to correct location.
+ + bbb12bc:
+ Deprecate the env_var_whitelist flag.
+ + 5858398:
+ roll rules_go to 0.24.1
+ + e7fd4a9:
+ bootstrap to persist a pid file for identifying reproxy in shutdown.
+ + 210eeea:
+ test tests/integ/remoteexec in gcp_windows/continous
+ + 0a146ec:
+ Add flag to control local pool parallelism.
+ + 1bb012a:
+ Change stdout/stderr to bytes instead of string
+ + 48dfb08:
+ Run the cipd binary after a release to create and upload the cipd package for the rbe binaries.
+ + 40635e5:
+ chromium windows integration test
+ + f09e059:
+ roll rules_go to v0.24.0
+ + 33f1571:
+ Fix various issues with racing.
+ + 8396941:
+ Change default bootstrap wait time to 20 seconds.
+ + 507c0e7:
+ Add the racing exec strategy.
+ + 050d94d:
+ Add the action struct to improve server.go readability.
+ + 3bc22d0:
+ Update preprocessor so it removes flags we want removed when the previous flag is -Xclang.
+ + d0b12c2:
+ fix precommit for windows
+ + 3258cff:
+ Refactor local execution to use the outerr package and add non-blocking execution.
+ + feb33b8:
+ Add instructions on how to install the precommit hook.
+ + 470d4bc:
+ Add precommit script to run gofmt/golint/gazelle.
+```
+
+## Release 0.13.7 (2020-08-21)
+```
+Changes:
+ + 0d25d98:
+ Increase gRPC max message size
+ + 85c7538:
+ Do not use toolchain inputs when there's an error
+ + 97b2e33:
+ integ test doesn't need to use moreflag
+ + b04537c:
+ Remove the metalava version check from the toolchain input processor.
+ + 9f14c07:
+ delete gazell:ignore
+ + e9fe9f2:
+ roll protobuf to 3.13.0
+ + 79d5af9:
+ roll bazel-gazelle to 0.21.1
+ + eb2e12d:
+ Add writable to the cipd install directory.
+ + 0df8d29:
+ use test_env rather than action_env for test
+ + ac6bc28:
+ integ: use data deps instead of flag with $(location)
+ + 7dde86c:
+ refactor BuildClangCommand
+ + 165e768:
+ flagsparser: use clang's Options.td to parse clang flags.
+ + 11c7804:
+ move reproxy_dep_test into own dir
+ + 61500ef:
+ roll rules_go 0.23.8
+ + 7344b85:
+ reproxy: set default platform OSFamily properties.
+ + 5e7b160:
+ make sure remoteexec calls remote-apis, not local fallback
+ + 8622f88:
+ roll rules_go 0.23.7
+ + b9c7215:
+ Revert "Merge "Fixing remote compare mode to update the action result with the local run results.""
+ + 41c7c67:
+ Migrate javac input processor to the new preprocessor.
+ + 9cdbae9:
+ Cleanup clang related input processors now that all clang dependent input processors are migrated.
+ + 87c1361:
+ Migrate clang links to the new preprocessor.
+ + 5aee2df:
+ Migrate clang CL to the new preprocessor.
+ + 5136612:
+ Migrate header abi dumper to the new preprocessor.
+ + 7e40a68:
+ Migrate clanglint to the new prerprocessor.
+ + a39a537:
+ Migrate cpp input processor to the new Preprocessor.
+ + 2f043c3:
+ Move the clang flagparser to a new package.
+ + df3ae15:
+ Migrate metalava to the new preprocessor.
+ + 1e4dffc:
+ Migrate r8 input processor to the new Preprocessor.
+ + 1441cc4:
+ Migrate the d8 label to the new Preprocessor.
+ + 7199f56:
+ Migrate the tool label to the new Preprocessor.
+ + b0593d3:
+ Add Preprocessor and BasePreprocessor
+ + 0f1d451:
+ roll rules_go v0.23.6
+ + 3bd9fd2:
+ cleanup patch for llvm.
+ + 470f86c:
+ install the new msys2 keyring
+ + 48d326d:
+ roll rules_go to 0.23.5
+ + db0c65a:
+ Fix broken gazelle after adding gen_clang_cl_flags
+ + 204d8a1:
+ Remove shadow headers.
+ + f221db8:
+ Add a coverage report to the linux presubmit.
+```
+
+## Release 0.13.5 (2020-07-23)
+```
+Changes:
+ + 16831e5:
+ Do not store cache entries for directories
+ + 45dce2b:
+ roll rules_go to v0.23.4
+ + 07ee194:
+ kokoro/macos_extenral: enabe unit tests
+ + f45e5be:
+ chromium linux integration test
+ + ab096bd:
+ Do not add dependencies from the CLI for signapk actions
+ + eb92c1c:
+ Invalidate output file cache entries before uploading LERC cache outputs
+ + 4691c35:
+ Add verification of LERC stats in integration test
+ + dc2894c:
+ Hide cpp dependency scanner inside input processor
+ + d74d8f1:
+ Remove the need to verify timestamp set by clang binary
+ + 9ea12a5:
+ handle clang-cl flags
+ + ab6e77b:
+ Disable local fallback when LERC local execution fails with a user error.
+ + 9780e32:
+ refactor flagsparser
+ + 750690c:
+ remoteexec test: show reproxy log if failed.
+ + 88ba17a:
+ Fixing remote compare mode to update the action result with the local run results.
+ + 2207a13:
+ Bumping SDK version to propagate recent bug fixes
+ + 175cdbe:
+ Add Dockerfile for ubuntu container with strace for RE debugging.
+ + 0c4fab3:
+ Add instructions on how to fetch dev-foundry.json file
+ + 98f89d7:
+ Removing a no longer needed ProxyResponseMillies stat.
+ + 1537b7f:
+ Add reproxy option to dump input tree of all actions it receives.
+ + 09d4d6c:
+ kokoro: Add Mac presubmit build
+ + 53e3c14:
+ Fix scripts to reflect current locations of bazel binaries.
+ + 545b29a:
+ kokoro: Set GOPATH, GOBIN, PATH for Mac builds
+```
+
 ## Release 0.13.4 (2020-06-30)
 ```
 Changes:

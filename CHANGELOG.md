@@ -1,3 +1,31 @@
+## Release 0.14.4 (2020-10-09)
+```
+Changes:
+ + 720d85a:
+ Add doc on CIPD package stuff.
+ + bf43144:
+ Adaptive racing.
+ + 8c3bb05:
+ Store invocation IDs in the rbe_metrics file.
+ + b0a9161:
+ kokoro release job for windows
+ + 29deac4:
+ Script to benchmark disk IO on Linux machines
+ + f42aa3a:
+ Latest SDK: fix deadlock when context is canceled
+ + 1b45a8d:
+ Performance evaluation framework.
+```
+
+## Release 0.14.3 (2020-10-06)
+```
+Changes:
+ + ff8215b:
+ Refactor integration tests so that they can be run using bazelisk
+ + 057114d:
+ Getting latest version of SDK with Capabilities check flag
+```
+
 ## Release 0.14.2 (2020-10-01)
 ```
 Changes:

@@ -1,3 +1,24 @@
+## Release 0.14.5 (2020-10-16)
+```
+Changes:
+ + 8bfe4dd:
+ roll gazelle to 0.22.2
+ + 773b963:
+ win integ: show reproxy log if test failed
+ + a0b10db:
+ Bump SDK version
+ + 5e5b390:
+ Do not use printf when printing stdout/stderr.
+ + 00bffc7:
+ Add rbe_action.sh script to run an action through rewrapper and reproxy.
+ + 8626317:
+ Add tests to ensure raced actions pass through stdout.
+ + f27e51e:
+ Bump SDK version to include DownloadOutputs fix.
+ + 685f10b:
+ Add a stat for racing finalization overhead.
+```
+
 ## Release 0.14.4 (2020-10-09)
 ```
 Changes:

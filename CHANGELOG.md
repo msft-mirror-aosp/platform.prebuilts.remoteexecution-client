@@ -1,3 +1,38 @@
+## Release 0.15.0 (2020-10-27)
+```
+Changes:
+ + 296553b:
+ Bump remote-apis-sdks version
+ + 2269809:
+ Pick minimum of total available system resources vs required resources
+ + dd2ea00:
+ make resourceDirs as reproxy process global.
+ + f8d1d0d:
+ Bugfix: too many records overflow gRPC message size.
+ + 56e2f6f:
+ Bugfix: errors channel should not block
+ + 2ed9b57:
+ refactor bigquerytranslator
+ + 13adf37:
+ Add config file support.
+ + 9e75557:
+ Minor fixes to download tool
+ + 8c0a1b2:
+ clangscandeps: add debug log
+ + 5e31cf9:
+ clang-cl: set -resource-dir for clang-scan-deps
+ + 773aa22:
+ Load reproxy_log.txt into bigquery
+ + 12c9b2b:
+ Add automation around generating bigquery schema from log.proto
+ + 308f5fa:
+ Minor fixes to download tool
+ + a5ec303:
+ clang-cl: ignore -Xclang -debug-info-kind=constructor
+ + 91ff539:
+ roll rules_go to 0.24.4
+```
+
 ## Release 0.14.5 (2020-10-16)
 ```
 Changes:

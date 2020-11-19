@@ -1,3 +1,59 @@
+## Release 0.15.0 (2020-10-27)
+```
+Changes:
+ + 296553b:
+ Bump remote-apis-sdks version
+ + 2269809:
+ Pick minimum of total available system resources vs required resources
+ + dd2ea00:
+ make resourceDirs as reproxy process global.
+ + f8d1d0d:
+ Bugfix: too many records overflow gRPC message size.
+ + 56e2f6f:
+ Bugfix: errors channel should not block
+ + 2ed9b57:
+ refactor bigquerytranslator
+ + 13adf37:
+ Add config file support.
+ + 9e75557:
+ Minor fixes to download tool
+ + 8c0a1b2:
+ clangscandeps: add debug log
+ + 5e31cf9:
+ clang-cl: set -resource-dir for clang-scan-deps
+ + 773aa22:
+ Load reproxy_log.txt into bigquery
+ + 12c9b2b:
+ Add automation around generating bigquery schema from log.proto
+ + 308f5fa:
+ Minor fixes to download tool
+ + a5ec303:
+ clang-cl: ignore -Xclang -debug-info-kind=constructor
+ + 91ff539:
+ roll rules_go to 0.24.4
+```
+
+## Release 0.14.5 (2020-10-16)
+```
+Changes:
+ + 8bfe4dd:
+ roll gazelle to 0.22.2
+ + 773b963:
+ win integ: show reproxy log if test failed
+ + a0b10db:
+ Bump SDK version
+ + 5e5b390:
+ Do not use printf when printing stdout/stderr.
+ + 00bffc7:
+ Add rbe_action.sh script to run an action through rewrapper and reproxy.
+ + 8626317:
+ Add tests to ensure raced actions pass through stdout.
+ + f27e51e:
+ Bump SDK version to include DownloadOutputs fix.
+ + 685f10b:
+ Add a stat for racing finalization overhead.
+```
+
 ## Release 0.14.4 (2020-10-09)
 
 ```

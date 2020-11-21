@@ -1,3 +1,53 @@
+## Release 0.16.1 (2020-11-18)
+```
+Changes:
+ + 28a5cef:
+ Fixing Kokoro Windows breakage.
+```
+
+## Release 0.16.0 (2020-11-17)
+```
+Changes:
+ + b4adeb9:
+ Bumping SDK version
+ + 268123a:
+ rbe_action.sh to use reclient binaries from an arbitrary directory.
+ + c127c9c:
+ rpl2trace - simple tool to convert *.rpl into trace.json
+ + a216000:
+ Add a flag to turn on unified uploader
+ + 39aa3bb:
+ clangcl: no /showIncludes for clang-scan-deps
+ + 9854072:
+ add /debug/pprof
+ + 2d9a23d:
+ logger: don't log huge virtual input contents
+ + fa615b4:
+ Modify rbe_action to use RBE_cfg
+ + c5853a4:
+ Tool to test upload speeds
+ + 33cb85d:
+ Document and add logging for labels to label-digests
+ + b2460ac:
+ roll github.com/Microsoft/go-winio to 0.4.15
+ + 0e446be:
+ Bump sdk commit and log remote execution error in racing.
+ + 3d7900d:
+ cppdependencyscanner: fix clang-scan-deps output parser
+ + f76ef51:
+ roll rules_go to 0.24.5
+ + 7d28f9e:
+ Handle cancelled RunRequest without crashing reproxy.
+ + 583f22a:
+ Set cap on racing holdoff
+ + 8c3abda:
+ check compiler update for resource dir cache
+ + 39edb8f:
+ Log warning in string instead of bytes
+ + 6a9f633:
+ use filename on disk
+```
+
 ## Release 0.15.0 (2020-10-27)
 ```
 Changes:

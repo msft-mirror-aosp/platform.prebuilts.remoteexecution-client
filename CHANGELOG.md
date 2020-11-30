@@ -1,3 +1,183 @@
+## Release 0.16.1 (2020-11-18)
+```
+Changes:
+ + 28a5cef:
+ Fixing Kokoro Windows breakage.
+```
+
+## Release 0.16.0 (2020-11-17)
+```
+Changes:
+ + b4adeb9:
+ Bumping SDK version
+ + 268123a:
+ rbe_action.sh to use reclient binaries from an arbitrary directory.
+ + c127c9c:
+ rpl2trace - simple tool to convert *.rpl into trace.json
+ + a216000:
+ Add a flag to turn on unified uploader
+ + 39aa3bb:
+ clangcl: no /showIncludes for clang-scan-deps
+ + 9854072:
+ add /debug/pprof
+ + 2d9a23d:
+ logger: don't log huge virtual input contents
+ + fa615b4:
+ Modify rbe_action to use RBE_cfg
+ + c5853a4:
+ Tool to test upload speeds
+ + 33cb85d:
+ Document and add logging for labels to label-digests
+ + b2460ac:
+ roll github.com/Microsoft/go-winio to 0.4.15
+ + 0e446be:
+ Bump sdk commit and log remote execution error in racing.
+ + 3d7900d:
+ cppdependencyscanner: fix clang-scan-deps output parser
+ + f76ef51:
+ roll rules_go to 0.24.5
+ + 7d28f9e:
+ Handle cancelled RunRequest without crashing reproxy.
+ + 583f22a:
+ Set cap on racing holdoff
+ + 8c3abda:
+ check compiler update for resource dir cache
+ + 39edb8f:
+ Log warning in string instead of bytes
+ + 6a9f633:
+ use filename on disk
+```
+
+## Release 0.15.0 (2020-10-27)
+```
+Changes:
+ + 296553b:
+ Bump remote-apis-sdks version
+ + 2269809:
+ Pick minimum of total available system resources vs required resources
+ + dd2ea00:
+ make resourceDirs as reproxy process global.
+ + f8d1d0d:
+ Bugfix: too many records overflow gRPC message size.
+ + 56e2f6f:
+ Bugfix: errors channel should not block
+ + 2ed9b57:
+ refactor bigquerytranslator
+ + 13adf37:
+ Add config file support.
+ + 9e75557:
+ Minor fixes to download tool
+ + 8c0a1b2:
+ clangscandeps: add debug log
+ + 5e31cf9:
+ clang-cl: set -resource-dir for clang-scan-deps
+ + 773aa22:
+ Load reproxy_log.txt into bigquery
+ + 12c9b2b:
+ Add automation around generating bigquery schema from log.proto
+ + 308f5fa:
+ Minor fixes to download tool
+ + a5ec303:
+ clang-cl: ignore -Xclang -debug-info-kind=constructor
+ + 91ff539:
+ roll rules_go to 0.24.4
+```
+
+## Release 0.14.5 (2020-10-16)
+```
+Changes:
+ + 8bfe4dd:
+ roll gazelle to 0.22.2
+ + 773b963:
+ win integ: show reproxy log if test failed
+ + a0b10db:
+ Bump SDK version
+ + 5e5b390:
+ Do not use printf when printing stdout/stderr.
+ + 00bffc7:
+ Add rbe_action.sh script to run an action through rewrapper and reproxy.
+ + 8626317:
+ Add tests to ensure raced actions pass through stdout.
+ + f27e51e:
+ Bump SDK version to include DownloadOutputs fix.
+ + 685f10b:
+ Add a stat for racing finalization overhead.
+```
+
+## Release 0.14.4 (2020-10-09)
+```
+Changes:
+ + 720d85a:
+ Add doc on CIPD package stuff.
+ + bf43144:
+ Adaptive racing.
+ + 8c3bb05:
+ Store invocation IDs in the rbe_metrics file.
+ + b0a9161:
+ kokoro release job for windows
+ + 29deac4:
+ Script to benchmark disk IO on Linux machines
+ + f42aa3a:
+ Latest SDK: fix deadlock when context is canceled
+ + 1b45a8d:
+ Performance evaluation framework.
+```
+
+## Release 0.14.3 (2020-10-06)
+```
+Changes:
+ + ff8215b:
+ Refactor integration tests so that they can be run using bazelisk
+ + 057114d:
+ Getting latest version of SDK with Capabilities check flag
+```
+
+## Release 0.14.2 (2020-10-01)
+```
+Changes:
+ + d70e820:
+ Removing Capabilities check from reproxy (SDK does it now)
+ + 98155c5:
+ Bump remote-apis-sdks commit to include Ola's upload fix
+```
+
+## Release 0.14.1 (2020-09-30)
+```
+Changes:
+ + a5f1897:
+ Designate more resources for local execution of javac/r8/d8.
+ + 4523b7a:
+ Add a context timeout when dialing IPC
+ + 5137a1a:
+ Capture reproxy_log.txt in addition to reproxy.* files
+ + d99e00f:
+ roll gazelle to 0.22.1
+ + 8167699:
+ roll rules_go to 0.24.3
+ + b841b34:
+ Revert "roll llvm to d0abc757495349fd053beeaea81cd954c2e457e7"
+ + ecf8e74:
+ Bump up remote-apis-sdks commit
+ + 40f2af8:
+ Rearrange kokoro directory
+ + 2f2aa3f:
+ Run with latest version of gazelle
+ + a3d94e3:
+ Tool to load tests parallel downloads
+ + c705fc7:
+ Don't include failed remote action log when in remote-local-fallback mode if local fallback succeeds.
+ + d2ff96f:
+ roll rules_go to 0.24.2
+ + 47809b3:
+ Markdown version of the command line flags docs.
+ + 5c34ba1:
+ Move some docker options inside the bazel_rbe function
+ + 0baf0b2:
+ roll llvm to d0abc757495349fd053beeaea81cd954c2e457e7
+ + 5cfd408:
+ static link mingw libraries
+```
+
 ## Release 0.14.0 (2020-09-11)
 ```
 Changes:

@@ -1,3 +1,20 @@
+## Release 0.19.0 (2021-01-05)
+```
+Changes:
+ + dca0beb:
+ Add Chrome experiments
+ + e23376f:
+ Add reclientreport tool to releaes artifacts
+ + 98abe06:
+ rollup bazel to 3.4.1
+ + a55450f:
+ Update RE SDK version to current HEAD.
+ + f9f4cb2:
+ roll rules_go to 0.24.9
+ + c02928a:
+ roll rules_go to 0.24.8
+```
+
 ## Release 0.18.0 (2020-12-03)
 ```
 Changes:

@@ -1,3 +1,53 @@
+## Release 0.19.1 (2021-01-18)
+```
+Changes:
+ + 91f67f1:
+ Add reclientreport to Android release script
+ + cbe0000:
+ Revert "roll llvm to 94e4ec6499a237aeec4f1fe8f2cc1e9bcb33f971"
+ + acc6880:
+ Nit: adding some default values to rewrapper.
+ + cb025fb:
+ Add cfg for reproxy in bootstrap
+ + d61141b:
+ Change chrome goma experiments to use GCE service account.
+ + 1588ff5:
+ Bugfix: Making output_dir default value platform independent.
+ + a850b69:
+ roll rules_go to 0.25.0
+ + 7400219:
+ fix kokoro windows; download *.xz from gs://re-client-ci-prebuilts
+ + 8c6a6b8:
+ Do not delete temporary results folder in case of experiment failure
+ + 2750b37:
+ Add non-cached runs of chrome build experiments
+ + 016753e:
+ Add run instructions for chrome-goma.
+ + ee2df8a:
+ Fix multiple trial runs for chrome build experiments.
+ + 7d2c643:
+ Fix kokoro re-client/gcp_windows
+ + 8093895:
+ Add new post build configuration for experiments.
+```
+
+## Release 0.19.0 (2021-01-05)
+```
+Changes:
+ + dca0beb:
+ Add Chrome experiments
+ + e23376f:
+ Add reclientreport tool to releaes artifacts
+ + 98abe06:
+ rollup bazel to 3.4.1
+ + a55450f:
+ Update RE SDK version to current HEAD.
+ + f9f4cb2:
+ roll rules_go to 0.24.9
+ + c02928a:
+ roll rules_go to 0.24.8
+```
+
 ## Release 0.18.0 (2020-12-03)
 ```
 Changes:

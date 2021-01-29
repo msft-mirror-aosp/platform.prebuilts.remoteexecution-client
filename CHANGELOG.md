@@ -1,4 +1,85 @@
+## Release 0.19.3 (2021-01-27)
+
+```
+Changes:
+ + cce3f38:
+ Updating SDK version to include digest mismatch retry
+ + 8acc6d2:
+ use go 1.15.7
+ + 3a3970e:
+ Fix continuous_android_lerc integration test
+ + c70eef3:
+ Add extra flags to reproxy
+ + 222f05c:
+ Revert "Revert "roll llvm to 94e4ec6499a237aeec4f1fe8f2cc1e9bcb33f971""
+```
+
+## Release 0.19.2 (2021-01-20)
+
+```
+Changes:
+ + b908e73:
+ Add some more logging statements to reproxy bootup process
+ + a3c82ff:
+ Bugfix: assignment to uninitialized map
+ + a705a5a:
+ Add cfg vs flag Chrome Build Runs
+```
+
+## Release 0.19.1 (2021-01-18)
+
+```
+Changes:
+ + 91f67f1:
+ Add reclientreport to Android release script
+ + cbe0000:
+ Revert "roll llvm to 94e4ec6499a237aeec4f1fe8f2cc1e9bcb33f971"
+ + acc6880:
+ Nit: adding some default values to rewrapper.
+ + cb025fb:
+ Add cfg for reproxy in bootstrap
+ + d61141b:
+ Change chrome goma experiments to use GCE service account.
+ + 1588ff5:
+ Bugfix: Making output_dir default value platform independent.
+ + a850b69:
+ roll rules_go to 0.25.0
+ + 7400219:
+ fix kokoro windows; download *.xz from gs://re-client-ci-prebuilts
+ + 8c6a6b8:
+ Do not delete temporary results folder in case of experiment failure
+ + 2750b37:
+ Add non-cached runs of chrome build experiments
+ + 016753e:
+ Add run instructions for chrome-goma.
+ + ee2df8a:
+ Fix multiple trial runs for chrome build experiments.
+ + 7d2c643:
+ Fix kokoro re-client/gcp_windows
+ + 8093895:
+ Add new post build configuration for experiments.
+```
+
+## Release 0.19.0 (2021-01-05)
+
+```
+Changes:
+ + dca0beb:
+ Add Chrome experiments
+ + e23376f:
+ Add reclientreport tool to releaes artifacts
+ + 98abe06:
+ rollup bazel to 3.4.1
+ + a55450f:
+ Update RE SDK version to current HEAD.
+ + f9f4cb2:
+ roll rules_go to 0.24.9
+ + c02928a:
+ roll rules_go to 0.24.8
+```
+
 ## Release 0.18.0 (2020-12-03)
+
 ```
 Changes:
  + af4481d:
@@ -20,6 +101,7 @@ Changes:
 ```
 
 ## Release 0.17.0 (2020-11-30)
+
 ```
 Changes:
  + ebb42e2:
@@ -53,6 +135,7 @@ Changes:
 ```
 
 ## Release 0.16.1 (2020-11-18)
+
 ```
 Changes:
  + 28a5cef:
@@ -60,6 +143,7 @@ Changes:
 ```
 
 ## Release 0.16.0 (2020-11-17)
+
 ```
 Changes:
  + b4adeb9:
@@ -103,6 +187,7 @@ Changes:
 ```
 
 ## Release 0.15.0 (2020-10-27)
+
 ```
 Changes:
  + 296553b:
@@ -138,6 +223,7 @@ Changes:
 ```
 
 ## Release 0.14.5 (2020-10-16)
+
 ```
 Changes:
  + 8bfe4dd:

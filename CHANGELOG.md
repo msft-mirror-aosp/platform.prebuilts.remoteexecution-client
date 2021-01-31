@@ -1,3 +1,29 @@
+## Release 0.19.3 (2021-01-27)
+```
+Changes:
+ + cce3f38:
+ Updating SDK version to include digest mismatch retry
+ + 8acc6d2:
+ use go 1.15.7
+ + 3a3970e:
+ Fix continuous_android_lerc integration test
+ + c70eef3:
+ Add extra flags to reproxy
+ + 222f05c:
+ Revert "Revert "roll llvm to 94e4ec6499a237aeec4f1fe8f2cc1e9bcb33f971""
+```
+
+## Release 0.19.2 (2021-01-20)
+```
+Changes:
+ + b908e73:
+ Add some more logging statements to reproxy bootup process
+ + a3c82ff:
+ Bugfix: assignment to uninitialized map
+ + a705a5a:
+ Add cfg vs flag Chrome Build Runs
+```
+
 ## Release 0.19.1 (2021-01-18)
 ```
 Changes:

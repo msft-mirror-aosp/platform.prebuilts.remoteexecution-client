@@ -1,3 +1,26 @@
+## Release 0.20.0 (2021-02-05)
+```
+Changes:
+ + e5aadb7:
+ [chrome] Ignore pnacl flags on scan deps
+ + a55fa20:
+ Clear default labels and set a generic_task monitored resource.
+ + e593c74:
+ Disabling file logging + version logging in rewrapper.
+ + 9723393:
+ Printing version to INFO log unconditionally.
+ + 5964b0e:
+ kokoro widows: reinstall msys2
+ + 385743b:
+ Monitoring package to publish build and action metrics to stackdrier.
+ + 78d0648:
+ Upgrade bazel version to 3.7.2
+ + 03e131a:
+ Fix OS specific filepaths on server_test
+ + 5d14e03:
+ Deleting old logs on proxy startup
+```
+
 ## Release 0.19.3 (2021-01-27)
 ```
 Changes:

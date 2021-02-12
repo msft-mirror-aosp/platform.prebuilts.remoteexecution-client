@@ -1,3 +1,18 @@
+## Release 0.20.1 (2021-02-09)
+```
+Changes:
+ + bd96c99:
+ Prevent bootstrap from exiting fatally when there are no reproxy log files.
+ + cfe9ec3:
+ Determine the current zone when the monitored resource is used.
+ + c1d768e:
+ Add the ability to copy local reclient binaries
+ + ba6aebc:
+ use go 1.15.8
+ + addbed1:
+ Add compression android multi region proto
+```
+
 ## Release 0.20.0 (2021-02-05)
 ```
 Changes:

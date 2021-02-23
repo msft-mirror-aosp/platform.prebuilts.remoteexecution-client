@@ -1,3 +1,38 @@
+## Release 0.21.0 (2021-02-18)
+```
+Changes:
+ + 2da7139:
+ Add reducedtext log format to write abridged rpl log files.
+ + b2fbbe6:
+ Add reclient version label to all exported metrics.
+ + 857f777:
+ Add remote status label to exported metrics. Use GenericNode for reduced cardinality.
+ + 4a455f7:
+ Roll bazel-gazelle to 0.22.3
+ + ac3ad59:
+ [experiments] Cleanup outputs between trials
+ + 6bd89dd:
+ Pass re-client tool name and version to GWS logs
+ + ee8c7bb:
+ Add NaCl --target flags on dependency scanning & extract input nacl procesor.
+ + 0f8c514:
+ Fix experiments multi-run setup.
+ + ded13c8:
+ Add LICENSE and NOTICE files to the reclient repo.
+ + afad219:
+ Update compression test proto
+ + b1b5cef:
+ roll rules_foreign_cc to 78dd4749941c0031e107cccbc441c7eeb89accd0
+ + 1b6a45d:
+ Use mutex before updating map
+ + cd7f9f4:
+ Cleanup obsolete disk deletion code
+ + 14a4efc:
+ [experiments] Move the image disk creation to the source image creation.
+ + bb8a304:
+ Update RE SDK & Add logging for download metrics
+```
+
 ## Release 0.20.1 (2021-02-09)
 ```
 Changes:

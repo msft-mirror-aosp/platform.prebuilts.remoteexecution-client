@@ -1,3 +1,34 @@
+## Release 0.22.0 (2021-02-25)
+```
+Changes:
+ + e00c829:
+ [windows] Add RELEASE & NOTICE to windows kokoro release workflow.
+ + 3f8f177:
+ roll protobuf to 3.15.2
+ + cdd4f79:
+ Update llvm to 98c6110d9bdda166a6093f8fdf1320b5f477ecbe
+ + 4f04dcd:
+ Remove deprecated rbe_autoconfig.
+ + 7d441d4:
+ [experiments] Only cleanup experiment resources on success.
+ + b6c7a0b:
+ Prevent NOTICE file from causing conflicts when dropped into Android.
+ + 0e8f5d3:
+ Remove path and home variables
+ + f7e32a2:
+ roll protobuf to 3.15.1
+ + 873c11f:
+ Upgrade to new SDK version.
+ + 33983cf:
+ use go 1.16
+ + 06d3401:
+ Implement idle timeout in reproxy
+ + 1a5f414:
+ Add metrics_namespace flag to bootstrap
+ + 04acc59:
+ Add LICENSE and NOTICE files to kokoro release artifacts.
+```
+
 ## Release 0.21.0 (2021-02-18)
 ```
 Changes:

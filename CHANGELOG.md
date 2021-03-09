@@ -1,3 +1,76 @@
+## Release 0.21.0 (2021-02-18)
+```
+Changes:
+ + 2da7139:
+ Add reducedtext log format to write abridged rpl log files.
+ + b2fbbe6:
+ Add reclient version label to all exported metrics.
+ + 857f777:
+ Add remote status label to exported metrics. Use GenericNode for reduced cardinality.
+ + 4a455f7:
+ Roll bazel-gazelle to 0.22.3
+ + ac3ad59:
+ [experiments] Cleanup outputs between trials
+ + 6bd89dd:
+ Pass re-client tool name and version to GWS logs
+ + ee8c7bb:
+ Add NaCl --target flags on dependency scanning & extract input nacl procesor.
+ + 0f8c514:
+ Fix experiments multi-run setup.
+ + ded13c8:
+ Add LICENSE and NOTICE files to the reclient repo.
+ + afad219:
+ Update compression test proto
+ + b1b5cef:
+ roll rules_foreign_cc to 78dd4749941c0031e107cccbc441c7eeb89accd0
+ + 1b6a45d:
+ Use mutex before updating map
+ + cd7f9f4:
+ Cleanup obsolete disk deletion code
+ + 14a4efc:
+ [experiments] Move the image disk creation to the source image creation.
+ + bb8a304:
+ Update RE SDK & Add logging for download metrics
+```
+
+## Release 0.20.1 (2021-02-09)
+```
+Changes:
+ + bd96c99:
+ Prevent bootstrap from exiting fatally when there are no reproxy log files.
+ + cfe9ec3:
+ Determine the current zone when the monitored resource is used.
+ + c1d768e:
+ Add the ability to copy local reclient binaries
+ + ba6aebc:
+ use go 1.15.8
+ + addbed1:
+ Add compression android multi region proto
+```
+
+## Release 0.20.0 (2021-02-05)
+```
+Changes:
+ + e5aadb7:
+ [chrome] Ignore pnacl flags on scan deps
+ + a55fa20:
+ Clear default labels and set a generic_task monitored resource.
+ + e593c74:
+ Disabling file logging + version logging in rewrapper.
+ + 9723393:
+ Printing version to INFO log unconditionally.
+ + 5964b0e:
+ kokoro widows: reinstall msys2
+ + 385743b:
+ Monitoring package to publish build and action metrics to stackdrier.
+ + 78d0648:
+ Upgrade bazel version to 3.7.2
+ + 03e131a:
+ Fix OS specific filepaths on server_test
+ + 5d14e03:
+ Deleting old logs on proxy startup
+```
+
 ## Release 0.19.3 (2021-01-27)
 
 ```

@@ -1,3 +1,67 @@
+## Release 0.23.0 (2021-03-09)
+```
+Changes:
+ + 0c607b4:
+ Reenable error/warning/fatal logs in rewrapper
+ + abb4e7a:
+ roll protobuf to 3.15.5
+ + ab08f5d:
+ update chromium/linux integ tests
+ + c92fef0:
+ add compile error test case
+ + 397da33:
+ [windows] Add rules_go patch.
+ + 6d584d6:
+ Add BuildFailureCount metric to track number of reclient related failures.
+ + 4654596:
+ [windows] Add windows re-client builder Dockerfile
+ + 87fbfcf:
+ Bump up continuous android test timeout to 2 hours
+ + ad12832:
+ update chromium/windows integ tests
+ + 88a814d:
+ roll llvm to 6d52c4819294dafb2c072011d72bb523092248a2
+ + 3d6a480:
+ Support arbitrary labels for metrics.
+ + 09078f1:
+ Update integration tests to use aosp image
+ + 5140ecf:
+ Add scripts to clone and create an image for AOSP source
+ + d3d607e:
+ roll protobuf to 3.15.3
+```
+
+## Release 0.22.0 (2021-02-25)
+```
+Changes:
+ + e00c829:
+ [windows] Add RELEASE & NOTICE to windows kokoro release workflow.
+ + 3f8f177:
+ roll protobuf to 3.15.2
+ + cdd4f79:
+ Update llvm to 98c6110d9bdda166a6093f8fdf1320b5f477ecbe
+ + 4f04dcd:
+ Remove deprecated rbe_autoconfig.
+ + 7d441d4:
+ [experiments] Only cleanup experiment resources on success.
+ + b6c7a0b:
+ Prevent NOTICE file from causing conflicts when dropped into Android.
+ + 0e8f5d3:
+ Remove path and home variables
+ + f7e32a2:
+ roll protobuf to 3.15.1
+ + 873c11f:
+ Upgrade to new SDK version.
+ + 33983cf:
+ use go 1.16
+ + 06d3401:
+ Implement idle timeout in reproxy
+ + 1a5f414:
+ Add metrics_namespace flag to bootstrap
+ + 04acc59:
+ Add LICENSE and NOTICE files to kokoro release artifacts.
+```
+
 ## Release 0.21.0 (2021-02-18)
 ```
 Changes:

@@ -1,3 +1,155 @@
+## Release 0.25.0 (2021-03-23)
+```
+Changes:
+ + 65ad975:
+ Revert Go version back to 1.15
+ + 5ac5cd7:
+ Add remote and local status to the ActionLatency metric.
+ + 59fe2c7:
+ remove cmake, ninja for linux and macosx
+ + 2800e67:
+ chromium integ tests update to r863615 (VERSION 4450.0 to 4455.0)
+ + 634cd9a:
+ Print newline at the end of bandwidth stats
+ + 3174046:
+ [rules_go] Update rules go to v0.27.0
+ + 8fe2853:
+ [windows] Faster releases.
+ + 92f2ee2:
+ Better report bandwidth stats
+ + 7e1a6e7:
+ Bump gazelle to 0.23.0
+ + e0165b9:
+ [MacOS] Add remote cache to macos builds.
+ + f178d72:
+ Make build latency distribution metric buckets more granular.
+ + 291b4fb:
+ chromium integ tests update to r863615
+ + c92a239:
+ [llvm] Update LLVM version.
+ + 30b4b42:
+ [windows] Delete presubmit and continuous artifacts.
+ + e740f8d:
+ [windows] Better CI unzipping.
+ + 9ac190d:
+ Add an option to bootstrap to print bandwidth stats
+ + 9966321:
+ [Part 1] Automate staging release symlink creation for Android
+```
+
+## Release 0.24.0 (2021-03-16)
+```
+Changes:
+ + 6efeeb8:
+ [Windows] CI Remove setup.bat
+ + 6f3283c:
+ Change BuildFailureCount to BuildCount.
+ + f64b773:
+ [windows] Refactor integ tests structure.
+ + edc831f:
+ roll protobuf to 3.15.6
+ + ea1e847:
+ [integ] Add local tag to integration tests.
+ + 3cd330e:
+ [ci] Add remote config to converage tests.
+ + 2f663d1:
+ rpl2trace: ignore event if from/to is unset
+ + 1c8b806:
+ [kokoro] Use RBE on windows.
+ + 9941d4f:
+ Turn on strict action environment for Windows.
+ + f40c97b:
+ [bazel] Strict environments.
+ + 21f3e0a:
+ use go 1.16.2
+ + b07259f:
+ Rename left / right in compare to remote/local
+ + da593bd:
+ Run compare action on remote n times
+ + 6dc3b1e:
+ [toolchains] Add manual tags to prevent wrong OS attempt to compile
+ + 5118588:
+ Add script to automatically create rollback CLs to qt-dev
+ + 4a1d133:
+ Upgrade bazel version to 4.0.0
+ + a5cb19f:
+ [clang-scan-deps] Use bazel to compile clang.
+ + 87dad6f:
+ Bump rules go to 0.26.0
+ + 8c6798a:
+ Update remote-apis-sdks
+ + b6ed9f7:
+ clean up chromium basic compile test
+ + 4084f98:
+ Refactor and rearrange compare functions
+ + 49c9b72:
+ [windows] Add windows remote execution configs.
+```
+
+## Release 0.23.0 (2021-03-09)
+```
+Changes:
+ + 0c607b4:
+ Reenable error/warning/fatal logs in rewrapper
+ + abb4e7a:
+ roll protobuf to 3.15.5
+ + ab08f5d:
+ update chromium/linux integ tests
+ + c92fef0:
+ add compile error test case
+ + 397da33:
+ [windows] Add rules_go patch.
+ + 6d584d6:
+ Add BuildFailureCount metric to track number of reclient related failures.
+ + 4654596:
+ [windows] Add windows re-client builder Dockerfile
+ + 87fbfcf:
+ Bump up continuous android test timeout to 2 hours
+ + ad12832:
+ update chromium/windows integ tests
+ + 88a814d:
+ roll llvm to 6d52c4819294dafb2c072011d72bb523092248a2
+ + 3d6a480:
+ Support arbitrary labels for metrics.
+ + 09078f1:
+ Update integration tests to use aosp image
+ + 5140ecf:
+ Add scripts to clone and create an image for AOSP source
+ + d3d607e:
+ roll protobuf to 3.15.3
+```
+
+## Release 0.22.0 (2021-02-25)
+```
+Changes:
+ + e00c829:
+ [windows] Add RELEASE & NOTICE to windows kokoro release workflow.
+ + 3f8f177:
+ roll protobuf to 3.15.2
+ + cdd4f79:
+ Update llvm to 98c6110d9bdda166a6093f8fdf1320b5f477ecbe
+ + 4f04dcd:
+ Remove deprecated rbe_autoconfig.
+ + 7d441d4:
+ [experiments] Only cleanup experiment resources on success.
+ + b6c7a0b:
+ Prevent NOTICE file from causing conflicts when dropped into Android.
+ + 0e8f5d3:
+ Remove path and home variables
+ + f7e32a2:
+ roll protobuf to 3.15.1
+ + 873c11f:
+ Upgrade to new SDK version.
+ + 33983cf:
+ use go 1.16
+ + 06d3401:
+ Implement idle timeout in reproxy
+ + 1a5f414:
+ Add metrics_namespace flag to bootstrap
+ + 04acc59:
+ Add LICENSE and NOTICE files to kokoro release artifacts.
+```
+
 ## Release 0.21.0 (2021-02-18)
 ```
 Changes:

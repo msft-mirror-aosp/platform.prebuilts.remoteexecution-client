@@ -1,14 +1,14 @@
 drops {
   dest_file: "NOTICE"
-  version: "0.25.0.5f9900f"
+  version: "0.27.0.bbfff8b"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   git_branch: "master"
   kokoro_drop {
     full_job_name: "re-client/gcp_ubuntu/release"
-    build_number: "216"
+    build_number: "223"
     artifact_gcs_bucket: "reclient-release-artifacts"
-    artifact_root: "prod/re-client/gcp_ubuntu/release/216/20210323-102702"
+    artifact_root: "prod/re-client/gcp_ubuntu/release/223/20210407-073544"
     artifact_name: "NOTICE"
     artifact_permission_mode: "640"
   }

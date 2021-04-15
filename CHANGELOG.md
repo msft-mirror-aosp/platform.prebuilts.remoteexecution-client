@@ -1,3 +1,115 @@
+## Release 0.27.0 (2021-04-07)
+```
+Changes:
+ + 34e1d11:
+ Bump remote-apis-sdks version
+```
+
+## Release 0.26.0 (2021-03-30)
+```
+Changes:
+ + 0a60366:
+ [llvm] Cleanups patches in separate folder.
+ + 921688d:
+ [llvm] Add llvm-bazel on windows.
+ + afb93e3:
+ [llvm] Remove llvm build warnings
+ + b9d7261:
+ [release] Allow creating release from version commit.
+ + 4738e86:
+ [release] Automate creating windows release.
+ + 9ec35f8:
+ Fix bug in create-release.sh script
+```
+
+## Release 0.25.0 (2021-03-23)
+```
+Changes:
+ + 65ad975:
+ Revert Go version back to 1.15
+ + 5ac5cd7:
+ Add remote and local status to the ActionLatency metric.
+ + 59fe2c7:
+ remove cmake, ninja for linux and macosx
+ + 2800e67:
+ chromium integ tests update to r863615 (VERSION 4450.0 to 4455.0)
+ + 634cd9a:
+ Print newline at the end of bandwidth stats
+ + 3174046:
+ [rules_go] Update rules go to v0.27.0
+ + 8fe2853:
+ [windows] Faster releases.
+ + 92f2ee2:
+ Better report bandwidth stats
+ + 7e1a6e7:
+ Bump gazelle to 0.23.0
+ + e0165b9:
+ [MacOS] Add remote cache to macos builds.
+ + f178d72:
+ Make build latency distribution metric buckets more granular.
+ + 291b4fb:
+ chromium integ tests update to r863615
+ + c92a239:
+ [llvm] Update LLVM version.
+ + 30b4b42:
+ [windows] Delete presubmit and continuous artifacts.
+ + e740f8d:
+ [windows] Better CI unzipping.
+ + 9ac190d:
+ Add an option to bootstrap to print bandwidth stats
+ + 9966321:
+ [Part 1] Automate staging release symlink creation for Android
+```
+
+## Release 0.24.0 (2021-03-16)
+```
+Changes:
+ + 6efeeb8:
+ [Windows] CI Remove setup.bat
+ + 6f3283c:
+ Change BuildFailureCount to BuildCount.
+ + f64b773:
+ [windows] Refactor integ tests structure.
+ + edc831f:
+ roll protobuf to 3.15.6
+ + ea1e847:
+ [integ] Add local tag to integration tests.
+ + 3cd330e:
+ [ci] Add remote config to converage tests.
+ + 2f663d1:
+ rpl2trace: ignore event if from/to is unset
+ + 1c8b806:
+ [kokoro] Use RBE on windows.
+ + 9941d4f:
+ Turn on strict action environment for Windows.
+ + f40c97b:
+ [bazel] Strict environments.
+ + 21f3e0a:
+ use go 1.16.2
+ + b07259f:
+ Rename left / right in compare to remote/local
+ + da593bd:
+ Run compare action on remote n times
+ + 6dc3b1e:
+ [toolchains] Add manual tags to prevent wrong OS attempt to compile
+ + 5118588:
+ Add script to automatically create rollback CLs to qt-dev
+ + 4a1d133:
+ Upgrade bazel version to 4.0.0
+ + a5cb19f:
+ [clang-scan-deps] Use bazel to compile clang.
+ + 87dad6f:
+ Bump rules go to 0.26.0
+ + 8c6798a:
+ Update remote-apis-sdks
+ + b6ed9f7:
+ clean up chromium basic compile test
+ + 4084f98:
+ Refactor and rearrange compare functions
+ + 49c9b72:
+ [windows] Add windows remote execution configs.
+```
+
 ## Release 0.23.0 (2021-03-09)
 ```
 Changes:

@@ -1,3 +1,27 @@
+## Release 0.27.0 (2021-04-07)
+```
+Changes:
+ + 34e1d11:
+ Bump remote-apis-sdks version
+```
+
+## Release 0.26.0 (2021-03-30)
+```
+Changes:
+ + 0a60366:
+ [llvm] Cleanups patches in separate folder.
+ + 921688d:
+ [llvm] Add llvm-bazel on windows.
+ + afb93e3:
+ [llvm] Remove llvm build warnings
+ + b9d7261:
+ [release] Allow creating release from version commit.
+ + 4738e86:
+ [release] Automate creating windows release.
+ + 9ec35f8:
+ Fix bug in create-release.sh script
+```
+
 ## Release 0.25.0 (2021-03-23)
 ```
 Changes:

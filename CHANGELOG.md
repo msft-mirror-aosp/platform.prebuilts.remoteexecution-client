@@ -1,4 +1,310 @@
+## Release 0.25.0 (2021-03-23)
+```
+Changes:
+ + 65ad975:
+ Revert Go version back to 1.15
+ + 5ac5cd7:
+ Add remote and local status to the ActionLatency metric.
+ + 59fe2c7:
+ remove cmake, ninja for linux and macosx
+ + 2800e67:
+ chromium integ tests update to r863615 (VERSION 4450.0 to 4455.0)
+ + 634cd9a:
+ Print newline at the end of bandwidth stats
+ + 3174046:
+ [rules_go] Update rules go to v0.27.0
+ + 8fe2853:
+ [windows] Faster releases.
+ + 92f2ee2:
+ Better report bandwidth stats
+ + 7e1a6e7:
+ Bump gazelle to 0.23.0
+ + e0165b9:
+ [MacOS] Add remote cache to macos builds.
+ + f178d72:
+ Make build latency distribution metric buckets more granular.
+ + 291b4fb:
+ chromium integ tests update to r863615
+ + c92a239:
+ [llvm] Update LLVM version.
+ + 30b4b42:
+ [windows] Delete presubmit and continuous artifacts.
+ + e740f8d:
+ [windows] Better CI unzipping.
+ + 9ac190d:
+ Add an option to bootstrap to print bandwidth stats
+ + 9966321:
+ [Part 1] Automate staging release symlink creation for Android
+```
+
+## Release 0.24.0 (2021-03-16)
+```
+Changes:
+ + 6efeeb8:
+ [Windows] CI Remove setup.bat
+ + 6f3283c:
+ Change BuildFailureCount to BuildCount.
+ + f64b773:
+ [windows] Refactor integ tests structure.
+ + edc831f:
+ roll protobuf to 3.15.6
+ + ea1e847:
+ [integ] Add local tag to integration tests.
+ + 3cd330e:
+ [ci] Add remote config to converage tests.
+ + 2f663d1:
+ rpl2trace: ignore event if from/to is unset
+ + 1c8b806:
+ [kokoro] Use RBE on windows.
+ + 9941d4f:
+ Turn on strict action environment for Windows.
+ + f40c97b:
+ [bazel] Strict environments.
+ + 21f3e0a:
+ use go 1.16.2
+ + b07259f:
+ Rename left / right in compare to remote/local
+ + da593bd:
+ Run compare action on remote n times
+ + 6dc3b1e:
+ [toolchains] Add manual tags to prevent wrong OS attempt to compile
+ + 5118588:
+ Add script to automatically create rollback CLs to qt-dev
+ + 4a1d133:
+ Upgrade bazel version to 4.0.0
+ + a5cb19f:
+ [clang-scan-deps] Use bazel to compile clang.
+ + 87dad6f:
+ Bump rules go to 0.26.0
+ + 8c6798a:
+ Update remote-apis-sdks
+ + b6ed9f7:
+ clean up chromium basic compile test
+ + 4084f98:
+ Refactor and rearrange compare functions
+ + 49c9b72:
+ [windows] Add windows remote execution configs.
+```
+
+## Release 0.23.0 (2021-03-09)
+```
+Changes:
+ + 0c607b4:
+ Reenable error/warning/fatal logs in rewrapper
+ + abb4e7a:
+ roll protobuf to 3.15.5
+ + ab08f5d:
+ update chromium/linux integ tests
+ + c92fef0:
+ add compile error test case
+ + 397da33:
+ [windows] Add rules_go patch.
+ + 6d584d6:
+ Add BuildFailureCount metric to track number of reclient related failures.
+ + 4654596:
+ [windows] Add windows re-client builder Dockerfile
+ + 87fbfcf:
+ Bump up continuous android test timeout to 2 hours
+ + ad12832:
+ update chromium/windows integ tests
+ + 88a814d:
+ roll llvm to 6d52c4819294dafb2c072011d72bb523092248a2
+ + 3d6a480:
+ Support arbitrary labels for metrics.
+ + 09078f1:
+ Update integration tests to use aosp image
+ + 5140ecf:
+ Add scripts to clone and create an image for AOSP source
+ + d3d607e:
+ roll protobuf to 3.15.3
+```
+
+## Release 0.22.0 (2021-02-25)
+```
+Changes:
+ + e00c829:
+ [windows] Add RELEASE & NOTICE to windows kokoro release workflow.
+ + 3f8f177:
+ roll protobuf to 3.15.2
+ + cdd4f79:
+ Update llvm to 98c6110d9bdda166a6093f8fdf1320b5f477ecbe
+ + 4f04dcd:
+ Remove deprecated rbe_autoconfig.
+ + 7d441d4:
+ [experiments] Only cleanup experiment resources on success.
+ + b6c7a0b:
+ Prevent NOTICE file from causing conflicts when dropped into Android.
+ + 0e8f5d3:
+ Remove path and home variables
+ + f7e32a2:
+ roll protobuf to 3.15.1
+ + 873c11f:
+ Upgrade to new SDK version.
+ + 33983cf:
+ use go 1.16
+ + 06d3401:
+ Implement idle timeout in reproxy
+ + 1a5f414:
+ Add metrics_namespace flag to bootstrap
+ + 04acc59:
+ Add LICENSE and NOTICE files to kokoro release artifacts.
+```
+
+## Release 0.21.0 (2021-02-18)
+```
+Changes:
+ + 2da7139:
+ Add reducedtext log format to write abridged rpl log files.
+ + b2fbbe6:
+ Add reclient version label to all exported metrics.
+ + 857f777:
+ Add remote status label to exported metrics. Use GenericNode for reduced cardinality.
+ + 4a455f7:
+ Roll bazel-gazelle to 0.22.3
+ + ac3ad59:
+ [experiments] Cleanup outputs between trials
+ + 6bd89dd:
+ Pass re-client tool name and version to GWS logs
+ + ee8c7bb:
+ Add NaCl --target flags on dependency scanning & extract input nacl procesor.
+ + 0f8c514:
+ Fix experiments multi-run setup.
+ + ded13c8:
+ Add LICENSE and NOTICE files to the reclient repo.
+ + afad219:
+ Update compression test proto
+ + b1b5cef:
+ roll rules_foreign_cc to 78dd4749941c0031e107cccbc441c7eeb89accd0
+ + 1b6a45d:
+ Use mutex before updating map
+ + cd7f9f4:
+ Cleanup obsolete disk deletion code
+ + 14a4efc:
+ [experiments] Move the image disk creation to the source image creation.
+ + bb8a304:
+ Update RE SDK & Add logging for download metrics
+```
+
+## Release 0.20.1 (2021-02-09)
+```
+Changes:
+ + bd96c99:
+ Prevent bootstrap from exiting fatally when there are no reproxy log files.
+ + cfe9ec3:
+ Determine the current zone when the monitored resource is used.
+ + c1d768e:
+ Add the ability to copy local reclient binaries
+ + ba6aebc:
+ use go 1.15.8
+ + addbed1:
+ Add compression android multi region proto
+```
+
+## Release 0.20.0 (2021-02-05)
+```
+Changes:
+ + e5aadb7:
+ [chrome] Ignore pnacl flags on scan deps
+ + a55fa20:
+ Clear default labels and set a generic_task monitored resource.
+ + e593c74:
+ Disabling file logging + version logging in rewrapper.
+ + 9723393:
+ Printing version to INFO log unconditionally.
+ + 5964b0e:
+ kokoro widows: reinstall msys2
+ + 385743b:
+ Monitoring package to publish build and action metrics to stackdrier.
+ + 78d0648:
+ Upgrade bazel version to 3.7.2
+ + 03e131a:
+ Fix OS specific filepaths on server_test
+ + 5d14e03:
+ Deleting old logs on proxy startup
+```
+
+## Release 0.19.3 (2021-01-27)
+
+```
+Changes:
+ + cce3f38:
+ Updating SDK version to include digest mismatch retry
+ + 8acc6d2:
+ use go 1.15.7
+ + 3a3970e:
+ Fix continuous_android_lerc integration test
+ + c70eef3:
+ Add extra flags to reproxy
+ + 222f05c:
+ Revert "Revert "roll llvm to 94e4ec6499a237aeec4f1fe8f2cc1e9bcb33f971""
+```
+
+## Release 0.19.2 (2021-01-20)
+
+```
+Changes:
+ + b908e73:
+ Add some more logging statements to reproxy bootup process
+ + a3c82ff:
+ Bugfix: assignment to uninitialized map
+ + a705a5a:
+ Add cfg vs flag Chrome Build Runs
+```
+
+## Release 0.19.1 (2021-01-18)
+
+```
+Changes:
+ + 91f67f1:
+ Add reclientreport to Android release script
+ + cbe0000:
+ Revert "roll llvm to 94e4ec6499a237aeec4f1fe8f2cc1e9bcb33f971"
+ + acc6880:
+ Nit: adding some default values to rewrapper.
+ + cb025fb:
+ Add cfg for reproxy in bootstrap
+ + d61141b:
+ Change chrome goma experiments to use GCE service account.
+ + 1588ff5:
+ Bugfix: Making output_dir default value platform independent.
+ + a850b69:
+ roll rules_go to 0.25.0
+ + 7400219:
+ fix kokoro windows; download *.xz from gs://re-client-ci-prebuilts
+ + 8c6a6b8:
+ Do not delete temporary results folder in case of experiment failure
+ + 2750b37:
+ Add non-cached runs of chrome build experiments
+ + 016753e:
+ Add run instructions for chrome-goma.
+ + ee2df8a:
+ Fix multiple trial runs for chrome build experiments.
+ + 7d2c643:
+ Fix kokoro re-client/gcp_windows
+ + 8093895:
+ Add new post build configuration for experiments.
+```
+
+## Release 0.19.0 (2021-01-05)
+
+```
+Changes:
+ + dca0beb:
+ Add Chrome experiments
+ + e23376f:
+ Add reclientreport tool to releaes artifacts
+ + 98abe06:
+ rollup bazel to 3.4.1
+ + a55450f:
+ Update RE SDK version to current HEAD.
+ + f9f4cb2:
+ roll rules_go to 0.24.9
+ + c02928a:
+ roll rules_go to 0.24.8
+```
+
 ## Release 0.18.0 (2020-12-03)
+
 ```
 Changes:
  + af4481d:
@@ -20,6 +326,7 @@ Changes:
 ```
 
 ## Release 0.17.0 (2020-11-30)
+
 ```
 Changes:
  + ebb42e2:
@@ -53,6 +360,7 @@ Changes:
 ```
 
 ## Release 0.16.1 (2020-11-18)
+
 ```
 Changes:
  + 28a5cef:
@@ -60,6 +368,7 @@ Changes:
 ```
 
 ## Release 0.16.0 (2020-11-17)
+
 ```
 Changes:
  + b4adeb9:
@@ -103,6 +412,7 @@ Changes:
 ```
 
 ## Release 0.15.0 (2020-10-27)
+
 ```
 Changes:
  + 296553b:
@@ -138,6 +448,7 @@ Changes:
 ```
 
 ## Release 0.14.5 (2020-10-16)
+
 ```
 Changes:
  + 8bfe4dd:

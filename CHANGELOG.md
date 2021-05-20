@@ -1,3 +1,37 @@
+## Release 0.29.0 (2021-04-28)
+```
+Changes:
+ + 6e850de:
+ [SDK] Bump SDK version.
+ + 49b123d:
+ [experiments] Allow preserving inputs for future reference.
+ + 1ea7c79:
+ [experiments] Update chrome examples to reflect current setup.
+ + 8e02ad8:
+ [experiments] Add disk type options
+ + 73e430e:
+ [bootstrap] Send SIGINT on Windows
+ + 9d020ec:
+ Add experimental_cache_miss_rate flag to simulate cache misses.
+```
+
+## Release 0.28.0 (2021-04-13)
+```
+Changes:
+ + f9c7042:
+ [inputprocessor] Add pprof option.
+ + 30eb390:
+ [bootstrap] Send SIGTERMs on linux.
+ + 5f0d773:
+ Log C++ input processor overhead
+ + d3edb35:
+ [experiments] Upload experiment definition at the beginning of the run.
+ + 46f5d67:
+ [experiments] Fixes and tweaks
+ + 6301694:
+ [windows][experiments] Add basic windows support to exp framework.
+```
+
 ## Release 0.27.0 (2021-04-07)
 ```
 Changes:

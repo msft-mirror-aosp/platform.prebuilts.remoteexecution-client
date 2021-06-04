@@ -1,3 +1,22 @@
+## Release 0.30.0 (2021-05-11)
+```
+Changes:
+ + 4d3a5ca:
+ Add rpi file to host proxy instance level events and stats.
+ + fa6b4c9:
+ Expose minimized file header interface from cgo from clang-scan-deps
+ + 03425a2:
+ [rsp] Fix rsp file reading on links.
+ + 86d4eb3:
+ Speed up data loading into bigquery tables
+ + 06dc659:
+ [experiments] Fix experiments cleanup with num_machines
+ + ebceda2:
+ don't set OSFamily property if Pool or label: is set.
+ + 39da0b0:
+ [experiments] Add num_machines to experiments.
+```
+
 ## Release 0.29.0 (2021-04-28)
 ```
 Changes:

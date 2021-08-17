@@ -1,3 +1,105 @@
+## Release 0.39.0 (2021-08-10)
+```
+Changes:
+ + 3dec0c7:
+ Remove TOC files from link actions.
+ + 67fd920:
+ Print the number of verified in the stats.
+ + 5f131f2:
+ Add flag to set deps cache max size for goma deps cache.
+ + a0c511f:
+ Implement direct deps retrieval for tsconfig and tsfile.
+```
+
+## Release 0.38.0 (2021-07-29)
+```
+Changes:
+ + 63cb7c8:
+ Have ShutDownProxy check that the reproxy process is done.
+ + 8a30379:
+ Update windows release workflow to pick cipd from PATH
+ + e0c0ef3:
+ Add perfgate support to experiment runner.
+ + 58a4659:
+ Do not record CPPInputProcessorMillis metric if using goma deps cache.
+ + 4b386fb:
+ add tsfile parser, to parse lines of import statement and fine its relative path.
+```
+
+## Release 0.37.0 (2021-07-21)
+```
+Changes:
+ + 41e4884:
+ Update goma's version to remove patch.
+ + 26a265e:
+ Fix bug preventing integration tests from running on reproxy goma ip.
+ + 1c0f984:
+ Use goma's native deps cache.
+ + dde54a8:
+ Add the action digest that produced a mismatch to log files
+ + 9c5299e:
+ Add extends to tsconfig_parser.
+ + 4822715:
+ Add kokoro windows recient + goma IP presubmits
+ + 1a1e16f:
+ Tweak kokoro win creation script.
+ + c91486a:
+ Add chrome build experiment
+```
+
+## Release 0.36.0 (2021-07-15)
+```
+Changes:
+ + 3053713:
+ Add release support for goma-ip build.
+ + cf1a3db:
+ Make goma builds cacheable.
+ + efc18c1:
+ Enable go race detection in re-client presubmits
+ + f9a2401:
+ Add kokoro workflows for reclient + goma input processor.
+ + 9d43a21:
+ Fix unit test fails in TestNoRemoteOnInputFail
+ + e549c61:
+ Print the type of include scanner being used in reproxy in logs.
+ + 87f718f:
+ Do not adjust command if using goma's input processor.
+ + 1f84511:
+ Fix no remote execution when input processing fails for CPP
+ + 7c70244:
+ Add a build configuration for include scanning.
+ + cf80535:
+ Add binary to run experiment runner and tabulator
+ + d8f7d6c:
+ Add the goma input processor as a cgo library and bridge to C++ goma.
+ + 4914fd4:
+ Turn on compiling the goma input processor on linux CI
+ + 1c59d33:
+ Add gclient support to windows.
+ + f375c72:
+ Build libs and headers needed for the goma input processor.
+ + e5d2e1f:
+ Refactor integration test configuration to use args and cfg files.
+ + 4a98e2b:
+ Remove couple of lines from readme.MD.
+ + d656d2d:
+ Separate experiments logic in runner and tabulator from binary
+ + c7a794d:
+ Revert "Fix no remote execution when input processing fails"
+ + 52a6816:
+ Fix no remote execution when input processing fails
+ + 497cfda:
+ Add deps cache example experiment proto
+ + 03fb41a:
+ Trim build.ninja file.
+ + 1af19ef:
+ [goma] Add rules to compile goma from reclient.
+ + 57e4b28:
+ Update kokoro windows custom VM to add depot tools to path.
+ + 2518f71:
+ Add better error messages for auth related RBE errors
+```
+
 ## Release 0.35.0 (2021-06-21)
 ```
 Changes:

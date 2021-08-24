@@ -1,3 +1,52 @@
+## Release 0.39.0 (2021-08-10)
+```
+Changes:
+ + 3dec0c7:
+ Remove TOC files from link actions.
+ + 67fd920:
+ Print the number of verified in the stats.
+ + 5f131f2:
+ Add flag to set deps cache max size for goma deps cache.
+ + a0c511f:
+ Implement direct deps retrieval for tsconfig and tsfile.
+```
+
+## Release 0.38.0 (2021-07-29)
+```
+Changes:
+ + 63cb7c8:
+ Have ShutDownProxy check that the reproxy process is done.
+ + 8a30379:
+ Update windows release workflow to pick cipd from PATH
+ + e0c0ef3:
+ Add perfgate support to experiment runner.
+ + 58a4659:
+ Do not record CPPInputProcessorMillis metric if using goma deps cache.
+ + 4b386fb:
+ add tsfile parser, to parse lines of import statement and fine its relative path.
+```
+
+## Release 0.37.0 (2021-07-21)
+```
+Changes:
+ + 41e4884:
+ Update goma's version to remove patch.
+ + 26a265e:
+ Fix bug preventing integration tests from running on reproxy goma ip.
+ + 1c0f984:
+ Use goma's native deps cache.
+ + dde54a8:
+ Add the action digest that produced a mismatch to log files
+ + 9c5299e:
+ Add extends to tsconfig_parser.
+ + 4822715:
+ Add kokoro windows recient + goma IP presubmits
+ + 1a1e16f:
+ Tweak kokoro win creation script.
+ + c91486a:
+ Add chrome build experiment
+```
+
 ## Release 0.36.0 (2021-07-15)
 ```
 Changes:

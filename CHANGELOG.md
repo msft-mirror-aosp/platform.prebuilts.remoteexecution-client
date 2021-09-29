@@ -1,3 +1,76 @@
+## Release 0.42.0 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.42 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.3 (2021-09-21)
+```
+Changes:
+ + 2f72937:
+ add kokoro/macos_external/vars.sh
+ + eab5c19:
+ fix install_precommit.sh
+ + 448918d:
+ Add macos_external/presubmit_goma
+```
+
+## Release 0.41.2 (2021-09-20)
+```
+Changes:
+ + d3d8254:
+ fix macos_external/release.sh
+ + a8a4f02:
+ fix macosx release
+```
+
+## Release 0.41.0 (2021-09-16)
+```
+Changes:
+ + b21aa95:
+ fix re-client-builder to allow depot_tools autoupdate
+ + f0651a6:
+ Add re-client/macos_external/release to kokoro release worflow
+ + 53fc515:
+ add mac release
+ + 40ff5a5:
+ Fix typo in linux goma release job name
+```
+
 ## Release 0.40.0 (2021-08-26)
 ```
 Changes:

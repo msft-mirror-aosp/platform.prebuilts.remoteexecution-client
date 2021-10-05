@@ -1,3 +1,16 @@
+## Release 0.40.0 (2021-08-26)
+```
+Changes:
+ + 0631fed:
+ Add typescript labels and typescript integration into re-client.
+ + 355f235:
+ Change exprunner example run to reflect new perfgate wrapper name
+ + 5d17c7b:
+ Add tags to experiment proto. This allows for perfgate to add user defined tags for data segregation.
+ + 26d1974:
+ Implement recursive deps traversal.
+```
+
 ## Release 0.39.0 (2021-08-10)
 ```
 Changes:

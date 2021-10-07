@@ -1,3 +1,616 @@
+## Release 0.42.0 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.42 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.3 (2021-09-21)
+```
+Changes:
+ + 2f72937:
+ add kokoro/macos_external/vars.sh
+ + eab5c19:
+ fix install_precommit.sh
+ + 448918d:
+ Add macos_external/presubmit_goma
+```
+
+## Release 0.41.2 (2021-09-20)
+```
+Changes:
+ + d3d8254:
+ fix macos_external/release.sh
+ + a8a4f02:
+ fix macosx release
+```
+
+## Release 0.41.0 (2021-09-16)
+```
+Changes:
+ + b21aa95:
+ fix re-client-builder to allow depot_tools autoupdate
+ + f0651a6:
+ Add re-client/macos_external/release to kokoro release worflow
+ + 53fc515:
+ add mac release
+ + 40ff5a5:
+ Fix typo in linux goma release job name
+```
+
+## Release 0.40.0 (2021-08-26)
+```
+Changes:
+ + 0631fed:
+ Add typescript labels and typescript integration into re-client.
+ + 355f235:
+ Change exprunner example run to reflect new perfgate wrapper name
+ + 5d17c7b:
+ Add tags to experiment proto. This allows for perfgate to add user defined tags for data segregation.
+ + 26d1974:
+ Implement recursive deps traversal.
+```
+
+## Release 0.39.0 (2021-08-10)
+```
+Changes:
+ + 3dec0c7:
+ Remove TOC files from link actions.
+ + 67fd920:
+ Print the number of verified in the stats.
+ + 5f131f2:
+ Add flag to set deps cache max size for goma deps cache.
+ + a0c511f:
+ Implement direct deps retrieval for tsconfig and tsfile.
+```
+
+## Release 0.38.0 (2021-07-29)
+```
+Changes:
+ + 63cb7c8:
+ Have ShutDownProxy check that the reproxy process is done.
+ + 8a30379:
+ Update windows release workflow to pick cipd from PATH
+ + e0c0ef3:
+ Add perfgate support to experiment runner.
+ + 58a4659:
+ Do not record CPPInputProcessorMillis metric if using goma deps cache.
+ + 4b386fb:
+ add tsfile parser, to parse lines of import statement and fine its relative path.
+```
+
+## Release 0.37.0 (2021-07-21)
+```
+Changes:
+ + 41e4884:
+ Update goma's version to remove patch.
+ + 26a265e:
+ Fix bug preventing integration tests from running on reproxy goma ip.
+ + 1c0f984:
+ Use goma's native deps cache.
+ + dde54a8:
+ Add the action digest that produced a mismatch to log files
+ + 9c5299e:
+ Add extends to tsconfig_parser.
+ + 4822715:
+ Add kokoro windows recient + goma IP presubmits
+ + 1a1e16f:
+ Tweak kokoro win creation script.
+ + c91486a:
+ Add chrome build experiment
+```
+
+## Release 0.36.0 (2021-07-15)
+```
+Changes:
+ + 3053713:
+ Add release support for goma-ip build.
+ + cf1a3db:
+ Make goma builds cacheable.
+ + efc18c1:
+ Enable go race detection in re-client presubmits
+ + f9a2401:
+ Add kokoro workflows for reclient + goma input processor.
+ + 9d43a21:
+ Fix unit test fails in TestNoRemoteOnInputFail
+ + e549c61:
+ Print the type of include scanner being used in reproxy in logs.
+ + 87f718f:
+ Do not adjust command if using goma's input processor.
+ + 1f84511:
+ Fix no remote execution when input processing fails for CPP
+ + 7c70244:
+ Add a build configuration for include scanning.
+ + cf80535:
+ Add binary to run experiment runner and tabulator
+ + d8f7d6c:
+ Add the goma input processor as a cgo library and bridge to C++ goma.
+ + 4914fd4:
+ Turn on compiling the goma input processor on linux CI
+ + 1c59d33:
+ Add gclient support to windows.
+ + f375c72:
+ Build libs and headers needed for the goma input processor.
+ + e5d2e1f:
+ Refactor integration test configuration to use args and cfg files.
+ + 4a98e2b:
+ Remove couple of lines from readme.MD.
+ + d656d2d:
+ Separate experiments logic in runner and tabulator from binary
+ + c7a794d:
+ Revert "Fix no remote execution when input processing fails"
+ + 52a6816:
+ Fix no remote execution when input processing fails
+ + 497cfda:
+ Add deps cache example experiment proto
+ + 03fb41a:
+ Trim build.ninja file.
+ + 1af19ef:
+ [goma] Add rules to compile goma from reclient.
+ + 57e4b28:
+ Update kokoro windows custom VM to add depot tools to path.
+ + 2518f71:
+ Add better error messages for auth related RBE errors
+```
+
+## Release 0.35.0 (2021-06-21)
+```
+Changes:
+ + c67dad9:
+ Revert "Fixed bug to not do remote execution when input processing fails"
+ + 21a1697:
+ add defer log.Flush() in main
+```
+
+## Release 0.34.0 (2021-06-16)
+```
+Changes:
+ + 1119aea:
+ fix typo in cipd-linux.yaml
+ + 1df31eb:
+ Log reproxy flags in rpi file.
+ + 56cadbc:
+ add rpl2cloudtrace in cipd package
+ + f26da5e:
+ Fixed bug to not do remote execution when input processing fails
+ + 958209d:
+ Add rpl2cloudtrace command
+```
+
+## Release 0.33.0 (2021-06-10)
+```
+Changes:
+ + 772456a:
+ Switch out -fsanitize-ignorelist for -fsanitize-blacklist until clang-scan-deps version supports the ignore version of the argument.
+ + 0b920df:
+ Fix tabulator skipping experiment with no rbe_metrics.txt file.
+ + 111fa64:
+ Fix reproxy server tests.
+ + 81e0385:
+ golang: update to 1.15.13
+ + 24dc9d9:
+ Add bazel's "racing" version for faster reclient iteration.
+```
+
+## Release 0.32.0 (2021-06-08)
+```
+Changes:
+ + 972b5da:
+ [reproxy] Make reduced text the default.
+ + bbe4ca7:
+ Support remote archiving.
+ + c956c10:
+ Downgrade half-baked ar-reading errors to warnings
+ + 5c8eb87:
+ Fix Android Test numbers
+ + 609c3b3:
+ Add TODO to -fsanitize-ignorelist support.
+ + 5c399ea:
+ rbeflag: allow comment in config file
+ + 96e391b:
+ Adds -fsanitize-ignorelist to arg scanner Joined list.
+ + 046bf31:
+ add cloud profiler support in reproxy
+ + a3d3d92:
+ Handle -fsanitize-ignorelist.
+ + 8a5da3c:
+ Revert llvm update commits.
+ + c24e0ae:
+ Update aosp's snapshot.
+ + 7b537a4:
+ update llvm-bazel sha256hash
+ + 73bf319:
+ add preserve_symlink option.
+ + 93ce047:
+ [kokoro][windows] Add image creator script for our windows CI.
+ + 01c2b31:
+ Add deps cache integration test.
+ + 45c8f8f:
+ Update llvm version
+ + 04f6197:
+ [bazel] Update bazel to v4.1.0.
+ + caaa265:
+ Run gazelle in presubmit
+```
+
+## Release 0.31.0 (2021-05-26)
+```
+Changes:
+ + 002ad3b:
+ remove build_naming_convention from remote-apis-sdks
+ + 5dfc16f:
+ Update SDK version to f831c118b.
+ + d591d46:
+ Evict old entries from deps cache to prevent unbounded growth.
+ + 59fdb1d:
+ delete @com_github_bazelbuild_rules_go
+ + 8176257:
+ Add stats for deps cache loading and writing to rpi file.
+ + ecb439f:
+ Remove "cache siloing" reclient version from platform for non LERC.
+ + 9e37e8c:
+ Use deps cache in the cpp input processor.
+ + aacbf57:
+ Add depscache.
+ + 7456489:
+ Remove --windows_cross flag.
+ + 97a6695:
+ Exclude docker directory in gazelle config.
+ + 0910580:
+ Use RBE config in the install script.
+ + 66bab18:
+ Update SDK to 7447b28.
+ + fbcdcbd:
+ [experiments] Tweak saving inputs
+ + 1ada4a5:
+ [Links] Read `.a` files by launching `ar t myarchive.a`.
+ + 4a2ee7c:
+ Support windows cross for nacl
+ + c974fe3:
+ Normalize dirs for windows cross compile
+ + f1e923e:
+ Support windows cross compile
+ + 3bdcdda:
+ [golang] Update golang to 1.15.12
+ + 848af86:
+ update github.com/Microsoft/go-winio; 0.4.15 -> 0.5.0
+```
+
+## Release 0.30.0 (2021-05-11)
+```
+Changes:
+ + 4d3a5ca:
+ Add rpi file to host proxy instance level events and stats.
+ + fa6b4c9:
+ Expose minimized file header interface from cgo from clang-scan-deps
+ + 03425a2:
+ [rsp] Fix rsp file reading on links.
+ + 86d4eb3:
+ Speed up data loading into bigquery tables
+ + 06dc659:
+ [experiments] Fix experiments cleanup with num_machines
+ + ebceda2:
+ don't set OSFamily property if Pool or label: is set.
+ + 39da0b0:
+ [experiments] Add num_machines to experiments.
+```
+
+## Release 0.29.0 (2021-04-28)
+```
+Changes:
+ + 6e850de:
+ [SDK] Bump SDK version.
+ + 49b123d:
+ [experiments] Allow preserving inputs for future reference.
+ + 1ea7c79:
+ [experiments] Update chrome examples to reflect current setup.
+ + 8e02ad8:
+ [experiments] Add disk type options
+ + 73e430e:
+ [bootstrap] Send SIGINT on Windows
+ + 9d020ec:
+ Add experimental_cache_miss_rate flag to simulate cache misses.
+```
+
+## Release 0.28.0 (2021-04-13)
+```
+Changes:
+ + f9c7042:
+ [inputprocessor] Add pprof option.
+ + 30eb390:
+ [bootstrap] Send SIGTERMs on linux.
+ + 5f0d773:
+ Log C++ input processor overhead
+ + d3edb35:
+ [experiments] Upload experiment definition at the beginning of the run.
+ + 46f5d67:
+ [experiments] Fixes and tweaks
+ + 6301694:
+ [windows][experiments] Add basic windows support to exp framework.
+```
+
+## Release 0.27.0 (2021-04-07)
+```
+Changes:
+ + 34e1d11:
+ Bump remote-apis-sdks version
+```
+
+## Release 0.26.0 (2021-03-30)
+```
+Changes:
+ + 0a60366:
+ [llvm] Cleanups patches in separate folder.
+ + 921688d:
+ [llvm] Add llvm-bazel on windows.
+ + afb93e3:
+ [llvm] Remove llvm build warnings
+ + b9d7261:
+ [release] Allow creating release from version commit.
+ + 4738e86:
+ [release] Automate creating windows release.
+ + 9ec35f8:
+ Fix bug in create-release.sh script
+```
+
+## Release 0.25.0 (2021-03-23)
+```
+Changes:
+ + 65ad975:
+ Revert Go version back to 1.15
+ + 5ac5cd7:
+ Add remote and local status to the ActionLatency metric.
+ + 59fe2c7:
+ remove cmake, ninja for linux and macosx
+ + 2800e67:
+ chromium integ tests update to r863615 (VERSION 4450.0 to 4455.0)
+ + 634cd9a:
+ Print newline at the end of bandwidth stats
+ + 3174046:
+ [rules_go] Update rules go to v0.27.0
+ + 8fe2853:
+ [windows] Faster releases.
+ + 92f2ee2:
+ Better report bandwidth stats
+ + 7e1a6e7:
+ Bump gazelle to 0.23.0
+ + e0165b9:
+ [MacOS] Add remote cache to macos builds.
+ + f178d72:
+ Make build latency distribution metric buckets more granular.
+ + 291b4fb:
+ chromium integ tests update to r863615
+ + c92a239:
+ [llvm] Update LLVM version.
+ + 30b4b42:
+ [windows] Delete presubmit and continuous artifacts.
+ + e740f8d:
+ [windows] Better CI unzipping.
+ + 9ac190d:
+ Add an option to bootstrap to print bandwidth stats
+ + 9966321:
+ [Part 1] Automate staging release symlink creation for Android
+```
+
+## Release 0.24.0 (2021-03-16)
+```
+Changes:
+ + 6efeeb8:
+ [Windows] CI Remove setup.bat
+ + 6f3283c:
+ Change BuildFailureCount to BuildCount.
+ + f64b773:
+ [windows] Refactor integ tests structure.
+ + edc831f:
+ roll protobuf to 3.15.6
+ + ea1e847:
+ [integ] Add local tag to integration tests.
+ + 3cd330e:
+ [ci] Add remote config to converage tests.
+ + 2f663d1:
+ rpl2trace: ignore event if from/to is unset
+ + 1c8b806:
+ [kokoro] Use RBE on windows.
+ + 9941d4f:
+ Turn on strict action environment for Windows.
+ + f40c97b:
+ [bazel] Strict environments.
+ + 21f3e0a:
+ use go 1.16.2
+ + b07259f:
+ Rename left / right in compare to remote/local
+ + da593bd:
+ Run compare action on remote n times
+ + 6dc3b1e:
+ [toolchains] Add manual tags to prevent wrong OS attempt to compile
+ + 5118588:
+ Add script to automatically create rollback CLs to qt-dev
+ + 4a1d133:
+ Upgrade bazel version to 4.0.0
+ + a5cb19f:
+ [clang-scan-deps] Use bazel to compile clang.
+ + 87dad6f:
+ Bump rules go to 0.26.0
+ + 8c6798a:
+ Update remote-apis-sdks
+ + b6ed9f7:
+ clean up chromium basic compile test
+ + 4084f98:
+ Refactor and rearrange compare functions
+ + 49c9b72:
+ [windows] Add windows remote execution configs.
+```
+
+## Release 0.23.0 (2021-03-09)
+```
+Changes:
+ + 0c607b4:
+ Reenable error/warning/fatal logs in rewrapper
+ + abb4e7a:
+ roll protobuf to 3.15.5
+ + ab08f5d:
+ update chromium/linux integ tests
+ + c92fef0:
+ add compile error test case
+ + 397da33:
+ [windows] Add rules_go patch.
+ + 6d584d6:
+ Add BuildFailureCount metric to track number of reclient related failures.
+ + 4654596:
+ [windows] Add windows re-client builder Dockerfile
+ + 87fbfcf:
+ Bump up continuous android test timeout to 2 hours
+ + ad12832:
+ update chromium/windows integ tests
+ + 88a814d:
+ roll llvm to 6d52c4819294dafb2c072011d72bb523092248a2
+ + 3d6a480:
+ Support arbitrary labels for metrics.
+ + 09078f1:
+ Update integration tests to use aosp image
+ + 5140ecf:
+ Add scripts to clone and create an image for AOSP source
+ + d3d607e:
+ roll protobuf to 3.15.3
+```
+
+## Release 0.22.0 (2021-02-25)
+```
+Changes:
+ + e00c829:
+ [windows] Add RELEASE & NOTICE to windows kokoro release workflow.
+ + 3f8f177:
+ roll protobuf to 3.15.2
+ + cdd4f79:
+ Update llvm to 98c6110d9bdda166a6093f8fdf1320b5f477ecbe
+ + 4f04dcd:
+ Remove deprecated rbe_autoconfig.
+ + 7d441d4:
+ [experiments] Only cleanup experiment resources on success.
+ + b6c7a0b:
+ Prevent NOTICE file from causing conflicts when dropped into Android.
+ + 0e8f5d3:
+ Remove path and home variables
+ + f7e32a2:
+ roll protobuf to 3.15.1
+ + 873c11f:
+ Upgrade to new SDK version.
+ + 33983cf:
+ use go 1.16
+ + 06d3401:
+ Implement idle timeout in reproxy
+ + 1a5f414:
+ Add metrics_namespace flag to bootstrap
+ + 04acc59:
+ Add LICENSE and NOTICE files to kokoro release artifacts.
+```
+
+## Release 0.21.0 (2021-02-18)
+```
+Changes:
+ + 2da7139:
+ Add reducedtext log format to write abridged rpl log files.
+ + b2fbbe6:
+ Add reclient version label to all exported metrics.
+ + 857f777:
+ Add remote status label to exported metrics. Use GenericNode for reduced cardinality.
+ + 4a455f7:
+ Roll bazel-gazelle to 0.22.3
+ + ac3ad59:
+ [experiments] Cleanup outputs between trials
+ + 6bd89dd:
+ Pass re-client tool name and version to GWS logs
+ + ee8c7bb:
+ Add NaCl --target flags on dependency scanning & extract input nacl procesor.
+ + 0f8c514:
+ Fix experiments multi-run setup.
+ + ded13c8:
+ Add LICENSE and NOTICE files to the reclient repo.
+ + afad219:
+ Update compression test proto
+ + b1b5cef:
+ roll rules_foreign_cc to 78dd4749941c0031e107cccbc441c7eeb89accd0
+ + 1b6a45d:
+ Use mutex before updating map
+ + cd7f9f4:
+ Cleanup obsolete disk deletion code
+ + 14a4efc:
+ [experiments] Move the image disk creation to the source image creation.
+ + bb8a304:
+ Update RE SDK & Add logging for download metrics
+```
+
+## Release 0.20.1 (2021-02-09)
+```
+Changes:
+ + bd96c99:
+ Prevent bootstrap from exiting fatally when there are no reproxy log files.
+ + cfe9ec3:
+ Determine the current zone when the monitored resource is used.
+ + c1d768e:
+ Add the ability to copy local reclient binaries
+ + ba6aebc:
+ use go 1.15.8
+ + addbed1:
+ Add compression android multi region proto
+```
+
+## Release 0.20.0 (2021-02-05)
+```
+Changes:
+ + e5aadb7:
+ [chrome] Ignore pnacl flags on scan deps
+ + a55fa20:
+ Clear default labels and set a generic_task monitored resource.
+ + e593c74:
+ Disabling file logging + version logging in rewrapper.
+ + 9723393:
+ Printing version to INFO log unconditionally.
+ + 5964b0e:
+ kokoro widows: reinstall msys2
+ + 385743b:
+ Monitoring package to publish build and action metrics to stackdrier.
+ + 78d0648:
+ Upgrade bazel version to 3.7.2
+ + 03e131a:
+ Fix OS specific filepaths on server_test
+ + 5d14e03:
+ Deleting old logs on proxy startup
+```
+
 ## Release 0.19.3 (2021-01-27)
 
 ```

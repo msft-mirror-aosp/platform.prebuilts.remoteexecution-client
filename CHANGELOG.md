@@ -1,3 +1,314 @@
+## Release 0.42.0 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.42 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.3 (2021-09-21)
+```
+Changes:
+ + 2f72937:
+ add kokoro/macos_external/vars.sh
+ + eab5c19:
+ fix install_precommit.sh
+ + 448918d:
+ Add macos_external/presubmit_goma
+```
+
+## Release 0.41.2 (2021-09-20)
+```
+Changes:
+ + d3d8254:
+ fix macos_external/release.sh
+ + a8a4f02:
+ fix macosx release
+```
+
+## Release 0.41.0 (2021-09-16)
+```
+Changes:
+ + b21aa95:
+ fix re-client-builder to allow depot_tools autoupdate
+ + f0651a6:
+ Add re-client/macos_external/release to kokoro release worflow
+ + 53fc515:
+ add mac release
+ + 40ff5a5:
+ Fix typo in linux goma release job name
+```
+
+## Release 0.40.0 (2021-08-26)
+```
+Changes:
+ + 0631fed:
+ Add typescript labels and typescript integration into re-client.
+ + 355f235:
+ Change exprunner example run to reflect new perfgate wrapper name
+ + 5d17c7b:
+ Add tags to experiment proto. This allows for perfgate to add user defined tags for data segregation.
+ + 26d1974:
+ Implement recursive deps traversal.
+```
+
+## Release 0.39.0 (2021-08-10)
+```
+Changes:
+ + 3dec0c7:
+ Remove TOC files from link actions.
+ + 67fd920:
+ Print the number of verified in the stats.
+ + 5f131f2:
+ Add flag to set deps cache max size for goma deps cache.
+ + a0c511f:
+ Implement direct deps retrieval for tsconfig and tsfile.
+```
+
+## Release 0.38.0 (2021-07-29)
+```
+Changes:
+ + 63cb7c8:
+ Have ShutDownProxy check that the reproxy process is done.
+ + 8a30379:
+ Update windows release workflow to pick cipd from PATH
+ + e0c0ef3:
+ Add perfgate support to experiment runner.
+ + 58a4659:
+ Do not record CPPInputProcessorMillis metric if using goma deps cache.
+ + 4b386fb:
+ add tsfile parser, to parse lines of import statement and fine its relative path.
+```
+
+## Release 0.37.0 (2021-07-21)
+```
+Changes:
+ + 41e4884:
+ Update goma's version to remove patch.
+ + 26a265e:
+ Fix bug preventing integration tests from running on reproxy goma ip.
+ + 1c0f984:
+ Use goma's native deps cache.
+ + dde54a8:
+ Add the action digest that produced a mismatch to log files
+ + 9c5299e:
+ Add extends to tsconfig_parser.
+ + 4822715:
+ Add kokoro windows recient + goma IP presubmits
+ + 1a1e16f:
+ Tweak kokoro win creation script.
+ + c91486a:
+ Add chrome build experiment
+```
+
+## Release 0.36.0 (2021-07-15)
+```
+Changes:
+ + 3053713:
+ Add release support for goma-ip build.
+ + cf1a3db:
+ Make goma builds cacheable.
+ + efc18c1:
+ Enable go race detection in re-client presubmits
+ + f9a2401:
+ Add kokoro workflows for reclient + goma input processor.
+ + 9d43a21:
+ Fix unit test fails in TestNoRemoteOnInputFail
+ + e549c61:
+ Print the type of include scanner being used in reproxy in logs.
+ + 87f718f:
+ Do not adjust command if using goma's input processor.
+ + 1f84511:
+ Fix no remote execution when input processing fails for CPP
+ + 7c70244:
+ Add a build configuration for include scanning.
+ + cf80535:
+ Add binary to run experiment runner and tabulator
+ + d8f7d6c:
+ Add the goma input processor as a cgo library and bridge to C++ goma.
+ + 4914fd4:
+ Turn on compiling the goma input processor on linux CI
+ + 1c59d33:
+ Add gclient support to windows.
+ + f375c72:
+ Build libs and headers needed for the goma input processor.
+ + e5d2e1f:
+ Refactor integration test configuration to use args and cfg files.
+ + 4a98e2b:
+ Remove couple of lines from readme.MD.
+ + d656d2d:
+ Separate experiments logic in runner and tabulator from binary
+ + c7a794d:
+ Revert "Fix no remote execution when input processing fails"
+ + 52a6816:
+ Fix no remote execution when input processing fails
+ + 497cfda:
+ Add deps cache example experiment proto
+ + 03fb41a:
+ Trim build.ninja file.
+ + 1af19ef:
+ [goma] Add rules to compile goma from reclient.
+ + 57e4b28:
+ Update kokoro windows custom VM to add depot tools to path.
+ + 2518f71:
+ Add better error messages for auth related RBE errors
+```
+
+## Release 0.35.0 (2021-06-21)
+```
+Changes:
+ + c67dad9:
+ Revert "Fixed bug to not do remote execution when input processing fails"
+ + 21a1697:
+ add defer log.Flush() in main
+```
+
+## Release 0.34.0 (2021-06-16)
+```
+Changes:
+ + 1119aea:
+ fix typo in cipd-linux.yaml
+ + 1df31eb:
+ Log reproxy flags in rpi file.
+ + 56cadbc:
+ add rpl2cloudtrace in cipd package
+ + f26da5e:
+ Fixed bug to not do remote execution when input processing fails
+ + 958209d:
+ Add rpl2cloudtrace command
+```
+
+## Release 0.33.0 (2021-06-10)
+```
+Changes:
+ + 772456a:
+ Switch out -fsanitize-ignorelist for -fsanitize-blacklist until clang-scan-deps version supports the ignore version of the argument.
+ + 0b920df:
+ Fix tabulator skipping experiment with no rbe_metrics.txt file.
+ + 111fa64:
+ Fix reproxy server tests.
+ + 81e0385:
+ golang: update to 1.15.13
+ + 24dc9d9:
+ Add bazel's "racing" version for faster reclient iteration.
+```
+
+## Release 0.32.0 (2021-06-08)
+```
+Changes:
+ + 972b5da:
+ [reproxy] Make reduced text the default.
+ + bbe4ca7:
+ Support remote archiving.
+ + c956c10:
+ Downgrade half-baked ar-reading errors to warnings
+ + 5c8eb87:
+ Fix Android Test numbers
+ + 609c3b3:
+ Add TODO to -fsanitize-ignorelist support.
+ + 5c399ea:
+ rbeflag: allow comment in config file
+ + 96e391b:
+ Adds -fsanitize-ignorelist to arg scanner Joined list.
+ + 046bf31:
+ add cloud profiler support in reproxy
+ + a3d3d92:
+ Handle -fsanitize-ignorelist.
+ + 8a5da3c:
+ Revert llvm update commits.
+ + c24e0ae:
+ Update aosp's snapshot.
+ + 7b537a4:
+ update llvm-bazel sha256hash
+ + 73bf319:
+ add preserve_symlink option.
+ + 93ce047:
+ [kokoro][windows] Add image creator script for our windows CI.
+ + 01c2b31:
+ Add deps cache integration test.
+ + 45c8f8f:
+ Update llvm version
+ + 04f6197:
+ [bazel] Update bazel to v4.1.0.
+ + caaa265:
+ Run gazelle in presubmit
+```
+
+## Release 0.31.0 (2021-05-26)
+```
+Changes:
+ + 002ad3b:
+ remove build_naming_convention from remote-apis-sdks
+ + 5dfc16f:
+ Update SDK version to f831c118b.
+ + d591d46:
+ Evict old entries from deps cache to prevent unbounded growth.
+ + 59fdb1d:
+ delete @com_github_bazelbuild_rules_go
+ + 8176257:
+ Add stats for deps cache loading and writing to rpi file.
+ + ecb439f:
+ Remove "cache siloing" reclient version from platform for non LERC.
+ + 9e37e8c:
+ Use deps cache in the cpp input processor.
+ + aacbf57:
+ Add depscache.
+ + 7456489:
+ Remove --windows_cross flag.
+ + 97a6695:
+ Exclude docker directory in gazelle config.
+ + 0910580:
+ Use RBE config in the install script.
+ + 66bab18:
+ Update SDK to 7447b28.
+ + fbcdcbd:
+ [experiments] Tweak saving inputs
+ + 1ada4a5:
+ [Links] Read `.a` files by launching `ar t myarchive.a`.
+ + 4a2ee7c:
+ Support windows cross for nacl
+ + c974fe3:
+ Normalize dirs for windows cross compile
+ + f1e923e:
+ Support windows cross compile
+ + 3bdcdda:
+ [golang] Update golang to 1.15.12
+ + 848af86:
+ update github.com/Microsoft/go-winio; 0.4.15 -> 0.5.0
+```
+
 ## Release 0.30.0 (2021-05-11)
 ```
 Changes:

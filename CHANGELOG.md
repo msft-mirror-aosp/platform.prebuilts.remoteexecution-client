@@ -1,3 +1,44 @@
+## Release 0.46.0 (2021-11-04)
+```
+Changes:
+ + 4302b6f:
+ Input processor should try to find SDKSettings.json file on Mac.
+```
+
+## Release 0.45.0 (2021-11-03)
+```
+ + 5c3aa6e:
+ Bump version to 0.45.0
+ + e67bac3:
+ Added inputprocessor.Options to errors returned by populateCommandIO
+ + 4621094:
+ rbe_action.sh fixed to shutdown reproxy with correct cfg.
+ + da319a0:
+ Add tool to dump entire reproxy log in raw format.
+ + e582014:
+ Add sha256 to llvm checkout
+ + 9b9200d:
+ Reclient + gomaip on windows!!!!
+ + e58defc:
+ Forward error logs to stdout and stderr.
+ + aa7a69a:
+ remove BAZEL_VERSION and BAZELRC
+ + 925f763:
+ Build reclient remotely when using rbe_action.sh
+ + a06ab8c:
+ roll goma client: candidate VERSION=235 to VERSION=235
+ + b91b800:
+ Compile reclient + goma IP on windows.
+ + 53e446e:
+ mac: bazel shutdown before changing directory
+ + 9aa7bdb:
+ Bump rules_foreign_cc to 0.6.0
+ + 94a1e58:
+ Do not try to trigger release workflows
+ + 630be19:
+ Chromium migration helper script.
+```
+
 ## Release 0.44.0 (2021-10-19)
 ```
 Changes:

@@ -1,3 +1,122 @@
+## Release 0.44.0 (2021-10-19)
+```
+Changes:
+ + 4294878:
+ roll goma client: VERSION=233 to candidate of VERSION=235 for MinGW tweaks
+ + 2aa7cad:
+ roll github.com/Microsoft/go-winio v0.5.0 -> v0.5.1
+ + 55eb546:
+ Add reclient fail early support.
+ + 8310d93:
+ Fix race condition in remote-apis-sdks
+ + 0925f65:
+ Remove kokoro artifacts from release.
+ + c39831c:
+ Attempt to make a _succesful_ upload.
+ + 5c7ed11:
+ Add release artifacts to our new secure release workflow.
+ + c90256e:
+ fix prod:re-client/macos_external_gomaip/continuous_goma
+```
+
+## Release 0.43.0 (2021-10-12)
+```
+Changes:
+ + 8a8f769:
+ shutdown bazel at the end of scripts.
+ + b44ad4d:
+ Change create release workflow for new release process.
+ + 8d52ef5:
+ add macos_external/release_goma as one of release jobs
+ + 7a9d4f0:
+ Support gomaip in mac
+ + 75af96c:
+ roll goma client: VERSION=231 to VERSION=233
+ + 3e40878:
+ setup mac gomaip continous/release
+ + 064e574:
+ Script to automate qt-dev cherrypick.
+ + b908bb6:
+ Add "new" no-unilateral-access release script.
+ + 0a9d21d:
+ Add rpl2trace to release.
+ + c32fbd7:
+ Specify a more meaningful commit message to re-client releases in Android
+```
+
+## Release 0.42.0 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.42 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.3 (2021-09-21)
+```
+Changes:
+ + 2f72937:
+ add kokoro/macos_external/vars.sh
+ + eab5c19:
+ fix install_precommit.sh
+ + 448918d:
+ Add macos_external/presubmit_goma
+```
+
+## Release 0.41.2 (2021-09-20)
+```
+Changes:
+ + d3d8254:
+ fix macos_external/release.sh
+ + a8a4f02:
+ fix macosx release
+```
+
+## Release 0.41.0 (2021-09-16)
+```
+Changes:
+ + b21aa95:
+ fix re-client-builder to allow depot_tools autoupdate
+ + f0651a6:
+ Add re-client/macos_external/release to kokoro release worflow
+ + 53fc515:
+ add mac release
+ + 40ff5a5:
+ Fix typo in linux goma release job name
+```
+
 ## Release 0.40.0 (2021-08-26)
 ```
 Changes:

@@ -1,3 +1,73 @@
+## Release 0.51.0 (2022-01-07)
+```
+Changes:
+ + 1f719e4:
+ Update Android disk image.
+ + 4507708:
+ Removed duplicated resourceDir logic in clangcl preprocessor
+ + 6bc1f1a:
+ Removed duplicated buildCommandLine and virtualInputs from clangcl
+ + c7ddf5f:
+ Cleaned up legacy parser behavior from clang preprocessors
+ + bcc2992:
+ Migrated clangcl.Preprocessor to a new flags format
+ + d3fa8e4:
+ Use GetOutputDigests function from SDK to compute output file/directory digests for local and remote reruns.
+ + ab17e2a:
+ Migrated nacl.Preprocessor to a new flags format
+ + 649972d:
+ Migrated clanglint.Preprocessor to a new flags format
+ + 939d114:
+ Migrated headerabi.Preprocessor to a new flags format
+ + 693ccfd:
+ Refactored cppcompile/preprocessor to leverage flag scanning within clangparser and reduce code duplication
+ + 90c4195:
+ Fix windows cross path \ -> / change
+```
+
+## Release 0.50.0 (2021-12-10)
+```
+Changes:
+ + 9932016:
+ Use configured service account when talking to GCS.
+ + e0cef9f:
+ Add keystore config for mac build
+ + d0a8450:
+ Revert "Remove reclient version cache silo"
+ + d2d8695:
+ Fix bug in release script where common.sh needs to run from source root.
+ + 6170173:
+ Add periodic macos release configs.
+ + 35bb744:
+ [windows] Rem vcredist from CI scripts
+ + dc8fb6a:
+ Added README.md describing how to work with patches
+ + a58db58:
+ Remove reclient version cache silo
+ + d5bb258:
+ Updated version of LLVM to match the version used in chromium/src
+ + 8b1be90:
+ Add support for building for Apple silicon.
+ + 0b6888e:
+ Upgrade go to 1.17.4
+ + d4ea280:
+ roll goma client to avoid linking msvcr100.dll
+ + f78fdc5:
+ Add num_remote_reruns flag.
+ + 19ab839:
+ Adding integration tests for xattr
+ + bcf4d9f:
+ Added batch scripts to simplify testing integ tests on Windows
+ + 89b3ed2:
+ Merged in RE API SDK changes making output paths working dir relative
+ + 6736d60:
+ Add num_local_reruns flag.
+ + d3722ae:
+ [windows][release] Set git basic config
+ + 52e6f98:
+ roll goma client to VERSION=239
+```
+
 ## Release 0.49.0 (2021-11-24)
 ```
 Changes:

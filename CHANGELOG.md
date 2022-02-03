@@ -1,3 +1,215 @@
+## Release 0.51.0 (2022-01-07)
+```
+Changes:
+ + 1f719e4:
+ Update Android disk image.
+ + 4507708:
+ Removed duplicated resourceDir logic in clangcl preprocessor
+ + 6bc1f1a:
+ Removed duplicated buildCommandLine and virtualInputs from clangcl
+ + c7ddf5f:
+ Cleaned up legacy parser behavior from clang preprocessors
+ + bcc2992:
+ Migrated clangcl.Preprocessor to a new flags format
+ + d3fa8e4:
+ Use GetOutputDigests function from SDK to compute output file/directory digests for local and remote reruns.
+ + ab17e2a:
+ Migrated nacl.Preprocessor to a new flags format
+ + 649972d:
+ Migrated clanglint.Preprocessor to a new flags format
+ + 939d114:
+ Migrated headerabi.Preprocessor to a new flags format
+ + 693ccfd:
+ Refactored cppcompile/preprocessor to leverage flag scanning within clangparser and reduce code duplication
+ + 90c4195:
+ Fix windows cross path \ -> / change
+```
+
+## Release 0.50.0 (2021-12-10)
+```
+Changes:
+ + 9932016:
+ Use configured service account when talking to GCS.
+ + e0cef9f:
+ Add keystore config for mac build
+ + d0a8450:
+ Revert "Remove reclient version cache silo"
+ + d2d8695:
+ Fix bug in release script where common.sh needs to run from source root.
+ + 6170173:
+ Add periodic macos release configs.
+ + 35bb744:
+ [windows] Rem vcredist from CI scripts
+ + dc8fb6a:
+ Added README.md describing how to work with patches
+ + a58db58:
+ Remove reclient version cache silo
+ + d5bb258:
+ Updated version of LLVM to match the version used in chromium/src
+ + 8b1be90:
+ Add support for building for Apple silicon.
+ + 0b6888e:
+ Upgrade go to 1.17.4
+ + d4ea280:
+ roll goma client to avoid linking msvcr100.dll
+ + f78fdc5:
+ Add num_remote_reruns flag.
+ + 19ab839:
+ Adding integration tests for xattr
+ + bcf4d9f:
+ Added batch scripts to simplify testing integ tests on Windows
+ + 89b3ed2:
+ Merged in RE API SDK changes making output paths working dir relative
+ + 6736d60:
+ Add num_local_reruns flag.
+ + d3722ae:
+ [windows][release] Set git basic config
+ + 52e6f98:
+ roll goma client to VERSION=239
+```
+
+## Release 0.49.0 (2021-11-24)
+```
+Changes:
+ + 6938ae5:
+ Remove the LD_LIBRARY_PATH variable
+ + 6986389:
+ Update rules_go & gazelle
+ + b44aeb4:
+ Check for number of expected action types in integ test
+ + 2615514:
+ [windows][release] Do not reuse release dirs
+ + 3a942a8:
+ [windows][release] Create release dir before copy
+ + 326a1cd:
+ Refactor android integration test to reuse script checked-in locally
+ + 980bebd:
+ [windows] Fix .bat calls again
+ + 9295341:
+ Update bazel to 4.2.1
+ + bd29036:
+ Fix virtual input behavior without fmc.
+```
+
+## Release 0.48.0 (2021-11-19)
+```
+Changes:
+ + 02fa2d6:
+ Update to latest image
+ + 8480aa4:
+ Remove redundant virtual inputs
+ + ca1fad1:
+ Fix ubuntu release container image
+ + a54d6b9:
+ Upgrade choco during windows release
+ + 2afb58b:
+ Fix windows release error handling and variables
+ + 08a76f7:
+ roll goma client and drop use_system_xcode=true
+ + e112172:
+ Add Windows Secure release workflow
+ + 13e16f1:
+ gclient.bzl: fix __is_macos
+```
+
+## Release 0.47.0 (2021-11-17)
+```
+Changes:
+ + c77ff62:
+ Add support for xattr hash
+ + edbad5e:
+ Fail the integration test if the Android image is older than 30 days
+ + 90d56d1:
+ Add a script to run Android build
+ + ca210f0:
+ Placed reproxy response dump files in logDir, and added logic removing them alongside with old log files
+ + 053881e:
+ roll goma client to VERSION=238
+ + 711239d:
+ Updated grpc_test integration test to verify truncated responses
+ + 633696d:
+ Filter out virtual inputs that are not physically existing directories or exist as a parent of a physical input. Also, remove .keep_me from virtual inputs.
+ + 4e4989f:
+ rbe_action.sh to support running an action from an arbitrary wd.
+ + e369d6f:
+ roll goma client to VERSION=237
+ + 7e1efd3:
+ Allow kbuilder user write access to depot_tools
+ + eb51a8b:
+ Turn on Windows Goma IP CI
+ + ddacfd9:
+ Fix reclient + gomaip windows integration tests
+ + 55183b2:
+ Improve gclient's patch code.
+ + 0814c78:
+ allow relative path for rewrapper --exec_root=
+ + 9f2d565:
+ Update Kokoro Win to run all unittests
+ + 4d21183:
+ Remove env_var_whitelist flag
+ + 8a8f4a0:
+ Added handling for re-proxy responses exceeding 32MB limit (b/201316487)
+ + 6d3284b:
+ Add CPU Arch to rbe_metrics.txt
+ + 7d5b4f8:
+ Remove include scanner suffix to the version number.
+ + 48f05cb:
+ Statically link non-system dlls and update builder
+ + ff7f365:
+ roll goma client to VERSION=236
+ + 4a0c264:
+ Update Android integration test
+ + e9ada74:
+ Update android snapshot
+ + 3ff95a2:
+ Scripts to create and push gerrit CLs.
+ + eb3495f:
+ Yank bazel racing strategy in different config
+ + d0d4ef2:
+ fixed a typo in install_precommit.sh
+```
+
+## Release 0.46.0 (2021-11-04)
+```
+Changes:
+ + 4302b6f:
+ Input processor should try to find SDKSettings.json file on Mac.
+```
+
+## Release 0.45.0 (2021-11-03)
+```
+ + 5c3aa6e:
+ Bump version to 0.45.0
+ + e67bac3:
+ Added inputprocessor.Options to errors returned by populateCommandIO
+ + 4621094:
+ rbe_action.sh fixed to shutdown reproxy with correct cfg.
+ + da319a0:
+ Add tool to dump entire reproxy log in raw format.
+ + e582014:
+ Add sha256 to llvm checkout
+ + 9b9200d:
+ Reclient + gomaip on windows!!!!
+ + e58defc:
+ Forward error logs to stdout and stderr.
+ + aa7a69a:
+ remove BAZEL_VERSION and BAZELRC
+ + 925f763:
+ Build reclient remotely when using rbe_action.sh
+ + a06ab8c:
+ roll goma client: candidate VERSION=235 to VERSION=235
+ + b91b800:
+ Compile reclient + goma IP on windows.
+ + 53e446e:
+ mac: bazel shutdown before changing directory
+ + 9aa7bdb:
+ Bump rules_foreign_cc to 0.6.0
+ + 94a1e58:
+ Do not try to trigger release workflows
+ + 630be19:
+ Chromium migration helper script.
+```
+
 ## Release 0.44.0 (2021-10-19)
 ```
 Changes:

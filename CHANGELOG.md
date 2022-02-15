@@ -1,3 +1,144 @@
+## Release 0.54.0 (2022-02-08)
+```
+Changes:
+ + 6ecff23:
+ Remove logic to check for collisions in virtual and physical inputs.
+ + c6a643e:
+ Bump SDK to latest version
+ + 8db0646:
+ Better handle auth errors in re-client
+ + 9b74d57:
+ Upload local artifacts after reruns.
+ + 3b5791c:
+ Add system disk size field to VMSettings
+ + 4825f25:
+ Experiment proto for attempting to identify release with regression.
+ + ae19bc2:
+ Add chrome-android-arm64-dbg experiment
+ + d6a7a30:
+ Add simple RBE Android build experiment
+```
+
+## Release 0.53.0 (2022-01-26)
+```
+Changes:
+ + 91c2b17:
+ Update remote-apis-sdks dependency
+ + d91dc5f:
+ Write Goma IP crash dump files and log files to reproxy log dir.
+ + fa493d2:
+ Add integration tests for compare mode.
+ + 5aa6c61:
+ Add output directories to rerun/compare mode unit tests.
+ + 86992cb:
+ `go get` -> `go install` for gen_schema script
+ + 8871ab5:
+ Fix crash when building Android with compare mode. When compare mode is enabled, reclient will try to stash and restore input/output files. However, when the exec strategy is racing the restore function is not defined causing a seg fault.
+ + 6022889:
+ Move set outside of if in windows release scrpit
+ + 08c009e:
+ Remove --host_platform remote configs
+```
+
+## Release 0.52.0 (2022-01-21)
+```
+Changes:
+ + 31b4ca1:
+ Don't normalize flags sent to dependency scanners
+ + 5a91e49:
+ Update bazel to 5.0.0
+ + ab23a57:
+ Fix create-qt-release script to find the drop commit correctly.
+ + f15b879:
+ Deprecate the environment field in rbe_metrics
+ + f2bd229:
+ Allows compare mode to be used with reruns and deprecates num_retries_if_mismatched.
+ + ad44af2:
+ Fix a typo in reproxy_win.cfg
+ + c7e98b3:
+ Made remote cache agnostic to local working dir
+ + f0e60a4:
+ Modify tool label behavior to not include files from the cmd
+ + c2f58fd:
+ Remove color code prefix from bootstrap output instead of removing it in Android Platform code
+ + 18d56e7:
+ Added TestChromiumCPPCrossOutDirCache for Windows
+ + 830a9d3:
+ Added canonicalize_working_dir flag to reproxy
+ + c645e14:
+ Added clang_depscan_ignored_plugins flag that allows to specify which plugins should be ignored during dependency scanning
+```
+
+## Release 0.51.0 (2022-01-07)
+```
+Changes:
+ + 1f719e4:
+ Update Android disk image.
+ + 4507708:
+ Removed duplicated resourceDir logic in clangcl preprocessor
+ + 6bc1f1a:
+ Removed duplicated buildCommandLine and virtualInputs from clangcl
+ + c7ddf5f:
+ Cleaned up legacy parser behavior from clang preprocessors
+ + bcc2992:
+ Migrated clangcl.Preprocessor to a new flags format
+ + d3fa8e4:
+ Use GetOutputDigests function from SDK to compute output file/directory digests for local and remote reruns.
+ + ab17e2a:
+ Migrated nacl.Preprocessor to a new flags format
+ + 649972d:
+ Migrated clanglint.Preprocessor to a new flags format
+ + 939d114:
+ Migrated headerabi.Preprocessor to a new flags format
+ + 693ccfd:
+ Refactored cppcompile/preprocessor to leverage flag scanning within clangparser and reduce code duplication
+ + 90c4195:
+ Fix windows cross path \ -> / change
+```
+
+## Release 0.50.0 (2021-12-10)
+```
+Changes:
+ + 9932016:
+ Use configured service account when talking to GCS.
+ + e0cef9f:
+ Add keystore config for mac build
+ + d0a8450:
+ Revert "Remove reclient version cache silo"
+ + d2d8695:
+ Fix bug in release script where common.sh needs to run from source root.
+ + 6170173:
+ Add periodic macos release configs.
+ + 35bb744:
+ [windows] Rem vcredist from CI scripts
+ + dc8fb6a:
+ Added README.md describing how to work with patches
+ + a58db58:
+ Remove reclient version cache silo
+ + d5bb258:
+ Updated version of LLVM to match the version used in chromium/src
+ + 8b1be90:
+ Add support for building for Apple silicon.
+ + 0b6888e:
+ Upgrade go to 1.17.4
+ + d4ea280:
+ roll goma client to avoid linking msvcr100.dll
+ + f78fdc5:
+ Add num_remote_reruns flag.
+ + 19ab839:
+ Adding integration tests for xattr
+ + bcf4d9f:
+ Added batch scripts to simplify testing integ tests on Windows
+ + 89b3ed2:
+ Merged in RE API SDK changes making output paths working dir relative
+ + 6736d60:
+ Add num_local_reruns flag.
+ + d3722ae:
+ [windows][release] Set git basic config
+ + 52e6f98:
+ roll goma client to VERSION=239
+```
+
 ## Release 0.49.0 (2021-11-24)
 ```
 Changes:

@@ -1,3 +1,22 @@
+## Release 0.57.0 (2022-03-03)
+```
+Changes:
+ + 704e84b:
+ Revert "Add environment variables support to GomaIP"
+ + 6a296b5:
+ Run lerc integ test on Windows
+ + 74c8721:
+ Setup chromium win integration test
+ + 3043c41:
+ Bump SDK to head.
+ + 9b3ab7d:
+ Add -MF handler for clangcl
+ + 93850ac:
+ Move canonicalize_working_dir flag to rewrapper
+ + 2351382:
+ Add script to clone chromium windows.
+```
+
 ## Release 0.56.0 (2022-02-24)
 ```
 Changes:

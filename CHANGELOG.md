@@ -1,3 +1,48 @@
+## Release 0.59.0 (2022-03-24)
+```
+Changes:
+ + d335989:
+ Update chromium source snapshot.
+ + 6d62bb5:
+ Bump remote-apis-sdks version
+ + c47902a:
+ Unify FindDependencies for both clang and clangcl.
+ + 119bfde:
+ Cache input processor results
+ + 69bec83:
+ Update android integration test image
+```
+
+## Release 0.58.0 (2022-03-16)
+```
+Changes:
+ + 18829e0:
+ run_configuration no longer requires machine settings
+ + 02deb05:
+ Bump sdk version
+ + 7fd044a:
+ Add support for google prod RPC credentials in reproxy
+```
+
+## Release 0.57.0 (2022-03-03)
+```
+Changes:
+ + 704e84b:
+ Revert "Add environment variables support to GomaIP"
+ + 6a296b5:
+ Run lerc integ test on Windows
+ + 74c8721:
+ Setup chromium win integration test
+ + 3043c41:
+ Bump SDK to head.
+ + 9b3ab7d:
+ Add -MF handler for clangcl
+ + 93850ac:
+ Move canonicalize_working_dir flag to rewrapper
+ + 2351382:
+ Add script to clone chromium windows.
+```
+
 ## Release 0.56.0 (2022-02-24)
 ```
 Changes:

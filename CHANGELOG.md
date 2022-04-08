@@ -1,3 +1,261 @@
+## Release 0.51.0 (2022-01-07)
+```
+Changes:
+ + 1f719e4:
+ Update Android disk image.
+ + 4507708:
+ Removed duplicated resourceDir logic in clangcl preprocessor
+ + 6bc1f1a:
+ Removed duplicated buildCommandLine and virtualInputs from clangcl
+ + c7ddf5f:
+ Cleaned up legacy parser behavior from clang preprocessors
+ + bcc2992:
+ Migrated clangcl.Preprocessor to a new flags format
+ + d3fa8e4:
+ Use GetOutputDigests function from SDK to compute output file/directory digests for local and remote reruns.
+ + ab17e2a:
+ Migrated nacl.Preprocessor to a new flags format
+ + 649972d:
+ Migrated clanglint.Preprocessor to a new flags format
+ + 939d114:
+ Migrated headerabi.Preprocessor to a new flags format
+ + 693ccfd:
+ Refactored cppcompile/preprocessor to leverage flag scanning within clangparser and reduce code duplication
+ + 90c4195:
+ Fix windows cross path \ -> / change
+```
+
+## Release 0.50.0 (2021-12-10)
+```
+Changes:
+ + 9932016:
+ Use configured service account when talking to GCS.
+ + e0cef9f:
+ Add keystore config for mac build
+ + d0a8450:
+ Revert "Remove reclient version cache silo"
+ + d2d8695:
+ Fix bug in release script where common.sh needs to run from source root.
+ + 6170173:
+ Add periodic macos release configs.
+ + 35bb744:
+ [windows] Rem vcredist from CI scripts
+ + dc8fb6a:
+ Added README.md describing how to work with patches
+ + a58db58:
+ Remove reclient version cache silo
+ + d5bb258:
+ Updated version of LLVM to match the version used in chromium/src
+ + 8b1be90:
+ Add support for building for Apple silicon.
+ + 0b6888e:
+ Upgrade go to 1.17.4
+ + d4ea280:
+ roll goma client to avoid linking msvcr100.dll
+ + f78fdc5:
+ Add num_remote_reruns flag.
+ + 19ab839:
+ Adding integration tests for xattr
+ + bcf4d9f:
+ Added batch scripts to simplify testing integ tests on Windows
+ + 89b3ed2:
+ Merged in RE API SDK changes making output paths working dir relative
+ + 6736d60:
+ Add num_local_reruns flag.
+ + d3722ae:
+ [windows][release] Set git basic config
+ + 52e6f98:
+ roll goma client to VERSION=239
+```
+
+## Release 0.49.0 (2021-11-24)
+```
+Changes:
+ + 6938ae5:
+ Remove the LD_LIBRARY_PATH variable
+ + 6986389:
+ Update rules_go & gazelle
+ + b44aeb4:
+ Check for number of expected action types in integ test
+ + 2615514:
+ [windows][release] Do not reuse release dirs
+ + 3a942a8:
+ [windows][release] Create release dir before copy
+ + 326a1cd:
+ Refactor android integration test to reuse script checked-in locally
+ + 980bebd:
+ [windows] Fix .bat calls again
+ + 9295341:
+ Update bazel to 4.2.1
+ + bd29036:
+ Fix virtual input behavior without fmc.
+```
+
+## Release 0.48.0 (2021-11-19)
+```
+Changes:
+ + 02fa2d6:
+ Update to latest image
+ + 8480aa4:
+ Remove redundant virtual inputs
+ + ca1fad1:
+ Fix ubuntu release container image
+ + a54d6b9:
+ Upgrade choco during windows release
+ + 2afb58b:
+ Fix windows release error handling and variables
+ + 08a76f7:
+ roll goma client and drop use_system_xcode=true
+ + e112172:
+ Add Windows Secure release workflow
+ + 13e16f1:
+ gclient.bzl: fix __is_macos
+```
+
+## Release 0.47.0 (2021-11-17)
+```
+Changes:
+ + c77ff62:
+ Add support for xattr hash
+ + edbad5e:
+ Fail the integration test if the Android image is older than 30 days
+ + 90d56d1:
+ Add a script to run Android build
+ + ca210f0:
+ Placed reproxy response dump files in logDir, and added logic removing them alongside with old log files
+ + 053881e:
+ roll goma client to VERSION=238
+ + 711239d:
+ Updated grpc_test integration test to verify truncated responses
+ + 633696d:
+ Filter out virtual inputs that are not physically existing directories or exist as a parent of a physical input. Also, remove .keep_me from virtual inputs.
+ + 4e4989f:
+ rbe_action.sh to support running an action from an arbitrary wd.
+ + e369d6f:
+ roll goma client to VERSION=237
+ + 7e1efd3:
+ Allow kbuilder user write access to depot_tools
+ + eb51a8b:
+ Turn on Windows Goma IP CI
+ + ddacfd9:
+ Fix reclient + gomaip windows integration tests
+ + 55183b2:
+ Improve gclient's patch code.
+ + 0814c78:
+ allow relative path for rewrapper --exec_root=
+ + 9f2d565:
+ Update Kokoro Win to run all unittests
+ + 4d21183:
+ Remove env_var_whitelist flag
+ + 8a8f4a0:
+ Added handling for re-proxy responses exceeding 32MB limit (b/201316487)
+ + 6d3284b:
+ Add CPU Arch to rbe_metrics.txt
+ + 7d5b4f8:
+ Remove include scanner suffix to the version number.
+ + 48f05cb:
+ Statically link non-system dlls and update builder
+ + ff7f365:
+ roll goma client to VERSION=236
+ + 4a0c264:
+ Update Android integration test
+ + e9ada74:
+ Update android snapshot
+ + 3ff95a2:
+ Scripts to create and push gerrit CLs.
+ + eb3495f:
+ Yank bazel racing strategy in different config
+ + d0d4ef2:
+ fixed a typo in install_precommit.sh
+```
+
+## Release 0.46.0 (2021-11-04)
+```
+Changes:
+ + 4302b6f:
+ Input processor should try to find SDKSettings.json file on Mac.
+```
+
+## Release 0.45.0 (2021-11-03)
+```
+ + 5c3aa6e:
+ Bump version to 0.45.0
+ + e67bac3:
+ Added inputprocessor.Options to errors returned by populateCommandIO
+ + 4621094:
+ rbe_action.sh fixed to shutdown reproxy with correct cfg.
+ + da319a0:
+ Add tool to dump entire reproxy log in raw format.
+ + e582014:
+ Add sha256 to llvm checkout
+ + 9b9200d:
+ Reclient + gomaip on windows!!!!
+ + e58defc:
+ Forward error logs to stdout and stderr.
+ + aa7a69a:
+ remove BAZEL_VERSION and BAZELRC
+ + 925f763:
+ Build reclient remotely when using rbe_action.sh
+ + a06ab8c:
+ roll goma client: candidate VERSION=235 to VERSION=235
+ + b91b800:
+ Compile reclient + goma IP on windows.
+ + 53e446e:
+ mac: bazel shutdown before changing directory
+ + 9aa7bdb:
+ Bump rules_foreign_cc to 0.6.0
+ + 94a1e58:
+ Do not try to trigger release workflows
+ + 630be19:
+ Chromium migration helper script.
+```
+
+## Release 0.44.0 (2021-10-19)
+```
+Changes:
+ + 4294878:
+ roll goma client: VERSION=233 to candidate of VERSION=235 for MinGW tweaks
+ + 2aa7cad:
+ roll github.com/Microsoft/go-winio v0.5.0 -> v0.5.1
+ + 55eb546:
+ Add reclient fail early support.
+ + 8310d93:
+ Fix race condition in remote-apis-sdks
+ + 0925f65:
+ Remove kokoro artifacts from release.
+ + c39831c:
+ Attempt to make a _succesful_ upload.
+ + 5c7ed11:
+ Add release artifacts to our new secure release workflow.
+ + c90256e:
+ fix prod:re-client/macos_external_gomaip/continuous_goma
+```
+
+## Release 0.43.0 (2021-10-12)
+```
+Changes:
+ + 8a8f769:
+ shutdown bazel at the end of scripts.
+ + b44ad4d:
+ Change create release workflow for new release process.
+ + 8d52ef5:
+ add macos_external/release_goma as one of release jobs
+ + 7a9d4f0:
+ Support gomaip in mac
+ + 75af96c:
+ roll goma client: VERSION=231 to VERSION=233
+ + 3e40878:
+ setup mac gomaip continous/release
+ + 064e574:
+ Script to automate qt-dev cherrypick.
+ + b908bb6:
+ Add "new" no-unilateral-access release script.
+ + 0a9d21d:
+ Add rpl2trace to release.
+ + c32fbd7:
+ Specify a more meaningful commit message to re-client releases in Android
+```
+
 ## Release 0.42.0 (2021-09-24)
 ```
 Changes:
@@ -612,6 +870,7 @@ Changes:
 ```
 
 ## Release 0.19.3 (2021-01-27)
+
 ```
 Changes:
  + cce3f38:
@@ -627,6 +886,7 @@ Changes:
 ```
 
 ## Release 0.19.2 (2021-01-20)
+
 ```
 Changes:
  + b908e73:
@@ -638,6 +898,7 @@ Changes:
 ```
 
 ## Release 0.19.1 (2021-01-18)
+
 ```
 Changes:
  + 91f67f1:
@@ -671,6 +932,7 @@ Changes:
 ```
 
 ## Release 0.19.0 (2021-01-05)
+
 ```
 Changes:
  + dca0beb:
@@ -688,6 +950,7 @@ Changes:
 ```
 
 ## Release 0.18.0 (2020-12-03)
+
 ```
 Changes:
  + af4481d:
@@ -709,6 +972,7 @@ Changes:
 ```
 
 ## Release 0.17.0 (2020-11-30)
+
 ```
 Changes:
  + ebb42e2:
@@ -742,6 +1006,7 @@ Changes:
 ```
 
 ## Release 0.16.1 (2020-11-18)
+
 ```
 Changes:
  + 28a5cef:
@@ -749,6 +1014,7 @@ Changes:
 ```
 
 ## Release 0.16.0 (2020-11-17)
+
 ```
 Changes:
  + b4adeb9:
@@ -792,6 +1058,7 @@ Changes:
 ```
 
 ## Release 0.15.0 (2020-10-27)
+
 ```
 Changes:
  + 296553b:
@@ -827,6 +1094,7 @@ Changes:
 ```
 
 ## Release 0.14.5 (2020-10-16)
+
 ```
 Changes:
  + 8bfe4dd:
@@ -848,6 +1116,7 @@ Changes:
 ```
 
 ## Release 0.14.4 (2020-10-09)
+
 ```
 Changes:
  + 720d85a:
@@ -867,6 +1136,7 @@ Changes:
 ```
 
 ## Release 0.14.3 (2020-10-06)
+
 ```
 Changes:
  + ff8215b:
@@ -876,6 +1146,7 @@ Changes:
 ```
 
 ## Release 0.14.2 (2020-10-01)
+
 ```
 Changes:
  + d70e820:
@@ -885,6 +1156,7 @@ Changes:
 ```
 
 ## Release 0.14.1 (2020-09-30)
+
 ```
 Changes:
  + a5f1897:
@@ -922,6 +1194,7 @@ Changes:
 ```
 
 ## Release 0.14.0 (2020-09-11)
+
 ```
 Changes:
  + d91fa91:
@@ -989,6 +1262,7 @@ Changes:
 ```
 
 ## Release 0.13.7 (2020-08-21)
+
 ```
 Changes:
  + 0d25d98:
@@ -1070,6 +1344,7 @@ Changes:
 ```
 
 ## Release 0.13.5 (2020-07-23)
+
 ```
 Changes:
  + 16831e5:
@@ -1119,6 +1394,7 @@ Changes:
 ```
 
 ## Release 0.13.4 (2020-06-30)
+
 ```
 Changes:
  + 3af712d:
@@ -1148,6 +1424,7 @@ Changes:
 ```
 
 ## Release 0.13.3 (2020-06-25)
+
 ```
 Changes:
  + e0ce5e9:
@@ -1197,6 +1474,7 @@ Changes:
 ```
 
 ## Release 0.13.2 (2020-06-08)
+
 ```
 Changes:
  + 8d702db:
@@ -1232,14 +1510,17 @@ Changes:
 ```
 
 ## Release 0.13.1 (2020-05-27)
+
 ```
 Changes:
   + 6ef0853:
     Revert "fix .bazelrc for windows"
 ```
+
 This release fixes the re-client version number to re-include git commit sha.
 
 ## Release 0.13.0 (2020-05-27)
+
 ```
 Changes:
   + ac536bf:
@@ -1369,14 +1650,14 @@ Changes:
   + 5b837e8:
     Include rsp file(s) as explicit inputs if passed explicitly to rewrapper.
 ```
-This release includes a number of fixes to:
-1. Get re-client to build in Windows
-2. Fix R8 mismatches
-3. Change re-client builds to use Bazelisk
-4. Fixes for C++ link action mismatches
-5. Fixes to flag parser / input processor for metalava actions
+
+This release includes a number of fixes to: 1. Get re-client to build in Windows
+2. Fix R8 mismatches 3. Change re-client builds to use Bazelisk 4. Fixes for C++
+link action mismatches 5. Fixes to flag parser / input processor for metalava
+actions
 
 ## Release 0.12.2 (2020-04-15)
+
 ```
 Changes:
   + d52f0b7:
@@ -1393,6 +1674,7 @@ This release primarily contains bug fixes to C++ input processor and rsp file
 parsing.
 
 ## Release 0.12.1 (2020-04-10)
+
 ```
 Changes:
   + 09a5526:
@@ -1402,6 +1684,7 @@ Changes:
 This release fixes input processor latency for header-abi-dumper actions.
 
 ## Release 0.12.0 (2020-04-08)
+
 ```
 Changes:
   + 5b29aa6:
@@ -1416,10 +1699,11 @@ Changes:
     Add support for Bazelisk and pin to Bazel 2.2.0.
 ```
 
-This release adds support for remote execution of header ABI dumper and adds a fix
-for compare mode of metalava actions.
+This release adds support for remote execution of header ABI dumper and adds a
+fix for compare mode of metalava actions.
 
 ## Release 0.11.0 (2020-04-02)
+
 ```
 Changes:
   + b2836e1:
@@ -1438,6 +1722,7 @@ This release adds support for linking, explicit output directories, and multiple
 input file lists. Also includes logging fixes.
 
 ## Release 0.10.0 (2020-04-01)
+
 ```
 Changes:
   + 3be02a4:
@@ -1467,6 +1752,7 @@ Changes:
 This release mainly adds metalava support to reproxy.
 
 ## Release 0.9.5 (2020-03-16)
+
 ```
 Changes:
   + 0bd4e59:
@@ -1481,6 +1767,7 @@ This release makes reproxy support cache silo key and does not clean arguments
 for remote execution to prevent bootloops on output images.
 
 ## Release 0.9.4 (2020-03-05)
+
 ```
 Changes:
   + 250a753:
@@ -1493,6 +1780,7 @@ This release has fixes for downloading coverage file generated as part of clang
 compiles and fixes LERC to NOT do un-necessary dependency validation.
 
 ## Release 0.9.3 (2020-03-03)
+
 ```
 Changes:
   + 9d89a75:
@@ -1511,6 +1799,7 @@ This release has fixes with respect to C++ input processor and bumps RE-SDK
 version to include fix for batch blob downloads.
 
 ## Release 0.9.2 (2020-02-28)
+
 ```
 Changes:
   + e140d51:
@@ -1529,6 +1818,7 @@ This release fixes a bug in reading RBE flags and includes input processor
 refactorings and fixes for supporting the nest/chrome builds.
 
 ## Release 0.9.1 (2020-02-25)
+
 ```
 Changes:
   + f4fae4d:
@@ -1537,10 +1827,11 @@ Changes:
     Remove the invalidation check in dependency scanner plugin
 ```
 
-This release changes scan-deps interface so that it takes an unescaped
-list of arguments instead of a JSON database string.
+This release changes scan-deps interface so that it takes an unescaped list of
+arguments instead of a JSON database string.
 
 ## Release 0.9.0 (2020-02-21)
+
 ```
 Changes:
   + 9bdf5ca:
@@ -1568,6 +1859,7 @@ Changes:
 This release contains support for the toolchain_inputs flag and other fixes.
 
 ## Release 0.8.2 (2020-02-10)
+
 ```
 Changes:
   + cc4b9cf:
@@ -1578,6 +1870,7 @@ This release fixes missing error logs in removal of output directories in
 compare mode.
 
 ## Release 0.8.1 (2020-02-07)
+
 ```
 Changes:
   + 2ae2a7f:
@@ -1600,10 +1893,11 @@ Changes:
     Add a feature to enable/disable the command argument cleaning. Default is enabled.
 ```
 
-This release fixes a breakage in D8 compare builds due to having inputs under output
-directories.
+This release fixes a breakage in D8 compare builds due to having inputs under
+output directories.
 
 ## Release 0.8.0 (2020-02-03)
+
 ```
 Changes:
   + 7af0844
@@ -1627,10 +1921,11 @@ Changes:
     Add -Qunused-arguments parameter to scan-deps invocation to suppress warnings
 ```
 
-This release adds a feature to enable synchronous upload of cached results in LERC mode
-and has a couple of bug-fixes for remote-execution flow.
+This release adds a feature to enable synchronous upload of cached results in
+LERC mode and has a couple of bug-fixes for remote-execution flow.
 
 ## Release 0.7.2 (2020-01-23)
+
 ```
 Changes:
   + edfbaae:
@@ -1643,6 +1938,7 @@ This release reverts the clang-scan-deps optimization since we discovered a bug
 in clang-scan-deps caching behaviour when workers are reused.
 
 ## Release 0.7.1 (2020-01-20)
+
 ```
 Changes:
   + bfee822:
@@ -1675,10 +1971,11 @@ Changes:
     Add virtual inputs for all -I and -isystem dir paths
 ```
 
-This release includes a potential fix for the flaky resource exhaustion issue
-as well as an optimization for the clang-scan-deps plugin.
+This release includes a potential fix for the flaky resource exhaustion issue as
+well as an optimization for the clang-scan-deps plugin.
 
 ## Release 0.7.0 (2020-01-06)
+
 ```
 Changes:
   + ea1b2a1:
@@ -1692,6 +1989,7 @@ lives alongside LLVM toolchains in Android to specify the list of files that
 constitute toolchain inputs.
 
 ## Release 0.6.2 (2019-12-19)
+
 ```
 Changes:
   + 41c7b59:
@@ -1704,6 +2002,7 @@ This release primarily fixes the GRPC max concurrent streams issue in the SDK
 and goes back to using full input processor as default.
 
 ## Release 0.6.1 (2019-12-16)
+
 ```
 Changes:
   + d3de0ae:
@@ -1717,6 +2016,7 @@ Changes:
 ```
 
 ## Release 0.6.0 (2019-12-03)
+
 ```
 Changes:
 
@@ -1774,6 +2074,7 @@ This release adds local performance metrics and shadow header detection as an
 off by default feature.
 
 ## Release 0.5.3 (2019-11-13)
+
 ```
 Changes:
 
@@ -1785,6 +2086,7 @@ Changes:
 This release addresses libstdc++ loading issue on dependency scanner plugin.
 
 ## Release 0.5.2 (2019-11-13)
+
 ```
 Changes:
 
@@ -1795,10 +2097,11 @@ Changes:
     with version number stamping.
 ```
 
-This release makes reproxy not fail when it cannot load CPP dependency
-scanner plugin.
+This release makes reproxy not fail when it cannot load CPP dependency scanner
+plugin.
 
 ## Release 0.5.1 (2019-11-11)
+
 ```
 Changes:
 
@@ -1806,10 +2109,10 @@ Changes:
     Add dependency_scanner_go_plugin.so to Kokoro regex too
 ```
 
-This release makes the Kokoro workflow also upload dependency scanner
-plugin.
+This release makes the Kokoro workflow also upload dependency scanner plugin.
 
 ## Release 0.5.0 (2019-11-11)
+
 ```
 Changes:
 
@@ -1830,6 +2133,7 @@ This release mainly adds dependency scanner plugin to support remote execution
 for C++ compile actions.
 
 ## Release 0.3.0 (2019-10-22)
+
 ```
 Changes:
 

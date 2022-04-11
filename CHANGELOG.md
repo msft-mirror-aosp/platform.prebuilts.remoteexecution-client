@@ -1,3 +1,63 @@
+## Release 0.61.0 (2022-04-05)
+```
+Changes:
+ + e1ac4cb:
+ Release tool - Android release checker
+ + fa4a88d:
+ Support gsplit-dwarf in clagparser.
+```
+
+## Release 0.60.0 (2022-03-31)
+```
+Changes:
+ + b3fce18:
+ Add an experiment to test the stability of CoG
+ + a3e7bfb:
+ Add explicit metrics for input processor wait time and cache lookup time.
+ + 2f186f5:
+ Release tool - Kokoro pakage
+ + 16f5b60:
+ Add CoG garbage collection experiment.
+ + 28b5563:
+ Timeout gcert creds refresh call
+ + 79a2ba3:
+ Release tool - git package.
+ + cb9185d:
+ Fix artifacts pattern for gcp_windows tests
+ + 68ac4cb:
+ Further caching of os.Stat results
+ + d554bc2:
+ Release tool - artifact checks.
+ + 9e8558e:
+ Add gcert support for cloud monitoring
+```
+
+## Release 0.59.0 (2022-03-24)
+```
+Changes:
+ + d335989:
+ Update chromium source snapshot.
+ + 6d62bb5:
+ Bump remote-apis-sdks version
+ + c47902a:
+ Unify FindDependencies for both clang and clangcl.
+ + 119bfde:
+ Cache input processor results
+ + 69bec83:
+ Update android integration test image
+```
+
+## Release 0.58.0 (2022-03-16)
+```
+Changes:
+ + 18829e0:
+ run_configuration no longer requires machine settings
+ + 02deb05:
+ Bump sdk version
+ + 7fd044a:
+ Add support for google prod RPC credentials in reproxy
+```
+
 ## Release 0.57.0 (2022-03-03)
 ```
 Changes:

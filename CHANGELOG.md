@@ -1,3 +1,18 @@
+## Release 0.62.0 (2022-04-12)
+```
+Changes:
+ + 7829f7c7:
+ Do not cache failed (non-existent) files
+ + 2d7675d2:
+ Add script uploading reclient to experiments CIPD (Windows)
+ + ee93248f:
+ Add script uploading reclient to experiments CIPD
+ + a9de68ca:
+ Release tool - Chromium package
+ + 99942235:
+ Prioritize depot_tools binaries above alternatives on windows.
+```
+
 ## Release 0.61.0 (2022-04-05)
 ```
 Changes:

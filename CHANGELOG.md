@@ -1,3 +1,664 @@
+## Release 0.62.0 (2022-04-12)
+```
+Changes:
+ + 7829f7c7:
+ Do not cache failed (non-existent) files
+ + 2d7675d2:
+ Add script uploading reclient to experiments CIPD (Windows)
+ + ee93248f:
+ Add script uploading reclient to experiments CIPD
+ + a9de68ca:
+ Release tool - Chromium package
+ + 99942235:
+ Prioritize depot_tools binaries above alternatives on windows.
+```
+
+## Release 0.61.0 (2022-04-05)
+```
+Changes:
+ + e1ac4cb:
+ Release tool - Android release checker
+ + fa4a88d:
+ Support gsplit-dwarf in clagparser.
+```
+
+## Release 0.60.0 (2022-03-31)
+```
+Changes:
+ + b3fce18:
+ Add an experiment to test the stability of CoG
+ + a3e7bfb:
+ Add explicit metrics for input processor wait time and cache lookup time.
+ + 2f186f5:
+ Release tool - Kokoro pakage
+ + 16f5b60:
+ Add CoG garbage collection experiment.
+ + 28b5563:
+ Timeout gcert creds refresh call
+ + 79a2ba3:
+ Release tool - git package.
+ + cb9185d:
+ Fix artifacts pattern for gcp_windows tests
+ + 68ac4cb:
+ Further caching of os.Stat results
+ + d554bc2:
+ Release tool - artifact checks.
+ + 9e8558e:
+ Add gcert support for cloud monitoring
+```
+
+## Release 0.59.0 (2022-03-24)
+```
+Changes:
+ + d335989:
+ Update chromium source snapshot.
+ + 6d62bb5:
+ Bump remote-apis-sdks version
+ + c47902a:
+ Unify FindDependencies for both clang and clangcl.
+ + 119bfde:
+ Cache input processor results
+ + 69bec83:
+ Update android integration test image
+```
+
+## Release 0.58.0 (2022-03-16)
+```
+Changes:
+ + 18829e0:
+ run_configuration no longer requires machine settings
+ + 02deb05:
+ Bump sdk version
+ + 7fd044a:
+ Add support for google prod RPC credentials in reproxy
+```
+
+## Release 0.57.0 (2022-03-03)
+```
+Changes:
+ + 704e84b:
+ Revert "Add environment variables support to GomaIP"
+ + 6a296b5:
+ Run lerc integ test on Windows
+ + 74c8721:
+ Setup chromium win integration test
+ + 3043c41:
+ Bump SDK to head.
+ + 9b3ab7d:
+ Add -MF handler for clangcl
+ + 93850ac:
+ Move canonicalize_working_dir flag to rewrapper
+ + 2351382:
+ Add script to clone chromium windows.
+```
+
+## Release 0.56.0 (2022-02-24)
+```
+Changes:
+ + 61a43e0:
+ Fix Windows NOTICE in cipd yaml
+ + 9a825a7:
+ Roll goma to cc1d13f0e8c6338751e74f0df5ecc9858b5aaea0
+ + 727673d:
+ Run grpc_test integ test on Windows
+ + 917a496:
+ Remove compare mode related changes from runLERC
+ + 4b729d6:
+ Update release scripts to use Kokoro GCS uploads
+ + 467a172:
+ Adds downloadmismatch cmd
+ + b4837ad:
+ Change docker image used by rbe_action on Windows
+ + 2f5bccc:
+ Add environment variables support to GomaIP
+ + c76ca3b:
+ Add logdump to release
+ + d12a632:
+ Fix macos release script.
+```
+
+## Release 0.55.0 (2022-02-22)
+```
+Changes:
+ + 4a2a05e:
+ Remove deprecated ioutil references
+ + 2f7c304:
+ Tweak Mac secure release scripts
+ + d1beb5f:
+ Fix win release again
+ + 5eb20a2:
+ [releases] Fix windows release instance
+ + 9f91490:
+ Setup Chromium linux integration test
+ + fb04b4e:
+ Update action count in Android test
+ + d85a729:
+ Update action counts in test.
+ + a85a8ad:
+ Update Android source image so postsubmits can pass.
+ + 28a476c:
+ Adds the ability to ssh into an existing workstation
+ + edfac5f:
+ Add Android RBE experiment with CXX_Links enabled.
+```
+
+## Release 0.54.0 (2022-02-08)
+```
+Changes:
+ + 6ecff23:
+ Remove logic to check for collisions in virtual and physical inputs.
+ + c6a643e:
+ Bump SDK to latest version
+ + 8db0646:
+ Better handle auth errors in re-client
+ + 9b74d57:
+ Upload local artifacts after reruns.
+ + 3b5791c:
+ Add system disk size field to VMSettings
+ + 4825f25:
+ Experiment proto for attempting to identify release with regression.
+ + ae19bc2:
+ Add chrome-android-arm64-dbg experiment
+ + d6a7a30:
+ Add simple RBE Android build experiment
+```
+
+## Release 0.53.0 (2022-01-26)
+```
+Changes:
+ + 91c2b17:
+ Update remote-apis-sdks dependency
+ + d91dc5f:
+ Write Goma IP crash dump files and log files to reproxy log dir.
+ + fa493d2:
+ Add integration tests for compare mode.
+ + 5aa6c61:
+ Add output directories to rerun/compare mode unit tests.
+ + 86992cb:
+ `go get` -> `go install` for gen_schema script
+ + 8871ab5:
+ Fix crash when building Android with compare mode. When compare mode is enabled, reclient will try to stash and restore input/output files. However, when the exec strategy is racing the restore function is not defined causing a seg fault.
+ + 6022889:
+ Move set outside of if in windows release scrpit
+ + 08c009e:
+ Remove --host_platform remote configs
+```
+
+## Release 0.52.0 (2022-01-21)
+```
+Changes:
+ + 31b4ca1:
+ Don't normalize flags sent to dependency scanners
+ + 5a91e49:
+ Update bazel to 5.0.0
+ + ab23a57:
+ Fix create-qt-release script to find the drop commit correctly.
+ + f15b879:
+ Deprecate the environment field in rbe_metrics
+ + f2bd229:
+ Allows compare mode to be used with reruns and deprecates num_retries_if_mismatched.
+ + ad44af2:
+ Fix a typo in reproxy_win.cfg
+ + c7e98b3:
+ Made remote cache agnostic to local working dir
+ + f0e60a4:
+ Modify tool label behavior to not include files from the cmd
+ + c2f58fd:
+ Remove color code prefix from bootstrap output instead of removing it in Android Platform code
+ + 18d56e7:
+ Added TestChromiumCPPCrossOutDirCache for Windows
+ + 830a9d3:
+ Added canonicalize_working_dir flag to reproxy
+ + c645e14:
+ Added clang_depscan_ignored_plugins flag that allows to specify which plugins should be ignored during dependency scanning
+```
+
+## Release 0.51.0 (2022-01-07)
+```
+Changes:
+ + 1f719e4:
+ Update Android disk image.
+ + 4507708:
+ Removed duplicated resourceDir logic in clangcl preprocessor
+ + 6bc1f1a:
+ Removed duplicated buildCommandLine and virtualInputs from clangcl
+ + c7ddf5f:
+ Cleaned up legacy parser behavior from clang preprocessors
+ + bcc2992:
+ Migrated clangcl.Preprocessor to a new flags format
+ + d3fa8e4:
+ Use GetOutputDigests function from SDK to compute output file/directory digests for local and remote reruns.
+ + ab17e2a:
+ Migrated nacl.Preprocessor to a new flags format
+ + 649972d:
+ Migrated clanglint.Preprocessor to a new flags format
+ + 939d114:
+ Migrated headerabi.Preprocessor to a new flags format
+ + 693ccfd:
+ Refactored cppcompile/preprocessor to leverage flag scanning within clangparser and reduce code duplication
+ + 90c4195:
+ Fix windows cross path \ -> / change
+```
+
+## Release 0.50.0 (2021-12-10)
+```
+Changes:
+ + 9932016:
+ Use configured service account when talking to GCS.
+ + e0cef9f:
+ Add keystore config for mac build
+ + d0a8450:
+ Revert "Remove reclient version cache silo"
+ + d2d8695:
+ Fix bug in release script where common.sh needs to run from source root.
+ + 6170173:
+ Add periodic macos release configs.
+ + 35bb744:
+ [windows] Rem vcredist from CI scripts
+ + dc8fb6a:
+ Added README.md describing how to work with patches
+ + a58db58:
+ Remove reclient version cache silo
+ + d5bb258:
+ Updated version of LLVM to match the version used in chromium/src
+ + 8b1be90:
+ Add support for building for Apple silicon.
+ + 0b6888e:
+ Upgrade go to 1.17.4
+ + d4ea280:
+ roll goma client to avoid linking msvcr100.dll
+ + f78fdc5:
+ Add num_remote_reruns flag.
+ + 19ab839:
+ Adding integration tests for xattr
+ + bcf4d9f:
+ Added batch scripts to simplify testing integ tests on Windows
+ + 89b3ed2:
+ Merged in RE API SDK changes making output paths working dir relative
+ + 6736d60:
+ Add num_local_reruns flag.
+ + d3722ae:
+ [windows][release] Set git basic config
+ + 52e6f98:
+ roll goma client to VERSION=239
+```
+
+## Release 0.49.0 (2021-11-24)
+```
+Changes:
+ + 6938ae5:
+ Remove the LD_LIBRARY_PATH variable
+ + 6986389:
+ Update rules_go & gazelle
+ + b44aeb4:
+ Check for number of expected action types in integ test
+ + 2615514:
+ [windows][release] Do not reuse release dirs
+ + 3a942a8:
+ [windows][release] Create release dir before copy
+ + 326a1cd:
+ Refactor android integration test to reuse script checked-in locally
+ + 980bebd:
+ [windows] Fix .bat calls again
+ + 9295341:
+ Update bazel to 4.2.1
+ + bd29036:
+ Fix virtual input behavior without fmc.
+```
+
+## Release 0.48.0 (2021-11-19)
+```
+Changes:
+ + 02fa2d6:
+ Update to latest image
+ + 8480aa4:
+ Remove redundant virtual inputs
+ + ca1fad1:
+ Fix ubuntu release container image
+ + a54d6b9:
+ Upgrade choco during windows release
+ + 2afb58b:
+ Fix windows release error handling and variables
+ + 08a76f7:
+ roll goma client and drop use_system_xcode=true
+ + e112172:
+ Add Windows Secure release workflow
+ + 13e16f1:
+ gclient.bzl: fix __is_macos
+```
+
+## Release 0.47.0 (2021-11-17)
+```
+Changes:
+ + c77ff62:
+ Add support for xattr hash
+ + edbad5e:
+ Fail the integration test if the Android image is older than 30 days
+ + 90d56d1:
+ Add a script to run Android build
+ + ca210f0:
+ Placed reproxy response dump files in logDir, and added logic removing them alongside with old log files
+ + 053881e:
+ roll goma client to VERSION=238
+ + 711239d:
+ Updated grpc_test integration test to verify truncated responses
+ + 633696d:
+ Filter out virtual inputs that are not physically existing directories or exist as a parent of a physical input. Also, remove .keep_me from virtual inputs.
+ + 4e4989f:
+ rbe_action.sh to support running an action from an arbitrary wd.
+ + e369d6f:
+ roll goma client to VERSION=237
+ + 7e1efd3:
+ Allow kbuilder user write access to depot_tools
+ + eb51a8b:
+ Turn on Windows Goma IP CI
+ + ddacfd9:
+ Fix reclient + gomaip windows integration tests
+ + 55183b2:
+ Improve gclient's patch code.
+ + 0814c78:
+ allow relative path for rewrapper --exec_root=
+ + 9f2d565:
+ Update Kokoro Win to run all unittests
+ + 4d21183:
+ Remove env_var_whitelist flag
+ + 8a8f4a0:
+ Added handling for re-proxy responses exceeding 32MB limit (b/201316487)
+ + 6d3284b:
+ Add CPU Arch to rbe_metrics.txt
+ + 7d5b4f8:
+ Remove include scanner suffix to the version number.
+ + 48f05cb:
+ Statically link non-system dlls and update builder
+ + ff7f365:
+ roll goma client to VERSION=236
+ + 4a0c264:
+ Update Android integration test
+ + e9ada74:
+ Update android snapshot
+ + 3ff95a2:
+ Scripts to create and push gerrit CLs.
+ + eb3495f:
+ Yank bazel racing strategy in different config
+ + d0d4ef2:
+ fixed a typo in install_precommit.sh
+```
+
+## Release 0.46.0 (2021-11-04)
+```
+Changes:
+ + 4302b6f:
+ Input processor should try to find SDKSettings.json file on Mac.
+```
+
+## Release 0.45.0 (2021-11-03)
+```
+ + 5c3aa6e:
+ Bump version to 0.45.0
+ + e67bac3:
+ Added inputprocessor.Options to errors returned by populateCommandIO
+ + 4621094:
+ rbe_action.sh fixed to shutdown reproxy with correct cfg.
+ + da319a0:
+ Add tool to dump entire reproxy log in raw format.
+ + e582014:
+ Add sha256 to llvm checkout
+ + 9b9200d:
+ Reclient + gomaip on windows!!!!
+ + e58defc:
+ Forward error logs to stdout and stderr.
+ + aa7a69a:
+ remove BAZEL_VERSION and BAZELRC
+ + 925f763:
+ Build reclient remotely when using rbe_action.sh
+ + a06ab8c:
+ roll goma client: candidate VERSION=235 to VERSION=235
+ + b91b800:
+ Compile reclient + goma IP on windows.
+ + 53e446e:
+ mac: bazel shutdown before changing directory
+ + 9aa7bdb:
+ Bump rules_foreign_cc to 0.6.0
+ + 94a1e58:
+ Do not try to trigger release workflows
+ + 630be19:
+ Chromium migration helper script.
+```
+
+## Release 0.44.0 (2021-10-19)
+```
+Changes:
+ + 4294878:
+ roll goma client: VERSION=233 to candidate of VERSION=235 for MinGW tweaks
+ + 2aa7cad:
+ roll github.com/Microsoft/go-winio v0.5.0 -> v0.5.1
+ + 55eb546:
+ Add reclient fail early support.
+ + 8310d93:
+ Fix race condition in remote-apis-sdks
+ + 0925f65:
+ Remove kokoro artifacts from release.
+ + c39831c:
+ Attempt to make a _succesful_ upload.
+ + 5c7ed11:
+ Add release artifacts to our new secure release workflow.
+ + c90256e:
+ fix prod:re-client/macos_external_gomaip/continuous_goma
+```
+
+## Release 0.43.0 (2021-10-12)
+```
+Changes:
+ + 8a8f769:
+ shutdown bazel at the end of scripts.
+ + b44ad4d:
+ Change create release workflow for new release process.
+ + 8d52ef5:
+ add macos_external/release_goma as one of release jobs
+ + 7a9d4f0:
+ Support gomaip in mac
+ + 75af96c:
+ roll goma client: VERSION=231 to VERSION=233
+ + 3e40878:
+ setup mac gomaip continous/release
+ + 064e574:
+ Script to automate qt-dev cherrypick.
+ + b908bb6:
+ Add "new" no-unilateral-access release script.
+ + 0a9d21d:
+ Add rpl2trace to release.
+ + c32fbd7:
+ Specify a more meaningful commit message to re-client releases in Android
+```
+
+## Release 0.42.0 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.42 (2021-09-24)
+```
+Changes:
+ + dc2bd51:
+ Update ubuntu and windows workflows to stop fetching a key.
+ + 61b1f42:
+ roll goma client: VERSION=227 to VERSION=231
+ + 8e862ab:
+ Update LLVM version.
+ + 59189c6:
+ Sort input process files in test
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.4 (2021-09-21)
+```
+Changes:
+ + d52629e:
+ fix cipd-mac.yaml path for cipd create
+```
+
+## Release 0.41.3 (2021-09-21)
+```
+Changes:
+ + 2f72937:
+ add kokoro/macos_external/vars.sh
+ + eab5c19:
+ fix install_precommit.sh
+ + 448918d:
+ Add macos_external/presubmit_goma
+```
+
+## Release 0.41.2 (2021-09-20)
+```
+Changes:
+ + d3d8254:
+ fix macos_external/release.sh
+ + a8a4f02:
+ fix macosx release
+```
+
+## Release 0.41.0 (2021-09-16)
+```
+Changes:
+ + b21aa95:
+ fix re-client-builder to allow depot_tools autoupdate
+ + f0651a6:
+ Add re-client/macos_external/release to kokoro release worflow
+ + 53fc515:
+ add mac release
+ + 40ff5a5:
+ Fix typo in linux goma release job name
+```
+
+## Release 0.40.0 (2021-08-26)
+```
+Changes:
+ + 0631fed:
+ Add typescript labels and typescript integration into re-client.
+ + 355f235:
+ Change exprunner example run to reflect new perfgate wrapper name
+ + 5d17c7b:
+ Add tags to experiment proto. This allows for perfgate to add user defined tags for data segregation.
+ + 26d1974:
+ Implement recursive deps traversal.
+```
+
+## Release 0.39.0 (2021-08-10)
+```
+Changes:
+ + 3dec0c7:
+ Remove TOC files from link actions.
+ + 67fd920:
+ Print the number of verified in the stats.
+ + 5f131f2:
+ Add flag to set deps cache max size for goma deps cache.
+ + a0c511f:
+ Implement direct deps retrieval for tsconfig and tsfile.
+```
+
+## Release 0.38.0 (2021-07-29)
+```
+Changes:
+ + 63cb7c8:
+ Have ShutDownProxy check that the reproxy process is done.
+ + 8a30379:
+ Update windows release workflow to pick cipd from PATH
+ + e0c0ef3:
+ Add perfgate support to experiment runner.
+ + 58a4659:
+ Do not record CPPInputProcessorMillis metric if using goma deps cache.
+ + 4b386fb:
+ add tsfile parser, to parse lines of import statement and fine its relative path.
+```
+
+## Release 0.37.0 (2021-07-21)
+```
+Changes:
+ + 41e4884:
+ Update goma's version to remove patch.
+ + 26a265e:
+ Fix bug preventing integration tests from running on reproxy goma ip.
+ + 1c0f984:
+ Use goma's native deps cache.
+ + dde54a8:
+ Add the action digest that produced a mismatch to log files
+ + 9c5299e:
+ Add extends to tsconfig_parser.
+ + 4822715:
+ Add kokoro windows recient + goma IP presubmits
+ + 1a1e16f:
+ Tweak kokoro win creation script.
+ + c91486a:
+ Add chrome build experiment
+```
+
+## Release 0.36.0 (2021-07-15)
+```
+Changes:
+ + 3053713:
+ Add release support for goma-ip build.
+ + cf1a3db:
+ Make goma builds cacheable.
+ + efc18c1:
+ Enable go race detection in re-client presubmits
+ + f9a2401:
+ Add kokoro workflows for reclient + goma input processor.
+ + 9d43a21:
+ Fix unit test fails in TestNoRemoteOnInputFail
+ + e549c61:
+ Print the type of include scanner being used in reproxy in logs.
+ + 87f718f:
+ Do not adjust command if using goma's input processor.
+ + 1f84511:
+ Fix no remote execution when input processing fails for CPP
+ + 7c70244:
+ Add a build configuration for include scanning.
+ + cf80535:
+ Add binary to run experiment runner and tabulator
+ + d8f7d6c:
+ Add the goma input processor as a cgo library and bridge to C++ goma.
+ + 4914fd4:
+ Turn on compiling the goma input processor on linux CI
+ + 1c59d33:
+ Add gclient support to windows.
+ + f375c72:
+ Build libs and headers needed for the goma input processor.
+ + e5d2e1f:
+ Refactor integration test configuration to use args and cfg files.
+ + 4a98e2b:
+ Remove couple of lines from readme.MD.
+ + d656d2d:
+ Separate experiments logic in runner and tabulator from binary
+ + c7a794d:
+ Revert "Fix no remote execution when input processing fails"
+ + 52a6816:
+ Fix no remote execution when input processing fails
+ + 497cfda:
+ Add deps cache example experiment proto
+ + 03fb41a:
+ Trim build.ninja file.
+ + 1af19ef:
+ [goma] Add rules to compile goma from reclient.
+ + 57e4b28:
+ Update kokoro windows custom VM to add depot tools to path.
+ + 2518f71:
+ Add better error messages for auth related RBE errors
+```
+
 ## Release 0.35.0 (2021-06-21)
 ```
 Changes:

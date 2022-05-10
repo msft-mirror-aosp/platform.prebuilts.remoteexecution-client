@@ -1,3 +1,218 @@
+## Release 0.62.0 (2022-04-12)
+```
+Changes:
+ + 7829f7c7:
+ Do not cache failed (non-existent) files
+ + 2d7675d2:
+ Add script uploading reclient to experiments CIPD (Windows)
+ + ee93248f:
+ Add script uploading reclient to experiments CIPD
+ + a9de68ca:
+ Release tool - Chromium package
+ + 99942235:
+ Prioritize depot_tools binaries above alternatives on windows.
+```
+
+## Release 0.61.0 (2022-04-05)
+```
+Changes:
+ + e1ac4cb:
+ Release tool - Android release checker
+ + fa4a88d:
+ Support gsplit-dwarf in clagparser.
+```
+
+## Release 0.60.0 (2022-03-31)
+```
+Changes:
+ + b3fce18:
+ Add an experiment to test the stability of CoG
+ + a3e7bfb:
+ Add explicit metrics for input processor wait time and cache lookup time.
+ + 2f186f5:
+ Release tool - Kokoro pakage
+ + 16f5b60:
+ Add CoG garbage collection experiment.
+ + 28b5563:
+ Timeout gcert creds refresh call
+ + 79a2ba3:
+ Release tool - git package.
+ + cb9185d:
+ Fix artifacts pattern for gcp_windows tests
+ + 68ac4cb:
+ Further caching of os.Stat results
+ + d554bc2:
+ Release tool - artifact checks.
+ + 9e8558e:
+ Add gcert support for cloud monitoring
+```
+
+## Release 0.59.0 (2022-03-24)
+```
+Changes:
+ + d335989:
+ Update chromium source snapshot.
+ + 6d62bb5:
+ Bump remote-apis-sdks version
+ + c47902a:
+ Unify FindDependencies for both clang and clangcl.
+ + 119bfde:
+ Cache input processor results
+ + 69bec83:
+ Update android integration test image
+```
+
+## Release 0.58.0 (2022-03-16)
+```
+Changes:
+ + 18829e0:
+ run_configuration no longer requires machine settings
+ + 02deb05:
+ Bump sdk version
+ + 7fd044a:
+ Add support for google prod RPC credentials in reproxy
+```
+
+## Release 0.57.0 (2022-03-03)
+```
+Changes:
+ + 704e84b:
+ Revert "Add environment variables support to GomaIP"
+ + 6a296b5:
+ Run lerc integ test on Windows
+ + 74c8721:
+ Setup chromium win integration test
+ + 3043c41:
+ Bump SDK to head.
+ + 9b3ab7d:
+ Add -MF handler for clangcl
+ + 93850ac:
+ Move canonicalize_working_dir flag to rewrapper
+ + 2351382:
+ Add script to clone chromium windows.
+```
+
+## Release 0.56.0 (2022-02-24)
+```
+Changes:
+ + 61a43e0:
+ Fix Windows NOTICE in cipd yaml
+ + 9a825a7:
+ Roll goma to cc1d13f0e8c6338751e74f0df5ecc9858b5aaea0
+ + 727673d:
+ Run grpc_test integ test on Windows
+ + 917a496:
+ Remove compare mode related changes from runLERC
+ + 4b729d6:
+ Update release scripts to use Kokoro GCS uploads
+ + 467a172:
+ Adds downloadmismatch cmd
+ + b4837ad:
+ Change docker image used by rbe_action on Windows
+ + 2f5bccc:
+ Add environment variables support to GomaIP
+ + c76ca3b:
+ Add logdump to release
+ + d12a632:
+ Fix macos release script.
+```
+
+## Release 0.55.0 (2022-02-22)
+```
+Changes:
+ + 4a2a05e:
+ Remove deprecated ioutil references
+ + 2f7c304:
+ Tweak Mac secure release scripts
+ + d1beb5f:
+ Fix win release again
+ + 5eb20a2:
+ [releases] Fix windows release instance
+ + 9f91490:
+ Setup Chromium linux integration test
+ + fb04b4e:
+ Update action count in Android test
+ + d85a729:
+ Update action counts in test.
+ + a85a8ad:
+ Update Android source image so postsubmits can pass.
+ + 28a476c:
+ Adds the ability to ssh into an existing workstation
+ + edfac5f:
+ Add Android RBE experiment with CXX_Links enabled.
+```
+
+## Release 0.54.0 (2022-02-08)
+```
+Changes:
+ + 6ecff23:
+ Remove logic to check for collisions in virtual and physical inputs.
+ + c6a643e:
+ Bump SDK to latest version
+ + 8db0646:
+ Better handle auth errors in re-client
+ + 9b74d57:
+ Upload local artifacts after reruns.
+ + 3b5791c:
+ Add system disk size field to VMSettings
+ + 4825f25:
+ Experiment proto for attempting to identify release with regression.
+ + ae19bc2:
+ Add chrome-android-arm64-dbg experiment
+ + d6a7a30:
+ Add simple RBE Android build experiment
+```
+
+## Release 0.53.0 (2022-01-26)
+```
+Changes:
+ + 91c2b17:
+ Update remote-apis-sdks dependency
+ + d91dc5f:
+ Write Goma IP crash dump files and log files to reproxy log dir.
+ + fa493d2:
+ Add integration tests for compare mode.
+ + 5aa6c61:
+ Add output directories to rerun/compare mode unit tests.
+ + 86992cb:
+ `go get` -> `go install` for gen_schema script
+ + 8871ab5:
+ Fix crash when building Android with compare mode. When compare mode is enabled, reclient will try to stash and restore input/output files. However, when the exec strategy is racing the restore function is not defined causing a seg fault.
+ + 6022889:
+ Move set outside of if in windows release scrpit
+ + 08c009e:
+ Remove --host_platform remote configs
+```
+
+## Release 0.52.0 (2022-01-21)
+```
+Changes:
+ + 31b4ca1:
+ Don't normalize flags sent to dependency scanners
+ + 5a91e49:
+ Update bazel to 5.0.0
+ + ab23a57:
+ Fix create-qt-release script to find the drop commit correctly.
+ + f15b879:
+ Deprecate the environment field in rbe_metrics
+ + f2bd229:
+ Allows compare mode to be used with reruns and deprecates num_retries_if_mismatched.
+ + ad44af2:
+ Fix a typo in reproxy_win.cfg
+ + c7e98b3:
+ Made remote cache agnostic to local working dir
+ + f0e60a4:
+ Modify tool label behavior to not include files from the cmd
+ + c2f58fd:
+ Remove color code prefix from bootstrap output instead of removing it in Android Platform code
+ + 18d56e7:
+ Added TestChromiumCPPCrossOutDirCache for Windows
+ + 830a9d3:
+ Added canonicalize_working_dir flag to reproxy
+ + c645e14:
+ Added clang_depscan_ignored_plugins flag that allows to specify which plugins should be ignored during dependency scanning
+```
+
 ## Release 0.51.0 (2022-01-07)
 ```
 Changes:

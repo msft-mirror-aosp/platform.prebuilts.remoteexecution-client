@@ -1,3 +1,30 @@
+## Release 0.64.0 (2022-05-09)
+```
+Changes:
+ + 5ee6ae4:
+ Modify how gcert credentials are obtained or refreshed
+ + 685a08a:
+ Delete old FATAL logs on startup
+ + a96f828:
+ Parallelize all tests in internal/pkg/reproxy/... and reduce test size to small
+ + 995a107:
+ Add comment support for remote-toolchain-inputs
+ + 3bd569b:
+ Better surface error messages in status tool
+ + 3d32de9:
+ Bump remote_apis_sdk
+ + 6f2e191:
+ Avoid timeouts on reproxy_test by increasing size to medium (5min timeout)
+ + 0e05eb6:
+ Add mismatch ignoring timing metrics.
+ + 35fc187:
+ Fix TRIAL in experiments framework
+ + b1ab57a:
+ Handle clang flag -fprofile-list= as an input file
+ + aa75a76:
+ Add environment variable section to experiments config
+```
+
 ## Release 0.63.0 (2022-04-26)
 ```
 Changes:

@@ -1,3 +1,38 @@
+## Release 0.67.0 (2022-05-26)
+```
+Changes:
+ + d152ea5:
+ Check compare builders are not failing as part of the release checklist.
+ + c6de196:
+ Populate LocalMetadata.Verification even when no mismatches are found
+```
+
+## Release 0.66.0 (2022-05-25)
+```
+Changes:
+ + d8873fe:
+ Update chromium-win source snapshot.
+ + a53e025:
+ Update chromium-ubuntu source snapshot.
+ + a673aec:
+ Include vpython required env vars in deps scan
+ + d9caeb2:
+ Report input processor failures back to reproxy.
+ + 5d3a8e1:
+ Limit env variables used during deps scan
+ + 407ea59:
+ Terminate reproxy if alive after CTRL_C on Win
+```
+
+## Release 0.65.0 (2022-05-13)
+```
+Changes:
+ + e8ea510:
+ Add compare mismatch diffing tool
+ + 723d3c7:
+ Revert "Revert "Add environment variables support to GomaIP""
+```
+
 ## Release 0.64.0 (2022-05-09)
 ```
 Changes:

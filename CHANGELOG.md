@@ -1,3 +1,24 @@
+## Release 0.69.0 (2022-06-10)
+```
+Changes:
+ + d3c4556:
+ Abstract out coloring of command line output
+ + 385a3f2:
+ Move printer to internal/pkg
+ + 63598e9:
+ Implement DialAllContexts which discovers all instances of reproxy
+ + 046afac:
+ Implementation of rpc service for reproxy_status
+ + 0776a2a:
+ Shutdown reproxy with rpl records of inflight actions.
+ + f9c71be:
+ Don't use ReadCommandOutputByPopen
+ + 4ed81dd:
+ Replace reclient-builder:v5 used in release with the recently updated v6
+ + 54278fc:
+ Support internal CIPD upload on Mac
+```
+
 ## Release 0.68.0 (2022-06-03)
 ```
 Changes:

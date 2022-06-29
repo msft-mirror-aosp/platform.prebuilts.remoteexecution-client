@@ -1,3 +1,99 @@
+## Release 0.69.0 (2022-06-10)
+```
+Changes:
+ + d3c4556:
+ Abstract out coloring of command line output
+ + 385a3f2:
+ Move printer to internal/pkg
+ + 63598e9:
+ Implement DialAllContexts which discovers all instances of reproxy
+ + 046afac:
+ Implementation of rpc service for reproxy_status
+ + 0776a2a:
+ Shutdown reproxy with rpl records of inflight actions.
+ + f9c71be:
+ Don't use ReadCommandOutputByPopen
+ + 4ed81dd:
+ Replace reclient-builder:v5 used in release with the recently updated v6
+ + 54278fc:
+ Support internal CIPD upload on Mac
+```
+
+## Release 0.68.0 (2022-06-03)
+```
+Changes:
+ + 731f38ee:
+ Roll goma to VERSION=248 10e4bef3bfc94962a64426073c2ee5800da99161
+ + 23e7ee29:
+ Update aosp image
+ + 421a7bdd:
+ Fix flaky issues with Mac presubmits.
+ + b6f3d7c9:
+ Add install script for windows
+```
+
+## Release 0.67.0 (2022-05-26)
+```
+Changes:
+ + d152ea5:
+ Check compare builders are not failing as part of the release checklist.
+ + c6de196:
+ Populate LocalMetadata.Verification even when no mismatches are found
+```
+
+## Release 0.66.0 (2022-05-25)
+```
+Changes:
+ + d8873fe:
+ Update chromium-win source snapshot.
+ + a53e025:
+ Update chromium-ubuntu source snapshot.
+ + a673aec:
+ Include vpython required env vars in deps scan
+ + d9caeb2:
+ Report input processor failures back to reproxy.
+ + 5d3a8e1:
+ Limit env variables used during deps scan
+ + 407ea59:
+ Terminate reproxy if alive after CTRL_C on Win
+```
+
+## Release 0.65.0 (2022-05-13)
+```
+Changes:
+ + e8ea510:
+ Add compare mismatch diffing tool
+ + 723d3c7:
+ Revert "Revert "Add environment variables support to GomaIP""
+```
+
+## Release 0.64.0 (2022-05-09)
+```
+Changes:
+ + 5ee6ae4:
+ Modify how gcert credentials are obtained or refreshed
+ + 685a08a:
+ Delete old FATAL logs on startup
+ + a96f828:
+ Parallelize all tests in internal/pkg/reproxy/... and reduce test size to small
+ + 995a107:
+ Add comment support for remote-toolchain-inputs
+ + 3bd569b:
+ Better surface error messages in status tool
+ + 3d32de9:
+ Bump remote_apis_sdk
+ + 6f2e191:
+ Avoid timeouts on reproxy_test by increasing size to medium (5min timeout)
+ + 0e05eb6:
+ Add mismatch ignoring timing metrics.
+ + 35fc187:
+ Fix TRIAL in experiments framework
+ + b1ab57a:
+ Handle clang flag -fprofile-list= as an input file
+ + aa75a76:
+ Add environment variable section to experiments config
+```
+
 ## Release 0.63.0 (2022-04-26)
 ```
 Changes:

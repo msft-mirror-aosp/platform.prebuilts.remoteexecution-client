@@ -1,3 +1,201 @@
+ Release 0.64.0 (2022-05-09)
+```
+Changes:
+ + 5ee6ae4:
+ Modify how gcert credentials are obtained or refreshed
+ + 685a08a:
+ Delete old FATAL logs on startup
+ + a96f828:
+ Parallelize all tests in internal/pkg/reproxy/... and reduce test size to small
+ + 995a107:
+ Add comment support for remote-toolchain-inputs
+ + 3bd569b:
+ Better surface error messages in status tool
+ + 3d32de9:
+ Bump remote_apis_sdk
+ + 6f2e191:
+ Avoid timeouts on reproxy_test by increasing size to medium (5min timeout)
+ + 0e05eb6:
+ Add mismatch ignoring timing metrics.
+ + 35fc187:
+ Fix TRIAL in experiments framework
+ + b1ab57a:
+ Handle clang flag -fprofile-list= as an input file
+ + aa75a76:
+ Add environment variable section to experiments config
+```
+
+## Release 0.63.0 (2022-04-26)
+```
+Changes:
+ + 6d67df4:
+ Integrate mismatch ignorer into bootstrap.
+ + 890a857:
+ Add implementation for ignoring mismathes.
+ + d39ae4b:
+ Add ignored marker to Mismatch and total ignored number in Verification
+ + c7eee53:
+ Add proto definitions for mismatch ignoring rules.
+ + 2073c55:
+ Update remote-apis-sdks version
+ + 53acab4:
+ Add scripts and instructions to run led experiments
+ + 210e41c:
+ Update AOSP snapshot for continuous integration test build
+ + 20f10b3:
+ Add git workspace creation experiment
+ + 2999462:
+ Release tool - Chrome queries
+ + 922fe5a:
+ Release tool - Query package.
+ + 396d068:
+ Update chromium images for postsubmits.
+```
+
+## Release 0.62.0 (2022-04-12)
+```
+Changes:
+ + 7829f7c7:
+ Do not cache failed (non-existent) files
+ + 2d7675d2:
+ Add script uploading reclient to experiments CIPD (Windows)
+ + ee93248f:
+ Add script uploading reclient to experiments CIPD
+ + a9de68ca:
+ Release tool - Chromium package
+ + 99942235:
+ Prioritize depot_tools binaries above alternatives on windows.
+```
+
+## Release 0.61.0 (2022-04-05)
+```
+Changes:
+ + e1ac4cb:
+ Release tool - Android release checker
+ + fa4a88d:
+ Support gsplit-dwarf in clagparser.
+```
+
+## Release 0.60.0 (2022-03-31)
+```
+Changes:
+ + b3fce18:
+ Add an experiment to test the stability of CoG
+ + a3e7bfb:
+ Add explicit metrics for input processor wait time and cache lookup time.
+ + 2f186f5:
+ Release tool - Kokoro pakage
+ + 16f5b60:
+ Add CoG garbage collection experiment.
+ + 28b5563:
+ Timeout gcert creds refresh call
+ + 79a2ba3:
+ Release tool - git package.
+ + cb9185d:
+ Fix artifacts pattern for gcp_windows tests
+ + 68ac4cb:
+ Further caching of os.Stat results
+ + d554bc2:
+ Release tool - artifact checks.
+ + 9e8558e:
+ Add gcert support for cloud monitoring
+```
+
+## Release 0.59.0 (2022-03-24)
+```
+Changes:
+ + d335989:
+ Update chromium source snapshot.
+ + 6d62bb5:
+ Bump remote-apis-sdks version
+ + c47902a:
+ Unify FindDependencies for both clang and clangcl.
+ + 119bfde:
+ Cache input processor results
+ + 69bec83:
+ Update android integration test image
+```
+
+## Release 0.58.0 (2022-03-16)
+```
+Changes:
+ + 18829e0:
+ run_configuration no longer requires machine settings
+ + 02deb05:
+ Bump sdk version
+ + 7fd044a:
+ Add support for google prod RPC credentials in reproxy
+```
+
+## Release 0.57.0 (2022-03-03)
+```
+Changes:
+ + 704e84b:
+ Revert "Add environment variables support to GomaIP"
+ + 6a296b5:
+ Run lerc integ test on Windows
+ + 74c8721:
+ Setup chromium win integration test
+ + 3043c41:
+ Bump SDK to head.
+ + 9b3ab7d:
+ Add -MF handler for clangcl
+ + 93850ac:
+ Move canonicalize_working_dir flag to rewrapper
+ + 2351382:
+ Add script to clone chromium windows.
+```
+
+## Release 0.56.0 (2022-02-24)
+```
+Changes:
+ + 61a43e0:
+ Fix Windows NOTICE in cipd yaml
+ + 9a825a7:
+ Roll goma to cc1d13f0e8c6338751e74f0df5ecc9858b5aaea0
+ + 727673d:
+ Run grpc_test integ test on Windows
+ + 917a496:
+ Remove compare mode related changes from runLERC
+ + 4b729d6:
+ Update release scripts to use Kokoro GCS uploads
+ + 467a172:
+ Adds downloadmismatch cmd
+ + b4837ad:
+ Change docker image used by rbe_action on Windows
+ + 2f5bccc:
+ Add environment variables support to GomaIP
+ + c76ca3b:
+ Add logdump to release
+ + d12a632:
+ Fix macos release script.
+```
+
+## Release 0.55.0 (2022-02-22)
+```
+Changes:
+ + 4a2a05e:
+ Remove deprecated ioutil references
+ + 2f7c304:
+ Tweak Mac secure release scripts
+ + d1beb5f:
+ Fix win release again
+ + 5eb20a2:
+ [releases] Fix windows release instance
+ + 9f91490:
+ Setup Chromium linux integration test
+ + fb04b4e:
+ Update action count in Android test
+ + d85a729:
+ Update action counts in test.
+ + a85a8ad:
+ Update Android source image so postsubmits can pass.
+ + 28a476c:
+ Adds the ability to ssh into an existing workstation
+ + edfac5f:
+ Add Android RBE experiment with CXX_Links enabled.
+```
+
 ## Release 0.54.0 (2022-02-08)
 ```
 Changes:

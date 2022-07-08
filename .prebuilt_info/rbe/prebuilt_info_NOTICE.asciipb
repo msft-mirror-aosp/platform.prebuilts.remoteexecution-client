@@ -1,10 +1,11 @@
 drops {
   dest_file: "NOTICE"
-  version: "0.68.0.2c94334"
+  version: "0.72.0.b874055"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {
     source_file: "NOTICE"
   }
   git_branch: "master"
+  transform: TRANSFORM_NONE
 }

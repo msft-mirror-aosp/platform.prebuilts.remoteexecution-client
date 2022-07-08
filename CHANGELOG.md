@@ -1,3 +1,59 @@
+## Release 0.72.0 (2022-07-04)
+```
+Changes:
+ + 17967ec:
+ Remove fatal failure when auth token cannot be acquired
+```
+
+## Release 0.71.0 (2022-06-22)
+```
+Changes:
+ + 75cbfca:
+ Make inputs.source paths relative to the textproto location
+ + b7be87b:
+ Control GlobalFileStatCache init by the env var
+ + 35dbafd:
+ Don't apply free_space filter in led experiments
+```
+
+## Release 0.70.0 (2022-06-20)
+```
+Changes:
+ + 0297a7f:
+ Implementation of reproxy-status binary
+ + 10da7d6:
+ Cleanup patch in run-led.sh if it was applied
+ + 94bb414:
+ Set EventPostBuildMetricsUpload metric value depending on result
+ + 7f62647:
+ Use sso:// instead of https:// when cloning repo
+ + ff5bcb1:
+ Make chromium/src CL optional in led experiments
+ + b32f9ec:
+ Add build farmer bug to commit message of release CLs
+```
+
+## Release 0.69.0 (2022-06-10)
+```
+Changes:
+ + d3c4556:
+ Abstract out coloring of command line output
+ + 385a3f2:
+ Move printer to internal/pkg
+ + 63598e9:
+ Implement DialAllContexts which discovers all instances of reproxy
+ + 046afac:
+ Implementation of rpc service for reproxy_status
+ + 0776a2a:
+ Shutdown reproxy with rpl records of inflight actions.
+ + f9c71be:
+ Don't use ReadCommandOutputByPopen
+ + 4ed81dd:
+ Replace reclient-builder:v5 used in release with the recently updated v6
+ + 54278fc:
+ Support internal CIPD upload on Mac
+```
+
 ## Release 0.68.0 (2022-06-03)
 ```
 Changes:

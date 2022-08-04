@@ -1,3 +1,75 @@
+## Release 0.73.0 (2022-07-19)
+```
+Changes:
+ + 4c17597:
+ Refactored LocalMetadata EventTimes Code
+ + 13862b2:
+ Fixup header-abi-dumper input processor
+ + 00b0ef9:
+ Fix unit test
+ + ebccd69:
+ Update chromium source snapshot.
+ + 91f6ccf:
+ Account for working directory when moving files in racing mode
+ + 1503382:
+ Remove InputListPaths from remote inputs
+ + 205281e:
+ Only consider successful builds for fallback calculations in release status tool
+ + 6311b9a:
+ Exclude CQ builders from status tool for now
+ + 0c5c167:
+ Run integ tests on Mac on presubmit.
+ + f1392b6:
+ Make `ar` archive deep scanning configurable
+ + 0062d55:
+ Simplified Event Recording Code
+ + e291191:
+ Update source snapshots for continuous builds
+ + 1e8e766:
+ Use sso authentication for git clone in release status tool
+ + 20ea597:
+ Add reproxystatus to android release script
+ + 2a8eac0:
+ Add a more descriptive error message to rewrapper fatal log
+ + 5bac396:
+ Fix documentation of re-client to indicate supported platforms
+```
+
+## Release 0.72.0 (2022-07-04)
+```
+Changes:
+ + 17967ec:
+ Remove fatal failure when auth token cannot be acquired
+```
+
+## Release 0.71.0 (2022-06-22)
+```
+Changes:
+ + 75cbfca:
+ Make inputs.source paths relative to the textproto location
+ + b7be87b:
+ Control GlobalFileStatCache init by the env var
+ + 35dbafd:
+ Don't apply free_space filter in led experiments
+```
+
+## Release 0.70.0 (2022-06-20)
+```
+Changes:
+ + 0297a7f:
+ Implementation of reproxy-status binary
+ + 10da7d6:
+ Cleanup patch in run-led.sh if it was applied
+ + 94bb414:
+ Set EventPostBuildMetricsUpload metric value depending on result
+ + 7f62647:
+ Use sso:// instead of https:// when cloning repo
+ + ff5bcb1:
+ Make chromium/src CL optional in led experiments
+ + b32f9ec:
+ Add build farmer bug to commit message of release CLs
+```
+
 ## Release 0.69.0 (2022-06-10)
 ```
 Changes:

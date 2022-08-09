@@ -1,3 +1,61 @@
+## Release 0.76.0 (2022-08-08)
+```
+Changes:
+ + b50200c5:
+ Update Chromium windows image.
+ + 1829ca8d:
+ Update aosp image for postsubmits.
+ + 7435fcab:
+ Update chromium docker image to be based on re-client-builder
+ + 13f3ce27:
+ Don't hard fail on missing toolchain inputs
+ + b8b56647:
+ Add metric for goma ip restarts
+ + 1bb18302:
+ Fix cipd upload script to build reproxystatus
+ + 578857ec:
+ Ensure toolchain inputs are relative to the working directory.
+ + 6c58dac5:
+ Add flags to check only chrome or android with release status tool
+```
+
+## Release 0.75.0 (2022-08-02)
+```
+Changes:
+ + 292eeaf:
+ Remove retry after crash in gomaip logic. Rely on local fallback instead
+ + 428d2fb:
+ Print errors ending with newline.
+ + 51566bd:
+ Add unit tests for GomaIP timeout/crash and fix data races
+ + 71ba026:
+ Added Flag to Turn Version Cache Silo On/Off
+ + 08e8a67:
+ Added Flag to Turn Version Cache Silo On/Off
+```
+
+## Release 0.74.1 (2022-07-28)
+```
+Changes:
+ + a86a4d4:
+ Ensure that we retry ProcessInputs after gomaip times out
+ + 7241f38:
+ Fix mutex and reset logic to ensure no deadlocks
+ + 356773f:
+ Unsets environment variables set as part of integration testing.
+```
+
+## Release 0.74.0 (2022-07-26)
+```
+Changes:
+ + ffaeb60:
+ Add goma dependency scan timeout and restart behavior
+ + 9ba3a79:
+ Fix chromium integration test.
+ + 3ee03c3:
+ Add compare and bootstrap integration tests to Mac presubmit.
+```
+
 ## Release 0.73.0 (2022-07-19)
 ```
 Changes:

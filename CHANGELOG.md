@@ -1,3 +1,41 @@
+## Release 0.77.2 (2022-08-19)
+```
+Changes:
+ + 6c3b8065:
+ Fix bug that prevents Goma IP from restarting the first time until 15 minutes have passed in the build.
+```
+
+## Release 0.77.1 (2022-08-16)
+```
+Changes:
+ + d4f39109:
+ Fix logging in bootstrap shutdown. Increase timeout to 60s.
+```
+
+## Release 0.77.0 (2022-08-15)
+```
+Changes:
+ + 6db2eaa7:
+ Shutdown reproxy via rpc rather than SIGINT.
+ + 20578165:
+ Fix check for whether reproxy is still running on Windows.
+```
+
+## Release 0.76.1 (2022-08-11)
+```
+Changes:
+ + b589a2c:
+ Increase shutdown timeout to 30 seconds.
+ + 6438fd2:
+ Add shutdown and reproxyargs integration tests to Mac presubmit.
+ + 40c0137:
+ Use new service account key for mac presubmits.
+ + 4b8df46:
+ Add xattr and idletimeout integration tests to Mac presubmit.
+ + ebfd6b4:
+ Add lerc integration test to Mac presubmit.
+```
+
 ## Release 0.76.0 (2022-08-08)
 ```
 Changes:

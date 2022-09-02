@@ -1,3 +1,369 @@
+## Release 0.77.2 (2022-08-19)
+```
+Changes:
+ + 6c3b8065:
+ Fix bug that prevents Goma IP from restarting the first time until 15 minutes have passed in the build.
+```
+
+## Release 0.77.1 (2022-08-16)
+```
+Changes:
+ + d4f39109:
+ Fix logging in bootstrap shutdown. Increase timeout to 60s.
+```
+
+## Release 0.77.0 (2022-08-15)
+```
+Changes:
+ + 6db2eaa7:
+ Shutdown reproxy via rpc rather than SIGINT.
+ + 20578165:
+ Fix check for whether reproxy is still running on Windows.
+```
+
+## Release 0.76.1 (2022-08-11)
+```
+Changes:
+ + b589a2c:
+ Increase shutdown timeout to 30 seconds.
+ + 6438fd2:
+ Add shutdown and reproxyargs integration tests to Mac presubmit.
+ + 40c0137:
+ Use new service account key for mac presubmits.
+ + 4b8df46:
+ Add xattr and idletimeout integration tests to Mac presubmit.
+ + ebfd6b4:
+ Add lerc integration test to Mac presubmit.
+```
+
+## Release 0.76.0 (2022-08-08)
+```
+Changes:
+ + b50200c5:
+ Update Chromium windows image.
+ + 1829ca8d:
+ Update aosp image for postsubmits.
+ + 7435fcab:
+ Update chromium docker image to be based on re-client-builder
+ + 13f3ce27:
+ Don't hard fail on missing toolchain inputs
+ + b8b56647:
+ Add metric for goma ip restarts
+ + 1bb18302:
+ Fix cipd upload script to build reproxystatus
+ + 578857ec:
+ Ensure toolchain inputs are relative to the working directory.
+ + 6c58dac5:
+ Add flags to check only chrome or android with release status tool
+```
+
+## Release 0.75.0 (2022-08-02)
+```
+Changes:
+ + 292eeaf:
+ Remove retry after crash in gomaip logic. Rely on local fallback instead
+ + 428d2fb:
+ Print errors ending with newline.
+ + 51566bd:
+ Add unit tests for GomaIP timeout/crash and fix data races
+ + 71ba026:
+ Added Flag to Turn Version Cache Silo On/Off
+ + 08e8a67:
+ Added Flag to Turn Version Cache Silo On/Off
+```
+
+## Release 0.74.1 (2022-07-28)
+```
+Changes:
+ + a86a4d4:
+ Ensure that we retry ProcessInputs after gomaip times out
+ + 7241f38:
+ Fix mutex and reset logic to ensure no deadlocks
+ + 356773f:
+ Unsets environment variables set as part of integration testing.
+```
+
+## Release 0.74.0 (2022-07-26)
+```
+Changes:
+ + ffaeb60:
+ Add goma dependency scan timeout and restart behavior
+ + 9ba3a79:
+ Fix chromium integration test.
+ + 3ee03c3:
+ Add compare and bootstrap integration tests to Mac presubmit.
+```
+
+## Release 0.73.0 (2022-07-19)
+```
+Changes:
+ + 4c17597:
+ Refactored LocalMetadata EventTimes Code
+ + 13862b2:
+ Fixup header-abi-dumper input processor
+ + 00b0ef9:
+ Fix unit test
+ + ebccd69:
+ Update chromium source snapshot.
+ + 91f6ccf:
+ Account for working directory when moving files in racing mode
+ + 1503382:
+ Remove InputListPaths from remote inputs
+ + 205281e:
+ Only consider successful builds for fallback calculations in release status tool
+ + 6311b9a:
+ Exclude CQ builders from status tool for now
+ + 0c5c167:
+ Run integ tests on Mac on presubmit.
+ + f1392b6:
+ Make `ar` archive deep scanning configurable
+ + 0062d55:
+ Simplified Event Recording Code
+ + e291191:
+ Update source snapshots for continuous builds
+ + 1e8e766:
+ Use sso authentication for git clone in release status tool
+ + 20ea597:
+ Add reproxystatus to android release script
+ + 2a8eac0:
+ Add a more descriptive error message to rewrapper fatal log
+ + 5bac396:
+ Fix documentation of re-client to indicate supported platforms
+```
+
+## Release 0.72.0 (2022-07-04)
+```
+Changes:
+ + 17967ec:
+ Remove fatal failure when auth token cannot be acquired
+```
+
+## Release 0.71.0 (2022-06-22)
+```
+Changes:
+ + 75cbfca:
+ Make inputs.source paths relative to the textproto location
+ + b7be87b:
+ Control GlobalFileStatCache init by the env var
+ + 35dbafd:
+ Don't apply free_space filter in led experiments
+```
+
+## Release 0.70.0 (2022-06-20)
+```
+Changes:
+ + 0297a7f:
+ Implementation of reproxy-status binary
+ + 10da7d6:
+ Cleanup patch in run-led.sh if it was applied
+ + 94bb414:
+ Set EventPostBuildMetricsUpload metric value depending on result
+ + 7f62647:
+ Use sso:// instead of https:// when cloning repo
+ + ff5bcb1:
+ Make chromium/src CL optional in led experiments
+ + b32f9ec:
+ Add build farmer bug to commit message of release CLs
+```
+
+## Release 0.69.0 (2022-06-10)
+```
+Changes:
+ + d3c4556:
+ Abstract out coloring of command line output
+ + 385a3f2:
+ Move printer to internal/pkg
+ + 63598e9:
+ Implement DialAllContexts which discovers all instances of reproxy
+ + 046afac:
+ Implementation of rpc service for reproxy_status
+ + 0776a2a:
+ Shutdown reproxy with rpl records of inflight actions.
+ + f9c71be:
+ Don't use ReadCommandOutputByPopen
+ + 4ed81dd:
+ Replace reclient-builder:v5 used in release with the recently updated v6
+ + 54278fc:
+ Support internal CIPD upload on Mac
+```
+
+## Release 0.68.0 (2022-06-03)
+```
+Changes:
+ + 731f38ee:
+ Roll goma to VERSION=248 10e4bef3bfc94962a64426073c2ee5800da99161
+ + 23e7ee29:
+ Update aosp image
+ + 421a7bdd:
+ Fix flaky issues with Mac presubmits.
+ + b6f3d7c9:
+ Add install script for windows
+```
+
+## Release 0.67.0 (2022-05-26)
+```
+Changes:
+ + d152ea5:
+ Check compare builders are not failing as part of the release checklist.
+ + c6de196:
+ Populate LocalMetadata.Verification even when no mismatches are found
+```
+
+## Release 0.66.0 (2022-05-25)
+```
+Changes:
+ + d8873fe:
+ Update chromium-win source snapshot.
+ + a53e025:
+ Update chromium-ubuntu source snapshot.
+ + a673aec:
+ Include vpython required env vars in deps scan
+ + d9caeb2:
+ Report input processor failures back to reproxy.
+ + 5d3a8e1:
+ Limit env variables used during deps scan
+ + 407ea59:
+ Terminate reproxy if alive after CTRL_C on Win
+```
+
+## Release 0.65.0 (2022-05-13)
+```
+Changes:
+ + e8ea510:
+ Add compare mismatch diffing tool
+ + 723d3c7:
+ Revert "Revert "Add environment variables support to GomaIP""
+```
+
+## Release 0.64.0 (2022-05-09)
+```
+Changes:
+ + 5ee6ae4:
+ Modify how gcert credentials are obtained or refreshed
+ + 685a08a:
+ Delete old FATAL logs on startup
+ + a96f828:
+ Parallelize all tests in internal/pkg/reproxy/... and reduce test size to small
+ + 995a107:
+ Add comment support for remote-toolchain-inputs
+ + 3bd569b:
+ Better surface error messages in status tool
+ + 3d32de9:
+ Bump remote_apis_sdk
+ + 6f2e191:
+ Avoid timeouts on reproxy_test by increasing size to medium (5min timeout)
+ + 0e05eb6:
+ Add mismatch ignoring timing metrics.
+ + 35fc187:
+ Fix TRIAL in experiments framework
+ + b1ab57a:
+ Handle clang flag -fprofile-list= as an input file
+ + aa75a76:
+ Add environment variable section to experiments config
+```
+
+## Release 0.63.0 (2022-04-26)
+```
+Changes:
+ + 6d67df4:
+ Integrate mismatch ignorer into bootstrap.
+ + 890a857:
+ Add implementation for ignoring mismathes.
+ + d39ae4b:
+ Add ignored marker to Mismatch and total ignored number in Verification
+ + c7eee53:
+ Add proto definitions for mismatch ignoring rules.
+ + 2073c55:
+ Update remote-apis-sdks version
+ + 53acab4:
+ Add scripts and instructions to run led experiments
+ + 210e41c:
+ Update AOSP snapshot for continuous integration test build
+ + 20f10b3:
+ Add git workspace creation experiment
+ + 2999462:
+ Release tool - Chrome queries
+ + 922fe5a:
+ Release tool - Query package.
+ + 396d068:
+ Update chromium images for postsubmits.
+```
+
+## Release 0.62.0 (2022-04-12)
+```
+Changes:
+ + 7829f7c7:
+ Do not cache failed (non-existent) files
+ + 2d7675d2:
+ Add script uploading reclient to experiments CIPD (Windows)
+ + ee93248f:
+ Add script uploading reclient to experiments CIPD
+ + a9de68ca:
+ Release tool - Chromium package
+ + 99942235:
+ Prioritize depot_tools binaries above alternatives on windows.
+```
+
+## Release 0.61.0 (2022-04-05)
+```
+Changes:
+ + e1ac4cb:
+ Release tool - Android release checker
+ + fa4a88d:
+ Support gsplit-dwarf in clagparser.
+```
+
+## Release 0.60.0 (2022-03-31)
+```
+Changes:
+ + b3fce18:
+ Add an experiment to test the stability of CoG
+ + a3e7bfb:
+ Add explicit metrics for input processor wait time and cache lookup time.
+ + 2f186f5:
+ Release tool - Kokoro pakage
+ + 16f5b60:
+ Add CoG garbage collection experiment.
+ + 28b5563:
+ Timeout gcert creds refresh call
+ + 79a2ba3:
+ Release tool - git package.
+ + cb9185d:
+ Fix artifacts pattern for gcp_windows tests
+ + 68ac4cb:
+ Further caching of os.Stat results
+ + d554bc2:
+ Release tool - artifact checks.
+ + 9e8558e:
+ Add gcert support for cloud monitoring
+```
+
+## Release 0.59.0 (2022-03-24)
+```
+Changes:
+ + d335989:
+ Update chromium source snapshot.
+ + 6d62bb5:
+ Bump remote-apis-sdks version
+ + c47902a:
+ Unify FindDependencies for both clang and clangcl.
+ + 119bfde:
+ Cache input processor results
+ + 69bec83:
+ Update android integration test image
+```
+
+## Release 0.58.0 (2022-03-16)
+```
+Changes:
+ + 18829e0:
+ run_configuration no longer requires machine settings
+ + 02deb05:
+ Bump sdk version
+ + 7fd044a:
+ Add support for google prod RPC credentials in reproxy
+```
+
 ## Release 0.57.0 (2022-03-03)
 ```
 Changes:

@@ -1,3 +1,39 @@
+## Release 0.80.0 (2022-09-21)
+```
+Changes:
+ + 002cb993:
+ Initialize compiler info cache correctly when using reproxy deps cache
+ + 11075ee2:
+ Bazel test to upload metrics to Perfgate
+ + eb45ceae:
+ [rewrapper] Implement --action_log
+ + 411a3045:
+ Restore using the pid file to check whether reproxy has shutdown.
+ + fd273939:
+ Include Mac builders in release status tool
+ + 98af4a4a:
+ wrapped up perfgate binary for metrics to upload, specify the project info.
+ + 502034dd:
+ Dependency scanner service
+```
+
+## Release 0.79.0 (2022-09-13)
+```
+Changes:
+ + de55e3c:
+ Use closures in Goma Input Processor.
+ + 57ce0a5:
+ Disable goma deps cache if dir is not specified
+ + f81b9fc:
+ update aosp and chromium-win images Also update the script to seamlessly work from cloudtop machines in addition to developer workstations.
+ + 0b59c0c:
+ Support ThinLTO flags for clang
+ + bf9e549:
+ Add cq checks to status tool
+ + fbee4da:
+ Use a thread locked worker pool for calling Goma input processor.
+```
+
 ## Release 0.78.0 (2022-08-31)
 ```
 Changes:

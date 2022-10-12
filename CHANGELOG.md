@@ -1,3 +1,31 @@
+## Release 0.81.1 (2022-10-04)
+```
+Changes:
+ + 100ab7a7:
+ Downgrade bazel back to 5.0.0
+```
+
+## Release 0.81.0 (2022-10-03)
+```
+Changes:
+ + c572b729:
+ Pass Goma IP errors back to the go layer.
+ + 0090e098:
+ Add flag for goma input processor timeout
+ + 73a5d456:
+ Add buffer to resCh to ensure that the send in gComputeIncludesDone is never blocking
+ + 88449725:
+ Upgrade Goma IP.
+ + b2e72748:
+ Add windows support to echo codelab and add dockerfiles
+ + 1e9a1d67:
+ Integrate goma built with libstdc++ with the skeleton service
+ + c00528cd:
+ Add echo codelab code
+ + 96bcdd0e:
+ Add reproxystatus to install scripts
+```
+
 ## Release 0.80.0 (2022-09-21)
 ```
 Changes:

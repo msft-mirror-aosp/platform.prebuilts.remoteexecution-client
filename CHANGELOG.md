@@ -1,3 +1,27 @@
+## Release 0.82.1 (2022-10-14)
+```
+Changes:
+ + ee25391:
+ Add log lines to IncludeProcessor::GetCompilerInfo
+ + 1779d0f:
+ Implement compiler_info_state error handling logic in goma
+ + 9d1b983:
+ Pass the PATH variable to the input processor to fix pnacl fallbacks.
+```
+
+## Release 0.82.0 (2022-10-13)
+```
+Changes:
+ + 02f4e1c:
+ Add additional log points after 'ComputeIncludesDone'
+ + 33f1a0a:
+ Build dependency scanner service w/ goma
+ + 08c449c:
+ Cleanup the input processor after cancelling contexts
+ + a3236bb:
+ Manually enable -fprofile_use for clang-cl
+```
+
 ## Release 0.81.1 (2022-10-04)
 ```
 Changes:

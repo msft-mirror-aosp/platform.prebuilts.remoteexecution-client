@@ -1,3 +1,24 @@
+## Release 0.78.0 (2022-08-31)
+```
+Changes:
+ + f8d9f33:
+ Update Goma input processor.
+ + 496df74:
+ Add experimental go deps cache for gomaip
+ + 7686d6c:
+ Add a flag for reset debounce timeout for goma input processor and lower the default timeout to 3 minutes.
+ + e036e76:
+ Check the CompilerInfoCache for a cache hit before obtaining a key lock.
+ + 44e049a:
+ Make arm mac build work
+ + 97f6485:
+ Added reproxyargs integration test to Windows tests.
+ + 5e5f89a:
+ Add luci download script
+ + 12f86f9:
+ Update images script and chromium linux image
+```
+
 ## Release 0.77.2 (2022-08-19)
 ```
 Changes:

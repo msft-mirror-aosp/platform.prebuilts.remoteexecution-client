@@ -1,3 +1,24 @@
+## Release 0.83.0 (2022-10-21)
+```
+Changes:
+ + aec42f7e:
+ ThinLTO: fix flag key matching
+ + 80b87d52:
+ Ensure that the deps cache is set to not ready until loaded from disk
+ + bc6b3397:
+ Remove reset logic from gomaip
+ + e4dfb6c5:
+ Update aosp snapshot image for integ tests.
+ + e48f0768:
+ Update chromium win snapshot image
+ + 02530a91:
+ Checkout latest Bump commit on Windows.
+ + 34f8a69a:
+ Update linux chromium kokoro integ test disk snapshot.
+ + fd92177a:
+ Add foundry-x-experiments mac-cross compile image
+```
+
 ## Release 0.82.1 (2022-10-14)
 ```
 Changes:

@@ -1,3 +1,76 @@
+## Release 0.83.0 (2022-10-21)
+```
+Changes:
+ + aec42f7e:
+ ThinLTO: fix flag key matching
+ + 80b87d52:
+ Ensure that the deps cache is set to not ready until loaded from disk
+ + bc6b3397:
+ Remove reset logic from gomaip
+ + e4dfb6c5:
+ Update aosp snapshot image for integ tests.
+ + e48f0768:
+ Update chromium win snapshot image
+ + 02530a91:
+ Checkout latest Bump commit on Windows.
+ + 34f8a69a:
+ Update linux chromium kokoro integ test disk snapshot.
+ + fd92177a:
+ Add foundry-x-experiments mac-cross compile image
+```
+
+## Release 0.82.1 (2022-10-14)
+```
+Changes:
+ + ee25391:
+ Add log lines to IncludeProcessor::GetCompilerInfo
+ + 1779d0f:
+ Implement compiler_info_state error handling logic in goma
+ + 9d1b983:
+ Pass the PATH variable to the input processor to fix pnacl fallbacks.
+```
+
+## Release 0.82.0 (2022-10-13)
+```
+Changes:
+ + 02f4e1c:
+ Add additional log points after 'ComputeIncludesDone'
+ + 33f1a0a:
+ Build dependency scanner service w/ goma
+ + 08c449c:
+ Cleanup the input processor after cancelling contexts
+ + a3236bb:
+ Manually enable -fprofile_use for clang-cl
+```
+
+## Release 0.81.1 (2022-10-04)
+```
+Changes:
+ + 100ab7a7:
+ Downgrade bazel back to 5.0.0
+```
+
+## Release 0.81.0 (2022-10-03)
+```
+Changes:
+ + c572b729:
+ Pass Goma IP errors back to the go layer.
+ + 0090e098:
+ Add flag for goma input processor timeout
+ + 73a5d456:
+ Add buffer to resCh to ensure that the send in gComputeIncludesDone is never blocking
+ + 88449725:
+ Upgrade Goma IP.
+ + b2e72748:
+ Add windows support to echo codelab and add dockerfiles
+ + 1e9a1d67:
+ Integrate goma built with libstdc++ with the skeleton service
+ + c00528cd:
+ Add echo codelab code
+ + 96bcdd0e:
+ Add reproxystatus to install scripts
+```
+
 ## Release 0.80.0 (2022-09-21)
 ```
 Changes:

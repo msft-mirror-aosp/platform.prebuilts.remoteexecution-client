@@ -1,3 +1,91 @@
+## Release 0.82.1 (2022-10-14)
+```
+Changes:
+ + ee25391:
+ Add log lines to IncludeProcessor::GetCompilerInfo
+ + 1779d0f:
+ Implement compiler_info_state error handling logic in goma
+ + 9d1b983:
+ Pass the PATH variable to the input processor to fix pnacl fallbacks.
+```
+
+## Release 0.82.0 (2022-10-13)
+```
+Changes:
+ + 02f4e1c:
+ Add additional log points after 'ComputeIncludesDone'
+ + 33f1a0a:
+ Build dependency scanner service w/ goma
+ + 08c449c:
+ Cleanup the input processor after cancelling contexts
+ + a3236bb:
+ Manually enable -fprofile_use for clang-cl
+```
+
+## Release 0.81.1 (2022-10-04)
+```
+Changes:
+ + 100ab7a7:
+ Downgrade bazel back to 5.0.0
+```
+
+## Release 0.81.0 (2022-10-03)
+```
+Changes:
+ + c572b729:
+ Pass Goma IP errors back to the go layer.
+ + 0090e098:
+ Add flag for goma input processor timeout
+ + 73a5d456:
+ Add buffer to resCh to ensure that the send in gComputeIncludesDone is never blocking
+ + 88449725:
+ Upgrade Goma IP.
+ + b2e72748:
+ Add windows support to echo codelab and add dockerfiles
+ + 1e9a1d67:
+ Integrate goma built with libstdc++ with the skeleton service
+ + c00528cd:
+ Add echo codelab code
+ + 96bcdd0e:
+ Add reproxystatus to install scripts
+```
+
+## Release 0.80.0 (2022-09-21)
+```
+Changes:
+ + 002cb993:
+ Initialize compiler info cache correctly when using reproxy deps cache
+ + 11075ee2:
+ Bazel test to upload metrics to Perfgate
+ + eb45ceae:
+ [rewrapper] Implement --action_log
+ + 411a3045:
+ Restore using the pid file to check whether reproxy has shutdown.
+ + fd273939:
+ Include Mac builders in release status tool
+ + 98af4a4a:
+ wrapped up perfgate binary for metrics to upload, specify the project info.
+ + 502034dd:
+ Dependency scanner service
+```
+
+## Release 0.79.0 (2022-09-13)
+```
+Changes:
+ + de55e3c:
+ Use closures in Goma Input Processor.
+ + 57ce0a5:
+ Disable goma deps cache if dir is not specified
+ + f81b9fc:
+ update aosp and chromium-win images Also update the script to seamlessly work from cloudtop machines in addition to developer workstations.
+ + 0b59c0c:
+ Support ThinLTO flags for clang
+ + bf9e549:
+ Add cq checks to status tool
+ + fbee4da:
+ Use a thread locked worker pool for calling Goma input processor.
+```
+
 ## Release 0.78.0 (2022-08-31)
 ```
 Changes:

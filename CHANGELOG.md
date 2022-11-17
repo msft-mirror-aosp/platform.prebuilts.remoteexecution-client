@@ -1,3 +1,42 @@
+## Release 0.86.0 (2022-11-09)
+```
+Changes:
+ + 241d7b9:
+ Add support for a output rsp files via OutputListPaths flag in rewrapper.
+ + 662dcd2:
+ Add cppdependencyscanner test to Mac presubmit
+ + 71f4334:
+ Updating sources to build dependency scanner service on kokoro
+```
+
+## Release 0.85.0 (2022-11-03)
+```
+Changes:
+ + 99dc179:
+ Do not rely on mtime to short circuit the deps cache.
+ + dcc4f88:
+ Remote Links - Properly handle archive files referenced in @rsp files.
+ + 81ed63b:
+ Add builder name option to run-led script
+```
+
+## Release 0.84.0 (2022-11-01)
+```
+Changes:
+ + 32423e8:
+ update goma
+ + c2c9512:
+ Move configuration options for input processor to a struct
+ + ddc13fc:
+ Add depscache integration test to Mac presubmit.
+ + af89b6d:
+ Fix create-qt-release.sh script to handle aosp being ahead of qt.
+ + 5f16bf9:
+ Add remoteexec test to Mac presubmit
+ + 5c73311:
+ release scripts: avoid the missing jq trap
+```
+
 ## Release 0.83.0 (2022-10-21)
 ```
 Changes:

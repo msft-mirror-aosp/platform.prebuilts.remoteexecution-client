@@ -1,3 +1,20 @@
+## Release 0.87.0 (2022-11-22)
+```
+Changes:
+ + 99922192:
+ Update goma to client to 9d55760
+ + 938d3188:
+ Read archive files directly from reproxy.
+ + bc3e9334:
+ ThinLTO: fix loading imported files
+ + 3e6d13d8:
+ Use dependency scanner service
+ + f2d239df:
+ Process remote_toolchain_inputs with missing files
+ + a84152b0:
+ Ensure goma revision stays in sync with goma_clang revision
+```
+
 ## Release 0.86.0 (2022-11-09)
 ```
 Changes:

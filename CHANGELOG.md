@@ -1,3 +1,37 @@
+## Release 0.89.0 (2022-11-30)
+```
+Changes:
+ + 79f18c7:
+ Support thin archive ar file format.
+ + 19977e7:
+ Fix release builds
+ + 072cb00:
+ Assign a default context for the DepsScannerClient object
+ + bcbca12:
+ Support Restat for Remote Execution
+ + 5714559:
+ Allow cache hits in grpc test.
+ + b73f3f2:
+ Add a commented local_repository definition of the SDK to make switching easier.
+```
+
+## Release 0.88.0 (2022-11-25)
+```
+Changes:
+ + 27fa7aa:
+ Build and release scandeps service for linux.
+ + b74c165:
+ Build and release scandeps-service for Mac
+ + a23c1d0:
+ Build and deploy dependency scanner service on Windows (release)
+ + 7f04bc5:
+ Reproxy controls depsscanner
+ + 2f07013:
+ Fix bug in deps cache causing cache corruption of actions sharing deps.
+ + 537dc5e:
+ Remove unused feature in Config struct.
+```
+
 ## Release 0.87.0 (2022-11-22)
 ```
 Changes:

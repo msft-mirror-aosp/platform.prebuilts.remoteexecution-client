@@ -1,3 +1,45 @@
+## Release 0.91.1 (2022-12-07)
+```
+Changes:
+ + cf73e25:
+ Fix macos.sh script
+ + 306c277:
+ Faster bootstrap.
+ + 1a2e46e:
+ Automatic authentication detection.
+```
+
+## Release 0.91.0 (2022-12-05)
+```
+Changes:
+ + a6de9e1:
+ Fix handling of outputs in compare mode
+ + 48c94e4:
+ Don't adjust command if we are using dependency scanner service
+```
+
+## Release 0.90.1 (2022-12-02)
+```
+Changes:
+ + 5e9a20c:
+ Fix performance issues with archive reader - Pass in relative directory instead of calling filepath.Rel
+```
+
+## Release 0.90.0 (2022-12-01)
+```
+Changes:
+ + 7eddb7c:
+ Add Test field to version bump script and add scandeps_server binary to android release.
+ + 89d0101:
+ Write clang-scan-deps binaries to a separate cipd package.
+ + 0268dfb:
+ Fail early on deps scan timeouts
+ + d9994ac:
+ Make unified uploads the default behavior in reproxy.
+ + a5a7199:
+ Move flags package under the input processor.
+```
+
 ## Release 0.89.0 (2022-11-30)
 ```
 Changes:

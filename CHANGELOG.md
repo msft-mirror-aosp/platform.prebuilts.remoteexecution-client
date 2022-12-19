@@ -1,3 +1,79 @@
+## Release 0.91.1 (2022-12-07)
+```
+Changes:
+ + cf73e25:
+ Fix macos.sh script
+ + 306c277:
+ Faster bootstrap.
+ + 1a2e46e:
+ Automatic authentication detection.
+```
+
+## Release 0.91.0 (2022-12-05)
+```
+Changes:
+ + a6de9e1:
+ Fix handling of outputs in compare mode
+ + 48c94e4:
+ Don't adjust command if we are using dependency scanner service
+```
+
+## Release 0.90.1 (2022-12-02)
+```
+Changes:
+ + 5e9a20c:
+ Fix performance issues with archive reader - Pass in relative directory instead of calling filepath.Rel
+```
+
+## Release 0.90.0 (2022-12-01)
+```
+Changes:
+ + 7eddb7c:
+ Add Test field to version bump script and add scandeps_server binary to android release.
+ + 89d0101:
+ Write clang-scan-deps binaries to a separate cipd package.
+ + 0268dfb:
+ Fail early on deps scan timeouts
+ + d9994ac:
+ Make unified uploads the default behavior in reproxy.
+ + a5a7199:
+ Move flags package under the input processor.
+```
+
+## Release 0.89.0 (2022-11-30)
+```
+Changes:
+ + 79f18c7:
+ Support thin archive ar file format.
+ + 19977e7:
+ Fix release builds
+ + 072cb00:
+ Assign a default context for the DepsScannerClient object
+ + bcbca12:
+ Support Restat for Remote Execution
+ + 5714559:
+ Allow cache hits in grpc test.
+ + b73f3f2:
+ Add a commented local_repository definition of the SDK to make switching easier.
+```
+
+## Release 0.88.0 (2022-11-25)
+```
+Changes:
+ + 27fa7aa:
+ Build and release scandeps service for linux.
+ + b74c165:
+ Build and release scandeps-service for Mac
+ + a23c1d0:
+ Build and deploy dependency scanner service on Windows (release)
+ + 7f04bc5:
+ Reproxy controls depsscanner
+ + 2f07013:
+ Fix bug in deps cache causing cache corruption of actions sharing deps.
+ + 537dc5e:
+ Remove unused feature in Config struct.
+```
+
 ## Release 0.87.0 (2022-11-22)
 ```
 Changes:

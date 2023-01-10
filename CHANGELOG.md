@@ -1,4 +1,427 @@
- Release 0.64.0 (2022-05-09)
+## Release 0.87.0 (2022-11-22)
+```
+Changes:
+ + 99922192:
+ Update goma to client to 9d55760
+ + 938d3188:
+ Read archive files directly from reproxy.
+ + bc3e9334:
+ ThinLTO: fix loading imported files
+ + 3e6d13d8:
+ Use dependency scanner service
+ + f2d239df:
+ Process remote_toolchain_inputs with missing files
+ + a84152b0:
+ Ensure goma revision stays in sync with goma_clang revision
+```
+
+## Release 0.86.0 (2022-11-09)
+```
+Changes:
+ + 241d7b9:
+ Add support for a output rsp files via OutputListPaths flag in rewrapper.
+ + 662dcd2:
+ Add cppdependencyscanner test to Mac presubmit
+ + 71f4334:
+ Updating sources to build dependency scanner service on kokoro
+```
+
+## Release 0.85.0 (2022-11-03)
+```
+Changes:
+ + 99dc179:
+ Do not rely on mtime to short circuit the deps cache.
+ + dcc4f88:
+ Remote Links - Properly handle archive files referenced in @rsp files.
+ + 81ed63b:
+ Add builder name option to run-led script
+```
+
+## Release 0.84.0 (2022-11-01)
+```
+Changes:
+ + 32423e8:
+ update goma
+ + c2c9512:
+ Move configuration options for input processor to a struct
+ + ddc13fc:
+ Add depscache integration test to Mac presubmit.
+ + af89b6d:
+ Fix create-qt-release.sh script to handle aosp being ahead of qt.
+ + 5f16bf9:
+ Add remoteexec test to Mac presubmit
+ + 5c73311:
+ release scripts: avoid the missing jq trap
+```
+
+## Release 0.83.0 (2022-10-21)
+```
+Changes:
+ + aec42f7e:
+ ThinLTO: fix flag key matching
+ + 80b87d52:
+ Ensure that the deps cache is set to not ready until loaded from disk
+ + bc6b3397:
+ Remove reset logic from gomaip
+ + e4dfb6c5:
+ Update aosp snapshot image for integ tests.
+ + e48f0768:
+ Update chromium win snapshot image
+ + 02530a91:
+ Checkout latest Bump commit on Windows.
+ + 34f8a69a:
+ Update linux chromium kokoro integ test disk snapshot.
+ + fd92177a:
+ Add foundry-x-experiments mac-cross compile image
+```
+
+## Release 0.82.1 (2022-10-14)
+```
+Changes:
+ + ee25391:
+ Add log lines to IncludeProcessor::GetCompilerInfo
+ + 1779d0f:
+ Implement compiler_info_state error handling logic in goma
+ + 9d1b983:
+ Pass the PATH variable to the input processor to fix pnacl fallbacks.
+```
+
+## Release 0.82.0 (2022-10-13)
+```
+Changes:
+ + 02f4e1c:
+ Add additional log points after 'ComputeIncludesDone'
+ + 33f1a0a:
+ Build dependency scanner service w/ goma
+ + 08c449c:
+ Cleanup the input processor after cancelling contexts
+ + a3236bb:
+ Manually enable -fprofile_use for clang-cl
+```
+
+## Release 0.81.1 (2022-10-04)
+```
+Changes:
+ + 100ab7a7:
+ Downgrade bazel back to 5.0.0
+```
+
+## Release 0.81.0 (2022-10-03)
+```
+Changes:
+ + c572b729:
+ Pass Goma IP errors back to the go layer.
+ + 0090e098:
+ Add flag for goma input processor timeout
+ + 73a5d456:
+ Add buffer to resCh to ensure that the send in gComputeIncludesDone is never blocking
+ + 88449725:
+ Upgrade Goma IP.
+ + b2e72748:
+ Add windows support to echo codelab and add dockerfiles
+ + 1e9a1d67:
+ Integrate goma built with libstdc++ with the skeleton service
+ + c00528cd:
+ Add echo codelab code
+ + 96bcdd0e:
+ Add reproxystatus to install scripts
+```
+
+## Release 0.80.0 (2022-09-21)
+```
+Changes:
+ + 002cb993:
+ Initialize compiler info cache correctly when using reproxy deps cache
+ + 11075ee2:
+ Bazel test to upload metrics to Perfgate
+ + eb45ceae:
+ [rewrapper] Implement --action_log
+ + 411a3045:
+ Restore using the pid file to check whether reproxy has shutdown.
+ + fd273939:
+ Include Mac builders in release status tool
+ + 98af4a4a:
+ wrapped up perfgate binary for metrics to upload, specify the project info.
+ + 502034dd:
+ Dependency scanner service
+```
+
+## Release 0.79.0 (2022-09-13)
+```
+Changes:
+ + de55e3c:
+ Use closures in Goma Input Processor.
+ + 57ce0a5:
+ Disable goma deps cache if dir is not specified
+ + f81b9fc:
+ update aosp and chromium-win images Also update the script to seamlessly work from cloudtop machines in addition to developer workstations.
+ + 0b59c0c:
+ Support ThinLTO flags for clang
+ + bf9e549:
+ Add cq checks to status tool
+ + fbee4da:
+ Use a thread locked worker pool for calling Goma input processor.
+```
+
+## Release 0.78.0 (2022-08-31)
+```
+Changes:
+ + f8d9f33:
+ Update Goma input processor.
+ + 496df74:
+ Add experimental go deps cache for gomaip
+ + 7686d6c:
+ Add a flag for reset debounce timeout for goma input processor and lower the default timeout to 3 minutes.
+ + e036e76:
+ Check the CompilerInfoCache for a cache hit before obtaining a key lock.
+ + 44e049a:
+ Make arm mac build work
+ + 97f6485:
+ Added reproxyargs integration test to Windows tests.
+ + 5e5f89a:
+ Add luci download script
+ + 12f86f9:
+ Update images script and chromium linux image
+```
+
+## Release 0.77.2 (2022-08-19)
+```
+Changes:
+ + 6c3b8065:
+ Fix bug that prevents Goma IP from restarting the first time until 15 minutes have passed in the build.
+```
+
+## Release 0.77.1 (2022-08-16)
+```
+Changes:
+ + d4f39109:
+ Fix logging in bootstrap shutdown. Increase timeout to 60s.
+```
+
+## Release 0.77.0 (2022-08-15)
+```
+Changes:
+ + 6db2eaa7:
+ Shutdown reproxy via rpc rather than SIGINT.
+ + 20578165:
+ Fix check for whether reproxy is still running on Windows.
+```
+
+## Release 0.76.1 (2022-08-11)
+```
+Changes:
+ + b589a2c:
+ Increase shutdown timeout to 30 seconds.
+ + 6438fd2:
+ Add shutdown and reproxyargs integration tests to Mac presubmit.
+ + 40c0137:
+ Use new service account key for mac presubmits.
+ + 4b8df46:
+ Add xattr and idletimeout integration tests to Mac presubmit.
+ + ebfd6b4:
+ Add lerc integration test to Mac presubmit.
+```
+
+## Release 0.76.0 (2022-08-08)
+```
+Changes:
+ + b50200c5:
+ Update Chromium windows image.
+ + 1829ca8d:
+ Update aosp image for postsubmits.
+ + 7435fcab:
+ Update chromium docker image to be based on re-client-builder
+ + 13f3ce27:
+ Don't hard fail on missing toolchain inputs
+ + b8b56647:
+ Add metric for goma ip restarts
+ + 1bb18302:
+ Fix cipd upload script to build reproxystatus
+ + 578857ec:
+ Ensure toolchain inputs are relative to the working directory.
+ + 6c58dac5:
+ Add flags to check only chrome or android with release status tool
+```
+
+## Release 0.75.0 (2022-08-02)
+```
+Changes:
+ + 292eeaf:
+ Remove retry after crash in gomaip logic. Rely on local fallback instead
+ + 428d2fb:
+ Print errors ending with newline.
+ + 51566bd:
+ Add unit tests for GomaIP timeout/crash and fix data races
+ + 71ba026:
+ Added Flag to Turn Version Cache Silo On/Off
+ + 08e8a67:
+ Added Flag to Turn Version Cache Silo On/Off
+```
+
+## Release 0.74.1 (2022-07-28)
+```
+Changes:
+ + a86a4d4:
+ Ensure that we retry ProcessInputs after gomaip times out
+ + 7241f38:
+ Fix mutex and reset logic to ensure no deadlocks
+ + 356773f:
+ Unsets environment variables set as part of integration testing.
+```
+
+## Release 0.74.0 (2022-07-26)
+```
+Changes:
+ + ffaeb60:
+ Add goma dependency scan timeout and restart behavior
+ + 9ba3a79:
+ Fix chromium integration test.
+ + 3ee03c3:
+ Add compare and bootstrap integration tests to Mac presubmit.
+```
+
+## Release 0.73.0 (2022-07-19)
+```
+Changes:
+ + 4c17597:
+ Refactored LocalMetadata EventTimes Code
+ + 13862b2:
+ Fixup header-abi-dumper input processor
+ + 00b0ef9:
+ Fix unit test
+ + ebccd69:
+ Update chromium source snapshot.
+ + 91f6ccf:
+ Account for working directory when moving files in racing mode
+ + 1503382:
+ Remove InputListPaths from remote inputs
+ + 205281e:
+ Only consider successful builds for fallback calculations in release status tool
+ + 6311b9a:
+ Exclude CQ builders from status tool for now
+ + 0c5c167:
+ Run integ tests on Mac on presubmit.
+ + f1392b6:
+ Make `ar` archive deep scanning configurable
+ + 0062d55:
+ Simplified Event Recording Code
+ + e291191:
+ Update source snapshots for continuous builds
+ + 1e8e766:
+ Use sso authentication for git clone in release status tool
+ + 20ea597:
+ Add reproxystatus to android release script
+ + 2a8eac0:
+ Add a more descriptive error message to rewrapper fatal log
+ + 5bac396:
+ Fix documentation of re-client to indicate supported platforms
+```
+
+## Release 0.72.0 (2022-07-04)
+```
+Changes:
+ + 17967ec:
+ Remove fatal failure when auth token cannot be acquired
+```
+
+## Release 0.71.0 (2022-06-22)
+```
+Changes:
+ + 75cbfca:
+ Make inputs.source paths relative to the textproto location
+ + b7be87b:
+ Control GlobalFileStatCache init by the env var
+ + 35dbafd:
+ Don't apply free_space filter in led experiments
+```
+
+## Release 0.70.0 (2022-06-20)
+```
+Changes:
+ + 0297a7f:
+ Implementation of reproxy-status binary
+ + 10da7d6:
+ Cleanup patch in run-led.sh if it was applied
+ + 94bb414:
+ Set EventPostBuildMetricsUpload metric value depending on result
+ + 7f62647:
+ Use sso:// instead of https:// when cloning repo
+ + ff5bcb1:
+ Make chromium/src CL optional in led experiments
+ + b32f9ec:
+ Add build farmer bug to commit message of release CLs
+```
+
+## Release 0.69.0 (2022-06-10)
+```
+Changes:
+ + d3c4556:
+ Abstract out coloring of command line output
+ + 385a3f2:
+ Move printer to internal/pkg
+ + 63598e9:
+ Implement DialAllContexts which discovers all instances of reproxy
+ + 046afac:
+ Implementation of rpc service for reproxy_status
+ + 0776a2a:
+ Shutdown reproxy with rpl records of inflight actions.
+ + f9c71be:
+ Don't use ReadCommandOutputByPopen
+ + 4ed81dd:
+ Replace reclient-builder:v5 used in release with the recently updated v6
+ + 54278fc:
+ Support internal CIPD upload on Mac
+```
+
+## Release 0.68.0 (2022-06-03)
+```
+Changes:
+ + 731f38ee:
+ Roll goma to VERSION=248 10e4bef3bfc94962a64426073c2ee5800da99161
+ + 23e7ee29:
+ Update aosp image
+ + 421a7bdd:
+ Fix flaky issues with Mac presubmits.
+ + b6f3d7c9:
+ Add install script for windows
+```
+
+## Release 0.67.0 (2022-05-26)
+```
+Changes:
+ + d152ea5:
+ Check compare builders are not failing as part of the release checklist.
+ + c6de196:
+ Populate LocalMetadata.Verification even when no mismatches are found
+```
+
+## Release 0.66.0 (2022-05-25)
+```
+Changes:
+ + d8873fe:
+ Update chromium-win source snapshot.
+ + a53e025:
+ Update chromium-ubuntu source snapshot.
+ + a673aec:
+ Include vpython required env vars in deps scan
+ + d9caeb2:
+ Report input processor failures back to reproxy.
+ + 5d3a8e1:
+ Limit env variables used during deps scan
+ + 407ea59:
+ Terminate reproxy if alive after CTRL_C on Win
+```
+
+## Release 0.65.0 (2022-05-13)
+```
+Changes:
+ + e8ea510:
+ Add compare mismatch diffing tool
+ + 723d3c7:
+ Revert "Revert "Add environment variables support to GomaIP""
+```
+
+## Release 0.64.0 (2022-05-09)
 ```
 Changes:
  + 5ee6ae4:

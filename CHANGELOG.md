@@ -1,3 +1,56 @@
+## Release 0.93.0 (2023-01-04)
+```
+Changes:
+ + 1b1d6dd:
+ Avoid usage of local clang and remote no-sandbox / no-remoteexec tags
+ + 7feff30:
+ Fix DOCKER_IMAGE
+ + c71d594:
+ Docker image to v8
+ + d4a2c5c:
+ Fix glob to glibc <= 2.23, or 2.29
+ + 99fbcf8:
+ Build dependency scanner with older version of glibc in Linux
+ + 8014622:
+ [rewrapper] Provide --local_wrapper option
+ + 9c1bc89:
+ Unit Tests for Restat Race
+ + f44ba3c:
+ Fix expectations in reclient chromium CI build.
+```
+
+## Release 0.92.1 (2022-12-19)
+```
+Changes:
+ + e8b8b58:
+ Update chromium disk image for CI.
+ + 27b91f2:
+ Add log2f as a function getting wrapped and fixed to glibc 2.23.
+ + 81609cd:
+ Update android disk image for CI.
+```
+
+## Release 0.92.0 (2022-12-16)
+```
+Changes:
+ + 56448c0:
+ Revert "Make unified uploads the default behavior in reproxy."
+ + 507da2e:
+ Clear file metadata cache entries for in-out files
+ + 76eb5a3:
+ Implement restat for racing
+ + 86f9a71:
+ ThinLTO: fix and improve the integration test
+ + 4c4b715:
+ Fixed bug with restat with remote execution
+ + d15cec7:
+ Upgrade bazel to 5.3.0 and linux toolchain image from gcr.io/reclient-releases/reclient-builder:v5 to gcr.io/reclient-releases/reclient-builder:v6
+ + 37c3eaf:
+ Update chromium image
+ + b624a6c:
+ Add TestFailEarlyOnIpTimeouts test
+```
+
 ## Release 0.91.1 (2022-12-07)
 ```
 Changes:

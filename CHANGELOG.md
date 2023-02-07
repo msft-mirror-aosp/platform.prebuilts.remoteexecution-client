@@ -1,3 +1,132 @@
+## Release 0.93.0 (2023-01-04)
+```
+Changes:
+ + 1b1d6dd:
+ Avoid usage of local clang and remote no-sandbox / no-remoteexec tags
+ + 7feff30:
+ Fix DOCKER_IMAGE
+ + c71d594:
+ Docker image to v8
+ + d4a2c5c:
+ Fix glob to glibc <= 2.23, or 2.29
+ + 99fbcf8:
+ Build dependency scanner with older version of glibc in Linux
+ + 8014622:
+ [rewrapper] Provide --local_wrapper option
+ + 9c1bc89:
+ Unit Tests for Restat Race
+ + f44ba3c:
+ Fix expectations in reclient chromium CI build.
+```
+
+## Release 0.92.1 (2022-12-19)
+```
+Changes:
+ + e8b8b58:
+ Update chromium disk image for CI.
+ + 27b91f2:
+ Add log2f as a function getting wrapped and fixed to glibc 2.23.
+ + 81609cd:
+ Update android disk image for CI.
+```
+
+## Release 0.92.0 (2022-12-16)
+```
+Changes:
+ + 56448c0:
+ Revert "Make unified uploads the default behavior in reproxy."
+ + 507da2e:
+ Clear file metadata cache entries for in-out files
+ + 76eb5a3:
+ Implement restat for racing
+ + 86f9a71:
+ ThinLTO: fix and improve the integration test
+ + 4c4b715:
+ Fixed bug with restat with remote execution
+ + d15cec7:
+ Upgrade bazel to 5.3.0 and linux toolchain image from gcr.io/reclient-releases/reclient-builder:v5 to gcr.io/reclient-releases/reclient-builder:v6
+ + 37c3eaf:
+ Update chromium image
+ + b624a6c:
+ Add TestFailEarlyOnIpTimeouts test
+```
+
+## Release 0.91.1 (2022-12-07)
+```
+Changes:
+ + cf73e25:
+ Fix macos.sh script
+ + 306c277:
+ Faster bootstrap.
+ + 1a2e46e:
+ Automatic authentication detection.
+```
+
+## Release 0.91.0 (2022-12-05)
+```
+Changes:
+ + a6de9e1:
+ Fix handling of outputs in compare mode
+ + 48c94e4:
+ Don't adjust command if we are using dependency scanner service
+```
+
+## Release 0.90.1 (2022-12-02)
+```
+Changes:
+ + 5e9a20c:
+ Fix performance issues with archive reader - Pass in relative directory instead of calling filepath.Rel
+```
+
+## Release 0.90.0 (2022-12-01)
+```
+Changes:
+ + 7eddb7c:
+ Add Test field to version bump script and add scandeps_server binary to android release.
+ + 89d0101:
+ Write clang-scan-deps binaries to a separate cipd package.
+ + 0268dfb:
+ Fail early on deps scan timeouts
+ + d9994ac:
+ Make unified uploads the default behavior in reproxy.
+ + a5a7199:
+ Move flags package under the input processor.
+```
+
+## Release 0.89.0 (2022-11-30)
+```
+Changes:
+ + 79f18c7:
+ Support thin archive ar file format.
+ + 19977e7:
+ Fix release builds
+ + 072cb00:
+ Assign a default context for the DepsScannerClient object
+ + bcbca12:
+ Support Restat for Remote Execution
+ + 5714559:
+ Allow cache hits in grpc test.
+ + b73f3f2:
+ Add a commented local_repository definition of the SDK to make switching easier.
+```
+
+## Release 0.88.0 (2022-11-25)
+```
+Changes:
+ + 27fa7aa:
+ Build and release scandeps service for linux.
+ + b74c165:
+ Build and release scandeps-service for Mac
+ + a23c1d0:
+ Build and deploy dependency scanner service on Windows (release)
+ + 7f04bc5:
+ Reproxy controls depsscanner
+ + 2f07013:
+ Fix bug in deps cache causing cache corruption of actions sharing deps.
+ + 537dc5e:
+ Remove unused feature in Config struct.
+```
+
 ## Release 0.87.0 (2022-11-22)
 ```
 Changes:

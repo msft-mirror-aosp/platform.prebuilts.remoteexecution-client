@@ -1,3 +1,10 @@
+## Release 0.96.2 (2023-02-06)
+```
+Changes:
+ + 00121e36:
+ Use a mutex for exclusive run of popen and pclose calls
+```
+
 ## Release 0.96.1 (2023-02-03)
 ```
 Changes:

@@ -1,3 +1,189 @@
+## Release 0.87.0 (2022-11-22)
+```
+Changes:
+ + 99922192:
+ Update goma to client to 9d55760
+ + 938d3188:
+ Read archive files directly from reproxy.
+ + bc3e9334:
+ ThinLTO: fix loading imported files
+ + 3e6d13d8:
+ Use dependency scanner service
+ + f2d239df:
+ Process remote_toolchain_inputs with missing files
+ + a84152b0:
+ Ensure goma revision stays in sync with goma_clang revision
+```
+
+## Release 0.86.0 (2022-11-09)
+```
+Changes:
+ + 241d7b9:
+ Add support for a output rsp files via OutputListPaths flag in rewrapper.
+ + 662dcd2:
+ Add cppdependencyscanner test to Mac presubmit
+ + 71f4334:
+ Updating sources to build dependency scanner service on kokoro
+```
+
+## Release 0.85.0 (2022-11-03)
+```
+Changes:
+ + 99dc179:
+ Do not rely on mtime to short circuit the deps cache.
+ + dcc4f88:
+ Remote Links - Properly handle archive files referenced in @rsp files.
+ + 81ed63b:
+ Add builder name option to run-led script
+```
+
+## Release 0.84.0 (2022-11-01)
+```
+Changes:
+ + 32423e8:
+ update goma
+ + c2c9512:
+ Move configuration options for input processor to a struct
+ + ddc13fc:
+ Add depscache integration test to Mac presubmit.
+ + af89b6d:
+ Fix create-qt-release.sh script to handle aosp being ahead of qt.
+ + 5f16bf9:
+ Add remoteexec test to Mac presubmit
+ + 5c73311:
+ release scripts: avoid the missing jq trap
+```
+
+## Release 0.83.0 (2022-10-21)
+```
+Changes:
+ + aec42f7e:
+ ThinLTO: fix flag key matching
+ + 80b87d52:
+ Ensure that the deps cache is set to not ready until loaded from disk
+ + bc6b3397:
+ Remove reset logic from gomaip
+ + e4dfb6c5:
+ Update aosp snapshot image for integ tests.
+ + e48f0768:
+ Update chromium win snapshot image
+ + 02530a91:
+ Checkout latest Bump commit on Windows.
+ + 34f8a69a:
+ Update linux chromium kokoro integ test disk snapshot.
+ + fd92177a:
+ Add foundry-x-experiments mac-cross compile image
+```
+
+## Release 0.82.1 (2022-10-14)
+```
+Changes:
+ + ee25391:
+ Add log lines to IncludeProcessor::GetCompilerInfo
+ + 1779d0f:
+ Implement compiler_info_state error handling logic in goma
+ + 9d1b983:
+ Pass the PATH variable to the input processor to fix pnacl fallbacks.
+```
+
+## Release 0.82.0 (2022-10-13)
+```
+Changes:
+ + 02f4e1c:
+ Add additional log points after 'ComputeIncludesDone'
+ + 33f1a0a:
+ Build dependency scanner service w/ goma
+ + 08c449c:
+ Cleanup the input processor after cancelling contexts
+ + a3236bb:
+ Manually enable -fprofile_use for clang-cl
+```
+
+## Release 0.81.1 (2022-10-04)
+```
+Changes:
+ + 100ab7a7:
+ Downgrade bazel back to 5.0.0
+```
+
+## Release 0.81.0 (2022-10-03)
+```
+Changes:
+ + c572b729:
+ Pass Goma IP errors back to the go layer.
+ + 0090e098:
+ Add flag for goma input processor timeout
+ + 73a5d456:
+ Add buffer to resCh to ensure that the send in gComputeIncludesDone is never blocking
+ + 88449725:
+ Upgrade Goma IP.
+ + b2e72748:
+ Add windows support to echo codelab and add dockerfiles
+ + 1e9a1d67:
+ Integrate goma built with libstdc++ with the skeleton service
+ + c00528cd:
+ Add echo codelab code
+ + 96bcdd0e:
+ Add reproxystatus to install scripts
+```
+
+## Release 0.80.0 (2022-09-21)
+```
+Changes:
+ + 002cb993:
+ Initialize compiler info cache correctly when using reproxy deps cache
+ + 11075ee2:
+ Bazel test to upload metrics to Perfgate
+ + eb45ceae:
+ [rewrapper] Implement --action_log
+ + 411a3045:
+ Restore using the pid file to check whether reproxy has shutdown.
+ + fd273939:
+ Include Mac builders in release status tool
+ + 98af4a4a:
+ wrapped up perfgate binary for metrics to upload, specify the project info.
+ + 502034dd:
+ Dependency scanner service
+```
+
+## Release 0.79.0 (2022-09-13)
+```
+Changes:
+ + de55e3c:
+ Use closures in Goma Input Processor.
+ + 57ce0a5:
+ Disable goma deps cache if dir is not specified
+ + f81b9fc:
+ update aosp and chromium-win images Also update the script to seamlessly work from cloudtop machines in addition to developer workstations.
+ + 0b59c0c:
+ Support ThinLTO flags for clang
+ + bf9e549:
+ Add cq checks to status tool
+ + fbee4da:
+ Use a thread locked worker pool for calling Goma input processor.
+```
+
+## Release 0.78.0 (2022-08-31)
+```
+Changes:
+ + f8d9f33:
+ Update Goma input processor.
+ + 496df74:
+ Add experimental go deps cache for gomaip
+ + 7686d6c:
+ Add a flag for reset debounce timeout for goma input processor and lower the default timeout to 3 minutes.
+ + e036e76:
+ Check the CompilerInfoCache for a cache hit before obtaining a key lock.
+ + 44e049a:
+ Make arm mac build work
+ + 97f6485:
+ Added reproxyargs integration test to Windows tests.
+ + 5e5f89a:
+ Add luci download script
+ + 12f86f9:
+ Update images script and chromium linux image
+```
+
 ## Release 0.77.2 (2022-08-19)
 ```
 Changes:

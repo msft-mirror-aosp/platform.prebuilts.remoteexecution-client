@@ -1,3 +1,78 @@
+## Release 0.96.2 (2023-02-06)
+```
+Changes:
+ + 00121e36:
+ Use a mutex for exclusive run of popen and pclose calls
+```
+
+## Release 0.96.1 (2023-02-03)
+```
+Changes:
+ + 56658f8:
+ Use multiline prototext format for logs
+```
+
+## Release 0.96.0 (2023-02-01)
+```
+Changes:
+ + d0efb49:
+ Use context for fail early logic
+ + 3fe7b1e:
+ Update the sdk to use the latest commit.
+ + 9432c44:
+ Don't pass handled link flags to base clangparser.
+ + 5f9594f:
+ Migrate from github.com/golang/protobuf/proto (now deprecated) to google.golang.org/protobuf/proto
+ + 15fd3f2:
+ Capture scandeps_server binary as well when uploading to cipd as part of led runs
+ + ba62f96:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + 4f2d184:
+ Add a flag to disable uploading the sysroot directory for remote links.
+ + 7152aa6:
+ Add experiment proto for remote linking in chrome
+ + f973804:
+ Reduce failBuildMu RLock scope
+ + f190d47:
+ Update chromium image for test
+ + 8678a65:
+ Preserve absolute path args used by CMake in cpp compile commands.
+```
+
+## Release 0.95.0 (2023-01-25)
+```
+Changes:
+ + b23eaaa:
+ Support scandeps_server on Ubuntu 14.04
+```
+
+## Release 0.94.0 (2023-01-23)
+```
+Changes:
+ + 7ab8a587:
+ Add local resource requirements on link actions.
+ + 9ffc3932:
+ Log errors from scandeps service
+ + 7a80a6c8:
+ Get debug symbols for scandeps server.
+ + 220b9aa4:
+ Refactor the googleauth package to streamline access from bootstrap and reproxy.
+ + 2a364481:
+ Add rsp handling with supplied function.
+ + f4c30e1c:
+ Adjust how glob is wrapped.
+ + afdf286c:
+ Add Win SDK and VC toolchain to virtual inputs
+ + 085d6f00:
+ Enable led experiments for builders with spaces
+ + 782b7afa:
+ GLIBC fix for 1604 compatibility.
+ + 09ededa8:
+ Add flags to allow specifying cache dir without enabling deps cache
+ + b5e334d2:
+ Update android source image for perf build.
+```
+
 ## Release 0.93.0 (2023-01-04)
 ```
 Changes:

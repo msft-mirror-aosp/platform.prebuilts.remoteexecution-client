@@ -1,3 +1,50 @@
+## Release 0.97.2 (2023-02-27)
+```
+Changes:
+ + b7aa8f1:
+ Revert "Bump version to 0.97.1"
+ + 79d10cd:
+ Bump version to 0.97.1 Bug: b/169675226 Test: NA
+ + f17e91e:
+ Support cfg project flag for led experiments
+ + 91c5a42:
+ Add a --config option to select input processor
+ + a92f060:
+ Revert "Bump version to 0.97.0"
+ + cc5d138:
+ Bump version to 0.97.0 Bug: b/169675226 Test: NA
+ + 27c9336:
+ Split out clang-options.json file usage
+ + 9736062:
+ Support scandeps_server on Ubuntu 14.04
+ + 60f5009:
+ Add recipe flag to run-led.sh
+ + cdd75c4:
+ General fixes for future support on Ubuntu 14.04
+ + 20312a9:
+ Update aosp and chromium images
+ + b881d3b:
+ Remove deps_cache_dir flag from experiments protos
+ + 163b26b:
+ Fix arg order in test helper.
+ + 7a8baa5:
+ Add integration test to verify automatic auth works as intendend.
+ + 171f3b5:
+ Log if reproxy is alive before shutting it down
+ + 23fc7bb:
+ Capture windows FATAL log files when checking for build failure
+ + 85502de:
+ Restart the dependency scanner service after crash or deadlock
+ + 1409b90:
+ Add gcloudauth option.
+ + 1334eb5:
+ Automatic auth to automatically run tool to obtain creds.
+ + a321640:
+ Remove minimized file contents cache
+ + 31e06f4:
+ Implementing AddLogRecords Optimizations
+```
+
 ## Release 0.96.2 (2023-02-06)
 ```
 Changes:

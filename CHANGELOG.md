@@ -1,3 +1,125 @@
+## Release 0.97.2 (2023-02-27)
+```
+Changes:
+ + b7aa8f1:
+ Revert "Bump version to 0.97.1"
+ + 79d10cd:
+ Bump version to 0.97.1 Bug: b/169675226 Test: NA
+ + f17e91e:
+ Support cfg project flag for led experiments
+ + 91c5a42:
+ Add a --config option to select input processor
+ + a92f060:
+ Revert "Bump version to 0.97.0"
+ + cc5d138:
+ Bump version to 0.97.0 Bug: b/169675226 Test: NA
+ + 27c9336:
+ Split out clang-options.json file usage
+ + 9736062:
+ Support scandeps_server on Ubuntu 14.04
+ + 60f5009:
+ Add recipe flag to run-led.sh
+ + cdd75c4:
+ General fixes for future support on Ubuntu 14.04
+ + 20312a9:
+ Update aosp and chromium images
+ + b881d3b:
+ Remove deps_cache_dir flag from experiments protos
+ + 163b26b:
+ Fix arg order in test helper.
+ + 7a8baa5:
+ Add integration test to verify automatic auth works as intendend.
+ + 171f3b5:
+ Log if reproxy is alive before shutting it down
+ + 23fc7bb:
+ Capture windows FATAL log files when checking for build failure
+ + 85502de:
+ Restart the dependency scanner service after crash or deadlock
+ + 1409b90:
+ Add gcloudauth option.
+ + 1334eb5:
+ Automatic auth to automatically run tool to obtain creds.
+ + a321640:
+ Remove minimized file contents cache
+ + 31e06f4:
+ Implementing AddLogRecords Optimizations
+```
+
+## Release 0.96.2 (2023-02-06)
+```
+Changes:
+ + 00121e36:
+ Use a mutex for exclusive run of popen and pclose calls
+```
+
+## Release 0.96.1 (2023-02-03)
+```
+Changes:
+ + 56658f8:
+ Use multiline prototext format for logs
+```
+
+## Release 0.96.0 (2023-02-01)
+```
+Changes:
+ + d0efb49:
+ Use context for fail early logic
+ + 3fe7b1e:
+ Update the sdk to use the latest commit.
+ + 9432c44:
+ Don't pass handled link flags to base clangparser.
+ + 5f9594f:
+ Migrate from github.com/golang/protobuf/proto (now deprecated) to google.golang.org/protobuf/proto
+ + 15fd3f2:
+ Capture scandeps_server binary as well when uploading to cipd as part of led runs
+ + ba62f96:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + 4f2d184:
+ Add a flag to disable uploading the sysroot directory for remote links.
+ + 7152aa6:
+ Add experiment proto for remote linking in chrome
+ + f973804:
+ Reduce failBuildMu RLock scope
+ + f190d47:
+ Update chromium image for test
+ + 8678a65:
+ Preserve absolute path args used by CMake in cpp compile commands.
+```
+
+## Release 0.95.0 (2023-01-25)
+```
+Changes:
+ + b23eaaa:
+ Support scandeps_server on Ubuntu 14.04
+```
+
+## Release 0.94.0 (2023-01-23)
+```
+Changes:
+ + 7ab8a587:
+ Add local resource requirements on link actions.
+ + 9ffc3932:
+ Log errors from scandeps service
+ + 7a80a6c8:
+ Get debug symbols for scandeps server.
+ + 220b9aa4:
+ Refactor the googleauth package to streamline access from bootstrap and reproxy.
+ + 2a364481:
+ Add rsp handling with supplied function.
+ + f4c30e1c:
+ Adjust how glob is wrapped.
+ + afdf286c:
+ Add Win SDK and VC toolchain to virtual inputs
+ + 085d6f00:
+ Enable led experiments for builders with spaces
+ + 782b7afa:
+ GLIBC fix for 1604 compatibility.
+ + 09ededa8:
+ Add flags to allow specifying cache dir without enabling deps cache
+ + b5e334d2:
+ Update android source image for perf build.
+```
+
 ## Release 0.93.0 (2023-01-04)
 ```
 Changes:

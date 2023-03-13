@@ -1,3 +1,39 @@
+## Release 0.99.0 (2023-03-08)
+```
+Changes:
+ + a6b843c:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + a0a0e77:
+ Add test that runs reproxy on ubuntu 14,16 and 18
+ + d53a183:
+ Mark flaky tests as such.
+ + 2d0a017:
+ Update kokoro and remote toolchain to v10 image
+ + dbe1011:
+ Update chromium-win source image.
+ + b1da30c:
+ Fix cfg file handling of blank lines.
+```
+
+## Release 0.98.0 (2023-03-02)
+```
+Changes:
+ + a5c8120:
+ Update clang scan deps
+ + bf19129:
+ Fix order of commands in release script
+ + 2536ea6:
+ Use cache in depsscanner service.
+ + 2815c67:
+ Add log record to stats after every action
+ + cc262a3:
+ Fix chromium docker image to use v9 image
+ + 9a96126:
+ Properly count scandeps service crash as fallback.
+ + f863aa2:
+ Update kokoro and remote toolchain to v9 image
+```
+
 ## Release 0.97.2 (2023-02-27)
 ```
 Changes:

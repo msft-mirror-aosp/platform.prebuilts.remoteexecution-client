@@ -1,3 +1,16 @@
+## Release 0.100.2 (2023-03-24)
+```
+Changes:
+ + 002ae28:
+ Update create-release script to list commits with 7 character ID.
+ + f1f7ac2:
+ Revert "Refactor monitoring package"
+ + 835169e:
+ Include reclientreport in cipd package for windows.
+ + 150bf0b:
+ Refactor monitoring package
+```
+
 ## Release 0.100.1 (2023-03-23)
 ```
 Changes:

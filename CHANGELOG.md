@@ -1,3 +1,86 @@
+## Release 0.99.0 (2023-03-08)
+```
+Changes:
+ + a6b843c:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + a0a0e77:
+ Add test that runs reproxy on ubuntu 14,16 and 18
+ + d53a183:
+ Mark flaky tests as such.
+ + 2d0a017:
+ Update kokoro and remote toolchain to v10 image
+ + dbe1011:
+ Update chromium-win source image.
+ + b1da30c:
+ Fix cfg file handling of blank lines.
+```
+
+## Release 0.98.0 (2023-03-02)
+```
+Changes:
+ + a5c8120:
+ Update clang scan deps
+ + bf19129:
+ Fix order of commands in release script
+ + 2536ea6:
+ Use cache in depsscanner service.
+ + 2815c67:
+ Add log record to stats after every action
+ + cc262a3:
+ Fix chromium docker image to use v9 image
+ + 9a96126:
+ Properly count scandeps service crash as fallback.
+ + f863aa2:
+ Update kokoro and remote toolchain to v9 image
+```
+
+## Release 0.97.2 (2023-02-27)
+```
+Changes:
+ + b7aa8f1:
+ Revert "Bump version to 0.97.1"
+ + 79d10cd:
+ Bump version to 0.97.1 Bug: b/169675226 Test: NA
+ + f17e91e:
+ Support cfg project flag for led experiments
+ + 91c5a42:
+ Add a --config option to select input processor
+ + a92f060:
+ Revert "Bump version to 0.97.0"
+ + cc5d138:
+ Bump version to 0.97.0 Bug: b/169675226 Test: NA
+ + 27c9336:
+ Split out clang-options.json file usage
+ + 9736062:
+ Support scandeps_server on Ubuntu 14.04
+ + 60f5009:
+ Add recipe flag to run-led.sh
+ + cdd75c4:
+ General fixes for future support on Ubuntu 14.04
+ + 20312a9:
+ Update aosp and chromium images
+ + b881d3b:
+ Remove deps_cache_dir flag from experiments protos
+ + 163b26b:
+ Fix arg order in test helper.
+ + 7a8baa5:
+ Add integration test to verify automatic auth works as intendend.
+ + 171f3b5:
+ Log if reproxy is alive before shutting it down
+ + 23fc7bb:
+ Capture windows FATAL log files when checking for build failure
+ + 85502de:
+ Restart the dependency scanner service after crash or deadlock
+ + 1409b90:
+ Add gcloudauth option.
+ + 1334eb5:
+ Automatic auth to automatically run tool to obtain creds.
+ + a321640:
+ Remove minimized file contents cache
+ + 31e06f4:
+ Implementing AddLogRecords Optimizations
+```
+
 ## Release 0.96.2 (2023-02-06)
 ```
 Changes:

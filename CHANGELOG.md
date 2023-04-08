@@ -1,3 +1,74 @@
+## Release 0.100.2 (2023-03-24)
+```
+Changes:
+ + 002ae28:
+ Update create-release script to list commits with 7 character ID.
+ + f1f7ac2:
+ Revert "Refactor monitoring package"
+ + 835169e:
+ Include reclientreport in cipd package for windows.
+ + 150bf0b:
+ Refactor monitoring package
+```
+
+## Release 0.100.1 (2023-03-23)
+```
+Changes:
+ + 88feef1:
+ Fix bump script to use 7 character commit ID in Changelog.
+ + 52ab1e4:
+ Add reclientreport and remotetool to cipd packages
+```
+
+## Release 0.100.0 (2023-03-22)
+```
+Changes:
+ + 9d75539:
+ Fix shutdown logic to always wait for reproxy to be dead
+ + 526e615:
+ Use ShutdownResponse.stats in bootstrap if it exists
+ + 9d02e9f:
+ Adding BuildCacheHitRatio and BuildLatency to Stats Proto
+ + 234a738:
+ Update chrome DEPS patch for led experiments
+ + 831616b:
+ Increase default ip_timeout from 3m to 10m
+ + 8683c71:
+ Pass correct log directory to goma in scandeps server
+ + 0c2fefe:
+ Populate ShutdownResponse.stats in reproxy
+ + a3d4659:
+ Process Mismatches Refactor
+ + 5b840f8:
+ Add IP timeout support to ClangScanDeps
+ + 4e490f2:
+ Cache inferred credentials.
+ + bad88be:
+ Use rbeflags in reclientreport to support all log flags
+ + 870c72a:
+ Add Stats field to ShutdownResponse
+ + e55953b:
+ Add sha256 for com_github_grpc_grpc to remove warning
+ + d07f3ba:
+ Cache the authentication token on disk to speedup bootstrap shutdown and subsequent builds.
+ + 0ab4b01:
+ fix fetching reclient config on windows (chromium)
+ + 0226ece:
+ Remove GCE zone lookup
+ + c4a7055:
+ Abort creating a release on missing changelogs
+ + fce3909:
+ Update opencensus with fix to the Flush bug.
+ + 350d649:
+ Reduce sleep time while waiting for reproxy to start/shutdown
+ + 182d9f6:
+ Allow specifying a second version for changelog
+ + 421a746:
+ Merge context used by goma and goma-service
+ + abce9c7:
+ Run gofmt and golint with hermetic go toolchain
+```
+
 ## Release 0.99.0 (2023-03-08)
 ```
 Changes:

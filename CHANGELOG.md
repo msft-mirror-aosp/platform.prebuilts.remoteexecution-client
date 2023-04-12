@@ -1,3 +1,40 @@
+## Release 0.101.0 (2023-04-11)
+```
+Changes:
+ + a3d9189:
+ Bump remote-apis-sdks commit
+ + 3a50a81:
+ Use static_link_msvcrt to build scandeps_server
+ + 30affe8:
+ Upgrade llvm to c4c5e79dd4b4c78eee7cffd9b0d7394b5bedcf12
+ + 651e344:
+ Include scandeps_server in experimental releases
+ + ee5a5bc:
+ Speed up git commit by passing all files to golint and gofmt at once
+ + fc6a255:
+ Update go version to 1.19.5
+ + 7b680b8:
+ Update rules_go to 0.34.0 to be able to update to go 1.19
+ + f4784ad:
+ Fix reclientreport entry in cipd-internal-windows
+ + 0a20a2a:
+ Remove go from reclient-builder
+ + c0e3185:
+ Update chromium linux disk image
+ + d55c1a4:
+ Fix opencensus time interval bug in patch
+ + 1dc0dfc:
+ Add label for NaCl links.
+ + b2ce2fd:
+ Ensure gsutil can reauth correctly in experiment framework
+ + f9bed70:
+ Fix wait_for_shutdown_rpc=false to shutdown after first signal
+ + 4392f5b:
+ Revert "Revert "Refactor monitoring package""
+ + d1957f1:
+ Chrome developer noop build experiment
+```
+
 ## Release 0.100.2 (2023-03-24)
 ```
 Changes:

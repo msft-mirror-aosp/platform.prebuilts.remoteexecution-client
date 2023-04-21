@@ -1,3 +1,28 @@
+## Release 0.102.0 (2023-04-19)
+```
+Changes:
+ + d4774f7:
+ Update chromium-win disk snapshot
+ + 4a5d831:
+ Update SDK commit.
+ + be45cc3:
+ Add async_reproxy_termination to bootstrap and add option to reclientreport to wait for reproxy to terminate
+ + 8d53757:
+ Propagate cache dir to input processor even if deps cache is disabled
+ + f3da4ae:
+ Re add golang.org/x/tools as it is required by golint
+ + 11012c5:
+ Remove unused dependencies
+ + 569084c:
+ Extract pid file handling in preparation for future changes
+ + de14ea5:
+ Remove local depscanner from scandeps service
+ + f8aaadc:
+ Exclude deleted files from linters input
+ + e1eed5b:
+ Don't build goma with scan-deps configuration
+```
+
 ## Release 0.101.0 (2023-04-11)
 ```
 Changes:

@@ -1,3 +1,26 @@
+## Release 0.103.0 (2023-04-26)
+```
+Changes:
+ + df66a5b:
+ Auth Refactor
+ + b989ed0:
+ Eliminate retries of invalid cached credentials, wipe cache instead
+ + 2d8cc3f:
+ Update assertion values in Android Integration test
+ + 0827720:
+ Update goma client to latest version.
+ + 08e2447:
+ Properly support --service_no_auth and --credential_file
+ + ab48705:
+ Refresh expired cached credentials and update flags auth flags for each attempt
+ + 3162c9a:
+ Update Docker image to install m4
+ + ed5bc98:
+ Remove TODOs with ldaps
+ + 96d1bbe:
+ Update aosp test image
+```
+
 ## Release 0.102.0 (2023-04-19)
 ```
 Changes:

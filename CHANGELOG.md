@@ -1,3 +1,194 @@
+## Release 0.101.0 (2023-04-11)
+```
+Changes:
+ + a3d9189:
+ Bump remote-apis-sdks commit
+ + 3a50a81:
+ Use static_link_msvcrt to build scandeps_server
+ + 30affe8:
+ Upgrade llvm to c4c5e79dd4b4c78eee7cffd9b0d7394b5bedcf12
+ + 651e344:
+ Include scandeps_server in experimental releases
+ + ee5a5bc:
+ Speed up git commit by passing all files to golint and gofmt at once
+ + fc6a255:
+ Update go version to 1.19.5
+ + 7b680b8:
+ Update rules_go to 0.34.0 to be able to update to go 1.19
+ + f4784ad:
+ Fix reclientreport entry in cipd-internal-windows
+ + 0a20a2a:
+ Remove go from reclient-builder
+ + c0e3185:
+ Update chromium linux disk image
+ + d55c1a4:
+ Fix opencensus time interval bug in patch
+ + 1dc0dfc:
+ Add label for NaCl links.
+ + b2ce2fd:
+ Ensure gsutil can reauth correctly in experiment framework
+ + f9bed70:
+ Fix wait_for_shutdown_rpc=false to shutdown after first signal
+ + 4392f5b:
+ Revert "Revert "Refactor monitoring package""
+ + d1957f1:
+ Chrome developer noop build experiment
+```
+
+## Release 0.100.2 (2023-03-24)
+```
+Changes:
+ + 002ae28:
+ Update create-release script to list commits with 7 character ID.
+ + f1f7ac2:
+ Revert "Refactor monitoring package"
+ + 835169e:
+ Include reclientreport in cipd package for windows.
+ + 150bf0b:
+ Refactor monitoring package
+```
+
+## Release 0.100.1 (2023-03-23)
+```
+Changes:
+ + 88feef1:
+ Fix bump script to use 7 character commit ID in Changelog.
+ + 52ab1e4:
+ Add reclientreport and remotetool to cipd packages
+```
+
+## Release 0.100.0 (2023-03-22)
+```
+Changes:
+ + 9d75539:
+ Fix shutdown logic to always wait for reproxy to be dead
+ + 526e615:
+ Use ShutdownResponse.stats in bootstrap if it exists
+ + 9d02e9f:
+ Adding BuildCacheHitRatio and BuildLatency to Stats Proto
+ + 234a738:
+ Update chrome DEPS patch for led experiments
+ + 831616b:
+ Increase default ip_timeout from 3m to 10m
+ + 8683c71:
+ Pass correct log directory to goma in scandeps server
+ + 0c2fefe:
+ Populate ShutdownResponse.stats in reproxy
+ + a3d4659:
+ Process Mismatches Refactor
+ + 5b840f8:
+ Add IP timeout support to ClangScanDeps
+ + 4e490f2:
+ Cache inferred credentials.
+ + bad88be:
+ Use rbeflags in reclientreport to support all log flags
+ + 870c72a:
+ Add Stats field to ShutdownResponse
+ + e55953b:
+ Add sha256 for com_github_grpc_grpc to remove warning
+ + d07f3ba:
+ Cache the authentication token on disk to speedup bootstrap shutdown and subsequent builds.
+ + 0ab4b01:
+ fix fetching reclient config on windows (chromium)
+ + 0226ece:
+ Remove GCE zone lookup
+ + c4a7055:
+ Abort creating a release on missing changelogs
+ + fce3909:
+ Update opencensus with fix to the Flush bug.
+ + 350d649:
+ Reduce sleep time while waiting for reproxy to start/shutdown
+ + 182d9f6:
+ Allow specifying a second version for changelog
+ + 421a746:
+ Merge context used by goma and goma-service
+ + abce9c7:
+ Run gofmt and golint with hermetic go toolchain
+```
+
+## Release 0.99.0 (2023-03-08)
+```
+Changes:
+ + a6b843c:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + a0a0e77:
+ Add test that runs reproxy on ubuntu 14,16 and 18
+ + d53a183:
+ Mark flaky tests as such.
+ + 2d0a017:
+ Update kokoro and remote toolchain to v10 image
+ + dbe1011:
+ Update chromium-win source image.
+ + b1da30c:
+ Fix cfg file handling of blank lines.
+```
+
+## Release 0.98.0 (2023-03-02)
+```
+Changes:
+ + a5c8120:
+ Update clang scan deps
+ + bf19129:
+ Fix order of commands in release script
+ + 2536ea6:
+ Use cache in depsscanner service.
+ + 2815c67:
+ Add log record to stats after every action
+ + cc262a3:
+ Fix chromium docker image to use v9 image
+ + 9a96126:
+ Properly count scandeps service crash as fallback.
+ + f863aa2:
+ Update kokoro and remote toolchain to v9 image
+```
+
+## Release 0.97.2 (2023-02-27)
+```
+Changes:
+ + b7aa8f1:
+ Revert "Bump version to 0.97.1"
+ + 79d10cd:
+ Bump version to 0.97.1 Bug: b/169675226 Test: NA
+ + f17e91e:
+ Support cfg project flag for led experiments
+ + 91c5a42:
+ Add a --config option to select input processor
+ + a92f060:
+ Revert "Bump version to 0.97.0"
+ + cc5d138:
+ Bump version to 0.97.0 Bug: b/169675226 Test: NA
+ + 27c9336:
+ Split out clang-options.json file usage
+ + 9736062:
+ Support scandeps_server on Ubuntu 14.04
+ + 60f5009:
+ Add recipe flag to run-led.sh
+ + cdd75c4:
+ General fixes for future support on Ubuntu 14.04
+ + 20312a9:
+ Update aosp and chromium images
+ + b881d3b:
+ Remove deps_cache_dir flag from experiments protos
+ + 163b26b:
+ Fix arg order in test helper.
+ + 7a8baa5:
+ Add integration test to verify automatic auth works as intendend.
+ + 171f3b5:
+ Log if reproxy is alive before shutting it down
+ + 23fc7bb:
+ Capture windows FATAL log files when checking for build failure
+ + 85502de:
+ Restart the dependency scanner service after crash or deadlock
+ + 1409b90:
+ Add gcloudauth option.
+ + 1334eb5:
+ Automatic auth to automatically run tool to obtain creds.
+ + a321640:
+ Remove minimized file contents cache
+ + 31e06f4:
+ Implementing AddLogRecords Optimizations
+```
+
 ## Release 0.96.2 (2023-02-06)
 ```
 Changes:

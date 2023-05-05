@@ -1,3 +1,159 @@
+## Release 0.103.0 (2023-04-26)
+```
+Changes:
+ + df66a5b:
+ Auth Refactor
+ + b989ed0:
+ Eliminate retries of invalid cached credentials, wipe cache instead
+ + 2d8cc3f:
+ Update assertion values in Android Integration test
+ + 0827720:
+ Update goma client to latest version.
+ + 08e2447:
+ Properly support --service_no_auth and --credential_file
+ + ab48705:
+ Refresh expired cached credentials and update flags auth flags for each attempt
+ + 3162c9a:
+ Update Docker image to install m4
+ + ed5bc98:
+ Remove TODOs with ldaps
+ + 96d1bbe:
+ Update aosp test image
+```
+
+## Release 0.102.0 (2023-04-19)
+```
+Changes:
+ + d4774f7:
+ Update chromium-win disk snapshot
+ + 4a5d831:
+ Update SDK commit.
+ + be45cc3:
+ Add async_reproxy_termination to bootstrap and add option to reclientreport to wait for reproxy to terminate
+ + 8d53757:
+ Propagate cache dir to input processor even if deps cache is disabled
+ + f3da4ae:
+ Re add golang.org/x/tools as it is required by golint
+ + 11012c5:
+ Remove unused dependencies
+ + 569084c:
+ Extract pid file handling in preparation for future changes
+ + de14ea5:
+ Remove local depscanner from scandeps service
+ + f8aaadc:
+ Exclude deleted files from linters input
+ + e1eed5b:
+ Don't build goma with scan-deps configuration
+```
+
+## Release 0.101.0 (2023-04-11)
+```
+Changes:
+ + a3d9189:
+ Bump remote-apis-sdks commit
+ + 3a50a81:
+ Use static_link_msvcrt to build scandeps_server
+ + 30affe8:
+ Upgrade llvm to c4c5e79dd4b4c78eee7cffd9b0d7394b5bedcf12
+ + 651e344:
+ Include scandeps_server in experimental releases
+ + ee5a5bc:
+ Speed up git commit by passing all files to golint and gofmt at once
+ + fc6a255:
+ Update go version to 1.19.5
+ + 7b680b8:
+ Update rules_go to 0.34.0 to be able to update to go 1.19
+ + f4784ad:
+ Fix reclientreport entry in cipd-internal-windows
+ + 0a20a2a:
+ Remove go from reclient-builder
+ + c0e3185:
+ Update chromium linux disk image
+ + d55c1a4:
+ Fix opencensus time interval bug in patch
+ + 1dc0dfc:
+ Add label for NaCl links.
+ + b2ce2fd:
+ Ensure gsutil can reauth correctly in experiment framework
+ + f9bed70:
+ Fix wait_for_shutdown_rpc=false to shutdown after first signal
+ + 4392f5b:
+ Revert "Revert "Refactor monitoring package""
+ + d1957f1:
+ Chrome developer noop build experiment
+```
+
+## Release 0.100.2 (2023-03-24)
+```
+Changes:
+ + 002ae28:
+ Update create-release script to list commits with 7 character ID.
+ + f1f7ac2:
+ Revert "Refactor monitoring package"
+ + 835169e:
+ Include reclientreport in cipd package for windows.
+ + 150bf0b:
+ Refactor monitoring package
+```
+
+## Release 0.100.1 (2023-03-23)
+```
+Changes:
+ + 88feef1:
+ Fix bump script to use 7 character commit ID in Changelog.
+ + 52ab1e4:
+ Add reclientreport and remotetool to cipd packages
+```
+
+## Release 0.100.0 (2023-03-22)
+```
+Changes:
+ + 9d75539:
+ Fix shutdown logic to always wait for reproxy to be dead
+ + 526e615:
+ Use ShutdownResponse.stats in bootstrap if it exists
+ + 9d02e9f:
+ Adding BuildCacheHitRatio and BuildLatency to Stats Proto
+ + 234a738:
+ Update chrome DEPS patch for led experiments
+ + 831616b:
+ Increase default ip_timeout from 3m to 10m
+ + 8683c71:
+ Pass correct log directory to goma in scandeps server
+ + 0c2fefe:
+ Populate ShutdownResponse.stats in reproxy
+ + a3d4659:
+ Process Mismatches Refactor
+ + 5b840f8:
+ Add IP timeout support to ClangScanDeps
+ + 4e490f2:
+ Cache inferred credentials.
+ + bad88be:
+ Use rbeflags in reclientreport to support all log flags
+ + 870c72a:
+ Add Stats field to ShutdownResponse
+ + e55953b:
+ Add sha256 for com_github_grpc_grpc to remove warning
+ + d07f3ba:
+ Cache the authentication token on disk to speedup bootstrap shutdown and subsequent builds.
+ + 0ab4b01:
+ fix fetching reclient config on windows (chromium)
+ + 0226ece:
+ Remove GCE zone lookup
+ + c4a7055:
+ Abort creating a release on missing changelogs
+ + fce3909:
+ Update opencensus with fix to the Flush bug.
+ + 350d649:
+ Reduce sleep time while waiting for reproxy to start/shutdown
+ + 182d9f6:
+ Allow specifying a second version for changelog
+ + 421a746:
+ Merge context used by goma and goma-service
+ + abce9c7:
+ Run gofmt and golint with hermetic go toolchain
+```
+
 ## Release 0.99.0 (2023-03-08)
 ```
 Changes:

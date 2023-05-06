@@ -1,3 +1,51 @@
+## Release 0.103.0 (2023-04-26)
+```
+Changes:
+ + df66a5b:
+ Auth Refactor
+ + b989ed0:
+ Eliminate retries of invalid cached credentials, wipe cache instead
+ + 2d8cc3f:
+ Update assertion values in Android Integration test
+ + 0827720:
+ Update goma client to latest version.
+ + 08e2447:
+ Properly support --service_no_auth and --credential_file
+ + ab48705:
+ Refresh expired cached credentials and update flags auth flags for each attempt
+ + 3162c9a:
+ Update Docker image to install m4
+ + ed5bc98:
+ Remove TODOs with ldaps
+ + 96d1bbe:
+ Update aosp test image
+```
+
+## Release 0.102.0 (2023-04-19)
+```
+Changes:
+ + d4774f7:
+ Update chromium-win disk snapshot
+ + 4a5d831:
+ Update SDK commit.
+ + be45cc3:
+ Add async_reproxy_termination to bootstrap and add option to reclientreport to wait for reproxy to terminate
+ + 8d53757:
+ Propagate cache dir to input processor even if deps cache is disabled
+ + f3da4ae:
+ Re add golang.org/x/tools as it is required by golint
+ + 11012c5:
+ Remove unused dependencies
+ + 569084c:
+ Extract pid file handling in preparation for future changes
+ + de14ea5:
+ Remove local depscanner from scandeps service
+ + f8aaadc:
+ Exclude deleted files from linters input
+ + e1eed5b:
+ Don't build goma with scan-deps configuration
+```
+
 ## Release 0.101.0 (2023-04-11)
 ```
 Changes:

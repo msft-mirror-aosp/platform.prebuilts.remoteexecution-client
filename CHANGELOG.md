@@ -1,3 +1,41 @@
+## Release 0.105.0 (2023-05-10)
+```
+Changes:
+ + 7fa71d8:
+ Use google.golang.org/api/oauth2 use correct expiry for tokens
+ + 1a39ae4:
+ Add license headers to remaining files
+ + f82f7f2:
+ Add license headers to pkg, llvm, and goma
+ + 51839b2:
+ Add license headers to //cmd/... files
+ + 47d6cbb:
+ Add license headers to internal/pkg files
+ + 4c80f4a:
+ Change scandeps restart error type
+```
+
+## Release 0.104.0 (2023-05-04)
+```
+Changes:
+ + 71f61a3:
+ update remote-apis-sdk
+ + 50f57f9:
+ ExportBuildMetrics to use stats proto for metrics
+ + 73b9b99:
+ Export Action Metrics after every action
+ + ea968dc:
+ Add CONTRIBUTING.md file
+ + 96758ee:
+ Implement rbe_metrics->BigQuery upload in bootstrap shutdown
+ + 3bfa3a9:
+ Change NonDeterministic bool flag to enum
+ + 4187038:
+ Update disk snapshots
+ + 24c74c3:
+ Don't check for total counts in chromium integ test
+```
+
 ## Release 0.103.0 (2023-04-26)
 ```
 Changes:

@@ -1,3 +1,10 @@
+## Release 0.107.1 (2023-05-25)
+```
+Changes:
+ + 68f7c3c:
+ Revert "Do not block input processing on local resources."
+```
+
 ## Release 0.107.0 (2023-05-24)
 ```
 Changes:

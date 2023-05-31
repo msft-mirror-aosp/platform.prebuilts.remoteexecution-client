@@ -1,3 +1,71 @@
+## Release 0.107.1 (2023-05-25)
+```
+Changes:
+ + 68f7c3c:
+ Revert "Do not block input processing on local resources."
+```
+
+## Release 0.107.0 (2023-05-24)
+```
+Changes:
+ + bf744ae:
+ Pass exec_id by value to GetCompilerInfo
+ + 9e82915:
+ Use a random port when starting the depsscanner service
+ + e6f84f6:
+ Use SubProcessTask::ReadCommandOutput with scandeps
+ + c99ee28:
+ Fix racing crash caused by local fallbacks.
+ + f930d49:
+ fix running integration tests
+ + de5fd92:
+ Release install and precommit scripts
+ + c8c2192:
+ Add copybara configuration
+ + b1eadc1:
+ Move patches to third_party directory
+```
+
+## Release 0.106.1 (2023-05-18)
+```
+Changes:
+ + 8e9e882:
+ Fix subtle scoping bug for credentials variable
+ + 2d8735e:
+ Add scandeps_server to install scripts
+ + 4fc0366:
+ Make bazel remote config internal
+ + 937b977:
+ Add disclaimer to README file
+ + 1684956:
+ Add more useful information when reproxy failed to execute
+```
+
+## Release 0.106.0 (2023-05-17)
+```
+Changes:
+ + 918bac9:
+ Do not block input processing on local resources.
+ + 8aa04ac:
+ If cached token is expired, redo inferrence flow
+ + f028f15:
+ Use remote_apis_go_deps instead of switched_rules_by_language to avoid warning
+ + 1b77f98:
+ Make GoogleProd and GCloud internal-only
+ + 109a4fe:
+ Run integration tests with scandeps server
+ + 5869319:
+ Remove remaining internal references
+ + cad16f1:
+ Fix golint error in googleauth.go
+ + 8748784:
+ Run golint and gofmt on whole repo at precommit
+ + 9af1bd7:
+ Handle equals signs in env var keys and values correctly
+ + d9d570b:
+ Modify racing to not cancel local execution if started and always attempt remote exec.
+```
+
 ## Release 0.105.0 (2023-05-10)
 ```
 Changes:

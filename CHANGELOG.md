@@ -1,3 +1,28 @@
+## Release 0.108.0 (2023-06-01)
+```
+Changes:
+ + 3c6f260:
+ Update Chromium Disk Snapshot
+ + 1db78ad:
+ Wait for local to finish if remote fails in race
+ + 7bfccae:
+ Update chromium-win disk snapshot
+ + ae70bd9:
+ Use ReadCommandOutputByRedirector on Windows
+ + 707c10b:
+ add stderrDg and stdoutDg to RemoteMetadata
+ + 4cddf97:
+ Update android image snapshot
+ + 11ddf7c:
+ Reland "Do not block input processing on local resources."
+ + 9e39d07:
+ Update copbara config
+ + e8da689:
+ Ignore unsupported flags in CPP include scanner
+ + 3f32387:
+ use additional flags when using run_integ.sh
+```
+
 ## Release 0.107.1 (2023-05-25)
 ```
 Changes:

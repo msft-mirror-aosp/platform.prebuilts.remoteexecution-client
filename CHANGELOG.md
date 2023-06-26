@@ -1,3 +1,32 @@
+## Release 0.109.0 (2023-06-14)
+```
+Changes:
+ + cf513d3:
+ update remote-apis-sdks
+ + 70035c1:
+ Initialize goma IP in the same thread as scandpes
+ + 9f4dc3c:
+ Add a reclient timeout to rewrapper
+ + 34ee663:
+ Use uds for depsscanner iff we are on mac/linux and reproxy is using uds
+ + 2e188d2:
+ Print action summary on bootstrap shutdown
+ + f180bb2:
+ digest.NewFromString() always return Empty on err
+ + c480245:
+ Generate correct canonical working dir for windows cross
+ + d8bc590:
+ xattr-hash changed to xattr-digest
+ + 63223af:
+ Improve error message for stubby timeout error
+ + 4873905:
+ Ensure racing-local always starts in a reasonable amount of time
+ + 38bf092:
+ Fix no-auth usecase for bootstrap startup and shutdown
+ + 6132551:
+ Increase scandeps_server shutdown timeout
+```
+
 ## Release 0.108.0 (2023-06-01)
 ```
 Changes:

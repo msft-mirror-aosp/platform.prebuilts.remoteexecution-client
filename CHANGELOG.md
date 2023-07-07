@@ -1,3 +1,771 @@
+## Release 0.109.0 (2023-06-14)
+```
+Changes:
+ + cf513d3:
+ update remote-apis-sdks
+ + 70035c1:
+ Initialize goma IP in the same thread as scandpes
+ + 9f4dc3c:
+ Add a reclient timeout to rewrapper
+ + 34ee663:
+ Use uds for depsscanner iff we are on mac/linux and reproxy is using uds
+ + 2e188d2:
+ Print action summary on bootstrap shutdown
+ + f180bb2:
+ digest.NewFromString() always return Empty on err
+ + c480245:
+ Generate correct canonical working dir for windows cross
+ + d8bc590:
+ xattr-hash changed to xattr-digest
+ + 63223af:
+ Improve error message for stubby timeout error
+ + 4873905:
+ Ensure racing-local always starts in a reasonable amount of time
+ + 38bf092:
+ Fix no-auth usecase for bootstrap startup and shutdown
+ + 6132551:
+ Increase scandeps_server shutdown timeout
+```
+
+## Release 0.108.0 (2023-06-01)
+```
+Changes:
+ + 3c6f260:
+ Update Chromium Disk Snapshot
+ + 1db78ad:
+ Wait for local to finish if remote fails in race
+ + 7bfccae:
+ Update chromium-win disk snapshot
+ + ae70bd9:
+ Use ReadCommandOutputByRedirector on Windows
+ + 707c10b:
+ add stderrDg and stdoutDg to RemoteMetadata
+ + 4cddf97:
+ Update android image snapshot
+ + 11ddf7c:
+ Reland "Do not block input processing on local resources."
+ + 9e39d07:
+ Update copbara config
+ + e8da689:
+ Ignore unsupported flags in CPP include scanner
+ + 3f32387:
+ use additional flags when using run_integ.sh
+```
+
+## Release 0.107.1 (2023-05-25)
+```
+Changes:
+ + 68f7c3c:
+ Revert "Do not block input processing on local resources."
+```
+
+## Release 0.107.0 (2023-05-24)
+```
+Changes:
+ + bf744ae:
+ Pass exec_id by value to GetCompilerInfo
+ + 9e82915:
+ Use a random port when starting the depsscanner service
+ + e6f84f6:
+ Use SubProcessTask::ReadCommandOutput with scandeps
+ + c99ee28:
+ Fix racing crash caused by local fallbacks.
+ + f930d49:
+ fix running integration tests
+ + de5fd92:
+ Release install and precommit scripts
+ + c8c2192:
+ Add copybara configuration
+ + b1eadc1:
+ Move patches to third_party directory
+```
+
+## Release 0.106.1 (2023-05-18)
+```
+Changes:
+ + 8e9e882:
+ Fix subtle scoping bug for credentials variable
+ + 2d8735e:
+ Add scandeps_server to install scripts
+ + 4fc0366:
+ Make bazel remote config internal
+ + 937b977:
+ Add disclaimer to README file
+ + 1684956:
+ Add more useful information when reproxy failed to execute
+```
+
+## Release 0.106.0 (2023-05-17)
+```
+Changes:
+ + 918bac9:
+ Do not block input processing on local resources.
+ + 8aa04ac:
+ If cached token is expired, redo inferrence flow
+ + f028f15:
+ Use remote_apis_go_deps instead of switched_rules_by_language to avoid warning
+ + 1b77f98:
+ Make GoogleProd and GCloud internal-only
+ + 109a4fe:
+ Run integration tests with scandeps server
+ + 5869319:
+ Remove remaining internal references
+ + cad16f1:
+ Fix golint error in googleauth.go
+ + 8748784:
+ Run golint and gofmt on whole repo at precommit
+ + 9af1bd7:
+ Handle equals signs in env var keys and values correctly
+ + d9d570b:
+ Modify racing to not cancel local execution if started and always attempt remote exec.
+```
+
+## Release 0.105.0 (2023-05-10)
+```
+Changes:
+ + 7fa71d8:
+ Use google.golang.org/api/oauth2 use correct expiry for tokens
+ + 1a39ae4:
+ Add license headers to remaining files
+ + f82f7f2:
+ Add license headers to pkg, llvm, and goma
+ + 51839b2:
+ Add license headers to //cmd/... files
+ + 47d6cbb:
+ Add license headers to internal/pkg files
+ + 4c80f4a:
+ Change scandeps restart error type
+```
+
+## Release 0.104.0 (2023-05-04)
+```
+Changes:
+ + 71f61a3:
+ update remote-apis-sdk
+ + 50f57f9:
+ ExportBuildMetrics to use stats proto for metrics
+ + 73b9b99:
+ Export Action Metrics after every action
+ + ea968dc:
+ Add CONTRIBUTING.md file
+ + 96758ee:
+ Implement rbe_metrics->BigQuery upload in bootstrap shutdown
+ + 3bfa3a9:
+ Change NonDeterministic bool flag to enum
+ + 4187038:
+ Update disk snapshots
+ + 24c74c3:
+ Don't check for total counts in chromium integ test
+```
+
+## Release 0.103.0 (2023-04-26)
+```
+Changes:
+ + df66a5b:
+ Auth Refactor
+ + b989ed0:
+ Eliminate retries of invalid cached credentials, wipe cache instead
+ + 2d8cc3f:
+ Update assertion values in Android Integration test
+ + 0827720:
+ Update goma client to latest version.
+ + 08e2447:
+ Properly support --service_no_auth and --credential_file
+ + ab48705:
+ Refresh expired cached credentials and update flags auth flags for each attempt
+ + 3162c9a:
+ Update Docker image to install m4
+ + ed5bc98:
+ Remove TODOs with ldaps
+ + 96d1bbe:
+ Update aosp test image
+```
+
+## Release 0.102.0 (2023-04-19)
+```
+Changes:
+ + d4774f7:
+ Update chromium-win disk snapshot
+ + 4a5d831:
+ Update SDK commit.
+ + be45cc3:
+ Add async_reproxy_termination to bootstrap and add option to reclientreport to wait for reproxy to terminate
+ + 8d53757:
+ Propagate cache dir to input processor even if deps cache is disabled
+ + f3da4ae:
+ Re add golang.org/x/tools as it is required by golint
+ + 11012c5:
+ Remove unused dependencies
+ + 569084c:
+ Extract pid file handling in preparation for future changes
+ + de14ea5:
+ Remove local depscanner from scandeps service
+ + f8aaadc:
+ Exclude deleted files from linters input
+ + e1eed5b:
+ Don't build goma with scan-deps configuration
+```
+
+## Release 0.101.0 (2023-04-11)
+```
+Changes:
+ + a3d9189:
+ Bump remote-apis-sdks commit
+ + 3a50a81:
+ Use static_link_msvcrt to build scandeps_server
+ + 30affe8:
+ Upgrade llvm to c4c5e79dd4b4c78eee7cffd9b0d7394b5bedcf12
+ + 651e344:
+ Include scandeps_server in experimental releases
+ + ee5a5bc:
+ Speed up git commit by passing all files to golint and gofmt at once
+ + fc6a255:
+ Update go version to 1.19.5
+ + 7b680b8:
+ Update rules_go to 0.34.0 to be able to update to go 1.19
+ + f4784ad:
+ Fix reclientreport entry in cipd-internal-windows
+ + 0a20a2a:
+ Remove go from reclient-builder
+ + c0e3185:
+ Update chromium linux disk image
+ + d55c1a4:
+ Fix opencensus time interval bug in patch
+ + 1dc0dfc:
+ Add label for NaCl links.
+ + b2ce2fd:
+ Ensure gsutil can reauth correctly in experiment framework
+ + f9bed70:
+ Fix wait_for_shutdown_rpc=false to shutdown after first signal
+ + 4392f5b:
+ Revert "Revert "Refactor monitoring package""
+ + d1957f1:
+ Chrome developer noop build experiment
+```
+
+## Release 0.100.2 (2023-03-24)
+```
+Changes:
+ + 002ae28:
+ Update create-release script to list commits with 7 character ID.
+ + f1f7ac2:
+ Revert "Refactor monitoring package"
+ + 835169e:
+ Include reclientreport in cipd package for windows.
+ + 150bf0b:
+ Refactor monitoring package
+```
+
+## Release 0.100.1 (2023-03-23)
+```
+Changes:
+ + 88feef1:
+ Fix bump script to use 7 character commit ID in Changelog.
+ + 52ab1e4:
+ Add reclientreport and remotetool to cipd packages
+```
+
+## Release 0.100.0 (2023-03-22)
+```
+Changes:
+ + 9d75539:
+ Fix shutdown logic to always wait for reproxy to be dead
+ + 526e615:
+ Use ShutdownResponse.stats in bootstrap if it exists
+ + 9d02e9f:
+ Adding BuildCacheHitRatio and BuildLatency to Stats Proto
+ + 234a738:
+ Update chrome DEPS patch for led experiments
+ + 831616b:
+ Increase default ip_timeout from 3m to 10m
+ + 8683c71:
+ Pass correct log directory to goma in scandeps server
+ + 0c2fefe:
+ Populate ShutdownResponse.stats in reproxy
+ + a3d4659:
+ Process Mismatches Refactor
+ + 5b840f8:
+ Add IP timeout support to ClangScanDeps
+ + 4e490f2:
+ Cache inferred credentials.
+ + bad88be:
+ Use rbeflags in reclientreport to support all log flags
+ + 870c72a:
+ Add Stats field to ShutdownResponse
+ + e55953b:
+ Add sha256 for com_github_grpc_grpc to remove warning
+ + d07f3ba:
+ Cache the authentication token on disk to speedup bootstrap shutdown and subsequent builds.
+ + 0ab4b01:
+ fix fetching reclient config on windows (chromium)
+ + 0226ece:
+ Remove GCE zone lookup
+ + c4a7055:
+ Abort creating a release on missing changelogs
+ + fce3909:
+ Update opencensus with fix to the Flush bug.
+ + 350d649:
+ Reduce sleep time while waiting for reproxy to start/shutdown
+ + 182d9f6:
+ Allow specifying a second version for changelog
+ + 421a746:
+ Merge context used by goma and goma-service
+ + abce9c7:
+ Run gofmt and golint with hermetic go toolchain
+```
+
+## Release 0.99.0 (2023-03-08)
+```
+Changes:
+ + a6b843c:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + a0a0e77:
+ Add test that runs reproxy on ubuntu 14,16 and 18
+ + d53a183:
+ Mark flaky tests as such.
+ + 2d0a017:
+ Update kokoro and remote toolchain to v10 image
+ + dbe1011:
+ Update chromium-win source image.
+ + b1da30c:
+ Fix cfg file handling of blank lines.
+```
+
+## Release 0.98.0 (2023-03-02)
+```
+Changes:
+ + a5c8120:
+ Update clang scan deps
+ + bf19129:
+ Fix order of commands in release script
+ + 2536ea6:
+ Use cache in depsscanner service.
+ + 2815c67:
+ Add log record to stats after every action
+ + cc262a3:
+ Fix chromium docker image to use v9 image
+ + 9a96126:
+ Properly count scandeps service crash as fallback.
+ + f863aa2:
+ Update kokoro and remote toolchain to v9 image
+```
+
+## Release 0.97.2 (2023-02-27)
+```
+Changes:
+ + b7aa8f1:
+ Revert "Bump version to 0.97.1"
+ + 79d10cd:
+ Bump version to 0.97.1 Bug: b/169675226 Test: NA
+ + f17e91e:
+ Support cfg project flag for led experiments
+ + 91c5a42:
+ Add a --config option to select input processor
+ + a92f060:
+ Revert "Bump version to 0.97.0"
+ + cc5d138:
+ Bump version to 0.97.0 Bug: b/169675226 Test: NA
+ + 27c9336:
+ Split out clang-options.json file usage
+ + 9736062:
+ Support scandeps_server on Ubuntu 14.04
+ + 60f5009:
+ Add recipe flag to run-led.sh
+ + cdd75c4:
+ General fixes for future support on Ubuntu 14.04
+ + 20312a9:
+ Update aosp and chromium images
+ + b881d3b:
+ Remove deps_cache_dir flag from experiments protos
+ + 163b26b:
+ Fix arg order in test helper.
+ + 7a8baa5:
+ Add integration test to verify automatic auth works as intendend.
+ + 171f3b5:
+ Log if reproxy is alive before shutting it down
+ + 23fc7bb:
+ Capture windows FATAL log files when checking for build failure
+ + 85502de:
+ Restart the dependency scanner service after crash or deadlock
+ + 1409b90:
+ Add gcloudauth option.
+ + 1334eb5:
+ Automatic auth to automatically run tool to obtain creds.
+ + a321640:
+ Remove minimized file contents cache
+ + 31e06f4:
+ Implementing AddLogRecords Optimizations
+```
+
+## Release 0.96.2 (2023-02-06)
+```
+Changes:
+ + 00121e36:
+ Use a mutex for exclusive run of popen and pclose calls
+```
+
+## Release 0.96.1 (2023-02-03)
+```
+Changes:
+ + 56658f8:
+ Use multiline prototext format for logs
+```
+
+## Release 0.96.0 (2023-02-01)
+```
+Changes:
+ + d0efb49:
+ Use context for fail early logic
+ + 3fe7b1e:
+ Update the sdk to use the latest commit.
+ + 9432c44:
+ Don't pass handled link flags to base clangparser.
+ + 5f9594f:
+ Migrate from github.com/golang/protobuf/proto (now deprecated) to google.golang.org/protobuf/proto
+ + 15fd3f2:
+ Capture scandeps_server binary as well when uploading to cipd as part of led runs
+ + ba62f96:
+ Revert "Support scandeps_server on Ubuntu 14.04"
+ + 4f2d184:
+ Add a flag to disable uploading the sysroot directory for remote links.
+ + 7152aa6:
+ Add experiment proto for remote linking in chrome
+ + f973804:
+ Reduce failBuildMu RLock scope
+ + f190d47:
+ Update chromium image for test
+ + 8678a65:
+ Preserve absolute path args used by CMake in cpp compile commands.
+```
+
+## Release 0.95.0 (2023-01-25)
+```
+Changes:
+ + b23eaaa:
+ Support scandeps_server on Ubuntu 14.04
+```
+
+## Release 0.94.0 (2023-01-23)
+```
+Changes:
+ + 7ab8a587:
+ Add local resource requirements on link actions.
+ + 9ffc3932:
+ Log errors from scandeps service
+ + 7a80a6c8:
+ Get debug symbols for scandeps server.
+ + 220b9aa4:
+ Refactor the googleauth package to streamline access from bootstrap and reproxy.
+ + 2a364481:
+ Add rsp handling with supplied function.
+ + f4c30e1c:
+ Adjust how glob is wrapped.
+ + afdf286c:
+ Add Win SDK and VC toolchain to virtual inputs
+ + 085d6f00:
+ Enable led experiments for builders with spaces
+ + 782b7afa:
+ GLIBC fix for 1604 compatibility.
+ + 09ededa8:
+ Add flags to allow specifying cache dir without enabling deps cache
+ + b5e334d2:
+ Update android source image for perf build.
+```
+
+## Release 0.93.0 (2023-01-04)
+```
+Changes:
+ + 1b1d6dd:
+ Avoid usage of local clang and remote no-sandbox / no-remoteexec tags
+ + 7feff30:
+ Fix DOCKER_IMAGE
+ + c71d594:
+ Docker image to v8
+ + d4a2c5c:
+ Fix glob to glibc <= 2.23, or 2.29
+ + 99fbcf8:
+ Build dependency scanner with older version of glibc in Linux
+ + 8014622:
+ [rewrapper] Provide --local_wrapper option
+ + 9c1bc89:
+ Unit Tests for Restat Race
+ + f44ba3c:
+ Fix expectations in reclient chromium CI build.
+```
+
+## Release 0.92.1 (2022-12-19)
+```
+Changes:
+ + e8b8b58:
+ Update chromium disk image for CI.
+ + 27b91f2:
+ Add log2f as a function getting wrapped and fixed to glibc 2.23.
+ + 81609cd:
+ Update android disk image for CI.
+```
+
+## Release 0.92.0 (2022-12-16)
+```
+Changes:
+ + 56448c0:
+ Revert "Make unified uploads the default behavior in reproxy."
+ + 507da2e:
+ Clear file metadata cache entries for in-out files
+ + 76eb5a3:
+ Implement restat for racing
+ + 86f9a71:
+ ThinLTO: fix and improve the integration test
+ + 4c4b715:
+ Fixed bug with restat with remote execution
+ + d15cec7:
+ Upgrade bazel to 5.3.0 and linux toolchain image from gcr.io/reclient-releases/reclient-builder:v5 to gcr.io/reclient-releases/reclient-builder:v6
+ + 37c3eaf:
+ Update chromium image
+ + b624a6c:
+ Add TestFailEarlyOnIpTimeouts test
+```
+
+## Release 0.91.1 (2022-12-07)
+```
+Changes:
+ + cf73e25:
+ Fix macos.sh script
+ + 306c277:
+ Faster bootstrap.
+ + 1a2e46e:
+ Automatic authentication detection.
+```
+
+## Release 0.91.0 (2022-12-05)
+```
+Changes:
+ + a6de9e1:
+ Fix handling of outputs in compare mode
+ + 48c94e4:
+ Don't adjust command if we are using dependency scanner service
+```
+
+## Release 0.90.1 (2022-12-02)
+```
+Changes:
+ + 5e9a20c:
+ Fix performance issues with archive reader - Pass in relative directory instead of calling filepath.Rel
+```
+
+## Release 0.90.0 (2022-12-01)
+```
+Changes:
+ + 7eddb7c:
+ Add Test field to version bump script and add scandeps_server binary to android release.
+ + 89d0101:
+ Write clang-scan-deps binaries to a separate cipd package.
+ + 0268dfb:
+ Fail early on deps scan timeouts
+ + d9994ac:
+ Make unified uploads the default behavior in reproxy.
+ + a5a7199:
+ Move flags package under the input processor.
+```
+
+## Release 0.89.0 (2022-11-30)
+```
+Changes:
+ + 79f18c7:
+ Support thin archive ar file format.
+ + 19977e7:
+ Fix release builds
+ + 072cb00:
+ Assign a default context for the DepsScannerClient object
+ + bcbca12:
+ Support Restat for Remote Execution
+ + 5714559:
+ Allow cache hits in grpc test.
+ + b73f3f2:
+ Add a commented local_repository definition of the SDK to make switching easier.
+```
+
+## Release 0.88.0 (2022-11-25)
+```
+Changes:
+ + 27fa7aa:
+ Build and release scandeps service for linux.
+ + b74c165:
+ Build and release scandeps-service for Mac
+ + a23c1d0:
+ Build and deploy dependency scanner service on Windows (release)
+ + 7f04bc5:
+ Reproxy controls depsscanner
+ + 2f07013:
+ Fix bug in deps cache causing cache corruption of actions sharing deps.
+ + 537dc5e:
+ Remove unused feature in Config struct.
+```
+
+## Release 0.87.0 (2022-11-22)
+```
+Changes:
+ + 99922192:
+ Update goma to client to 9d55760
+ + 938d3188:
+ Read archive files directly from reproxy.
+ + bc3e9334:
+ ThinLTO: fix loading imported files
+ + 3e6d13d8:
+ Use dependency scanner service
+ + f2d239df:
+ Process remote_toolchain_inputs with missing files
+ + a84152b0:
+ Ensure goma revision stays in sync with goma_clang revision
+```
+
+## Release 0.86.0 (2022-11-09)
+```
+Changes:
+ + 241d7b9:
+ Add support for a output rsp files via OutputListPaths flag in rewrapper.
+ + 662dcd2:
+ Add cppdependencyscanner test to Mac presubmit
+ + 71f4334:
+ Updating sources to build dependency scanner service on kokoro
+```
+
+## Release 0.85.0 (2022-11-03)
+```
+Changes:
+ + 99dc179:
+ Do not rely on mtime to short circuit the deps cache.
+ + dcc4f88:
+ Remote Links - Properly handle archive files referenced in @rsp files.
+ + 81ed63b:
+ Add builder name option to run-led script
+```
+
+## Release 0.84.0 (2022-11-01)
+```
+Changes:
+ + 32423e8:
+ update goma
+ + c2c9512:
+ Move configuration options for input processor to a struct
+ + ddc13fc:
+ Add depscache integration test to Mac presubmit.
+ + af89b6d:
+ Fix create-qt-release.sh script to handle aosp being ahead of qt.
+ + 5f16bf9:
+ Add remoteexec test to Mac presubmit
+ + 5c73311:
+ release scripts: avoid the missing jq trap
+```
+
+## Release 0.83.0 (2022-10-21)
+```
+Changes:
+ + aec42f7e:
+ ThinLTO: fix flag key matching
+ + 80b87d52:
+ Ensure that the deps cache is set to not ready until loaded from disk
+ + bc6b3397:
+ Remove reset logic from gomaip
+ + e4dfb6c5:
+ Update aosp snapshot image for integ tests.
+ + e48f0768:
+ Update chromium win snapshot image
+ + 02530a91:
+ Checkout latest Bump commit on Windows.
+ + 34f8a69a:
+ Update linux chromium kokoro integ test disk snapshot.
+ + fd92177a:
+ Add foundry-x-experiments mac-cross compile image
+```
+
+## Release 0.82.1 (2022-10-14)
+```
+Changes:
+ + ee25391:
+ Add log lines to IncludeProcessor::GetCompilerInfo
+ + 1779d0f:
+ Implement compiler_info_state error handling logic in goma
+ + 9d1b983:
+ Pass the PATH variable to the input processor to fix pnacl fallbacks.
+```
+
+## Release 0.82.0 (2022-10-13)
+```
+Changes:
+ + 02f4e1c:
+ Add additional log points after 'ComputeIncludesDone'
+ + 33f1a0a:
+ Build dependency scanner service w/ goma
+ + 08c449c:
+ Cleanup the input processor after cancelling contexts
+ + a3236bb:
+ Manually enable -fprofile_use for clang-cl
+```
+
+## Release 0.81.1 (2022-10-04)
+```
+Changes:
+ + 100ab7a7:
+ Downgrade bazel back to 5.0.0
+```
+
+## Release 0.81.0 (2022-10-03)
+```
+Changes:
+ + c572b729:
+ Pass Goma IP errors back to the go layer.
+ + 0090e098:
+ Add flag for goma input processor timeout
+ + 73a5d456:
+ Add buffer to resCh to ensure that the send in gComputeIncludesDone is never blocking
+ + 88449725:
+ Upgrade Goma IP.
+ + b2e72748:
+ Add windows support to echo codelab and add dockerfiles
+ + 1e9a1d67:
+ Integrate goma built with libstdc++ with the skeleton service
+ + c00528cd:
+ Add echo codelab code
+ + 96bcdd0e:
+ Add reproxystatus to install scripts
+```
+
+## Release 0.80.0 (2022-09-21)
+```
+Changes:
+ + 002cb993:
+ Initialize compiler info cache correctly when using reproxy deps cache
+ + 11075ee2:
+ Bazel test to upload metrics to Perfgate
+ + eb45ceae:
+ [rewrapper] Implement --action_log
+ + 411a3045:
+ Restore using the pid file to check whether reproxy has shutdown.
+ + fd273939:
+ Include Mac builders in release status tool
+ + 98af4a4a:
+ wrapped up perfgate binary for metrics to upload, specify the project info.
+ + 502034dd:
+ Dependency scanner service
+```
+
+## Release 0.79.0 (2022-09-13)
+```
+Changes:
+ + de55e3c:
+ Use closures in Goma Input Processor.
+ + 57ce0a5:
+ Disable goma deps cache if dir is not specified
+ + f81b9fc:
+ update aosp and chromium-win images Also update the script to seamlessly work from cloudtop machines in addition to developer workstations.
+ + 0b59c0c:
+ Support ThinLTO flags for clang
+ + bf9e549:
+ Add cq checks to status tool
+ + fbee4da:
+ Use a thread locked worker pool for calling Goma input processor.
+```
+
 ## Release 0.78.0 (2022-08-31)
 ```
 Changes:

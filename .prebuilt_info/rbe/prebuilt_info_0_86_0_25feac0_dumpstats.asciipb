@@ -1,10 +1,10 @@
 drops {
-  dest_file: "CHANGELOG.md"
-  version: "0.109.0.927890d"
+  dest_file: "0.86.0.25feac0/dumpstats"
+  version: "0.86.0.25feac0"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {
-    source_file: "CHANGELOG.md"
+    source_file: "dumpstats"
   }
   git_branch: "master"
   transform: TRANSFORM_NONE

@@ -7,4 +7,5 @@ drops {
     source_file: "NOTICE"
   }
   git_branch: "master"
+  transform: TRANSFORM_NONE
 }

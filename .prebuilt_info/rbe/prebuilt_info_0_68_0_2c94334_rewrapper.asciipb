@@ -1,11 +1,10 @@
 drops {
-  dest_file: "CHANGELOG.md"
-  version: "0.109.0.927890d"
+  dest_file: "0.68.0.2c94334/rewrapper"
+  version: "0.68.0.2c94334"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {
-    source_file: "CHANGELOG.md"
+    source_file: "rewrapper"
   }
   git_branch: "master"
-  transform: TRANSFORM_NONE
 }

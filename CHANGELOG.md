@@ -1,3 +1,163 @@
+## Release 0.109.0 (2023-06-14)
+```
+Changes:
+ + cf513d3:
+ update remote-apis-sdks
+ + 70035c1:
+ Initialize goma IP in the same thread as scandpes
+ + 9f4dc3c:
+ Add a reclient timeout to rewrapper
+ + 34ee663:
+ Use uds for depsscanner iff we are on mac/linux and reproxy is using uds
+ + 2e188d2:
+ Print action summary on bootstrap shutdown
+ + f180bb2:
+ digest.NewFromString() always return Empty on err
+ + c480245:
+ Generate correct canonical working dir for windows cross
+ + d8bc590:
+ xattr-hash changed to xattr-digest
+ + 63223af:
+ Improve error message for stubby timeout error
+ + 4873905:
+ Ensure racing-local always starts in a reasonable amount of time
+ + 38bf092:
+ Fix no-auth usecase for bootstrap startup and shutdown
+ + 6132551:
+ Increase scandeps_server shutdown timeout
+```
+
+## Release 0.108.0 (2023-06-01)
+```
+Changes:
+ + 3c6f260:
+ Update Chromium Disk Snapshot
+ + 1db78ad:
+ Wait for local to finish if remote fails in race
+ + 7bfccae:
+ Update chromium-win disk snapshot
+ + ae70bd9:
+ Use ReadCommandOutputByRedirector on Windows
+ + 707c10b:
+ add stderrDg and stdoutDg to RemoteMetadata
+ + 4cddf97:
+ Update android image snapshot
+ + 11ddf7c:
+ Reland "Do not block input processing on local resources."
+ + 9e39d07:
+ Update copbara config
+ + e8da689:
+ Ignore unsupported flags in CPP include scanner
+ + 3f32387:
+ use additional flags when using run_integ.sh
+```
+
+## Release 0.107.1 (2023-05-25)
+```
+Changes:
+ + 68f7c3c:
+ Revert "Do not block input processing on local resources."
+```
+
+## Release 0.107.0 (2023-05-24)
+```
+Changes:
+ + bf744ae:
+ Pass exec_id by value to GetCompilerInfo
+ + 9e82915:
+ Use a random port when starting the depsscanner service
+ + e6f84f6:
+ Use SubProcessTask::ReadCommandOutput with scandeps
+ + c99ee28:
+ Fix racing crash caused by local fallbacks.
+ + f930d49:
+ fix running integration tests
+ + de5fd92:
+ Release install and precommit scripts
+ + c8c2192:
+ Add copybara configuration
+ + b1eadc1:
+ Move patches to third_party directory
+```
+
+## Release 0.106.1 (2023-05-18)
+```
+Changes:
+ + 8e9e882:
+ Fix subtle scoping bug for credentials variable
+ + 2d8735e:
+ Add scandeps_server to install scripts
+ + 4fc0366:
+ Make bazel remote config internal
+ + 937b977:
+ Add disclaimer to README file
+ + 1684956:
+ Add more useful information when reproxy failed to execute
+```
+
+## Release 0.106.0 (2023-05-17)
+```
+Changes:
+ + 918bac9:
+ Do not block input processing on local resources.
+ + 8aa04ac:
+ If cached token is expired, redo inferrence flow
+ + f028f15:
+ Use remote_apis_go_deps instead of switched_rules_by_language to avoid warning
+ + 1b77f98:
+ Make GoogleProd and GCloud internal-only
+ + 109a4fe:
+ Run integration tests with scandeps server
+ + 5869319:
+ Remove remaining internal references
+ + cad16f1:
+ Fix golint error in googleauth.go
+ + 8748784:
+ Run golint and gofmt on whole repo at precommit
+ + 9af1bd7:
+ Handle equals signs in env var keys and values correctly
+ + d9d570b:
+ Modify racing to not cancel local execution if started and always attempt remote exec.
+```
+
+## Release 0.105.0 (2023-05-10)
+```
+Changes:
+ + 7fa71d8:
+ Use google.golang.org/api/oauth2 use correct expiry for tokens
+ + 1a39ae4:
+ Add license headers to remaining files
+ + f82f7f2:
+ Add license headers to pkg, llvm, and goma
+ + 51839b2:
+ Add license headers to //cmd/... files
+ + 47d6cbb:
+ Add license headers to internal/pkg files
+ + 4c80f4a:
+ Change scandeps restart error type
+```
+
+## Release 0.104.0 (2023-05-04)
+```
+Changes:
+ + 71f61a3:
+ update remote-apis-sdk
+ + 50f57f9:
+ ExportBuildMetrics to use stats proto for metrics
+ + 73b9b99:
+ Export Action Metrics after every action
+ + ea968dc:
+ Add CONTRIBUTING.md file
+ + 96758ee:
+ Implement rbe_metrics->BigQuery upload in bootstrap shutdown
+ + 3bfa3a9:
+ Change NonDeterministic bool flag to enum
+ + 4187038:
+ Update disk snapshots
+ + 24c74c3:
+ Don't check for total counts in chromium integ test
+```
+
 ## Release 0.103.0 (2023-04-26)
 ```
 Changes:

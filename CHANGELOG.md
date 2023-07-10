@@ -1,3 +1,32 @@
+## Release 0.110.0 (2023-06-29)
+```
+Changes:
+ + 21f81e9:
+ Add thread safe fuctions for dealing with LocalMetadata.EventTimes
+ + 6ac25ec:
+ Add racing_tmp_dir flag to specify tmp dir to use for racing outputs
+ + aff528e:
+ Switch Scandeps on Win to SubProcessTask::ReadCommandOutput
+ + 0a2c092:
+ update reclient_perfgate binary
+ + 6d9130e:
+ update snapshot images
+ + 1e12edc:
+ add regression direction to perfgate metric
+ + 0cbeac6:
+ Create a perfgate dashboard for layout development
+ + 381dd63:
+ git ignore IntelliJ files
+ + 512385f:
+ Add permission to upload data to perfgate dashboard
+ + 8f00ed6:
+ update the sdk
+ + 1beb2bf:
+ ensure logs are captured for chromium tests
+ + e46dbce:
+ Increase timeout on reclient timeout test
+```
+
 ## Release 0.109.0 (2023-06-14)
 ```
 Changes:

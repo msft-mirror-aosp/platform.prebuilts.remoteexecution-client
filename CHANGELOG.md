@@ -1,3 +1,42 @@
+## Release 0.112.0 (2023-07-31)
+```
+Changes:
+ + 4436499:
+ add ServerQueuedMillis metrics to perfgate
+ + 0a393fb:
+ Update tools_build.patch
+ + 62b6772:
+ Fix timeout error check condition
+ + 1ed966d:
+ Mark reclient timeouts as ResultStatus=TIMEOUT and tag action metrics with exit code
+ + 9a6b014:
+ Replace googleauth implementation with stub on non linux platforms
+ + 9c18c66:
+ Improve error for attempting to use the stub depsscanner
+ + eeab81d:
+ Update remote-apis-sdk
+ + 965cba2:
+ remove extra space for KOKORO_BUILD_INITIATOR
+ + 12d6e76:
+ Move wait for input processor cleanup out of shutdown critical path
+ + 6121473:
+ Support rsp files in c++ compiles.
+ + 21006bc:
+ Set RBE_exec_strategy=remote_local_fallback for chromium postsubmit builds
+ + c9fb86a:
+ update perfgate dashboard
+ + 733021e:
+ Simplify depsscanner connection logic as it is out of the critical path
+ + 27da932:
+ Start reproxy server immediately and connect to dependencies in the background
+ + cfa81d5:
+ update perfgate dashboard layout
+ + 2fc1ce6:
+ use chained sub job to upload metrics to perfgate
+ + 0242f33:
+ fix macos and ubuntu release builders
+```
+
 ## Release 0.111.0 (2023-07-14)
 ```
 Changes:

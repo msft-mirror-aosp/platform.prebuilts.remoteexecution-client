@@ -1,3 +1,73 @@
+## Release 0.111.0 (2023-07-14)
+```
+Changes:
+ + 4760337:
+ Add -fexperimental-new-pass-manager to ignored flags.
+ + 754af10:
+ Remove copybara config
+ + 74f140d:
+ Update grpc-go to 1.5.2, and minor changes to dial
+ + 7414694:
+ skip perfgate upload for Windows CI builder
+ + 81bee28:
+ Add remotemac bazelrc config to use remote cache for bazel
+ + 326f787:
+ Start input processor in parallel with connecting to RBE
+ + 54fc495:
+ remove Android performance Kokoro test
+ + 7b8bada:
+ Try connecting to dependency scanner every 50ms to speed up startup
+ + 44a95e9:
+ enable RBE_remote_cache to speed up Android CI build
+ + 241ff7a:
+ upload Chromium build data to perfgate dashboard
+ + 4a409e4:
+ reduce release builder cost
+ + 79e175f:
+ Ensure reproxy.creds can only be read/written by owner
+ + c4bf62b:
+ Tweaked CLA section from CONTRIBUTING file
+ + 9aa98ce:
+ Update CONTRIBUTING.md file
+ + e3de639:
+ save Gerrit Commit ID and Num in BigQuery
+ + 8d5f47a:
+ Change the license comment style for C++ headers
+ + 4c97ca3:
+ Build scandeps using clangscandeps
+ + e036b95:
+ Update fallback note in chromium build script
+```
+
+## Release 0.110.0 (2023-06-29)
+```
+Changes:
+ + 21f81e9:
+ Add thread safe fuctions for dealing with LocalMetadata.EventTimes
+ + 6ac25ec:
+ Add racing_tmp_dir flag to specify tmp dir to use for racing outputs
+ + aff528e:
+ Switch Scandeps on Win to SubProcessTask::ReadCommandOutput
+ + 0a2c092:
+ update reclient_perfgate binary
+ + 6d9130e:
+ update snapshot images
+ + 1e12edc:
+ add regression direction to perfgate metric
+ + 0cbeac6:
+ Create a perfgate dashboard for layout development
+ + 381dd63:
+ git ignore IntelliJ files
+ + 512385f:
+ Add permission to upload data to perfgate dashboard
+ + 8f00ed6:
+ update the sdk
+ + 1beb2bf:
+ ensure logs are captured for chromium tests
+ + e46dbce:
+ Increase timeout on reclient timeout test
+```
+
 ## Release 0.109.0 (2023-06-14)
 ```
 Changes:

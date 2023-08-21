@@ -1,3 +1,28 @@
+## Release 0.113.0 (2023-08-10)
+```
+Changes:
+ + 5c2c8d5:
+ Fix pid file deletion logic
+ + 61924d1:
+ Remove creds from disk whenever reproxy fails startup
+ + c6ebb14:
+ Fix for racing not respecting the --download_outputs flag
+ + b4de87d:
+ Add more detailed developer build centric metrics
+ + 8c789d7:
+ Demote cloud monitoring initialization error to warning
+ + a2b9d48:
+ Update postsubmit images
+ + a3fa2f8:
+ Add helpful hints when failing to infer auth
+ + 506f4cf:
+ Set remote_working_dir for racing actions
+ + ba142fa:
+ add a feature flag for casng and mem profile
+ + fb2d9be:
+ Fix mac_amd64 release
+```
+
 ## Release 0.112.0 (2023-07-31)
 ```
 Changes:

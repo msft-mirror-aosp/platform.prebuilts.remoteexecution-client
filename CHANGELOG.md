@@ -1,3 +1,52 @@
+## Release 0.114.2 (2023-08-25)
+```
+Changes:
+ + 5953872:
+ Fix release script
+```
+
+## Release 0.114.1 (2023-08-25)
+```
+Changes:
+ + f9fc226:
+ Don't copy scandeps_server.sym for clangscandeps
+```
+
+## Release 0.114.0 (2023-08-25)
+```
+Changes:
+ + 6c414d8:
+ Add ExperimentalExitOnStuckActions feature
+ + 002a43d:
+ Rework compare mode to include exit codes.
+ + c03f428:
+ Respect dial_timeout flag in rewrapper.
+ + 2134bf2:
+ Fix bug in reporting downloaded bytes when preserver_unchange_output_mtime is set.
+ + 175c1fb:
+ Build scandeps as part of release job and copy it into the Android release.
+ + 1c68d0d:
+ Fix duplicate setting of exportActionMetrics function
+ + 7659e49:
+ update the sdk
+ + f4be0f2:
+ Add env variables used by cl.exe
+ + 422d98c:
+ Build scandeps with Android libraries.
+ + 11e6fe6:
+ Remove fatal error if preserve is true and download outputs is false
+ + 5162b73:
+ Update tools_build.patch to reflect changes api.py
+ + b60b8ae:
+ Save presubmit info to BigQuery
+ + c4a7d74:
+ Update defaults for re_proxy and depscanner binary paths to be relative to the calling executable
+ + a297b9f:
+ Check for error in response before writing action log.
+ + fc56fb8:
+ Add startTime to StartProxyWithOutput call in new test
+```
+
 ## Release 0.113.0 (2023-08-10)
 ```
 Changes:

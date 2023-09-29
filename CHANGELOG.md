@@ -1,3 +1,29 @@
+## Release 0.116.1 (2023-09-25)
+```
+Changes:
+ + cad1ad0:
+ Check if filetype is a binary and if it is mark it as executable
+```
+
+## Release 0.116.0 (2023-09-21)
+```
+Changes:
+ + 97fae77:
+ Patch in goma mac macro fix
+ + f995a56:
+ Collect all glog files on windows where they can contain .exe
+ + 546d84c:
+ Add fail_early_window flag to restrict fail early logic to a window
+ + 57130a7:
+ Make reproxy downloads atomic.
+ + 0c4b563:
+ Create a Stat.pb constructor
+ + 95ac589:
+ Change prefix to github repo and add go package to proto files
+ + 028ed86:
+ Move stat pb out as a separate library
+```
+
 ## Release 0.115.1 (2023-09-14)
 ```
 Changes:

@@ -1,3 +1,51 @@
+## Release 0.117.1 (2023-10-05)
+```
+Changes:
+ + 850cd52:
+ Revert "Cache LOAS expiry to skip prodcertstatus and stubby calls"
+ + 98d9338:
+ Copy scandeps binary for chromium postsubmits
+```
+
+## Release 0.117.0 (2023-10-05)
+```
+Changes:
+ + ae6b36f:
+ Enable scandeps by default.
+ + 081c6a8:
+ Start draining server without blocking shutdown rpc
+ + cbeae63:
+ Update to rbe docker image to python3
+ + 4aca409:
+ Cache LOAS expiry to skip prodcertstatus and stubby calls
+ + f29e4ed:
+ Add new docker-sandbox and goma-service-linux configs
+ + df0885e:
+ Add .gitreview file to make submitting cls easier
+ + 5ec770b:
+ Prevent duplicate error msg in reproxy.INFO
+ + 4869c39:
+ Build goma inside docker to ensure a consistent version of clang is used
+ + 06a5c64:
+ Add num of running actions to proxyInfo
+ + 6136d2f:
+ Add resource usage stat to reproxyinfo from Logger
+ + 3d6d00b:
+ Fix scripts for bigquery schema generator
+ + e03bd3a:
+ Remove goma mac patch and update goma
+ + 0dc6b7b:
+ Created credentials helper binary
+ + 0036a87:
+ Remove the dependency between stats and logger
+ + 4d506d6:
+ Throw a fatal error if rerun flags are improperly set
+ + 4166d2b:
+ Collect all glog files and rpl files with reclientreport
+ + 5964957:
+ Add initial user docs for reproxystatus
+```
+
 ## Release 0.116.1 (2023-09-25)
 ```
 Changes:

@@ -1,3 +1,52 @@
+## Release 0.118.1 (2023-10-23)
+```
+Changes:
+ + ea1dd38:
+ Move SDK to older commit
+ + ec7feec:
+ chmod 755 release script
+```
+
+## Release 0.118.0 (2023-10-20)
+```
+Changes:
+ + 2a7ae2c:
+ Update remote-apis-sdks
+ + f4832cf:
+ Use oauth/google library to check for ADC validity
+ + 0057098:
+ Remove ADC cache from disk
+ + b43e3cd:
+ Replace up/down arrows with text on Stats message.
+ + cbae998:
+ Update android snapshot image
+ + e38f7f5:
+ Log HTTP calls in reproxy and bootstrap
+ + df26cde:
+ Update proxy.pb.go
+ + 224116f:
+ Pass parent CI job status to perfgate
+ + fc34095:
+ Add fallback info to the RunResponse
+ + 9c9a76a:
+ Add .pb.go files and go.mod to //api package
+ + 6f38fcd:
+ Reland "Cache LOAS expiry to skip prodcertstatus and stubby calls"
+ + 652de2c:
+ Fix windows scandeps integration tests to actualy report errors
+ + 4d357ee:
+ Update snapshot images from chromium postsubmit
+ + b3a0821:
+ Updated auth fallback to gcloud if gcert fails.
+```
+
+## Release 0.117.2 (2023-10-10)
+```
+Changes:
+ + d1aa1e1:
+ Sign windows binaries
+```
+
 ## Release 0.117.1 (2023-10-05)
 ```
 Changes:

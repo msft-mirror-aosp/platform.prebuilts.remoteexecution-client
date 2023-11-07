@@ -1,3 +1,59 @@
+## Release 0.120.1 (2023-11-03)
+```
+Changes:
+ + b6dece2:
+ Replace reproxy with depscan in scandeps_server socket file
+```
+
+## Release 0.120.0 (2023-11-02)
+```
+Changes:
+ + 38e919d:
+ Create Experimental Credentials Helper Flags
+ + 66e056d:
+ GOOGLE:
+ + 8aadfe8:
+ Add resource usage metrics to perfgate
+ + 162908f:
+ Revert "update the SDK"
+ + d179332:
+ Fix documentation of the bigquery tool and add error messages.
+ + e6e4fb4:
+ Support --Wl,--script for clang flagsparser
+ + 3b37e8b:
+ Create logging directory if it doesn't exist.
+```
+
+## Release 0.119.1 (2023-10-30)
+```
+Changes:
+ + c47c30a:
+ update the SDK
+ + 2227bb3:
+ Fix typo in usage2CSV binary
+ + 47780d4:
+ Usage log to csv convertor
+```
+
+## Release 0.119.0 (2023-10-25)
+```
+Changes:
+ + c28fd79:
+ Update rpl2trace binary
+ + 433170e:
+ Fix typo in peak num action metric name
+ + 91fe8db:
+ Add support for -fcrash-diagnostics-dir clang flag.
+ + 5b1eeb7:
+ Allow disabling atomic downloads on a per action basis. Also add metric for measuring atomix download latency
+ + e305541:
+ Handle --retain-symbols-file linker flag
+ + eded3be:
+ Fix rbe_action script.
+ + be50400:
+ Add unix time to usage log
+```
+
 ## Release 0.118.1 (2023-10-23)
 ```
 Changes:

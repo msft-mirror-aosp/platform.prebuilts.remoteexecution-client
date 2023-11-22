@@ -3,4 +3,4 @@
 FROM ubuntu:14.04
 RUN apt-get update && apt-get -y upgrade
 # The language pack is required to avoid silent encoding errors due to missing locales.
-RUN apt-get -y install python language-pack-en-base
+RUN apt-get -y install python unzip language-pack-en-base

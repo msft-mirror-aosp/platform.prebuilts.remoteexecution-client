@@ -1,3 +1,29 @@
+## Release 0.124.1 (2023-12-04)
+```
+Changes:
+ + 1ceee42:
+ fix ubuntu-based release job
+ + c03b96b:
+ fix release presubmit job for windows
+ + 8d95b62:
+ Add credshelper binary to missing release files
+ + a65246a:
+ fix gcs release in release jobs
+```
+
+## Release 0.124.0 (2023-12-01)
+```
+Changes:
+ + 34b0434:
+ use compatible arguments between darwin and posix
+ + 2f64851:
+ Link libc++ statically for ubuntu 1404 scandeps
+ + d8362fd:
+ fix presubmit release jobs for linux and mac
+ + 3b099b0:
+ Revert^2 "Handle virtual inputs for various include-type paths containing '..'"
+```
+
 ## Release 0.123.1 (2023-11-28)
 ```
 Changes:

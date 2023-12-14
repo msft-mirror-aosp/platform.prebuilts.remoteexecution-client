@@ -1,3 +1,32 @@
+## Release 0.125.0 (2023-12-13)
+```
+Changes:
+ + 8092d61:
+ Use CredsHelper Flag
+ + 5a4fd35:
+ Credshelper Binary Cleanup Errors
+ + b76d0ed:
+ Update chromium win image.
+ + e202ad3:
+ Update the re-client README about gclient
+ + 2988efe:
+ Always write a token to creds file on disk
+ + 89d5946:
+ Replace all log.Fatalf in rewrapper/bootstrap with log.Exitf
+ + 6bfa338:
+ Remove explicit addition of source file in dependency list in scandeps server.
+ + ae04544:
+ Improve error message for gcloud and adc failure
+ + 31d77d2:
+ Change credshelper binary output to json
+ + 583d22e:
+ fix wrong release tag for windows goma release
+ + 8a6f88e:
+ fix typo and indentation in release jobs
+ + b949c6c:
+ Add code to run the credshelper
+```
+
 ## Release 0.124.1 (2023-12-04)
 ```
 Changes:

@@ -1,3 +1,18 @@
+## Release 0.126.0 (2024-01-02)
+```
+Changes:
+ + cc5d3c9:
+ Windows CI build with vpython
+ + b63c550:
+ Getting rid of duplicate error messages when gcloud fails
+ + bebcb5c:
+ Update Chrome Linux CI image
+ + 655c9be:
+ Fix Windows CredsHelper tests
+ + 8f65a8d:
+ Allow all env vars with overrides in local execution
+```
+
 ## Release 0.125.0 (2023-12-13)
 ```
 Changes:

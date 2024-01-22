@@ -1,3 +1,173 @@
+## Release 0.126.0 (2024-01-02)
+```
+Changes:
+ + cc5d3c9:
+ Windows CI build with vpython
+ + b63c550:
+ Getting rid of duplicate error messages when gcloud fails
+ + bebcb5c:
+ Update Chrome Linux CI image
+ + 655c9be:
+ Fix Windows CredsHelper tests
+ + 8f65a8d:
+ Allow all env vars with overrides in local execution
+```
+
+## Release 0.125.0 (2023-12-13)
+```
+Changes:
+ + 8092d61:
+ Use CredsHelper Flag
+ + 5a4fd35:
+ Credshelper Binary Cleanup Errors
+ + b76d0ed:
+ Update chromium win image.
+ + e202ad3:
+ Update the re-client README about gclient
+ + 2988efe:
+ Always write a token to creds file on disk
+ + 89d5946:
+ Replace all log.Fatalf in rewrapper/bootstrap with log.Exitf
+ + 6bfa338:
+ Remove explicit addition of source file in dependency list in scandeps server.
+ + ae04544:
+ Improve error message for gcloud and adc failure
+ + 31d77d2:
+ Change credshelper binary output to json
+ + 583d22e:
+ fix wrong release tag for windows goma release
+ + 8a6f88e:
+ fix typo and indentation in release jobs
+ + b949c6c:
+ Add code to run the credshelper
+```
+
+## Release 0.124.1 (2023-12-04)
+```
+Changes:
+ + 1ceee42:
+ fix ubuntu-based release job
+ + c03b96b:
+ fix release presubmit job for windows
+ + 8d95b62:
+ Add credshelper binary to missing release files
+ + a65246a:
+ fix gcs release in release jobs
+```
+
+## Release 0.124.0 (2023-12-01)
+```
+Changes:
+ + 34b0434:
+ use compatible arguments between darwin and posix
+ + 2f64851:
+ Link libc++ statically for ubuntu 1404 scandeps
+ + d8362fd:
+ fix presubmit release jobs for linux and mac
+ + 3b099b0:
+ Revert^2 "Handle virtual inputs for various include-type paths containing '..'"
+```
+
+## Release 0.123.1 (2023-11-28)
+```
+Changes:
+ + 3bcabac:
+ Revert "Handle virtual inputs for various include-type paths containing '..'"
+ + 7098adc:
+ fix windows release scripts
+ + f56627c:
+ fix release script
+ + 41adb90:
+ fix release script
+ + bdcbe4b:
+ fix release script
+ + 7e81f3d:
+ fix presubmits for release jobs
+ + 5816849:
+ Remove hint from error message.
+ + 1ab6874:
+ Fix release scripts.
+ + b172d61:
+ Handle virtual inputs for various include-type paths containing '..'
+```
+
+## Release 0.123.0 (2023-11-27)
+```
+Changes:
+ + 5ffa1b6:
+ Revert^2 "Update remote-apis-sdk"
+ + acf0c96:
+ Return from runRemote if res is not OK
+ + 21ba467:
+ Revert "Stash files from input-output dirs in compare mode"
+ + b47c3f8:
+ add presubmit jobs for release scripts
+ + 8b44a41:
+ Monthly update Android CI Image
+ + 120948d:
+ mitigate flakiness in lerc test
+ + 8f9b52b:
+ Force set the executable bit on Windows toolchain inputs.
+ + 0052190:
+ Add support for SSH proxies in experiments framework.
+ + bc7bca7:
+ enforce semver validation in version bump
+ + 424a364:
+ Monthly update win CI image
+ + fbf493c:
+ Ensure resource manager has at least 1 cpu to work with.
+```
+
+## Release 0.122.2 (2023-11-20)
+```
+Changes:
+ + 6372730:
+ Revert "Update remote-apis-sdk"
+```
+
+## Release 0.122.1 (2023-11-17)
+```
+Changes:
+```
+
+## Release 0.122 (2023-11-17)
+```
+Changes:
+ + 66aa56a:
+ Fixed missing credshelper binary in mac
+ + 9e065c5:
+ Stash files from input-output dirs in compare mode
+ + b9706cb:
+ Revert "Add support for -fcrash-diagnostics-dir clang flag."
+ + 308162b:
+ Include log directories in rbe_metrics file
+```
+
+## Release 0.121.0 (2023-11-15)
+```
+Changes:
+ + 6ac09dd:
+ fix a race in compare mode
+ + bbb03f0:
+ update chromium snapshot image & fix copying logs
+ + f2bcfa9:
+ Change GoogleProd Unavailable Warning
+ + b225271:
+ Update remote-apis-sdk
+ + 12220d0:
+ Copy the missing logs for Windows CI builder
+ + bf82abe:
+ Add internal README section for authentication options
+ + de7b6ae:
+ Include credshelper binary in internal release
+ + eba5831:
+ Add logic for caching credshelper credentials
+ + 6ff4a50:
+ Do not log mismatches
+ + bea16d9:
+ Create output directory if it doesn't exist.
+```
+
 ## Release 0.120.1 (2023-11-03)
 ```
 Changes:

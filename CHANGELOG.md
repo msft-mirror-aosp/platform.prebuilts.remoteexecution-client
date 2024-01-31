@@ -1,3 +1,45 @@
+## Release 0.130.0 (2024-01-29)
+```
+Changes:
+ + 4c44c60:
+ Update chromium-linux-builder to ubuntu 20.04
+ + 9be8919:
+ Remove Type() and Name() from cppdepsscanner
+ + 0bbc03b:
+ Reland "Move plugin ignoring logic into cpp bridge code"
+ + d3ac3bf:
+ Reland "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 553797c:
+ Move arg adjustment for clangscandeps to bridge code
+ + 24d5490:
+ Expose capabilities via RPC for scandeps servers
+ + 9556345:
+ Compare cleaned paths in cppdependencyscanner integration test
+ + f48a8cb:
+ Add version string to scandeps binaries
+```
+
+## Release 0.129.0 (2024-01-26)
+```
+Changes:
+ + 6a41777:
+ Update LLVM 82e851a407c52d65ce65e7aa58453127e67d42a0
+ + 4f37568:
+ Inputprocessor arg adjust for CSD service
+ + 063a3ab:
+ Remove non-supported clang args from test
+ + 33ce663:
+ Hide LLVM source code's lint warnings
+ + 80cded7:
+ Add -fsanitize-coverage-allowlist value as input dependency.
+ + 93a7cc4:
+ Fix Flaky Windows Integ test
+ + 5e789d8:
+ Update Chrome Linux CI image
+ + e32ae3f:
+ Monthly update Windows CI Image
+```
+
 ## Release 0.128.1 (2024-01-23)
 ```
 Changes:

@@ -1,3 +1,125 @@
+## Release 0.130.0 (2024-01-29)
+```
+Changes:
+ + 4c44c60:
+ Update chromium-linux-builder to ubuntu 20.04
+ + 9be8919:
+ Remove Type() and Name() from cppdepsscanner
+ + 0bbc03b:
+ Reland "Move plugin ignoring logic into cpp bridge code"
+ + d3ac3bf:
+ Reland "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 553797c:
+ Move arg adjustment for clangscandeps to bridge code
+ + 24d5490:
+ Expose capabilities via RPC for scandeps servers
+ + 9556345:
+ Compare cleaned paths in cppdependencyscanner integration test
+ + f48a8cb:
+ Add version string to scandeps binaries
+```
+
+## Release 0.129.0 (2024-01-26)
+```
+Changes:
+ + 6a41777:
+ Update LLVM 82e851a407c52d65ce65e7aa58453127e67d42a0
+ + 4f37568:
+ Inputprocessor arg adjust for CSD service
+ + 063a3ab:
+ Remove non-supported clang args from test
+ + 33ce663:
+ Hide LLVM source code's lint warnings
+ + 80cded7:
+ Add -fsanitize-coverage-allowlist value as input dependency.
+ + 93a7cc4:
+ Fix Flaky Windows Integ test
+ + 5e789d8:
+ Update Chrome Linux CI image
+ + e32ae3f:
+ Monthly update Windows CI Image
+```
+
+## Release 0.128.1 (2024-01-23)
+```
+Changes:
+ + aa9e7cb:
+ Fix Windows CI build to use scandeps_server
+ + 5c1e9f4:
+ Revert "Move arg adjustment for clangscandeps to bridge code"
+ + c6df124:
+ Revert "Expose caching capability via RPC for deps scanners"
+ + 2e0d7fb:
+ Revert "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 2b2bc6d:
+ Revert "Move plugin ignoring logic into cpp bridge code"
+```
+
+## Release 0.128.0 (2024-01-22)
+```
+Changes:
+ + 4e0c43a:
+ Release non dbg version of scandeps_server on windows
+ + 514a131:
+ Move plugin ignoring logic into cpp bridge code
+ + 6248c64:
+ Only use reproxy deps cache if depscanner doesnt support caching
+ + 8507449:
+ Expose caching capability via RPC for deps scanners
+ + 5f2371f:
+ Move arg adjustment for clangscandeps to bridge code
+ + 7a98f63:
+ Cleanup older reclient releases that are no longer used
+ + 41d17d7:
+ Handle glinux servers in googleauth
+ + b1a7a1b:
+ Fix install script to match prod release
+ + 6d5fe69:
+ Format all cpp files with clang-format
+ + 2a8002f:
+ Add gopackagesdriver script to get code completion in vscode
+```
+
+## Release 0.127.1 (2024-01-11)
+```
+Changes:
+ + f0316fc:
+ Add logic to check csd and goma releases separately on windows
+ + 6fd77b9:
+ Update to bazel 6.3.2
+```
+
+## Release 0.127.0 (2024-01-10)
+```
+Changes:
+ + eb7287d:
+ Fixing caching bug when using credentials helper
+ + a4d1fb6:
+ Properly use working directory in clang-tidy input processor.
+ + d29ab57:
+ Increase timeout on windows presubmit integ tests.
+ + 37d741e:
+ Set the executable bit on args[0] and remote_wrapper of given command.
+ + fc8197c:
+ Check for valid ADC when ADC is requested explicitly
+ + f7882fc:
+ Support the --save-temps flag.
+ + 2343bd0:
+ Fix nil pointer issues when upload to bq
+ + 04765b6:
+ Add missing fields to bigquerytranslator
+ + c88aff8:
+ Monthly update AOSP CI Image
+ + 3b59dcf:
+ upgrade golang/glog
+ + c8e64e3:
+ add qps to status tool
+ + 4fcdbeb:
+ Add log of command that timed out for exit-on-stuck-actions.
+ + b271399:
+ add SDK version flag
+```
+
 ## Release 0.126.0 (2024-01-02)
 ```
 Changes:

@@ -1,3 +1,295 @@
+## Release 0.130.0 (2024-01-29)
+```
+Changes:
+ + 4c44c60:
+ Update chromium-linux-builder to ubuntu 20.04
+ + 9be8919:
+ Remove Type() and Name() from cppdepsscanner
+ + 0bbc03b:
+ Reland "Move plugin ignoring logic into cpp bridge code"
+ + d3ac3bf:
+ Reland "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 553797c:
+ Move arg adjustment for clangscandeps to bridge code
+ + 24d5490:
+ Expose capabilities via RPC for scandeps servers
+ + 9556345:
+ Compare cleaned paths in cppdependencyscanner integration test
+ + f48a8cb:
+ Add version string to scandeps binaries
+```
+
+## Release 0.129.0 (2024-01-26)
+```
+Changes:
+ + 6a41777:
+ Update LLVM 82e851a407c52d65ce65e7aa58453127e67d42a0
+ + 4f37568:
+ Inputprocessor arg adjust for CSD service
+ + 063a3ab:
+ Remove non-supported clang args from test
+ + 33ce663:
+ Hide LLVM source code's lint warnings
+ + 80cded7:
+ Add -fsanitize-coverage-allowlist value as input dependency.
+ + 93a7cc4:
+ Fix Flaky Windows Integ test
+ + 5e789d8:
+ Update Chrome Linux CI image
+ + e32ae3f:
+ Monthly update Windows CI Image
+```
+
+## Release 0.128.1 (2024-01-23)
+```
+Changes:
+ + aa9e7cb:
+ Fix Windows CI build to use scandeps_server
+ + 5c1e9f4:
+ Revert "Move arg adjustment for clangscandeps to bridge code"
+ + c6df124:
+ Revert "Expose caching capability via RPC for deps scanners"
+ + 2e0d7fb:
+ Revert "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 2b2bc6d:
+ Revert "Move plugin ignoring logic into cpp bridge code"
+```
+
+## Release 0.128.0 (2024-01-22)
+```
+Changes:
+ + 4e0c43a:
+ Release non dbg version of scandeps_server on windows
+ + 514a131:
+ Move plugin ignoring logic into cpp bridge code
+ + 6248c64:
+ Only use reproxy deps cache if depscanner doesnt support caching
+ + 8507449:
+ Expose caching capability via RPC for deps scanners
+ + 5f2371f:
+ Move arg adjustment for clangscandeps to bridge code
+ + 7a98f63:
+ Cleanup older reclient releases that are no longer used
+ + 41d17d7:
+ Handle glinux servers in googleauth
+ + b1a7a1b:
+ Fix install script to match prod release
+ + 6d5fe69:
+ Format all cpp files with clang-format
+ + 2a8002f:
+ Add gopackagesdriver script to get code completion in vscode
+```
+
+## Release 0.127.1 (2024-01-11)
+```
+Changes:
+ + f0316fc:
+ Add logic to check csd and goma releases separately on windows
+ + 6fd77b9:
+ Update to bazel 6.3.2
+```
+
+## Release 0.127.0 (2024-01-10)
+```
+Changes:
+ + eb7287d:
+ Fixing caching bug when using credentials helper
+ + a4d1fb6:
+ Properly use working directory in clang-tidy input processor.
+ + d29ab57:
+ Increase timeout on windows presubmit integ tests.
+ + 37d741e:
+ Set the executable bit on args[0] and remote_wrapper of given command.
+ + fc8197c:
+ Check for valid ADC when ADC is requested explicitly
+ + f7882fc:
+ Support the --save-temps flag.
+ + 2343bd0:
+ Fix nil pointer issues when upload to bq
+ + 04765b6:
+ Add missing fields to bigquerytranslator
+ + c88aff8:
+ Monthly update AOSP CI Image
+ + 3b59dcf:
+ upgrade golang/glog
+ + c8e64e3:
+ add qps to status tool
+ + 4fcdbeb:
+ Add log of command that timed out for exit-on-stuck-actions.
+ + b271399:
+ add SDK version flag
+```
+
+## Release 0.126.0 (2024-01-02)
+```
+Changes:
+ + cc5d3c9:
+ Windows CI build with vpython
+ + b63c550:
+ Getting rid of duplicate error messages when gcloud fails
+ + bebcb5c:
+ Update Chrome Linux CI image
+ + 655c9be:
+ Fix Windows CredsHelper tests
+ + 8f65a8d:
+ Allow all env vars with overrides in local execution
+```
+
+## Release 0.125.0 (2023-12-13)
+```
+Changes:
+ + 8092d61:
+ Use CredsHelper Flag
+ + 5a4fd35:
+ Credshelper Binary Cleanup Errors
+ + b76d0ed:
+ Update chromium win image.
+ + e202ad3:
+ Update the re-client README about gclient
+ + 2988efe:
+ Always write a token to creds file on disk
+ + 89d5946:
+ Replace all log.Fatalf in rewrapper/bootstrap with log.Exitf
+ + 6bfa338:
+ Remove explicit addition of source file in dependency list in scandeps server.
+ + ae04544:
+ Improve error message for gcloud and adc failure
+ + 31d77d2:
+ Change credshelper binary output to json
+ + 583d22e:
+ fix wrong release tag for windows goma release
+ + 8a6f88e:
+ fix typo and indentation in release jobs
+ + b949c6c:
+ Add code to run the credshelper
+```
+
+## Release 0.124.1 (2023-12-04)
+```
+Changes:
+ + 1ceee42:
+ fix ubuntu-based release job
+ + c03b96b:
+ fix release presubmit job for windows
+ + 8d95b62:
+ Add credshelper binary to missing release files
+ + a65246a:
+ fix gcs release in release jobs
+```
+
+## Release 0.124.0 (2023-12-01)
+```
+Changes:
+ + 34b0434:
+ use compatible arguments between darwin and posix
+ + 2f64851:
+ Link libc++ statically for ubuntu 1404 scandeps
+ + d8362fd:
+ fix presubmit release jobs for linux and mac
+ + 3b099b0:
+ Revert^2 "Handle virtual inputs for various include-type paths containing '..'"
+```
+
+## Release 0.123.1 (2023-11-28)
+```
+Changes:
+ + 3bcabac:
+ Revert "Handle virtual inputs for various include-type paths containing '..'"
+ + 7098adc:
+ fix windows release scripts
+ + f56627c:
+ fix release script
+ + 41adb90:
+ fix release script
+ + bdcbe4b:
+ fix release script
+ + 7e81f3d:
+ fix presubmits for release jobs
+ + 5816849:
+ Remove hint from error message.
+ + 1ab6874:
+ Fix release scripts.
+ + b172d61:
+ Handle virtual inputs for various include-type paths containing '..'
+```
+
+## Release 0.123.0 (2023-11-27)
+```
+Changes:
+ + 5ffa1b6:
+ Revert^2 "Update remote-apis-sdk"
+ + acf0c96:
+ Return from runRemote if res is not OK
+ + 21ba467:
+ Revert "Stash files from input-output dirs in compare mode"
+ + b47c3f8:
+ add presubmit jobs for release scripts
+ + 8b44a41:
+ Monthly update Android CI Image
+ + 120948d:
+ mitigate flakiness in lerc test
+ + 8f9b52b:
+ Force set the executable bit on Windows toolchain inputs.
+ + 0052190:
+ Add support for SSH proxies in experiments framework.
+ + bc7bca7:
+ enforce semver validation in version bump
+ + 424a364:
+ Monthly update win CI image
+ + fbf493c:
+ Ensure resource manager has at least 1 cpu to work with.
+```
+
+## Release 0.122.2 (2023-11-20)
+```
+Changes:
+ + 6372730:
+ Revert "Update remote-apis-sdk"
+```
+
+## Release 0.122.1 (2023-11-17)
+```
+Changes:
+```
+
+## Release 0.122 (2023-11-17)
+```
+Changes:
+ + 66aa56a:
+ Fixed missing credshelper binary in mac
+ + 9e065c5:
+ Stash files from input-output dirs in compare mode
+ + b9706cb:
+ Revert "Add support for -fcrash-diagnostics-dir clang flag."
+ + 308162b:
+ Include log directories in rbe_metrics file
+```
+
+## Release 0.121.0 (2023-11-15)
+```
+Changes:
+ + 6ac09dd:
+ fix a race in compare mode
+ + bbb03f0:
+ update chromium snapshot image & fix copying logs
+ + f2bcfa9:
+ Change GoogleProd Unavailable Warning
+ + b225271:
+ Update remote-apis-sdk
+ + 12220d0:
+ Copy the missing logs for Windows CI builder
+ + bf82abe:
+ Add internal README section for authentication options
+ + de7b6ae:
+ Include credshelper binary in internal release
+ + eba5831:
+ Add logic for caching credshelper credentials
+ + 6ff4a50:
+ Do not log mismatches
+ + bea16d9:
+ Create output directory if it doesn't exist.
+```
+
 ## Release 0.120.1 (2023-11-03)
 ```
 Changes:

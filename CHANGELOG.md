@@ -1,3 +1,24 @@
+## Release 0.131.0 (2024-02-02)
+```
+Changes:
+ + 849e799:
+ Add reproxy version string to our own depscache
+ + f72451a:
+ Add scandeps server string to bridge.cc
+ + 808e498:
+ Disable depot_tools updates in linux docker image
+ + 9729f63:
+ Allow Guitar Corp Account to Authenticate
+ + 1ce2358:
+ Make integ test robust
+ + 0e95491:
+ Monthly update AOSP CI Image
+ + 13cd694:
+ Fix javac remote-exec fallbacks
+ + d454868:
+ Check for goma cipd package in windows release script
+```
+
 ## Release 0.130.0 (2024-01-29)
 ```
 Changes:

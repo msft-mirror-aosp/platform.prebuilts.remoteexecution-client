@@ -1,3 +1,45 @@
+## Release 0.131.1 (2024-02-06)
+```
+Changes:
+ + 3ac5840:
+ create-release.sh supports prod release
+ + f244a8b:
+ Add setlocal to release .bat scripts
+ + c152715:
+ Revert "Add transition to allow scandeps to build with clang-cl ..."
+ + a37fd6c:
+ Revert "Remove goma cgo dependency scanner"
+ + a4d6ed4:
+ Revert "Install prerequisites for goma continous test"
+ + dea4987:
+ Install prerequisites for goma continous test
+ + 2cd54c7:
+ Remove goma cgo dependency scanner
+ + 2cd4a2e:
+ Add transition to allow scandeps to build with clang-cl in a mingw build
+```
+
+## Release 0.131.0 (2024-02-02)
+```
+Changes:
+ + 849e799:
+ Add reproxy version string to our own depscache
+ + f72451a:
+ Add scandeps server string to bridge.cc
+ + 808e498:
+ Disable depot_tools updates in linux docker image
+ + 9729f63:
+ Allow Guitar Corp Account to Authenticate
+ + 1ce2358:
+ Make integ test robust
+ + 0e95491:
+ Monthly update AOSP CI Image
+ + 13cd694:
+ Fix javac remote-exec fallbacks
+ + d454868:
+ Check for goma cipd package in windows release script
+```
+
 ## Release 0.130.0 (2024-01-29)
 ```
 Changes:

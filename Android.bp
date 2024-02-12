@@ -1,4 +1,4 @@
 prebuilt_build_tool {
     name: "rewrapper",
-    src: "0.131.0.1deecd0/rewrapper",
+    src: "0.131.1.784ddbb/rewrapper",
 }

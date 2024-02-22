@@ -1,3 +1,40 @@
+## Release 0.132.0 (2024-02-15)
+```
+Changes:
+ + a1f0705:
+ Support execrel:// prefix for credshelper flag
+ + d57eaa9:
+ Support Javac argument file
+ + eb74995:
+ Fix typo in create-release script
+ + a5d3151:
+ Build goma ninja target remotely on linux
+ + 4c13580:
+ Remove dependency installation in windows kokoro jobs
+ + c6e2ed2:
+ Integrate integrate goma grpc and bridge logic
+ + d33732d:
+ Use clangscandeps-service when building windows release binaries
+ + 3ab4141:
+ Make bootstrap respect RBE_HTTP_PROXY flag
+ + e766455:
+ Run clang-tidy against cmd/
+ + 3f9cdf9:
+ Switch Kokoro tests to use clangscandeps-service
+ + 8f187e2:
+ Refine llvm patches to work for mingw and clang-cl
+ + aa7e9eb:
+ Revert^2 "Install prerequisites for goma continous test"
+ + e0bc023:
+ Revert^2 "Remove goma cgo dependency scanner"
+ + b4c246f:
+ Revert^2 "Add transition to allow scandeps to build with clang-cl ..."
+ + ff9a8f1:
+ Make scripts/install work on glinux laptops
+ + 3195380:
+ Populate Remote Metadata Regardless of Race Result
+```
+
 ## Release 0.131.1 (2024-02-06)
 ```
 Changes:

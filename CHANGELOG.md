@@ -1,3 +1,42 @@
+## Release 0.134.1 (2024-02-29)
+```
+Changes:
+ + 01fa555:
+ Fix bug in remoteRacing
+ + 2e7db78:
+ Make racing respect env vars from rewrapper as well
+```
+
+## Release 0.134.0 (2024-02-27)
+```
+Changes:
+ + 701f5fa:
+ Ensure remote_wrapper is exec-root-relative when processing its toolchain dependencies.
+```
+
+## Release 0.133.0 (2024-02-27)
+```
+Changes:
+ + bc7a0d9:
+ Update chromium test image
+ + f7ec15c:
+ Increase the number of commits we look for in the CHANGELOG
+ + 9104d96:
+ Goma IP - include resources in dependencies
+ + f63e994:
+ Make windows integ test robust
+ + 9841d06:
+ Remove --amend argument when committing
+ + 938b128:
+ Remove incorrect entries from Changelog
+ + 0e89270:
+ allow version without hash for release script
+ + bf40f4f:
+ require bug number in release scripts
+ + 8deef2a:
+ Revert "Remove dependency installation in windows kokoro jobs"
+```
+
 ## Release 0.132.0 (2024-02-15)
 ```
 Changes:

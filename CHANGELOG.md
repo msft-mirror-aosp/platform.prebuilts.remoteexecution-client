@@ -1,3 +1,100 @@
+## Release 0.134.1 (2024-02-29)
+```
+Changes:
+ + 01fa555:
+ Fix bug in remoteRacing
+ + 2e7db78:
+ Make racing respect env vars from rewrapper as well
+```
+
+## Release 0.134.0 (2024-02-27)
+```
+Changes:
+ + 701f5fa:
+ Ensure remote_wrapper is exec-root-relative when processing its toolchain dependencies.
+```
+
+## Release 0.133.0 (2024-02-27)
+```
+Changes:
+ + bc7a0d9:
+ Update chromium test image
+ + f7ec15c:
+ Increase the number of commits we look for in the CHANGELOG
+ + 9104d96:
+ Goma IP - include resources in dependencies
+ + f63e994:
+ Make windows integ test robust
+ + 9841d06:
+ Remove --amend argument when committing
+ + 938b128:
+ Remove incorrect entries from Changelog
+ + 0e89270:
+ allow version without hash for release script
+ + bf40f4f:
+ require bug number in release scripts
+ + 8deef2a:
+ Revert "Remove dependency installation in windows kokoro jobs"
+```
+
+## Release 0.132.0 (2024-02-15)
+```
+Changes:
+ + a1f0705:
+ Support execrel:// prefix for credshelper flag
+ + d57eaa9:
+ Support Javac argument file
+ + eb74995:
+ Fix typo in create-release script
+ + a5d3151:
+ Build goma ninja target remotely on linux
+ + 4c13580:
+ Remove dependency installation in windows kokoro jobs
+ + c6e2ed2:
+ Integrate integrate goma grpc and bridge logic
+ + d33732d:
+ Use clangscandeps-service when building windows release binaries
+ + 3ab4141:
+ Make bootstrap respect RBE_HTTP_PROXY flag
+ + e766455:
+ Run clang-tidy against cmd/
+ + 3f9cdf9:
+ Switch Kokoro tests to use clangscandeps-service
+ + 8f187e2:
+ Refine llvm patches to work for mingw and clang-cl
+ + aa7e9eb:
+ Revert^2 "Install prerequisites for goma continous test"
+ + e0bc023:
+ Revert^2 "Remove goma cgo dependency scanner"
+ + b4c246f:
+ Revert^2 "Add transition to allow scandeps to build with clang-cl ..."
+ + ff9a8f1:
+ Make scripts/install work on glinux laptops
+ + 3195380:
+ Populate Remote Metadata Regardless of Race Result
+```
+
+## Release 0.131.1 (2024-02-06)
+```
+Changes:
+ + 3ac5840:
+ create-release.sh supports prod release
+ + f244a8b:
+ Add setlocal to release .bat scripts
+ + c152715:
+ Revert "Add transition to allow scandeps to build with clang-cl ..."
+ + a37fd6c:
+ Revert "Remove goma cgo dependency scanner"
+ + a4d6ed4:
+ Revert "Install prerequisites for goma continous test"
+ + dea4987:
+ Install prerequisites for goma continous test
+ + 2cd54c7:
+ Remove goma cgo dependency scanner
+ + 2cd4a2e:
+ Add transition to allow scandeps to build with clang-cl in a mingw build
+```
+
 ## Release 0.131.0 (2024-02-02)
 ```
 Changes:

@@ -1,3 +1,62 @@
+## Release 0.136.1 (2024-03-18)
+```
+Changes:
+ + 0a9b20d:
+ Fix windows release script - staging dir for gomaip
+ + 52620bd:
+ Minor fix to scripts/install
+ + ead34f3:
+ Increase TestWindowedCountWithWindow window size
+```
+
+## Release 0.136.0 (2024-03-15)
+```
+Changes:
+ + 446b1d4:
+ Fallback on using $USER if $HOME is unset
+ + 1dacf1c:
+ Bump remote-api-sdk
+ + db5161a:
+ Run go_mod_tidy with precommit hook
+ + f32c35e:
+ Increase max revc msg size for reproxy server.
+```
+
+## Release 0.135.0 (2024-03-13)
+```
+Changes:
+ + 28038f7:
+ Bump remote-apis-sdks
+ + 57c00ca:
+ Use local action and longer delay to make reproxystatus test less flakey
+ + 1edf477:
+ Create separate Kokoro jobs to check CI image age
+ + 24390ae:
+ Update Kokoro Win Snapshot Image
+ + 52be216:
+ Update Kokoro Win CI image family
+ + 91c358e:
+ Refactor Kokoro CI snapshot image name
+ + 4aa06d4:
+ Add watch mode to reproxystatus
+ + 276e3ed:
+ Don't fail CI Build for old snapshot Image
+ + 2ba5cae:
+ Integrate clangscandeps bridge code with service code
+ + ef06896:
+ Remove mingw toolchain now that only clang-cl is used
+ + aaf5de0:
+ Remove clangscandeps cgo depsscanner
+ + 2ee9eff:
+ Update android snapshot
+ + f21d86f:
+ Fix release script to read VERSION_NUMBER correctly
+ + 64a3dac:
+ Support Clang-CL argument file
+ + f3b0dad:
+ Refactor scanner to preserve prev flag parse result
+```
+
 ## Release 0.134.1 (2024-02-29)
 ```
 Changes:

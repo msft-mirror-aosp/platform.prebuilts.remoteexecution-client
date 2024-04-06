@@ -1,3 +1,44 @@
+## Release 0.138.0 (2024-04-03)
+```
+Changes:
+ + 32d3b4e:
+ Adjust max listen size for messages from rewrapper/siso
+ + 09789bf:
+ Move pkg/version to internal/pkg/version
+ + a708e51:
+ Remove usages of deprecated go_embed_data
+ + 0511637:
+ Bump remote-apis-sdks
+ + 6238760:
+ Fix bug in credshelper to run commands more than once
+```
+
+## Release 0.137.1 (2024-03-25)
+```
+Changes:
+ + 63cff9b:
+ Use cgo enabled binaries on mac
+```
+
+## Release 0.137.0 (2024-03-25)
+```
+Changes:
+ + e1e4ea8:
+ Apply filters for downloads
+ + abf24bb:
+ Remove unused arguments and constants
+ + a93006a:
+ Cleanup auth proto
+ + 313d9b4:
+ Bump remote-apis-sdks
+ + 0868ff4:
+ Remove internal automatic auth code
+ + 2ec4143:
+ Invalidate internal auth flags
+ + 093a823:
+ Update Docker Image Update Doc
+```
+
 ## Release 0.136.1 (2024-03-18)
 ```
 Changes:

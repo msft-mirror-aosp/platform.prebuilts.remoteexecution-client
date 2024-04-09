@@ -1,6 +1,6 @@
 drops {
   dest_file: "Android.bp"
-  version: "0.138.0.e854224"
+  version: "0.136.1.732f8b5"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {

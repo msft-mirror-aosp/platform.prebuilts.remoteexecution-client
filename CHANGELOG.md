@@ -1,3 +1,40 @@
+## Release 0.139.0 (2024-04-10)
+```
+Changes:
+ + 41c46c0:
+ Add flag to set max listen size for grpc listener.
+ + 94656f3:
+ Add flag to enable/disable creds cache.
+ + 551b64c:
+ Increate windows integ test timeout
+ + 5509d51:
+ Minor clean up of scripts/install
+ + 2727445:
+ Fix reproxy hanging when metrics_project not set
+ + 562abd8:
+ Auto git push snapshot update CL
+ + 4432763:
+ update aosp snapshot image
+ + de4294b:
+ Only download toplevel outputs by default when building remotely
+ + b3ba92c:
+ Add flag to turn on log uploading.
+ + 32c4542:
+ Revert "Update reclient_perfgate binary"
+ + c56d545:
+ Add virtual_inputs rewrapper flag
+ + 8a7c67c:
+ Move stats interface into stat package
+ + b9bd91e:
+ Remove cyclic dependency between logger and monitoring
+ + 4abe3fa:
+ Update reclient_perfgate binary
+ + d110445:
+ Update Chrome Snapshot Image
+ + 60de439:
+ Generate .sym files as part of the bazel build
+```
+
 ## Release 0.138.0 (2024-04-03)
 ```
 Changes:

@@ -1,3 +1,41 @@
+## Release 0.143.0 (2024-05-08)
+```
+Changes:
+ + a38f3b0:
+ Bump remote-apis-sdks
+ + ca51364:
+ Add auxiliary metadata bin to mac release
+```
+
+## Release 0.142.0 (2024-05-08)
+```
+Changes:
+ + f7106cb:
+ include proto regeneration in precommit hook
+ + 45feb50:
+ update the SDK to bring the round-robin grpc balancer
+ + a41cbee:
+ Reject new rewrapper commands at peak number of threads
+ + 916d35f:
+ Release auxiliary_metadata.pb file
+ + 939ea6a:
+ Enable CI jobs with auxiliary metadata
+ + 0d089b4:
+ Fix bugs for --auxiliary_metadata_path
+ + 164f2ca:
+ Update chromium image.
+ + b08ba6f:
+ Integ test for auxiliary metadata
+ + f93033c:
+ Support for auxiliary metadata as plugin
+ + fe86d4a:
+ Improve sha detection in workspace status script
+ + 36e2930:
+ Add reclient_manifest rule and reclientpkg library
+ + 064c052:
+ Add //:artifacts.tar which contains all artifacts for release
+```
+
 ## Release 0.141.1 (2024-05-01)
 ```
 Changes:

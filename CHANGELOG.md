@@ -1,3 +1,95 @@
+## Release 0.143.0 (2024-05-08)
+```
+Changes:
+ + a38f3b0:
+ Bump remote-apis-sdks
+ + ca51364:
+ Add auxiliary metadata bin to mac release
+```
+
+## Release 0.142.0 (2024-05-08)
+```
+Changes:
+ + f7106cb:
+ include proto regeneration in precommit hook
+ + 45feb50:
+ update the SDK to bring the round-robin grpc balancer
+ + a41cbee:
+ Reject new rewrapper commands at peak number of threads
+ + 916d35f:
+ Release auxiliary_metadata.pb file
+ + 939ea6a:
+ Enable CI jobs with auxiliary metadata
+ + 0d089b4:
+ Fix bugs for --auxiliary_metadata_path
+ + 164f2ca:
+ Update chromium image.
+ + b08ba6f:
+ Integ test for auxiliary metadata
+ + f93033c:
+ Support for auxiliary metadata as plugin
+ + fe86d4a:
+ Improve sha detection in workspace status script
+ + 36e2930:
+ Add reclient_manifest rule and reclientpkg library
+ + 064c052:
+ Add //:artifacts.tar which contains all artifacts for release
+```
+
+## Release 0.141.1 (2024-05-01)
+```
+Changes:
+ + c79c289:
+ Add .exe to scandeps_server in .yaml file for windows.
+```
+
+## Release 0.141.0 (2024-04-30)
+```
+Changes:
+ + 60b68b2:
+ Update the sdk
+ + ecca965:
+ Add LUCI ProxyUptime to bookmarklet
+ + 44d9569:
+ Add @rsp support for clang.
+ + 27028b0:
+ Remove copt -fPIC on windows as it is ignored by clang-cl
+ + 1cf143a:
+ Add bookmarklet for rbe_metrics page on LUCI
+```
+
+## Release 0.140.1 (2024-04-24)
+```
+Changes:
+ + c4f0cc6:
+ Add scandeps_server to csd cipd yaml files
+ + 728d252:
+ update the sdk
+ + bb620e8:
+ Fix LED run scripts
+```
+
+## Release 0.140.0 (2024-04-18)
+```
+Changes:
+ + e1c4af8:
+ Go back to using cgo platform for arm go builds
+ + 4bb833f:
+ Disable depot tools updating in chromium docker image
+ + e73f132:
+ Build scandeps_server with android glibc remotely
+ + 35caca7:
+ Update snapshot image every 30 days
+ + 5a3f299:
+ Fix windows postsubmit batch bug by removing one layer of indirection
+ + 6b2adea:
+ Fix fallback count for Windows tests
+ + 4ce606d:
+ Build perfgate binary with Kokoro
+ + 4187e4f:
+ Run all windows kokoro bazel commands in docker
+```
+
 ## Release 0.139.0 (2024-04-10)
 ```
 Changes:

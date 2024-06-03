@@ -1,3 +1,259 @@
+## Release 0.146.0 (2024-05-22)
+```
+Changes:
+ + be020f4:
+ update the sdk
+ + 5f4719e:
+ Rollup the remotetool into reproxytool
+ + 32d4351:
+ Add working directory support to shallow deps parser.
+ + e03b8a9:
+ Bump remote-apis-sdks
+```
+
+## Release 0.145.0 (2024-05-21)
+```
+Changes:
+ + dff08f0:
+ Fix the windows release script
+ + 179cb9d:
+ Checkout correct commit before gclient sync
+ + 024c20e:
+ Restart windows bash script after clone
+ + 32cac25:
+ Fix typo in continuous_docker.bat name
+ + 98537fd:
+ Use STABLE_VERSION_SHA in cipd tag
+ + f1472f9:
+ Fix a couple of bugs with the new release process
+ + d714602:
+ Use absolute path when restarting script
+```
+
+## Release 0.144.1 (2024-05-16)
+```
+Changes:
+ + 39caa18:
+ Restart release script after checking out bump commit
+ + 7a70a9d:
+ Run whole windows kokoro job in one docker run
+ + f47123f:
+ Update snapshot image every 30 days
+ + 3165f94:
+ Hide stack unwind when USER not set
+ + 6fb00c5:
+ LED run with auxiliary metadata descriptor
+ + dd99336:
+ Run reproxy_test remotely
+ + eace897:
+ Fix typo in continuous.bat name
+ + 5c0ec1e:
+ Fix release postsubmit issues
+ + fd1bfd7:
+ Add auxiliary_proto to artifacts.tar
+ + a12b7fd:
+ Update github.com/Microsoft/go-winio
+ + 626a93c:
+ Add correct service account json for mac continous jobs
+ + c7714c7:
+ Update Android release script for auxiliary descriptor
+ + c33cd14:
+ Implement reclientpkguploader
+ + 42ed34b:
+ Implement cipd and gcs uploading for release binary
+ + 6f179a8:
+ Refactor version.txt generation
+ + 370edc7:
+ Delete exited docker container instances after bazel runs on windows
+ + ffb91ab:
+ Update windows RBE image to new version
+```
+
+## Release 0.144.0 (2024-05-13)
+```
+Changes:
+ + c124946:
+ Actually cache the winsdk and vcdist directories.
+ + bb91c0f:
+ Also log the error in setting flags
+ + 5af4d0d:
+ Update windows snapshot to use E: drive
+ + 4326e15:
+ Switch to windowsktcb built image for remote build
+ + 899432c:
+ Remove default server address of 127.0.0.1:8000
+```
+
+## Release 0.143.0 (2024-05-08)
+```
+Changes:
+ + a38f3b0:
+ Bump remote-apis-sdks
+ + ca51364:
+ Add auxiliary metadata bin to mac release
+```
+
+## Release 0.142.0 (2024-05-08)
+```
+Changes:
+ + f7106cb:
+ include proto regeneration in precommit hook
+ + 45feb50:
+ update the SDK to bring the round-robin grpc balancer
+ + a41cbee:
+ Reject new rewrapper commands at peak number of threads
+ + 916d35f:
+ Release auxiliary_metadata.pb file
+ + 939ea6a:
+ Enable CI jobs with auxiliary metadata
+ + 0d089b4:
+ Fix bugs for --auxiliary_metadata_path
+ + 164f2ca:
+ Update chromium image.
+ + b08ba6f:
+ Integ test for auxiliary metadata
+ + f93033c:
+ Support for auxiliary metadata as plugin
+ + fe86d4a:
+ Improve sha detection in workspace status script
+ + 36e2930:
+ Add reclient_manifest rule and reclientpkg library
+ + 064c052:
+ Add //:artifacts.tar which contains all artifacts for release
+```
+
+## Release 0.141.1 (2024-05-01)
+```
+Changes:
+ + c79c289:
+ Add .exe to scandeps_server in .yaml file for windows.
+```
+
+## Release 0.141.0 (2024-04-30)
+```
+Changes:
+ + 60b68b2:
+ Update the sdk
+ + ecca965:
+ Add LUCI ProxyUptime to bookmarklet
+ + 44d9569:
+ Add @rsp support for clang.
+ + 27028b0:
+ Remove copt -fPIC on windows as it is ignored by clang-cl
+ + 1cf143a:
+ Add bookmarklet for rbe_metrics page on LUCI
+```
+
+## Release 0.140.1 (2024-04-24)
+```
+Changes:
+ + c4f0cc6:
+ Add scandeps_server to csd cipd yaml files
+ + 728d252:
+ update the sdk
+ + bb620e8:
+ Fix LED run scripts
+```
+
+## Release 0.140.0 (2024-04-18)
+```
+Changes:
+ + e1c4af8:
+ Go back to using cgo platform for arm go builds
+ + 4bb833f:
+ Disable depot tools updating in chromium docker image
+ + e73f132:
+ Build scandeps_server with android glibc remotely
+ + 35caca7:
+ Update snapshot image every 30 days
+ + 5a3f299:
+ Fix windows postsubmit batch bug by removing one layer of indirection
+ + 6b2adea:
+ Fix fallback count for Windows tests
+ + 4ce606d:
+ Build perfgate binary with Kokoro
+ + 4187e4f:
+ Run all windows kokoro bazel commands in docker
+```
+
+## Release 0.139.0 (2024-04-10)
+```
+Changes:
+ + 41c46c0:
+ Add flag to set max listen size for grpc listener.
+ + 94656f3:
+ Add flag to enable/disable creds cache.
+ + 551b64c:
+ Increate windows integ test timeout
+ + 5509d51:
+ Minor clean up of scripts/install
+ + 2727445:
+ Fix reproxy hanging when metrics_project not set
+ + 562abd8:
+ Auto git push snapshot update CL
+ + 4432763:
+ update aosp snapshot image
+ + de4294b:
+ Only download toplevel outputs by default when building remotely
+ + b3ba92c:
+ Add flag to turn on log uploading.
+ + 32c4542:
+ Revert "Update reclient_perfgate binary"
+ + c56d545:
+ Add virtual_inputs rewrapper flag
+ + 8a7c67c:
+ Move stats interface into stat package
+ + b9bd91e:
+ Remove cyclic dependency between logger and monitoring
+ + 4abe3fa:
+ Update reclient_perfgate binary
+ + d110445:
+ Update Chrome Snapshot Image
+ + 60de439:
+ Generate .sym files as part of the bazel build
+```
+
+## Release 0.138.0 (2024-04-03)
+```
+Changes:
+ + 32d3b4e:
+ Adjust max listen size for messages from rewrapper/siso
+ + 09789bf:
+ Move pkg/version to internal/pkg/version
+ + a708e51:
+ Remove usages of deprecated go_embed_data
+ + 0511637:
+ Bump remote-apis-sdks
+ + 6238760:
+ Fix bug in credshelper to run commands more than once
+```
+
+## Release 0.137.1 (2024-03-25)
+```
+Changes:
+ + 63cff9b:
+ Use cgo enabled binaries on mac
+```
+
+## Release 0.137.0 (2024-03-25)
+```
+Changes:
+ + e1e4ea8:
+ Apply filters for downloads
+ + abf24bb:
+ Remove unused arguments and constants
+ + a93006a:
+ Cleanup auth proto
+ + 313d9b4:
+ Bump remote-apis-sdks
+ + 0868ff4:
+ Remove internal automatic auth code
+ + 2ec4143:
+ Invalidate internal auth flags
+ + 093a823:
+ Update Docker Image Update Doc
+```
+
 ## Release 0.136.1 (2024-03-18)
 ```
 Changes:

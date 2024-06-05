@@ -1,3 +1,881 @@
+## Release 0.146.0 (2024-05-22)
+```
+Changes:
+ + be020f4:
+ update the sdk
+ + 5f4719e:
+ Rollup the remotetool into reproxytool
+ + 32d4351:
+ Add working directory support to shallow deps parser.
+ + e03b8a9:
+ Bump remote-apis-sdks
+```
+
+## Release 0.145.0 (2024-05-21)
+```
+Changes:
+ + dff08f0:
+ Fix the windows release script
+ + 179cb9d:
+ Checkout correct commit before gclient sync
+ + 024c20e:
+ Restart windows bash script after clone
+ + 32cac25:
+ Fix typo in continuous_docker.bat name
+ + 98537fd:
+ Use STABLE_VERSION_SHA in cipd tag
+ + f1472f9:
+ Fix a couple of bugs with the new release process
+ + d714602:
+ Use absolute path when restarting script
+```
+
+## Release 0.144.1 (2024-05-16)
+```
+Changes:
+ + 39caa18:
+ Restart release script after checking out bump commit
+ + 7a70a9d:
+ Run whole windows kokoro job in one docker run
+ + f47123f:
+ Update snapshot image every 30 days
+ + 3165f94:
+ Hide stack unwind when USER not set
+ + 6fb00c5:
+ LED run with auxiliary metadata descriptor
+ + dd99336:
+ Run reproxy_test remotely
+ + eace897:
+ Fix typo in continuous.bat name
+ + 5c0ec1e:
+ Fix release postsubmit issues
+ + fd1bfd7:
+ Add auxiliary_proto to artifacts.tar
+ + a12b7fd:
+ Update github.com/Microsoft/go-winio
+ + 626a93c:
+ Add correct service account json for mac continous jobs
+ + c7714c7:
+ Update Android release script for auxiliary descriptor
+ + c33cd14:
+ Implement reclientpkguploader
+ + 42ed34b:
+ Implement cipd and gcs uploading for release binary
+ + 6f179a8:
+ Refactor version.txt generation
+ + 370edc7:
+ Delete exited docker container instances after bazel runs on windows
+ + ffb91ab:
+ Update windows RBE image to new version
+```
+
+## Release 0.144.0 (2024-05-13)
+```
+Changes:
+ + c124946:
+ Actually cache the winsdk and vcdist directories.
+ + bb91c0f:
+ Also log the error in setting flags
+ + 5af4d0d:
+ Update windows snapshot to use E: drive
+ + 4326e15:
+ Switch to windowsktcb built image for remote build
+ + 899432c:
+ Remove default server address of 127.0.0.1:8000
+```
+
+## Release 0.143.0 (2024-05-08)
+```
+Changes:
+ + a38f3b0:
+ Bump remote-apis-sdks
+ + ca51364:
+ Add auxiliary metadata bin to mac release
+```
+
+## Release 0.142.0 (2024-05-08)
+```
+Changes:
+ + f7106cb:
+ include proto regeneration in precommit hook
+ + 45feb50:
+ update the SDK to bring the round-robin grpc balancer
+ + a41cbee:
+ Reject new rewrapper commands at peak number of threads
+ + 916d35f:
+ Release auxiliary_metadata.pb file
+ + 939ea6a:
+ Enable CI jobs with auxiliary metadata
+ + 0d089b4:
+ Fix bugs for --auxiliary_metadata_path
+ + 164f2ca:
+ Update chromium image.
+ + b08ba6f:
+ Integ test for auxiliary metadata
+ + f93033c:
+ Support for auxiliary metadata as plugin
+ + fe86d4a:
+ Improve sha detection in workspace status script
+ + 36e2930:
+ Add reclient_manifest rule and reclientpkg library
+ + 064c052:
+ Add //:artifacts.tar which contains all artifacts for release
+```
+
+## Release 0.141.1 (2024-05-01)
+```
+Changes:
+ + c79c289:
+ Add .exe to scandeps_server in .yaml file for windows.
+```
+
+## Release 0.141.0 (2024-04-30)
+```
+Changes:
+ + 60b68b2:
+ Update the sdk
+ + ecca965:
+ Add LUCI ProxyUptime to bookmarklet
+ + 44d9569:
+ Add @rsp support for clang.
+ + 27028b0:
+ Remove copt -fPIC on windows as it is ignored by clang-cl
+ + 1cf143a:
+ Add bookmarklet for rbe_metrics page on LUCI
+```
+
+## Release 0.140.1 (2024-04-24)
+```
+Changes:
+ + c4f0cc6:
+ Add scandeps_server to csd cipd yaml files
+ + 728d252:
+ update the sdk
+ + bb620e8:
+ Fix LED run scripts
+```
+
+## Release 0.140.0 (2024-04-18)
+```
+Changes:
+ + e1c4af8:
+ Go back to using cgo platform for arm go builds
+ + 4bb833f:
+ Disable depot tools updating in chromium docker image
+ + e73f132:
+ Build scandeps_server with android glibc remotely
+ + 35caca7:
+ Update snapshot image every 30 days
+ + 5a3f299:
+ Fix windows postsubmit batch bug by removing one layer of indirection
+ + 6b2adea:
+ Fix fallback count for Windows tests
+ + 4ce606d:
+ Build perfgate binary with Kokoro
+ + 4187e4f:
+ Run all windows kokoro bazel commands in docker
+```
+
+## Release 0.139.0 (2024-04-10)
+```
+Changes:
+ + 41c46c0:
+ Add flag to set max listen size for grpc listener.
+ + 94656f3:
+ Add flag to enable/disable creds cache.
+ + 551b64c:
+ Increate windows integ test timeout
+ + 5509d51:
+ Minor clean up of scripts/install
+ + 2727445:
+ Fix reproxy hanging when metrics_project not set
+ + 562abd8:
+ Auto git push snapshot update CL
+ + 4432763:
+ update aosp snapshot image
+ + de4294b:
+ Only download toplevel outputs by default when building remotely
+ + b3ba92c:
+ Add flag to turn on log uploading.
+ + 32c4542:
+ Revert "Update reclient_perfgate binary"
+ + c56d545:
+ Add virtual_inputs rewrapper flag
+ + 8a7c67c:
+ Move stats interface into stat package
+ + b9bd91e:
+ Remove cyclic dependency between logger and monitoring
+ + 4abe3fa:
+ Update reclient_perfgate binary
+ + d110445:
+ Update Chrome Snapshot Image
+ + 60de439:
+ Generate .sym files as part of the bazel build
+```
+
+## Release 0.138.0 (2024-04-03)
+```
+Changes:
+ + 32d3b4e:
+ Adjust max listen size for messages from rewrapper/siso
+ + 09789bf:
+ Move pkg/version to internal/pkg/version
+ + a708e51:
+ Remove usages of deprecated go_embed_data
+ + 0511637:
+ Bump remote-apis-sdks
+ + 6238760:
+ Fix bug in credshelper to run commands more than once
+```
+
+## Release 0.137.1 (2024-03-25)
+```
+Changes:
+ + 63cff9b:
+ Use cgo enabled binaries on mac
+```
+
+## Release 0.137.0 (2024-03-25)
+```
+Changes:
+ + e1e4ea8:
+ Apply filters for downloads
+ + abf24bb:
+ Remove unused arguments and constants
+ + a93006a:
+ Cleanup auth proto
+ + 313d9b4:
+ Bump remote-apis-sdks
+ + 0868ff4:
+ Remove internal automatic auth code
+ + 2ec4143:
+ Invalidate internal auth flags
+ + 093a823:
+ Update Docker Image Update Doc
+```
+
+## Release 0.136.1 (2024-03-18)
+```
+Changes:
+ + 0a9b20d:
+ Fix windows release script - staging dir for gomaip
+ + 52620bd:
+ Minor fix to scripts/install
+ + ead34f3:
+ Increase TestWindowedCountWithWindow window size
+```
+
+## Release 0.136.0 (2024-03-15)
+```
+Changes:
+ + 446b1d4:
+ Fallback on using $USER if $HOME is unset
+ + 1dacf1c:
+ Bump remote-api-sdk
+ + db5161a:
+ Run go_mod_tidy with precommit hook
+ + f32c35e:
+ Increase max revc msg size for reproxy server.
+```
+
+## Release 0.135.0 (2024-03-13)
+```
+Changes:
+ + 28038f7:
+ Bump remote-apis-sdks
+ + 57c00ca:
+ Use local action and longer delay to make reproxystatus test less flakey
+ + 1edf477:
+ Create separate Kokoro jobs to check CI image age
+ + 24390ae:
+ Update Kokoro Win Snapshot Image
+ + 52be216:
+ Update Kokoro Win CI image family
+ + 91c358e:
+ Refactor Kokoro CI snapshot image name
+ + 4aa06d4:
+ Add watch mode to reproxystatus
+ + 276e3ed:
+ Don't fail CI Build for old snapshot Image
+ + 2ba5cae:
+ Integrate clangscandeps bridge code with service code
+ + ef06896:
+ Remove mingw toolchain now that only clang-cl is used
+ + aaf5de0:
+ Remove clangscandeps cgo depsscanner
+ + 2ee9eff:
+ Update android snapshot
+ + f21d86f:
+ Fix release script to read VERSION_NUMBER correctly
+ + 64a3dac:
+ Support Clang-CL argument file
+ + f3b0dad:
+ Refactor scanner to preserve prev flag parse result
+```
+
+## Release 0.134.1 (2024-02-29)
+```
+Changes:
+ + 01fa555:
+ Fix bug in remoteRacing
+ + 2e7db78:
+ Make racing respect env vars from rewrapper as well
+```
+
+## Release 0.134.0 (2024-02-27)
+```
+Changes:
+ + 701f5fa:
+ Ensure remote_wrapper is exec-root-relative when processing its toolchain dependencies.
+```
+
+## Release 0.133.0 (2024-02-27)
+```
+Changes:
+ + bc7a0d9:
+ Update chromium test image
+ + f7ec15c:
+ Increase the number of commits we look for in the CHANGELOG
+ + 9104d96:
+ Goma IP - include resources in dependencies
+ + f63e994:
+ Make windows integ test robust
+ + 9841d06:
+ Remove --amend argument when committing
+ + 938b128:
+ Remove incorrect entries from Changelog
+ + 0e89270:
+ allow version without hash for release script
+ + bf40f4f:
+ require bug number in release scripts
+ + 8deef2a:
+ Revert "Remove dependency installation in windows kokoro jobs"
+```
+
+## Release 0.132.0 (2024-02-15)
+```
+Changes:
+ + a1f0705:
+ Support execrel:// prefix for credshelper flag
+ + d57eaa9:
+ Support Javac argument file
+ + eb74995:
+ Fix typo in create-release script
+ + a5d3151:
+ Build goma ninja target remotely on linux
+ + 4c13580:
+ Remove dependency installation in windows kokoro jobs
+ + c6e2ed2:
+ Integrate integrate goma grpc and bridge logic
+ + d33732d:
+ Use clangscandeps-service when building windows release binaries
+ + 3ab4141:
+ Make bootstrap respect RBE_HTTP_PROXY flag
+ + e766455:
+ Run clang-tidy against cmd/
+ + 3f9cdf9:
+ Switch Kokoro tests to use clangscandeps-service
+ + 8f187e2:
+ Refine llvm patches to work for mingw and clang-cl
+ + aa7e9eb:
+ Revert^2 "Install prerequisites for goma continous test"
+ + e0bc023:
+ Revert^2 "Remove goma cgo dependency scanner"
+ + b4c246f:
+ Revert^2 "Add transition to allow scandeps to build with clang-cl ..."
+ + ff9a8f1:
+ Make scripts/install work on glinux laptops
+ + 3195380:
+ Populate Remote Metadata Regardless of Race Result
+```
+
+## Release 0.131.1 (2024-02-06)
+```
+Changes:
+ + 3ac5840:
+ create-release.sh supports prod release
+ + f244a8b:
+ Add setlocal to release .bat scripts
+ + c152715:
+ Revert "Add transition to allow scandeps to build with clang-cl ..."
+ + a37fd6c:
+ Revert "Remove goma cgo dependency scanner"
+ + a4d6ed4:
+ Revert "Install prerequisites for goma continous test"
+ + dea4987:
+ Install prerequisites for goma continous test
+ + 2cd54c7:
+ Remove goma cgo dependency scanner
+ + 2cd4a2e:
+ Add transition to allow scandeps to build with clang-cl in a mingw build
+```
+
+## Release 0.131.0 (2024-02-02)
+```
+Changes:
+ + 849e799:
+ Add reproxy version string to our own depscache
+ + f72451a:
+ Add scandeps server string to bridge.cc
+ + 808e498:
+ Disable depot_tools updates in linux docker image
+ + 9729f63:
+ Allow Guitar Corp Account to Authenticate
+ + 1ce2358:
+ Make integ test robust
+ + 0e95491:
+ Monthly update AOSP CI Image
+ + 13cd694:
+ Fix javac remote-exec fallbacks
+ + d454868:
+ Check for goma cipd package in windows release script
+```
+
+## Release 0.130.0 (2024-01-29)
+```
+Changes:
+ + 4c44c60:
+ Update chromium-linux-builder to ubuntu 20.04
+ + 9be8919:
+ Remove Type() and Name() from cppdepsscanner
+ + 0bbc03b:
+ Reland "Move plugin ignoring logic into cpp bridge code"
+ + d3ac3bf:
+ Reland "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 553797c:
+ Move arg adjustment for clangscandeps to bridge code
+ + 24d5490:
+ Expose capabilities via RPC for scandeps servers
+ + 9556345:
+ Compare cleaned paths in cppdependencyscanner integration test
+ + f48a8cb:
+ Add version string to scandeps binaries
+```
+
+## Release 0.129.0 (2024-01-26)
+```
+Changes:
+ + 6a41777:
+ Update LLVM 82e851a407c52d65ce65e7aa58453127e67d42a0
+ + 4f37568:
+ Inputprocessor arg adjust for CSD service
+ + 063a3ab:
+ Remove non-supported clang args from test
+ + 33ce663:
+ Hide LLVM source code's lint warnings
+ + 80cded7:
+ Add -fsanitize-coverage-allowlist value as input dependency.
+ + 93a7cc4:
+ Fix Flaky Windows Integ test
+ + 5e789d8:
+ Update Chrome Linux CI image
+ + e32ae3f:
+ Monthly update Windows CI Image
+```
+
+## Release 0.128.1 (2024-01-23)
+```
+Changes:
+ + aa9e7cb:
+ Fix Windows CI build to use scandeps_server
+ + 5c1e9f4:
+ Revert "Move arg adjustment for clangscandeps to bridge code"
+ + c6df124:
+ Revert "Expose caching capability via RPC for deps scanners"
+ + 2e0d7fb:
+ Revert "Only use reproxy deps cache if depscanner doesnt support caching"
+ + 2b2bc6d:
+ Revert "Move plugin ignoring logic into cpp bridge code"
+```
+
+## Release 0.128.0 (2024-01-22)
+```
+Changes:
+ + 4e0c43a:
+ Release non dbg version of scandeps_server on windows
+ + 514a131:
+ Move plugin ignoring logic into cpp bridge code
+ + 6248c64:
+ Only use reproxy deps cache if depscanner doesnt support caching
+ + 8507449:
+ Expose caching capability via RPC for deps scanners
+ + 5f2371f:
+ Move arg adjustment for clangscandeps to bridge code
+ + 7a98f63:
+ Cleanup older reclient releases that are no longer used
+ + 41d17d7:
+ Handle glinux servers in googleauth
+ + b1a7a1b:
+ Fix install script to match prod release
+ + 6d5fe69:
+ Format all cpp files with clang-format
+ + 2a8002f:
+ Add gopackagesdriver script to get code completion in vscode
+```
+
+## Release 0.127.1 (2024-01-11)
+```
+Changes:
+ + f0316fc:
+ Add logic to check csd and goma releases separately on windows
+ + 6fd77b9:
+ Update to bazel 6.3.2
+```
+
+## Release 0.127.0 (2024-01-10)
+```
+Changes:
+ + eb7287d:
+ Fixing caching bug when using credentials helper
+ + a4d1fb6:
+ Properly use working directory in clang-tidy input processor.
+ + d29ab57:
+ Increase timeout on windows presubmit integ tests.
+ + 37d741e:
+ Set the executable bit on args[0] and remote_wrapper of given command.
+ + fc8197c:
+ Check for valid ADC when ADC is requested explicitly
+ + f7882fc:
+ Support the --save-temps flag.
+ + 2343bd0:
+ Fix nil pointer issues when upload to bq
+ + 04765b6:
+ Add missing fields to bigquerytranslator
+ + c88aff8:
+ Monthly update AOSP CI Image
+ + 3b59dcf:
+ upgrade golang/glog
+ + c8e64e3:
+ add qps to status tool
+ + 4fcdbeb:
+ Add log of command that timed out for exit-on-stuck-actions.
+ + b271399:
+ add SDK version flag
+```
+
+## Release 0.126.0 (2024-01-02)
+```
+Changes:
+ + cc5d3c9:
+ Windows CI build with vpython
+ + b63c550:
+ Getting rid of duplicate error messages when gcloud fails
+ + bebcb5c:
+ Update Chrome Linux CI image
+ + 655c9be:
+ Fix Windows CredsHelper tests
+ + 8f65a8d:
+ Allow all env vars with overrides in local execution
+```
+
+## Release 0.125.0 (2023-12-13)
+```
+Changes:
+ + 8092d61:
+ Use CredsHelper Flag
+ + 5a4fd35:
+ Credshelper Binary Cleanup Errors
+ + b76d0ed:
+ Update chromium win image.
+ + e202ad3:
+ Update the re-client README about gclient
+ + 2988efe:
+ Always write a token to creds file on disk
+ + 89d5946:
+ Replace all log.Fatalf in rewrapper/bootstrap with log.Exitf
+ + 6bfa338:
+ Remove explicit addition of source file in dependency list in scandeps server.
+ + ae04544:
+ Improve error message for gcloud and adc failure
+ + 31d77d2:
+ Change credshelper binary output to json
+ + 583d22e:
+ fix wrong release tag for windows goma release
+ + 8a6f88e:
+ fix typo and indentation in release jobs
+ + b949c6c:
+ Add code to run the credshelper
+```
+
+## Release 0.124.1 (2023-12-04)
+```
+Changes:
+ + 1ceee42:
+ fix ubuntu-based release job
+ + c03b96b:
+ fix release presubmit job for windows
+ + 8d95b62:
+ Add credshelper binary to missing release files
+ + a65246a:
+ fix gcs release in release jobs
+```
+
+## Release 0.124.0 (2023-12-01)
+```
+Changes:
+ + 34b0434:
+ use compatible arguments between darwin and posix
+ + 2f64851:
+ Link libc++ statically for ubuntu 1404 scandeps
+ + d8362fd:
+ fix presubmit release jobs for linux and mac
+ + 3b099b0:
+ Revert^2 "Handle virtual inputs for various include-type paths containing '..'"
+```
+
+## Release 0.123.1 (2023-11-28)
+```
+Changes:
+ + 3bcabac:
+ Revert "Handle virtual inputs for various include-type paths containing '..'"
+ + 7098adc:
+ fix windows release scripts
+ + f56627c:
+ fix release script
+ + 41adb90:
+ fix release script
+ + bdcbe4b:
+ fix release script
+ + 7e81f3d:
+ fix presubmits for release jobs
+ + 5816849:
+ Remove hint from error message.
+ + 1ab6874:
+ Fix release scripts.
+ + b172d61:
+ Handle virtual inputs for various include-type paths containing '..'
+```
+
+## Release 0.123.0 (2023-11-27)
+```
+Changes:
+ + 5ffa1b6:
+ Revert^2 "Update remote-apis-sdk"
+ + acf0c96:
+ Return from runRemote if res is not OK
+ + 21ba467:
+ Revert "Stash files from input-output dirs in compare mode"
+ + b47c3f8:
+ add presubmit jobs for release scripts
+ + 8b44a41:
+ Monthly update Android CI Image
+ + 120948d:
+ mitigate flakiness in lerc test
+ + 8f9b52b:
+ Force set the executable bit on Windows toolchain inputs.
+ + 0052190:
+ Add support for SSH proxies in experiments framework.
+ + bc7bca7:
+ enforce semver validation in version bump
+ + 424a364:
+ Monthly update win CI image
+ + fbf493c:
+ Ensure resource manager has at least 1 cpu to work with.
+```
+
+## Release 0.122.2 (2023-11-20)
+```
+Changes:
+ + 6372730:
+ Revert "Update remote-apis-sdk"
+```
+
+## Release 0.122.1 (2023-11-17)
+```
+Changes:
+```
+
+## Release 0.122 (2023-11-17)
+```
+Changes:
+ + 66aa56a:
+ Fixed missing credshelper binary in mac
+ + 9e065c5:
+ Stash files from input-output dirs in compare mode
+ + b9706cb:
+ Revert "Add support for -fcrash-diagnostics-dir clang flag."
+ + 308162b:
+ Include log directories in rbe_metrics file
+```
+
+## Release 0.121.0 (2023-11-15)
+```
+Changes:
+ + 6ac09dd:
+ fix a race in compare mode
+ + bbb03f0:
+ update chromium snapshot image & fix copying logs
+ + f2bcfa9:
+ Change GoogleProd Unavailable Warning
+ + b225271:
+ Update remote-apis-sdk
+ + 12220d0:
+ Copy the missing logs for Windows CI builder
+ + bf82abe:
+ Add internal README section for authentication options
+ + de7b6ae:
+ Include credshelper binary in internal release
+ + eba5831:
+ Add logic for caching credshelper credentials
+ + 6ff4a50:
+ Do not log mismatches
+ + bea16d9:
+ Create output directory if it doesn't exist.
+```
+
+## Release 0.120.1 (2023-11-03)
+```
+Changes:
+ + b6dece2:
+ Replace reproxy with depscan in scandeps_server socket file
+```
+
+## Release 0.120.0 (2023-11-02)
+```
+Changes:
+ + 38e919d:
+ Create Experimental Credentials Helper Flags
+ + 66e056d:
+ GOOGLE:
+ + 8aadfe8:
+ Add resource usage metrics to perfgate
+ + 162908f:
+ Revert "update the SDK"
+ + d179332:
+ Fix documentation of the bigquery tool and add error messages.
+ + e6e4fb4:
+ Support --Wl,--script for clang flagsparser
+ + 3b37e8b:
+ Create logging directory if it doesn't exist.
+```
+
+## Release 0.119.1 (2023-10-30)
+```
+Changes:
+ + c47c30a:
+ update the SDK
+ + 2227bb3:
+ Fix typo in usage2CSV binary
+ + 47780d4:
+ Usage log to csv convertor
+```
+
+## Release 0.119.0 (2023-10-25)
+```
+Changes:
+ + c28fd79:
+ Update rpl2trace binary
+ + 433170e:
+ Fix typo in peak num action metric name
+ + 91fe8db:
+ Add support for -fcrash-diagnostics-dir clang flag.
+ + 5b1eeb7:
+ Allow disabling atomic downloads on a per action basis. Also add metric for measuring atomix download latency
+ + e305541:
+ Handle --retain-symbols-file linker flag
+ + eded3be:
+ Fix rbe_action script.
+ + be50400:
+ Add unix time to usage log
+```
+
+## Release 0.118.1 (2023-10-23)
+```
+Changes:
+ + ea1dd38:
+ Move SDK to older commit
+ + ec7feec:
+ chmod 755 release script
+```
+
+## Release 0.118.0 (2023-10-20)
+```
+Changes:
+ + 2a7ae2c:
+ Update remote-apis-sdks
+ + f4832cf:
+ Use oauth/google library to check for ADC validity
+ + 0057098:
+ Remove ADC cache from disk
+ + b43e3cd:
+ Replace up/down arrows with text on Stats message.
+ + cbae998:
+ Update android snapshot image
+ + e38f7f5:
+ Log HTTP calls in reproxy and bootstrap
+ + df26cde:
+ Update proxy.pb.go
+ + 224116f:
+ Pass parent CI job status to perfgate
+ + fc34095:
+ Add fallback info to the RunResponse
+ + 9c9a76a:
+ Add .pb.go files and go.mod to //api package
+ + 6f38fcd:
+ Reland "Cache LOAS expiry to skip prodcertstatus and stubby calls"
+ + 652de2c:
+ Fix windows scandeps integration tests to actualy report errors
+ + 4d357ee:
+ Update snapshot images from chromium postsubmit
+ + b3a0821:
+ Updated auth fallback to gcloud if gcert fails.
+```
+
+## Release 0.117.2 (2023-10-10)
+```
+Changes:
+ + d1aa1e1:
+ Sign windows binaries
+```
+
+## Release 0.117.1 (2023-10-05)
+```
+Changes:
+ + 850cd52:
+ Revert "Cache LOAS expiry to skip prodcertstatus and stubby calls"
+ + 98d9338:
+ Copy scandeps binary for chromium postsubmits
+```
+
+## Release 0.117.0 (2023-10-05)
+```
+Changes:
+ + ae6b36f:
+ Enable scandeps by default.
+ + 081c6a8:
+ Start draining server without blocking shutdown rpc
+ + cbeae63:
+ Update to rbe docker image to python3
+ + 4aca409:
+ Cache LOAS expiry to skip prodcertstatus and stubby calls
+ + f29e4ed:
+ Add new docker-sandbox and goma-service-linux configs
+ + df0885e:
+ Add .gitreview file to make submitting cls easier
+ + 5ec770b:
+ Prevent duplicate error msg in reproxy.INFO
+ + 4869c39:
+ Build goma inside docker to ensure a consistent version of clang is used
+ + 06a5c64:
+ Add num of running actions to proxyInfo
+ + 6136d2f:
+ Add resource usage stat to reproxyinfo from Logger
+ + 3d6d00b:
+ Fix scripts for bigquery schema generator
+ + e03bd3a:
+ Remove goma mac patch and update goma
+ + 0dc6b7b:
+ Created credentials helper binary
+ + 0036a87:
+ Remove the dependency between stats and logger
+ + 4d506d6:
+ Throw a fatal error if rerun flags are improperly set
+ + 4166d2b:
+ Collect all glog files and rpl files with reclientreport
+ + 5964957:
+ Add initial user docs for reproxystatus
+```
+
 ## Release 0.116.1 (2023-09-25)
 ```
 Changes:

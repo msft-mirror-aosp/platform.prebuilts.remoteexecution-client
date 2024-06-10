@@ -1,3 +1,89 @@
+## Release 0.146.0 (2024-05-22)
+```
+Changes:
+ + be020f4:
+ update the sdk
+ + 5f4719e:
+ Rollup the remotetool into reproxytool
+ + 32d4351:
+ Add working directory support to shallow deps parser.
+ + e03b8a9:
+ Bump remote-apis-sdks
+```
+
+## Release 0.145.0 (2024-05-21)
+```
+Changes:
+ + dff08f0:
+ Fix the windows release script
+ + 179cb9d:
+ Checkout correct commit before gclient sync
+ + 024c20e:
+ Restart windows bash script after clone
+ + 32cac25:
+ Fix typo in continuous_docker.bat name
+ + 98537fd:
+ Use STABLE_VERSION_SHA in cipd tag
+ + f1472f9:
+ Fix a couple of bugs with the new release process
+ + d714602:
+ Use absolute path when restarting script
+```
+
+## Release 0.144.1 (2024-05-16)
+```
+Changes:
+ + 39caa18:
+ Restart release script after checking out bump commit
+ + 7a70a9d:
+ Run whole windows kokoro job in one docker run
+ + f47123f:
+ Update snapshot image every 30 days
+ + 3165f94:
+ Hide stack unwind when USER not set
+ + 6fb00c5:
+ LED run with auxiliary metadata descriptor
+ + dd99336:
+ Run reproxy_test remotely
+ + eace897:
+ Fix typo in continuous.bat name
+ + 5c0ec1e:
+ Fix release postsubmit issues
+ + fd1bfd7:
+ Add auxiliary_proto to artifacts.tar
+ + a12b7fd:
+ Update github.com/Microsoft/go-winio
+ + 626a93c:
+ Add correct service account json for mac continous jobs
+ + c7714c7:
+ Update Android release script for auxiliary descriptor
+ + c33cd14:
+ Implement reclientpkguploader
+ + 42ed34b:
+ Implement cipd and gcs uploading for release binary
+ + 6f179a8:
+ Refactor version.txt generation
+ + 370edc7:
+ Delete exited docker container instances after bazel runs on windows
+ + ffb91ab:
+ Update windows RBE image to new version
+```
+
+## Release 0.144.0 (2024-05-13)
+```
+Changes:
+ + c124946:
+ Actually cache the winsdk and vcdist directories.
+ + bb91c0f:
+ Also log the error in setting flags
+ + 5af4d0d:
+ Update windows snapshot to use E: drive
+ + 4326e15:
+ Switch to windowsktcb built image for remote build
+ + 899432c:
+ Remove default server address of 127.0.0.1:8000
+```
+
 ## Release 0.143.0 (2024-05-08)
 ```
 Changes:

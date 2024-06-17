@@ -1,3 +1,65 @@
+## Release 0.148.0 (2024-06-03)
+```
+Changes:
+ + 04101066:
+ Update release scripts to use 8-char commit hashes
+ + a9ee0f78:
+ Increase delay before action in reproxystatus test
+ + a9c2ebc8:
+ Fix pipe check on Windows.
+ + 06587939:
+ Build goma scandeps_server with android toolchain
+ + ae458652:
+ Update chromium linux docker image to use new kbuilder uid
+ + e291c207:
+ Setup invocation id for all Kokoro integ tests
+ + 0cbf3579:
+ Kokoro CI build LogRecords to BQ
+ + 9110735a:
+ Setup Invocation ID for Kokoro CI build
+ + b1bd7b97:
+ Fix log message
+ + 3c59dc00:
+ Revert "Integ Test for LogRecord to bigquery table"
+ + c9dd0167:
+ Switch to linux ktcb built image for remote build
+ + b9f91fc4:
+ Add some verbose logs for deps parser verification.
+ + e2362801:
+ Add bigquery uploading status to rpi file
+ + 7c3a45eb:
+ Integ Test for LogRecord to bigquery table
+```
+
+## Release 0.147.0 (2024-05-29)
+```
+Changes:
+ + 16ecb93:
+ Fix auxiliary metadata integ test
+ + df8cd39:
+ Add log line indicating local result was used when racing remote fails.
+ + b2758f3:
+ Check reproxy existence in rewrapper.
+ + dca732b:
+ Adds offline mode to rewrapper.
+ + 202b28f:
+ Upload LogRecord to Bigquery
+ + c319e78:
+ Deduplicate scandeps server c++ logic
+ + 4245a23:
+ Split out clangscandeps helper cpp functions
+ + 322b911:
+ Add a server option to reproxytool
+ + 4794b07:
+ Add a local_path argument to gclient build rule
+ + 68fea64:
+ Fix bugs for --auxiliary_metadata_path
+ + 0106385:
+ Refactor insert to bigquery logic
+ + cda624b:
+ Make flag setting failure a V1 info instead of warning
+```
+
 ## Release 0.146.0 (2024-05-22)
 ```
 Changes:

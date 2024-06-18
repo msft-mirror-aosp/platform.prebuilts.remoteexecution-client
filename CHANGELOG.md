@@ -1,3 +1,52 @@
+## Release 0.149.0 (2024-06-13)
+```
+Changes:
+ + 1097d19e:
+ Disable llvm zlib for all builds
+ + 78573391:
+ Update snapshot image every 30 days
+ + 1a6f8060:
+ Fix some trivial nogo linter errors before moving to nogo
+ + d8ade381:
+ Serve UI from reproxytool
+ + 44b87a89:
+ Fix tools_build.patch
+ + d3ae8635:
+ Update to bazel 7.1.1
+ + c235ec2a:
+ Delete unused llvm patches
+ + a08242e6:
+ Cleanup and update release scripts/docs to reflect new process
+ + 3b7d8cc0:
+ Add experiment.pb.go
+ + fa0683df:
+ Update snapshot image every 30 days
+ + 660bd3aa:
+ Expose output file exec bit in rpl logs.
+ + b776a74d:
+ Remove pdb file copy as it is no longer needed
+ + aef53530:
+ Fix local external builds
+ + f6bddeb9:
+ Add RPL UI Folder
+ + 5495499e:
+ Update SDK to include OutputFileIsExecutable in execution Metadata.
+ + ffcbb23b:
+ Delete unused auth flags
+ + 6cb954a5:
+ Use the same linux docker image for android toolchain builds
+ + 14258450:
+ Fix bigquery translator output files
+ + b6f922dd:
+ Add fail_on_mismatch to fail actions when they mismatch in compare mode.
+ + 76d2a1a8:
+ Upgrade Linux docker image to Ubuntu 2004
+ + 48621454:
+ Add support for RCLE mode (Remote Cache Local Execution).
+ + 8964c874:
+ Bump remote-apis-sdks
+```
+
 ## Release 0.148.0 (2024-06-03)
 ```
 Changes:

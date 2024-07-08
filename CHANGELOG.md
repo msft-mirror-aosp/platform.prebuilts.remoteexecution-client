@@ -1,3 +1,16 @@
+## Release 0.150.0 (2024-06-17)
+```
+Changes:
+ + 6a297077:
+ Fix change log
+ + 62a5c133:
+ Update many dependencies
+ + 9fcbaf3a:
+ Update reclient docker image
+ + b4ca6b1c:
+ Fix rewrapperargs_test on Windows
+```
+
 ## Release 0.149.0 (2024-06-13)
 ```
 Changes:

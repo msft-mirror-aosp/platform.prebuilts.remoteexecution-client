@@ -1,3 +1,127 @@
+## Release 0.150.0 (2024-06-17)
+```
+Changes:
+ + 6a297077:
+ Fix change log
+ + 62a5c133:
+ Update many dependencies
+ + 9fcbaf3a:
+ Update reclient docker image
+ + b4ca6b1c:
+ Fix rewrapperargs_test on Windows
+```
+
+## Release 0.149.0 (2024-06-13)
+```
+Changes:
+ + 1097d19e:
+ Disable llvm zlib for all builds
+ + 78573391:
+ Update snapshot image every 30 days
+ + 1a6f8060:
+ Fix some trivial nogo linter errors before moving to nogo
+ + d8ade381:
+ Serve UI from reproxytool
+ + 44b87a89:
+ Fix tools_build.patch
+ + d3ae8635:
+ Update to bazel 7.1.1
+ + c235ec2a:
+ Delete unused llvm patches
+ + a08242e6:
+ Cleanup and update release scripts/docs to reflect new process
+ + 3b7d8cc0:
+ Add experiment.pb.go
+ + fa0683df:
+ Update snapshot image every 30 days
+ + 660bd3aa:
+ Expose output file exec bit in rpl logs.
+ + b776a74d:
+ Remove pdb file copy as it is no longer needed
+ + aef53530:
+ Fix local external builds
+ + f6bddeb9:
+ Add RPL UI Folder
+ + 5495499e:
+ Update SDK to include OutputFileIsExecutable in execution Metadata.
+ + ffcbb23b:
+ Delete unused auth flags
+ + 6cb954a5:
+ Use the same linux docker image for android toolchain builds
+ + 14258450:
+ Fix bigquery translator output files
+ + b6f922dd:
+ Add fail_on_mismatch to fail actions when they mismatch in compare mode.
+ + 76d2a1a8:
+ Upgrade Linux docker image to Ubuntu 2004
+ + 48621454:
+ Add support for RCLE mode (Remote Cache Local Execution).
+ + 8964c874:
+ Bump remote-apis-sdks
+```
+
+## Release 0.148.0 (2024-06-03)
+```
+Changes:
+ + 04101066:
+ Update release scripts to use 8-char commit hashes
+ + a9ee0f78:
+ Increase delay before action in reproxystatus test
+ + a9c2ebc8:
+ Fix pipe check on Windows.
+ + 06587939:
+ Build goma scandeps_server with android toolchain
+ + ae458652:
+ Update chromium linux docker image to use new kbuilder uid
+ + e291c207:
+ Setup invocation id for all Kokoro integ tests
+ + 0cbf3579:
+ Kokoro CI build LogRecords to BQ
+ + 9110735a:
+ Setup Invocation ID for Kokoro CI build
+ + b1bd7b97:
+ Fix log message
+ + 3c59dc00:
+ Revert "Integ Test for LogRecord to bigquery table"
+ + c9dd0167:
+ Switch to linux ktcb built image for remote build
+ + b9f91fc4:
+ Add some verbose logs for deps parser verification.
+ + e2362801:
+ Add bigquery uploading status to rpi file
+ + 7c3a45eb:
+ Integ Test for LogRecord to bigquery table
+```
+
+## Release 0.147.0 (2024-05-29)
+```
+Changes:
+ + 16ecb93:
+ Fix auxiliary metadata integ test
+ + df8cd39:
+ Add log line indicating local result was used when racing remote fails.
+ + b2758f3:
+ Check reproxy existence in rewrapper.
+ + dca732b:
+ Adds offline mode to rewrapper.
+ + 202b28f:
+ Upload LogRecord to Bigquery
+ + c319e78:
+ Deduplicate scandeps server c++ logic
+ + 4245a23:
+ Split out clangscandeps helper cpp functions
+ + 322b911:
+ Add a server option to reproxytool
+ + 4794b07:
+ Add a local_path argument to gclient build rule
+ + 68fea64:
+ Fix bugs for --auxiliary_metadata_path
+ + 0106385:
+ Refactor insert to bigquery logic
+ + cda624b:
+ Make flag setting failure a V1 info instead of warning
+```
+
 ## Release 0.146.0 (2024-05-22)
 ```
 Changes:

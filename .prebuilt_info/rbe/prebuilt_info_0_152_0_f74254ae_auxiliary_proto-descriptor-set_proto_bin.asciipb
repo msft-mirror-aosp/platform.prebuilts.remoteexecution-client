@@ -1,0 +1,11 @@
+drops {
+  dest_file: "0.152.0.f74254ae/auxiliary_proto-descriptor-set.proto.bin"
+  version: "0.152.0.f74254ae"
+  version_group: "rbe"
+  git_project: "platform/prebuilts/remoteexecution-client"
+  local_drop {
+    source_file: "auxiliary_proto-descriptor-set.proto.bin"
+  }
+  git_branch: "master"
+  transform: TRANSFORM_NONE
+}

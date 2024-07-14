@@ -1,3 +1,104 @@
+## Release 0.152.0 (2024-07-02)
+```
+Changes:
+ + f5024a57:
+ Initial renovate configuration
+ + d43da69e:
+ Pipe peak num of bq uploader to reproxy.INFO
+ + 3ff1520b:
+ Refactor RRPL to bigquery logic
+ + fa8c65d9:
+ DownloadRegex respects local cache hits
+ + 102018bc:
+ Revert "Remove duplicate credshelper code in re-client"
+ + 9f1412a7:
+ Remove integ.SetDefaultEnvVars()
+ + c653e873:
+ Fix the build of the reproxyui.
+ + 8c23289a:
+ Use different disk cache for workflows with goma and clangscandeps
+ + c8a2273a:
+ Minimal file digest for deps cache
+ + f97753c5:
+ Update to go 1.21.11
+ + 49a700ae:
+ Improve cache hits for bazel build
+ + cd91ea63:
+ Evaluate symlinks in working directory.
+ + 07a827e4:
+ Update SDK
+ + 8e25ca02:
+ Address review comments from tg/2197023
+ + 51f48757:
+ Remove duplicate credshelper code in re-client
+ + 9766fedf:
+ Use callback api for ProcessInputs
+ + 4508b054:
+ Enable clangscandeps builds on github ci
+ + 1994e2be:
+ Replace //linters:gofmt with normal go fmt call
+ + 54e8a4fd:
+ Fix bigquery schema creation script
+ + 7365a43c:
+ Update bigquery sdk to 0.156
+ + fbb06aae:
+ Merge 5cd8db681ef9805ab5af1b81181c61b40042fc76 into b01814bd5c87bbe414667f9cfe99e8e6e9e6f0ba
+```
+
+## Release 0.151.0 (2024-06-20)
+```
+Changes:
+ + 3f37455e:
+ Use the sdks credshelper if the sdk flags are set
+ + 99d74252:
+ Delete unused go_deps.bzl
+ + 22617aa9:
+ Add github action definition that will run before PRs and on pushes to main
+ + 9c949932:
+ Increase gclient sync timeout as it sometimes takes over 600s on windows
+ + 92da653c:
+ Split googler specific sha.sh logic into its own script
+ + 41ae7182:
+ Add support for optional user.bazelrc
+ + ff92fe2a:
+ Update SDK
+ + e7dc439b:
+ Fix all lock copying
+ + 10065382:
+ Merge 1e938a7ad96de7b0d96817b4874f647b0d56b8f2 into 918103ceeb6a678998fca45f119c6906300e0b4a
+ + aba6a161:
+ Add one more exclusion file to list of files to patch
+ + 4b03ee5b:
+ Update snapshot image every 30 days
+ + 3968f6eb:
+ Add a script to autogenerate patches reverse patches to import a Github PR into reclient
+ + f0adc032:
+ Remove unexported CHANGELOG.md from exported list of artifacts
+ + b9746269:
+ Fix all unkeyed struct litterals
+ + 32ea7a7d:
+ Move googler specific flags to a separate file.
+ + 472e08f6:
+ Make bazel root shorter to resolve path length issues
+ + 0a1c1cb8:
+ Use the same docker image for integration tests
+ + 3d64506d:
+ Change how creds file flag is set
+```
+
+## Release 0.150.0 (2024-06-17)
+```
+Changes:
+ + 6a297077:
+ Fix change log
+ + 62a5c133:
+ Update many dependencies
+ + 9fcbaf3a:
+ Update reclient docker image
+ + b4ca6b1c:
+ Fix rewrapperargs_test on Windows
+```
+
 ## Release 0.149.0 (2024-06-13)
 ```
 Changes:

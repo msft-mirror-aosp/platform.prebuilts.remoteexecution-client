@@ -1,3 +1,215 @@
+## Release 0.152.0 (2024-07-02)
+```
+Changes:
+ + f5024a57:
+ Initial renovate configuration
+ + d43da69e:
+ Pipe peak num of bq uploader to reproxy.INFO
+ + 3ff1520b:
+ Refactor RRPL to bigquery logic
+ + fa8c65d9:
+ DownloadRegex respects local cache hits
+ + 102018bc:
+ Revert "Remove duplicate credshelper code in re-client"
+ + 9f1412a7:
+ Remove integ.SetDefaultEnvVars()
+ + c653e873:
+ Fix the build of the reproxyui.
+ + 8c23289a:
+ Use different disk cache for workflows with goma and clangscandeps
+ + c8a2273a:
+ Minimal file digest for deps cache
+ + f97753c5:
+ Update to go 1.21.11
+ + 49a700ae:
+ Improve cache hits for bazel build
+ + cd91ea63:
+ Evaluate symlinks in working directory.
+ + 07a827e4:
+ Update SDK
+ + 8e25ca02:
+ Address review comments from tg/2197023
+ + 51f48757:
+ Remove duplicate credshelper code in re-client
+ + 9766fedf:
+ Use callback api for ProcessInputs
+ + 4508b054:
+ Enable clangscandeps builds on github ci
+ + 1994e2be:
+ Replace //linters:gofmt with normal go fmt call
+ + 54e8a4fd:
+ Fix bigquery schema creation script
+ + 7365a43c:
+ Update bigquery sdk to 0.156
+ + fbb06aae:
+ Merge 5cd8db681ef9805ab5af1b81181c61b40042fc76 into b01814bd5c87bbe414667f9cfe99e8e6e9e6f0ba
+```
+
+## Release 0.151.0 (2024-06-20)
+```
+Changes:
+ + 3f37455e:
+ Use the sdks credshelper if the sdk flags are set
+ + 99d74252:
+ Delete unused go_deps.bzl
+ + 22617aa9:
+ Add github action definition that will run before PRs and on pushes to main
+ + 9c949932:
+ Increase gclient sync timeout as it sometimes takes over 600s on windows
+ + 92da653c:
+ Split googler specific sha.sh logic into its own script
+ + 41ae7182:
+ Add support for optional user.bazelrc
+ + ff92fe2a:
+ Update SDK
+ + e7dc439b:
+ Fix all lock copying
+ + 10065382:
+ Merge 1e938a7ad96de7b0d96817b4874f647b0d56b8f2 into 918103ceeb6a678998fca45f119c6906300e0b4a
+ + aba6a161:
+ Add one more exclusion file to list of files to patch
+ + 4b03ee5b:
+ Update snapshot image every 30 days
+ + 3968f6eb:
+ Add a script to autogenerate patches reverse patches to import a Github PR into reclient
+ + f0adc032:
+ Remove unexported CHANGELOG.md from exported list of artifacts
+ + b9746269:
+ Fix all unkeyed struct litterals
+ + 32ea7a7d:
+ Move googler specific flags to a separate file.
+ + 472e08f6:
+ Make bazel root shorter to resolve path length issues
+ + 0a1c1cb8:
+ Use the same docker image for integration tests
+ + 3d64506d:
+ Change how creds file flag is set
+```
+
+## Release 0.150.0 (2024-06-17)
+```
+Changes:
+ + 6a297077:
+ Fix change log
+ + 62a5c133:
+ Update many dependencies
+ + 9fcbaf3a:
+ Update reclient docker image
+ + b4ca6b1c:
+ Fix rewrapperargs_test on Windows
+```
+
+## Release 0.149.0 (2024-06-13)
+```
+Changes:
+ + 1097d19e:
+ Disable llvm zlib for all builds
+ + 78573391:
+ Update snapshot image every 30 days
+ + 1a6f8060:
+ Fix some trivial nogo linter errors before moving to nogo
+ + d8ade381:
+ Serve UI from reproxytool
+ + 44b87a89:
+ Fix tools_build.patch
+ + d3ae8635:
+ Update to bazel 7.1.1
+ + c235ec2a:
+ Delete unused llvm patches
+ + a08242e6:
+ Cleanup and update release scripts/docs to reflect new process
+ + 3b7d8cc0:
+ Add experiment.pb.go
+ + fa0683df:
+ Update snapshot image every 30 days
+ + 660bd3aa:
+ Expose output file exec bit in rpl logs.
+ + b776a74d:
+ Remove pdb file copy as it is no longer needed
+ + aef53530:
+ Fix local external builds
+ + f6bddeb9:
+ Add RPL UI Folder
+ + 5495499e:
+ Update SDK to include OutputFileIsExecutable in execution Metadata.
+ + ffcbb23b:
+ Delete unused auth flags
+ + 6cb954a5:
+ Use the same linux docker image for android toolchain builds
+ + 14258450:
+ Fix bigquery translator output files
+ + b6f922dd:
+ Add fail_on_mismatch to fail actions when they mismatch in compare mode.
+ + 76d2a1a8:
+ Upgrade Linux docker image to Ubuntu 2004
+ + 48621454:
+ Add support for RCLE mode (Remote Cache Local Execution).
+ + 8964c874:
+ Bump remote-apis-sdks
+```
+
+## Release 0.148.0 (2024-06-03)
+```
+Changes:
+ + 04101066:
+ Update release scripts to use 8-char commit hashes
+ + a9ee0f78:
+ Increase delay before action in reproxystatus test
+ + a9c2ebc8:
+ Fix pipe check on Windows.
+ + 06587939:
+ Build goma scandeps_server with android toolchain
+ + ae458652:
+ Update chromium linux docker image to use new kbuilder uid
+ + e291c207:
+ Setup invocation id for all Kokoro integ tests
+ + 0cbf3579:
+ Kokoro CI build LogRecords to BQ
+ + 9110735a:
+ Setup Invocation ID for Kokoro CI build
+ + b1bd7b97:
+ Fix log message
+ + 3c59dc00:
+ Revert "Integ Test for LogRecord to bigquery table"
+ + c9dd0167:
+ Switch to linux ktcb built image for remote build
+ + b9f91fc4:
+ Add some verbose logs for deps parser verification.
+ + e2362801:
+ Add bigquery uploading status to rpi file
+ + 7c3a45eb:
+ Integ Test for LogRecord to bigquery table
+```
+
+## Release 0.147.0 (2024-05-29)
+```
+Changes:
+ + 16ecb93:
+ Fix auxiliary metadata integ test
+ + df8cd39:
+ Add log line indicating local result was used when racing remote fails.
+ + b2758f3:
+ Check reproxy existence in rewrapper.
+ + dca732b:
+ Adds offline mode to rewrapper.
+ + 202b28f:
+ Upload LogRecord to Bigquery
+ + c319e78:
+ Deduplicate scandeps server c++ logic
+ + 4245a23:
+ Split out clangscandeps helper cpp functions
+ + 322b911:
+ Add a server option to reproxytool
+ + 4794b07:
+ Add a local_path argument to gclient build rule
+ + 68fea64:
+ Fix bugs for --auxiliary_metadata_path
+ + 0106385:
+ Refactor insert to bigquery logic
+ + cda624b:
+ Make flag setting failure a V1 info instead of warning
+```
+
 ## Release 0.146.0 (2024-05-22)
 ```
 Changes:

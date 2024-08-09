@@ -1,3 +1,100 @@
+## Release 0.155.0 (2024-07-31)
+```
+Changes:
+ + 5eaeaf87:
+ Add correlated_invocations_id rewrapper flag
+ + dfc2011f:
+ Revert "Get reproxytool to start building on Windows"
+ + 03bf46b2:
+ Get reproxytool to start building on Windows
+ + 76543e34:
+ Use UDS for reproxy <-> depsscanner communciation on Windows
+ + fa86a11f:
+ [GH] Update angular+cli monorepo to v18 (major)
+ + d2f3b2c0:
+ Add flag for building mac intel release on arm
+ + 6a630515:
+ Add angular monorepo to renovate config
+ + e2c75a56:
+ Update SDK
+ + 4df58a70:
+ Revert^2 "Remove duplicate credshelper code in re-client"
+ + 15ef806b:
+ Update the SDK
+ + b08ba6a5:
+ [GH] fix unused var in goma_subprocess.patch
+ + f115c236:
+ Add some v(1) logging around lerc-shallow mode.
+ + 59b20496:
+ Refactor some variable names
+ + e4b51880:
+ Skip invalid rows for bigquery upload
+ + 1e21a853:
+ Update github ci to use macos-14
+ + e60d6510:
+ Generate bigquery schemas from protos using bazel
+ + d4514bed:
+ Fix bigquery schema creation script
+ + 49b550ae:
+ Only allow patch bumps on release branches
+```
+
+## Release 0.154.0 (2024-07-16)
+```
+Changes:
+ + 88b9a3e7:
+ Bind C:\ur and C:\Windows	emp to docker container
+ + 7d982289:
+ Move noisy unversioned go deps to monthly update schedule
+ + 4be5c359:
+ Update snapshot image every 30 days
+ + f3c28ace:
+ Update snapshot image every 30 days
+ + b3d92646:
+ Create release branch creation script
+ + f1994723:
+ Remove --remote_download_toplevel from remote config
+ + d74ae070:
+ Add machine_info to bookmarklet
+```
+
+## Release 0.153.0 (2024-07-11)
+```
+Changes:
+ + 8dec34fc:
+ Update generated pb.go files after protobuf version bump
+ + 95ca6efa:
+ [GH] Update gazelle digest to 852fdcf
+ + f1974df8:
+ Update glog to avoid calling user.Current() on windows
+ + 0a83534c:
+ Improve credshelper logging
+ + 4f2b58bd:
+ Dont try and initialize sdk client for all reproxytool ops
+ + 5da4442f:
+ [GH] Update google.golang.org/genproto digest to 40e1e62
+ + 429c26e6:
+ Invalidate github ci repository cache for new image versions
+ + 0d0fc43d:
+ Update Github contributions policy
+ + 46343978:
+ Migrate to v2 cloud monitoring api as v1 is deprecated
+ + bcd448cd:
+ Update golang.org/x/tools to v0.18.0 to gazelle's hardcoded version
+ + efe65154:
+ Ensure renovate runs go mod tidy after updating dependencies.
+ + 3e2d8d68:
+ Add KOKORO_BUILD_INITIATOR as perfgate tag
+ + f13f1e76:
+ Remove Status on scandeps startup in favor of Capabilities call
+ + 2442efe0:
+ Always link locally on windows
+ + 5a067bf6:
+ Fix incorrectly formatted struct tags
+ + 2605b174:
+ Switch to goma fork
+```
+
 ## Release 0.152.0 (2024-07-02)
 ```
 Changes:

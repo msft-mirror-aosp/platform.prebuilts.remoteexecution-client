@@ -1,3 +1,31 @@
+## Release 0.157.0 (2024-08-12)
+```
+Changes:
+ + 2f13cf9b:
+ Retry bq upload with error code 503/500
+ + f2ca0f88:
+ Remove dependency of goma-rbe-images
+ + 56e5e9f2:
+ Make deps scanner connect timeout configurable.
+```
+
+## Release 0.156.0 (2024-08-08)
+```
+Changes:
+ + 1693c7ac:
+ Update gazelle to 0.38.0
+ + f234b4f9:
+ Fix typo for text:///tmp/reproxy_log.txt
+ + d4164be4:
+ Remove unused logger formats
+ + 3c889f89:
+ Add caching to credshelper package
+ + cfeee3de:
+ Limit usage of //internal/pkg/version to binary targets
+ + 50527eed:
+ Update snapshot image every 30 days
+```
+
 ## Release 0.155.0 (2024-07-31)
 ```
 Changes:

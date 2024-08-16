@@ -1,0 +1,11 @@
+drops {
+  dest_file: "0.148.0.41b09b51/bootstrap"
+  version: "0.148.0.41b09b51"
+  version_group: "rbe"
+  git_project: "platform/prebuilts/remoteexecution-client"
+  local_drop {
+    source_file: "bootstrap"
+  }
+  git_branch: "master"
+  transform: TRANSFORM_NONE
+}

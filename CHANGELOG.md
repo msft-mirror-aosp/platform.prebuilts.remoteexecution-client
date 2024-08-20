@@ -1,3 +1,16 @@
+## Release 0.158.0 (2024-08-13)
+```
+Changes:
+ + 47ac7a23:
+ Fix issue with missing creds cache file
+ + 9da0d527:
+ Fix credshelper logging
+ + e50f614e:
+ Update snapshot image every 30 days
+ + 3049d8d3:
+ Retry connecting to dependency scanner service if we time out.
+```
+
 ## Release 0.157.0 (2024-08-12)
 ```
 Changes:

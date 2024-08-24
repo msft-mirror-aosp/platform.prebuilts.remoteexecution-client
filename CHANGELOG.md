@@ -1,3 +1,45 @@
+## Release 0.159.1 (2024-08-22)
+```
+Changes:
+ + 8dab0b3e:
+ Revert "Remove caching from credshelper interface & SDK Import"
+```
+
+## Release 0.159.0 (2024-08-20)
+```
+Changes:
+ + bae67fda:
+ [GH] Update googleapis to 278611b
+ + 41a19bb4:
+ automate importing github PRs
+ + bb6db233:
+ Remove caching from credshelper interface & SDK Import
+ + f1e51782:
+ [GH] Update angular+cli monorepo
+ + d6eb89d1:
+ [GH] Update dependency @types/node to v20
+ + b507592d:
+ [GH] Update dependency @angular-builders/bazel to v18
+ + 73851e59:
+ Print RBE stats and startup success to stderr
+ + 297efcb0:
+ Update snapshot image every 30 days
+ + ddd04dfb:
+ renormalize line feeds
+ + 4e5f7c1a:
+ avoid crlf issues with copybara
+ + 48ed3aec:
+ Fix bigquery translator for mismatches
+ + df7fcf1d:
+ [GH] Update dependency rules_pkg to v1
+ + f4e5d04c:
+ [GH] rpl2trace: Various fixes
+ + 7feb6d8a:
+ [GH] Fix `-instance` doc in cmd-line-flags.md
+ + 74830bb1:
+ [GH] Increase racing bias upper limit to wait for remote cache a bit more
+```
+
 ## Release 0.158.0 (2024-08-13)
 ```
 Changes:

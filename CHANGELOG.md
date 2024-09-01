@@ -1,3 +1,12 @@
+## Release 0.159.2 (2024-08-26)
+```
+Changes:
+ + b018c14c:
+ Fix Missing BQ rows
+ + 82260052:
+ Cleanup BQ uploader un-used fields
+```
+
 ## Release 0.159.1 (2024-08-22)
 ```
 Changes:

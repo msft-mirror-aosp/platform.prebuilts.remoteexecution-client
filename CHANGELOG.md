@@ -1,3 +1,95 @@
+## Release 0.159.2 (2024-08-26)
+```
+Changes:
+ + b018c14c:
+ Fix Missing BQ rows
+ + 82260052:
+ Cleanup BQ uploader un-used fields
+```
+
+## Release 0.159.1 (2024-08-22)
+```
+Changes:
+ + 8dab0b3e:
+ Revert "Remove caching from credshelper interface & SDK Import"
+```
+
+## Release 0.159.0 (2024-08-20)
+```
+Changes:
+ + bae67fda:
+ [GH] Update googleapis to 278611b
+ + 41a19bb4:
+ automate importing github PRs
+ + bb6db233:
+ Remove caching from credshelper interface & SDK Import
+ + f1e51782:
+ [GH] Update angular+cli monorepo
+ + d6eb89d1:
+ [GH] Update dependency @types/node to v20
+ + b507592d:
+ [GH] Update dependency @angular-builders/bazel to v18
+ + 73851e59:
+ Print RBE stats and startup success to stderr
+ + 297efcb0:
+ Update snapshot image every 30 days
+ + ddd04dfb:
+ renormalize line feeds
+ + 4e5f7c1a:
+ avoid crlf issues with copybara
+ + 48ed3aec:
+ Fix bigquery translator for mismatches
+ + df7fcf1d:
+ [GH] Update dependency rules_pkg to v1
+ + f4e5d04c:
+ [GH] rpl2trace: Various fixes
+ + 7feb6d8a:
+ [GH] Fix `-instance` doc in cmd-line-flags.md
+ + 74830bb1:
+ [GH] Increase racing bias upper limit to wait for remote cache a bit more
+```
+
+## Release 0.158.0 (2024-08-13)
+```
+Changes:
+ + 47ac7a23:
+ Fix issue with missing creds cache file
+ + 9da0d527:
+ Fix credshelper logging
+ + e50f614e:
+ Update snapshot image every 30 days
+ + 3049d8d3:
+ Retry connecting to dependency scanner service if we time out.
+```
+
+## Release 0.157.0 (2024-08-12)
+```
+Changes:
+ + 2f13cf9b:
+ Retry bq upload with error code 503/500
+ + f2ca0f88:
+ Remove dependency of goma-rbe-images
+ + 56e5e9f2:
+ Make deps scanner connect timeout configurable.
+```
+
+## Release 0.156.0 (2024-08-08)
+```
+Changes:
+ + 1693c7ac:
+ Update gazelle to 0.38.0
+ + f234b4f9:
+ Fix typo for text:///tmp/reproxy_log.txt
+ + d4164be4:
+ Remove unused logger formats
+ + 3c889f89:
+ Add caching to credshelper package
+ + cfeee3de:
+ Limit usage of //internal/pkg/version to binary targets
+ + 50527eed:
+ Update snapshot image every 30 days
+```
+
 ## Release 0.155.0 (2024-07-31)
 ```
 Changes:

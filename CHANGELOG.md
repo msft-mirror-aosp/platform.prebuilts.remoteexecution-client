@@ -1,15 +1,45 @@
-## Release 0.159.2 (2024-08-26)
+## Release 0.163.0 (2024-09-09)
 ```
 Changes:
- + b018c14c:
- Fix Missing BQ rows
- + 82260052:
- Cleanup BQ uploader un-used fields
+ + 40328577:
+ Also fix the bazelisk version for the mac release build
 ```
 
-## Release 0.159.1 (2024-08-22)
+## Release 0.162.0 (2024-09-06)
 ```
 Changes:
+ + e32ffe1d:
+ Fix mac bazelisk to v1.20.0
+```
+
+## Release 0.161.0 (2024-09-06)
+```
+Changes:
+ + 3e3af3be:
+ Add JobObject support in Windows.
+ + 9e5ad93f:
+ Rename exists_*.go -> subprocess_*.go
+```
+
+## Release 0.160.0 (2024-09-04)
+```
+Changes:
+ + 71a29cc0:
+ Update aosp snapshot image every 30 days
+ + 54cf5a64:
+ Add CommandResultStatus to RemoteFallbackInfo
+ + eeae3ac5:
+ Temporarily delete credshelper startup and shutdown logs
+ + cdcc051e:
+ Revert^2 "Remove caching from credshelper interface & SDK Import"
+ + 10714a61:
+ Always create address dir for socket file in case it doesn't exist
+ + 39f9b1e0:
+ Remove log_path uses from integration tests
+ + 5aac8b43:
+ Fix Missing BQ rows
+ + 2baa6efe:
+ Cleanup BQ uploader un-used fields
  + 8dab0b3e:
  Revert "Remove caching from credshelper interface & SDK Import"
 ```

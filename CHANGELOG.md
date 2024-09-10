@@ -1,3 +1,310 @@
+## Release 0.163.0 (2024-09-09)
+```
+Changes:
+ + 40328577:
+ Also fix the bazelisk version for the mac release build
+```
+
+## Release 0.162.0 (2024-09-06)
+```
+Changes:
+ + e32ffe1d:
+ Fix mac bazelisk to v1.20.0
+```
+
+## Release 0.161.0 (2024-09-06)
+```
+Changes:
+ + 3e3af3be:
+ Add JobObject support in Windows.
+ + 9e5ad93f:
+ Rename exists_*.go -> subprocess_*.go
+```
+
+## Release 0.160.0 (2024-09-04)
+```
+Changes:
+ + 71a29cc0:
+ Update aosp snapshot image every 30 days
+ + 54cf5a64:
+ Add CommandResultStatus to RemoteFallbackInfo
+ + eeae3ac5:
+ Temporarily delete credshelper startup and shutdown logs
+ + cdcc051e:
+ Revert^2 "Remove caching from credshelper interface & SDK Import"
+ + 10714a61:
+ Always create address dir for socket file in case it doesn't exist
+ + 39f9b1e0:
+ Remove log_path uses from integration tests
+ + 5aac8b43:
+ Fix Missing BQ rows
+ + 2baa6efe:
+ Cleanup BQ uploader un-used fields
+ + 8dab0b3e:
+ Revert "Remove caching from credshelper interface & SDK Import"
+```
+
+## Release 0.159.0 (2024-08-20)
+```
+Changes:
+ + bae67fda:
+ [GH] Update googleapis to 278611b
+ + 41a19bb4:
+ automate importing github PRs
+ + bb6db233:
+ Remove caching from credshelper interface & SDK Import
+ + f1e51782:
+ [GH] Update angular+cli monorepo
+ + d6eb89d1:
+ [GH] Update dependency @types/node to v20
+ + b507592d:
+ [GH] Update dependency @angular-builders/bazel to v18
+ + 73851e59:
+ Print RBE stats and startup success to stderr
+ + 297efcb0:
+ Update snapshot image every 30 days
+ + ddd04dfb:
+ renormalize line feeds
+ + 4e5f7c1a:
+ avoid crlf issues with copybara
+ + 48ed3aec:
+ Fix bigquery translator for mismatches
+ + df7fcf1d:
+ [GH] Update dependency rules_pkg to v1
+ + f4e5d04c:
+ [GH] rpl2trace: Various fixes
+ + 7feb6d8a:
+ [GH] Fix `-instance` doc in cmd-line-flags.md
+ + 74830bb1:
+ [GH] Increase racing bias upper limit to wait for remote cache a bit more
+```
+
+## Release 0.158.0 (2024-08-13)
+```
+Changes:
+ + 47ac7a23:
+ Fix issue with missing creds cache file
+ + 9da0d527:
+ Fix credshelper logging
+ + e50f614e:
+ Update snapshot image every 30 days
+ + 3049d8d3:
+ Retry connecting to dependency scanner service if we time out.
+```
+
+## Release 0.157.0 (2024-08-12)
+```
+Changes:
+ + 2f13cf9b:
+ Retry bq upload with error code 503/500
+ + f2ca0f88:
+ Remove dependency of goma-rbe-images
+ + 56e5e9f2:
+ Make deps scanner connect timeout configurable.
+```
+
+## Release 0.156.0 (2024-08-08)
+```
+Changes:
+ + 1693c7ac:
+ Update gazelle to 0.38.0
+ + f234b4f9:
+ Fix typo for text:///tmp/reproxy_log.txt
+ + d4164be4:
+ Remove unused logger formats
+ + 3c889f89:
+ Add caching to credshelper package
+ + cfeee3de:
+ Limit usage of //internal/pkg/version to binary targets
+ + 50527eed:
+ Update snapshot image every 30 days
+```
+
+## Release 0.155.0 (2024-07-31)
+```
+Changes:
+ + 5eaeaf87:
+ Add correlated_invocations_id rewrapper flag
+ + dfc2011f:
+ Revert "Get reproxytool to start building on Windows"
+ + 03bf46b2:
+ Get reproxytool to start building on Windows
+ + 76543e34:
+ Use UDS for reproxy <-> depsscanner communciation on Windows
+ + fa86a11f:
+ [GH] Update angular+cli monorepo to v18 (major)
+ + d2f3b2c0:
+ Add flag for building mac intel release on arm
+ + 6a630515:
+ Add angular monorepo to renovate config
+ + e2c75a56:
+ Update SDK
+ + 4df58a70:
+ Revert^2 "Remove duplicate credshelper code in re-client"
+ + 15ef806b:
+ Update the SDK
+ + b08ba6a5:
+ [GH] fix unused var in goma_subprocess.patch
+ + f115c236:
+ Add some v(1) logging around lerc-shallow mode.
+ + 59b20496:
+ Refactor some variable names
+ + e4b51880:
+ Skip invalid rows for bigquery upload
+ + 1e21a853:
+ Update github ci to use macos-14
+ + e60d6510:
+ Generate bigquery schemas from protos using bazel
+ + d4514bed:
+ Fix bigquery schema creation script
+ + 49b550ae:
+ Only allow patch bumps on release branches
+```
+
+## Release 0.154.0 (2024-07-16)
+```
+Changes:
+ + 88b9a3e7:
+ Bind C:\ur and C:\Windows	emp to docker container
+ + 7d982289:
+ Move noisy unversioned go deps to monthly update schedule
+ + 4be5c359:
+ Update snapshot image every 30 days
+ + f3c28ace:
+ Update snapshot image every 30 days
+ + b3d92646:
+ Create release branch creation script
+ + f1994723:
+ Remove --remote_download_toplevel from remote config
+ + d74ae070:
+ Add machine_info to bookmarklet
+```
+
+## Release 0.153.0 (2024-07-11)
+```
+Changes:
+ + 8dec34fc:
+ Update generated pb.go files after protobuf version bump
+ + 95ca6efa:
+ [GH] Update gazelle digest to 852fdcf
+ + f1974df8:
+ Update glog to avoid calling user.Current() on windows
+ + 0a83534c:
+ Improve credshelper logging
+ + 4f2b58bd:
+ Dont try and initialize sdk client for all reproxytool ops
+ + 5da4442f:
+ [GH] Update google.golang.org/genproto digest to 40e1e62
+ + 429c26e6:
+ Invalidate github ci repository cache for new image versions
+ + 0d0fc43d:
+ Update Github contributions policy
+ + 46343978:
+ Migrate to v2 cloud monitoring api as v1 is deprecated
+ + bcd448cd:
+ Update golang.org/x/tools to v0.18.0 to gazelle's hardcoded version
+ + efe65154:
+ Ensure renovate runs go mod tidy after updating dependencies.
+ + 3e2d8d68:
+ Add KOKORO_BUILD_INITIATOR as perfgate tag
+ + f13f1e76:
+ Remove Status on scandeps startup in favor of Capabilities call
+ + 2442efe0:
+ Always link locally on windows
+ + 5a067bf6:
+ Fix incorrectly formatted struct tags
+ + 2605b174:
+ Switch to goma fork
+```
+
+## Release 0.152.0 (2024-07-02)
+```
+Changes:
+ + f5024a57:
+ Initial renovate configuration
+ + d43da69e:
+ Pipe peak num of bq uploader to reproxy.INFO
+ + 3ff1520b:
+ Refactor RRPL to bigquery logic
+ + fa8c65d9:
+ DownloadRegex respects local cache hits
+ + 102018bc:
+ Revert "Remove duplicate credshelper code in re-client"
+ + 9f1412a7:
+ Remove integ.SetDefaultEnvVars()
+ + c653e873:
+ Fix the build of the reproxyui.
+ + 8c23289a:
+ Use different disk cache for workflows with goma and clangscandeps
+ + c8a2273a:
+ Minimal file digest for deps cache
+ + f97753c5:
+ Update to go 1.21.11
+ + 49a700ae:
+ Improve cache hits for bazel build
+ + cd91ea63:
+ Evaluate symlinks in working directory.
+ + 07a827e4:
+ Update SDK
+ + 8e25ca02:
+ Address review comments from tg/2197023
+ + 51f48757:
+ Remove duplicate credshelper code in re-client
+ + 9766fedf:
+ Use callback api for ProcessInputs
+ + 4508b054:
+ Enable clangscandeps builds on github ci
+ + 1994e2be:
+ Replace //linters:gofmt with normal go fmt call
+ + 54e8a4fd:
+ Fix bigquery schema creation script
+ + 7365a43c:
+ Update bigquery sdk to 0.156
+ + fbb06aae:
+ Merge 5cd8db681ef9805ab5af1b81181c61b40042fc76 into b01814bd5c87bbe414667f9cfe99e8e6e9e6f0ba
+```
+
+## Release 0.151.0 (2024-06-20)
+```
+Changes:
+ + 3f37455e:
+ Use the sdks credshelper if the sdk flags are set
+ + 99d74252:
+ Delete unused go_deps.bzl
+ + 22617aa9:
+ Add github action definition that will run before PRs and on pushes to main
+ + 9c949932:
+ Increase gclient sync timeout as it sometimes takes over 600s on windows
+ + 92da653c:
+ Split googler specific sha.sh logic into its own script
+ + 41ae7182:
+ Add support for optional user.bazelrc
+ + ff92fe2a:
+ Update SDK
+ + e7dc439b:
+ Fix all lock copying
+ + 10065382:
+ Merge 1e938a7ad96de7b0d96817b4874f647b0d56b8f2 into 918103ceeb6a678998fca45f119c6906300e0b4a
+ + aba6a161:
+ Add one more exclusion file to list of files to patch
+ + 4b03ee5b:
+ Update snapshot image every 30 days
+ + 3968f6eb:
+ Add a script to autogenerate patches reverse patches to import a Github PR into reclient
+ + f0adc032:
+ Remove unexported CHANGELOG.md from exported list of artifacts
+ + b9746269:
+ Fix all unkeyed struct litterals
+ + 32ea7a7d:
+ Move googler specific flags to a separate file.
+ + 472e08f6:
+ Make bazel root shorter to resolve path length issues
+ + 0a1c1cb8:
+ Use the same docker image for integration tests
+ + 3d64506d:
+ Change how creds file flag is set
+```
+
 ## Release 0.150.0 (2024-06-17)
 ```
 Changes:

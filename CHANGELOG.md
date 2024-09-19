@@ -1,3 +1,16 @@
+## Release 0.164.0 (2024-09-13)
+```
+Changes:
+ + 285833ab:
+ Add newline after "Proxy started successfully" message. This makes it consistent with other error messages returned by the function.
+ + 89e3ad80:
+ Adding check for refresh expiry in credshelper
+ + b0b547cd:
+ Prepare to switch kokoro mac ci to ventura
+ + 2da8a2d7:
+ Reduce timeout on depsscan shutdown in startup logic.
+```
+
 ## Release 0.163.0 (2024-09-09)
 ```
 Changes:

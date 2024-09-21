@@ -1,6 +1,6 @@
 drops {
   dest_file: "CHANGELOG.md"
-  version: "0.163.0.d27158ab"
+  version: "0.164.0.76480e37"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {

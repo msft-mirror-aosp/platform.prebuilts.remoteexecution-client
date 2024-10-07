@@ -1,3 +1,110 @@
+## Release 0.164.0 (2024-09-13)
+```
+Changes:
+ + 285833ab:
+ Add newline after "Proxy started successfully" message. This makes it consistent with other error messages returned by the function.
+ + 89e3ad80:
+ Adding check for refresh expiry in credshelper
+ + b0b547cd:
+ Prepare to switch kokoro mac ci to ventura
+ + 2da8a2d7:
+ Reduce timeout on depsscan shutdown in startup logic.
+```
+
+## Release 0.163.0 (2024-09-09)
+```
+Changes:
+ + 40328577:
+ Also fix the bazelisk version for the mac release build
+```
+
+## Release 0.162.0 (2024-09-06)
+```
+Changes:
+ + e32ffe1d:
+ Fix mac bazelisk to v1.20.0
+```
+
+## Release 0.161.0 (2024-09-06)
+```
+Changes:
+ + 3e3af3be:
+ Add JobObject support in Windows.
+ + 9e5ad93f:
+ Rename exists_*.go -> subprocess_*.go
+```
+
+## Release 0.160.0 (2024-09-04)
+```
+Changes:
+ + 71a29cc0:
+ Update aosp snapshot image every 30 days
+ + 54cf5a64:
+ Add CommandResultStatus to RemoteFallbackInfo
+ + eeae3ac5:
+ Temporarily delete credshelper startup and shutdown logs
+ + cdcc051e:
+ Revert^2 "Remove caching from credshelper interface & SDK Import"
+ + 10714a61:
+ Always create address dir for socket file in case it doesn't exist
+ + 39f9b1e0:
+ Remove log_path uses from integration tests
+ + 5aac8b43:
+ Fix Missing BQ rows
+ + 2baa6efe:
+ Cleanup BQ uploader un-used fields
+ + 8dab0b3e:
+ Revert "Remove caching from credshelper interface & SDK Import"
+```
+
+## Release 0.159.0 (2024-08-20)
+```
+Changes:
+ + bae67fda:
+ [GH] Update googleapis to 278611b
+ + 41a19bb4:
+ automate importing github PRs
+ + bb6db233:
+ Remove caching from credshelper interface & SDK Import
+ + f1e51782:
+ [GH] Update angular+cli monorepo
+ + d6eb89d1:
+ [GH] Update dependency @types/node to v20
+ + b507592d:
+ [GH] Update dependency @angular-builders/bazel to v18
+ + 73851e59:
+ Print RBE stats and startup success to stderr
+ + 297efcb0:
+ Update snapshot image every 30 days
+ + ddd04dfb:
+ renormalize line feeds
+ + 4e5f7c1a:
+ avoid crlf issues with copybara
+ + 48ed3aec:
+ Fix bigquery translator for mismatches
+ + df7fcf1d:
+ [GH] Update dependency rules_pkg to v1
+ + f4e5d04c:
+ [GH] rpl2trace: Various fixes
+ + 7feb6d8a:
+ [GH] Fix `-instance` doc in cmd-line-flags.md
+ + 74830bb1:
+ [GH] Increase racing bias upper limit to wait for remote cache a bit more
+```
+
+## Release 0.158.0 (2024-08-13)
+```
+Changes:
+ + 47ac7a23:
+ Fix issue with missing creds cache file
+ + 9da0d527:
+ Fix credshelper logging
+ + e50f614e:
+ Update snapshot image every 30 days
+ + 3049d8d3:
+ Retry connecting to dependency scanner service if we time out.
+```
+
 ## Release 0.157.0 (2024-08-12)
 ```
 Changes:

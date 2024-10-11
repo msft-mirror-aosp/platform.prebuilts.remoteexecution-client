@@ -1,3 +1,49 @@
+## Release 0.168.0 (2024-10-04)
+```
+Changes:
+ + a77e2285:
+ Remove experimental credshelper flags
+ + 659a99d4:
+ [GH] Update googleapis to 8af14fe
+ + 25203657:
+ Replace mkdir with mkdirall in artifacts.
+```
+
+## Release 0.167.0 (2024-09-25)
+```
+Changes:
+ + 9edee038:
+ Fix kokoro permissions for release artifacts dir
+ + 635f92ed:
+ Update chromium snapshot image every 30 days
+```
+
+## Release 0.166.0 (2024-09-23)
+```
+Changes:
+ + 12f21bc6:
+ Fix x20 artifacts upload
+ + dd524bd2:
+ Increase rewrapperargs_test size to large
+```
+
+## Release 0.165.0 (2024-09-18)
+```
+Changes:
+ + 850d99bb:
+ Copy release artifacts to Kokoro artifacts dir
+ + 9f5abd6e:
+ Remove logrecord server
+ + 548df37b:
+ [GH] Build(deps): Bump path-to-regexp and express in /internal/pkg/logrecordserver/ui/app
+ + 68d8a3aa:
+ Update chromium-win snapshot image every 30 days
+ + a6ec36ed:
+ SDK Update
+ + 91e0b34b:
+ Delete unused creds_file flag
+```
+
 ## Release 0.164.0 (2024-09-13)
 ```
 Changes:

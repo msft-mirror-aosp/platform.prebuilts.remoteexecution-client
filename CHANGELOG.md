@@ -1,3 +1,12 @@
+## Release 0.169.0 (2024-10-09)
+```
+Changes:
+ + 271fd29b:
+ Update aosp snapshot image every 30 days
+ + 6b307645:
+ Fix clang flag issues
+```
+
 ## Release 0.168.0 (2024-10-04)
 ```
 Changes:

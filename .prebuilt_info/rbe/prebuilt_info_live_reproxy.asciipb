@@ -1,6 +1,6 @@
 drops {
   dest_file: "live/reproxy"
-  version: "0.164.0.76480e37"
+  version: "0.169.0.5ae0d8b0"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {

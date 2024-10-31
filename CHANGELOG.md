@@ -1,15 +1,113 @@
-## Release 0.159.2 (2024-08-26)
+## Release 0.169.0 (2024-10-09)
 ```
 Changes:
- + b018c14c:
- Fix Missing BQ rows
- + 82260052:
- Cleanup BQ uploader un-used fields
+ + 271fd29b:
+ Update aosp snapshot image every 30 days
+ + 6b307645:
+ Fix clang flag issues
 ```
 
-## Release 0.159.1 (2024-08-22)
+## Release 0.168.0 (2024-10-04)
 ```
 Changes:
+ + a77e2285:
+ Remove experimental credshelper flags
+ + 659a99d4:
+ [GH] Update googleapis to 8af14fe
+ + 25203657:
+ Replace mkdir with mkdirall in artifacts.
+```
+
+## Release 0.167.0 (2024-09-25)
+```
+Changes:
+ + 9edee038:
+ Fix kokoro permissions for release artifacts dir
+ + 635f92ed:
+ Update chromium snapshot image every 30 days
+```
+
+## Release 0.166.0 (2024-09-23)
+```
+Changes:
+ + 12f21bc6:
+ Fix x20 artifacts upload
+ + dd524bd2:
+ Increase rewrapperargs_test size to large
+```
+
+## Release 0.165.0 (2024-09-18)
+```
+Changes:
+ + 850d99bb:
+ Copy release artifacts to Kokoro artifacts dir
+ + 9f5abd6e:
+ Remove logrecord server
+ + 548df37b:
+ [GH] Build(deps): Bump path-to-regexp and express in /internal/pkg/logrecordserver/ui/app
+ + 68d8a3aa:
+ Update chromium-win snapshot image every 30 days
+ + a6ec36ed:
+ SDK Update
+ + 91e0b34b:
+ Delete unused creds_file flag
+```
+
+## Release 0.164.0 (2024-09-13)
+```
+Changes:
+ + 285833ab:
+ Add newline after "Proxy started successfully" message. This makes it consistent with other error messages returned by the function.
+ + 89e3ad80:
+ Adding check for refresh expiry in credshelper
+ + b0b547cd:
+ Prepare to switch kokoro mac ci to ventura
+ + 2da8a2d7:
+ Reduce timeout on depsscan shutdown in startup logic.
+```
+
+## Release 0.163.0 (2024-09-09)
+```
+Changes:
+ + 40328577:
+ Also fix the bazelisk version for the mac release build
+```
+
+## Release 0.162.0 (2024-09-06)
+```
+Changes:
+ + e32ffe1d:
+ Fix mac bazelisk to v1.20.0
+```
+
+## Release 0.161.0 (2024-09-06)
+```
+Changes:
+ + 3e3af3be:
+ Add JobObject support in Windows.
+ + 9e5ad93f:
+ Rename exists_*.go -> subprocess_*.go
+```
+
+## Release 0.160.0 (2024-09-04)
+```
+Changes:
+ + 71a29cc0:
+ Update aosp snapshot image every 30 days
+ + 54cf5a64:
+ Add CommandResultStatus to RemoteFallbackInfo
+ + eeae3ac5:
+ Temporarily delete credshelper startup and shutdown logs
+ + cdcc051e:
+ Revert^2 "Remove caching from credshelper interface & SDK Import"
+ + 10714a61:
+ Always create address dir for socket file in case it doesn't exist
+ + 39f9b1e0:
+ Remove log_path uses from integration tests
+ + 5aac8b43:
+ Fix Missing BQ rows
+ + 2baa6efe:
+ Cleanup BQ uploader un-used fields
  + 8dab0b3e:
  Revert "Remove caching from credshelper interface & SDK Import"
 ```

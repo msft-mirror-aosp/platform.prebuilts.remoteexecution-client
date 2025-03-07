@@ -1,3 +1,36 @@
+## Release 0.172.0 (2024-11-12)
+```
+Changes:
+ + a9fe0e3b:
+ Run basic diagnostics when scandeps server fails to boot up
+ + 5f55127e:
+ Update chrome linux image
+```
+
+## Release 0.171.0 (2024-10-30)
+```
+Changes:
+ + 4f508ef8:
+ Change depsscanner retry via restart logic.
+```
+
+## Release 0.170.0 (2024-10-24)
+```
+Changes:
+ + 5d13034e:
+ Ignore llvm_zlib and llvm_zstd packages in the renovate config.
+ + 4f4b37ac:
+ Patch LLVM/Clang to support memtag-stack
+ + 9a5f12fd:
+ Add protobuf group to Renovate config
+ + 1a68fd08:
+ Update chromium-win snapshot image every 30 days
+ + ee4305ba:
+ Update Protobuf to 28.2
+ + ebaff4e6:
+ update googleapis
+```
+
 ## Release 0.169.0 (2024-10-09)
 ```
 Changes:

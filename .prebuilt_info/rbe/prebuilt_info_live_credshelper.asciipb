@@ -1,11 +1,11 @@
 drops {
   dest_file: "live/credshelper"
-  version: "0.172.0.3cf60ba5"
+  version: "0.180.0.df4552c8"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {
     source_file: "credshelper"
   }
-  git_branch: "master"
+  git_branch: "main"
   transform: TRANSFORM_NONE
 }

@@ -1,3 +1,12 @@
+## Release 0.181.0 (2025-07-09)
+```
+Changes:
+ + 9c0e6cbc:
+ Update remote-apis-sdks
+ + 0073e801:
+ Update res if GetFlattenedOutputs returns an error
+```
+
 ## Release 0.180.0 (2025-06-04)
 ```
 Changes:

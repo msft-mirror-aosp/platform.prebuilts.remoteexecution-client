@@ -1,6 +1,6 @@
 drops {
   dest_file: "live/scandeps_server"
-  version: "0.181.0.c60a3c1f"
+  version: "0.182.0.8eb62dcb"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {

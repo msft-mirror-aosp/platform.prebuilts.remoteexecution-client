@@ -1,6 +1,6 @@
 drops {
   dest_file: "live/auxiliary_proto-descriptor-set.proto.bin"
-  version: "0.182.0.8eb62dcb"
+  version: "0.184.0.b56be69d"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {

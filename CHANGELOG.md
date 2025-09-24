@@ -1,3 +1,17 @@
+## Release 0.184.0 (2025-09-15)
+```
+Changes:
+ + c4aebbd9:
+ Fix compare mode bugs
+```
+
+## Release 0.183.0 (2025-09-12)
+```
+Changes:
+ + 41e91ef4:
+ Update Go from 1.23.1 to 1.24.7 [security]
+```
+
 ## Release 0.182.0 (2025-07-15)
 ```
 Changes:

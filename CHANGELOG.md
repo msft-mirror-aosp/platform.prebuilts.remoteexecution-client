@@ -1,3 +1,14 @@
+## Release 0.185.0 (2025-10-03)
+```
+Changes:
+ + 610a1db7:
+ add `-bazel_compat` flag to compatible with bazel credential helper
+ + befba262:
+ Update remote-apis-sdks
+ + cd14cae8:
+ Format the credshelper clear-cache message lazily.
+```
+
 ## Release 0.184.0 (2025-09-15)
 ```
 Changes:

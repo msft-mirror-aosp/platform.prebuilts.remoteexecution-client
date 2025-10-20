@@ -1,3 +1,28 @@
+## Release 0.185.0 (2025-10-03)
+```
+Changes:
+ + 610a1db7:
+ add `-bazel_compat` flag to compatible with bazel credential helper
+ + befba262:
+ Update remote-apis-sdks
+ + cd14cae8:
+ Format the credshelper clear-cache message lazily.
+```
+
+## Release 0.184.0 (2025-09-15)
+```
+Changes:
+ + c4aebbd9:
+ Fix compare mode bugs
+```
+
+## Release 0.183.0 (2025-09-12)
+```
+Changes:
+ + 41e91ef4:
+ Update Go from 1.23.1 to 1.24.7 [security]
+```
+
 ## Release 0.182.0 (2025-07-15)
 ```
 Changes:

@@ -1,6 +1,6 @@
 drops {
   dest_file: "live/rewrapper"
-  version: "0.182.0.8eb62dcb"
+  version: "0.185.0.db415f21"
   version_group: "rbe"
   git_project: "platform/prebuilts/remoteexecution-client"
   local_drop {
